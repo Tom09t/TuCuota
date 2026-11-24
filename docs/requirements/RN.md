@@ -1,0 +1,1917 @@
+# Catálogo RN — originales, historial y complementarias
+
+Consultar CON.md antes de interpretar las reglas; las sustituciones y excepciones aprobadas prevalecen. El catálogo no está auditado integralmente.
+
+- **PRE-RN-0001** (sin DEC explícita; HISTORICA_CON-004_CON-010; fuente `1ffb80ad-2bd5-4415-85af-7393425a665f`): Todo jugador pertenece a un club.
+- **RN-0001** (DEC-001; VERSION_FORMAL_CON-004; fuente `4b3c22c0-989e-47f1-9644-fda0fee11637`): Cada club tendrá un identificador único.
+- **PRE-RN-0002** (sin DEC explícita; HISTORICA_CON-004_CON-010; fuente `1ffb80ad-2bd5-4415-85af-7393425a665f`): El DNI debe ser único dentro de cada club.
+- **RN-0002** (DEC-001; VERSION_FORMAL_CON-004; fuente `4b3c22c0-989e-47f1-9644-fda0fee11637`): Los datos de un club deben estar aislados de los demás.
+- **PRE-RN-0003** (sin DEC explícita; HISTORICA_CON-004_CON-010; fuente `1ffb80ad-2bd5-4415-85af-7393425a665f`): Todo jugador debe tener un estado.
+- **RN-0003** (DEC-001; VERSION_FORMAL_CON-004; fuente `4b3c22c0-989e-47f1-9644-fda0fee11637`): Cada club tendrá su propio portal público personalizado.
+- **PRE-RN-0004** (sin DEC explícita; HISTORICA_CON-004_CON-010; fuente `1ffb80ad-2bd5-4415-85af-7393425a665f`): Un jugador dado de baja conserva sus cuotas y pagos históricos.
+- **RN-0004** (DEC-001; VERSION_FORMAL_CON-004; fuente `4b3c22c0-989e-47f1-9644-fda0fee11637`): Obras Mendoza será el primer club piloto.
+- **PRE-RN-0005** (sin DEC explícita; HISTORICA_CON-004_CON-010; fuente `1ffb80ad-2bd5-4415-85af-7393425a665f`): Los jugadores dados de baja no reciben nuevas cuotas automáticas.
+- **RN-0005** (DEC-001; VERSION_FORMAL_CON-004; fuente `4b3c22c0-989e-47f1-9644-fda0fee11637`): La plataforma debe permitir incorporar nuevos clubes sin modificar el código.
+- **PRE-RN-0006** (sin DEC explícita; HISTORICA_CON-004_CON-010; fuente `1ffb80ad-2bd5-4415-85af-7393425a665f`): Un administrador solo puede gestionar jugadores de los clubes que tiene autorizados.
+- **RN-0006** (DEC-002; VERSION_FORMAL_CON-004; fuente `c69d0ccd-f95b-4e8d-ade4-46423aaa4b41`): Solo el superadministrador puede crear clubes.
+- **RN-0007** (DEC-002; EXTRAIDA_NO_VALIDADA; fuente `c69d0ccd-f95b-4e8d-ade4-46423aaa4b41`): Los clubes no pueden registrarse por cuenta propia.
+- **RN-0008** (DEC-002; EXTRAIDA_NO_VALIDADA; fuente `c69d0ccd-f95b-4e8d-ade4-46423aaa4b41`): Cada club tendrá un identificador único.
+- **RN-0009** (DEC-002; EXTRAIDA_NO_VALIDADA; fuente `c69d0ccd-f95b-4e8d-ade4-46423aaa4b41`): El superadministrador podrá consultar y administrar los clubes registrados.
+- **RN-0010** (DEC-002; EXTRAIDA_NO_VALIDADA; fuente `c69d0ccd-f95b-4e8d-ade4-46423aaa4b41`): Cada club tendrá sus propios administradores.
+- **RN-0011** (DEC-003; EXTRAIDA_NO_VALIDADA; fuente `6c8ebbda-4ca6-45ee-b70d-19b939b8473f`): Un club puede encontrarse activo o inactivo.
+- **RN-0012** (DEC-003; EXTRAIDA_NO_VALIDADA; fuente `6c8ebbda-4ca6-45ee-b70d-19b939b8473f`): Al dar de baja un club, su estado cambia a inactivo.
+- **RN-0013** (DEC-003; EXTRAIDA_NO_VALIDADA; fuente `6c8ebbda-4ca6-45ee-b70d-19b939b8473f`): La baja no elimina jugadores, cuotas, pagos ni administradores.
+- **RN-0014** (DEC-003; SUSTITUIDA_CON-014; fuente `6c8ebbda-4ca6-45ee-b70d-19b939b8473f`): Un club inactivo no puede generar nuevas cuotas ni iniciar nuevos cobros.
+- **RN-0015** (DEC-003; EXTRAIDA_NO_VALIDADA; fuente `6c8ebbda-4ca6-45ee-b70d-19b939b8473f`): El superadministrador puede consultar el historial de clubes inactivos.
+- **RN-0016** (DEC-004; EXTRAIDA_NO_VALIDADA; fuente `e942c39f-bfac-4e6c-bd32-bac5d845502d`): Solo el superadministrador puede reactivar un club.
+- **RN-0017** (DEC-004; EXTRAIDA_NO_VALIDADA; fuente `e942c39f-bfac-4e6c-bd32-bac5d845502d`): La reactivación cambia el estado del club de inactivo a activo.
+- **RN-0018** (DEC-004; EXTRAIDA_NO_VALIDADA; fuente `e942c39f-bfac-4e6c-bd32-bac5d845502d`): Se conservan todos los jugadores, categorías, administradores, cuotas y pagos anteriores.
+- **RN-0019** (DEC-004; EXTRAIDA_NO_VALIDADA; fuente `e942c39f-bfac-4e6c-bd32-bac5d845502d`): No se generan automáticamente cuotas correspondientes a los meses en los que el club estuvo inactivo.
+- **RN-0020** (DEC-004; EXTRAIDA_NO_VALIDADA; fuente `e942c39f-bfac-4e6c-bd32-bac5d845502d`): Las nuevas cuotas podrán generarse a partir de la reactivación, según la configuración vigente del club.
+- **RN-0021** (DEC-004; EXTRAIDA_NO_VALIDADA; fuente `e942c39f-bfac-4e6c-bd32-bac5d845502d`): Se debe registrar la fecha de reactivación para mantener trazabilidad.
+- **RN-0022** (DEC-005; REVISAR_IMPACTO; fuente `c4d827c0-1470-44d4-a5cc-35e63a19822a`): Un club puede tener múltiples administradores.
+- **RN-0023** (DEC-005; REVISAR_IMPACTO; fuente `c4d827c0-1470-44d4-a5cc-35e63a19822a`): Todos los administradores de un mismo club tienen los mismos permisos.
+- **RN-0024** (DEC-005; REVISAR_IMPACTO; fuente `c4d827c0-1470-44d4-a5cc-35e63a19822a`): Los administradores pueden gestionar jugadores, categorías, cuotas y consultar pagos de su club.
+- **RN-0025** (DEC-005; REVISAR_IMPACTO; fuente `c4d827c0-1470-44d4-a5cc-35e63a19822a`): Un administrador no puede acceder a información de otros clubes sin autorización.
+- **RN-0026** (DEC-005; REVISAR_IMPACTO; fuente `c4d827c0-1470-44d4-a5cc-35e63a19822a`): El superadministrador tiene un nivel de acceso diferente al de los administradores de clubes.
+- **RN-0027** (DEC-006; REVISAR_IMPACTO; fuente `ae4dadc2-d821-427b-945e-96e9be354201`): El superadministrador crea el primer administrador al registrar un club.
+- **RN-0028** (DEC-006; REVISAR_IMPACTO; fuente `ae4dadc2-d821-427b-945e-96e9be354201`): Los administradores pueden incorporar otros administradores a su propio club.
+- **RN-0029** (DEC-006; REVISAR_IMPACTO; fuente `ae4dadc2-d821-427b-945e-96e9be354201`): Los administradores pueden modificar y dar de baja a otros administradores de su club.
+- **RN-0030** (DEC-006; REVISAR_IMPACTO; fuente `ae4dadc2-d821-427b-945e-96e9be354201`): Todos los administradores del club tienen los mismos permisos.
+- **RN-0031** (DEC-006; REVISAR_IMPACTO; fuente `ae4dadc2-d821-427b-945e-96e9be354201`): Ningún administrador puede gestionar usuarios de otros clubes.
+- **RN-0032** (DEC-006; REVISAR_IMPACTO; fuente `ae4dadc2-d821-427b-945e-96e9be354201`): Las bajas de administradores serán lógicas, conservando el historial de sus acciones.
+- **RN-0033** (DEC-006; REVISAR_IMPACTO; fuente `ae4dadc2-d821-427b-945e-96e9be354201`): No se permitirá dar de baja al último administrador activo de un club.
+- **RN-0034** (DEC-007; EXTRAIDA_NO_VALIDADA; fuente `e92fc343-d148-4939-a609-abef76fe64a3`): Cada cuenta administrativa pertenece a un único club.
+- **RN-0035** (DEC-007; EXTRAIDA_NO_VALIDADA; fuente `e92fc343-d148-4939-a609-abef76fe64a3`): Un club puede tener múltiples cuentas administrativas.
+- **RN-0036** (DEC-007; EXTRAIDA_NO_VALIDADA; fuente `e92fc343-d148-4939-a609-abef76fe64a3`): Una misma cuenta no puede administrar varios clubes.
+- **RN-0037** (DEC-007; EXTRAIDA_NO_VALIDADA; fuente `e92fc343-d148-4939-a609-abef76fe64a3`): Si una persona administra dos clubes, debe utilizar cuentas independientes.
+- **RN-0038** (DEC-007; EXTRAIDA_NO_VALIDADA; fuente `e92fc343-d148-4939-a609-abef76fe64a3`): Cada operación administrativa debe validar que el usuario pertenezca al club correspondiente.
+- **RN-0039** (DEC-007; EXTRAIDA_NO_VALIDADA; fuente `e92fc343-d148-4939-a609-abef76fe64a3`): El superadministrador es un usuario de plataforma y no está sujeto a la asociación con un único club.
+- **RN-0040** (DEC-008; EXTRAIDA_NO_VALIDADA; fuente `af4427fa-f887-41c2-b093-9ac3ea901b39`): Los administradores se autentican mediante correo electrónico y contraseña.
+- **RN-0041** (DEC-008; EXTRAIDA_NO_VALIDADA; fuente `af4427fa-f887-41c2-b093-9ac3ea901b39`): Cada cuenta administrativa tendrá un correo electrónico asociado.
+- **RN-0042** (DEC-008; EXTRAIDA_NO_VALIDADA; fuente `af4427fa-f887-41c2-b093-9ac3ea901b39`): El sistema permitirá solicitar la recuperación de contraseña por email.
+- **RN-0043** (DEC-008; EXTRAIDA_NO_VALIDADA; fuente `af4427fa-f887-41c2-b093-9ac3ea901b39`): La recuperación utilizará un enlace temporal de un solo uso.
+- **RN-0044** (DEC-008; EXTRAIDA_NO_VALIDADA; fuente `af4427fa-f887-41c2-b093-9ac3ea901b39`): Las contraseñas se almacenarán mediante hashes seguros, nunca en texto plano.
+- **RN-0045** (DEC-008; EXTRAIDA_NO_VALIDADA; fuente `af4427fa-f887-41c2-b093-9ac3ea901b39`): Los usuarios dados de baja no podrán iniciar sesión.
+- **RN-0046** (DEC-008; EXTRAIDA_NO_VALIDADA; fuente `af4427fa-f887-41c2-b093-9ac3ea901b39`): Las operaciones privadas requerirán una sesión autenticada.
+- **RN-0047** (DEC-009; EXTRAIDA_NO_VALIDADA; fuente `5272e231-1b03-4cbc-85f6-77f44994383d`): El correo electrónico debe ser único dentro de cada club.
+- **RN-0048** (DEC-009; EXTRAIDA_NO_VALIDADA; fuente `5272e231-1b03-4cbc-85f6-77f44994383d`): Un mismo correo puede estar registrado en múltiples clubes.
+- **RN-0049** (DEC-009; EXTRAIDA_NO_VALIDADA; fuente `5272e231-1b03-4cbc-85f6-77f44994383d`): Cada cuenta mantiene sus propias credenciales, estado y permisos.
+- **RN-0050** (DEC-009; EXTRAIDA_NO_VALIDADA; fuente `5272e231-1b03-4cbc-85f6-77f44994383d`): La autenticación debe identificar inequívocamente el club al que pertenece la cuenta.
+- **RN-0051** (DEC-009; EXTRAIDA_NO_VALIDADA; fuente `5272e231-1b03-4cbc-85f6-77f44994383d`): La recuperación de contraseña debe afectar únicamente a la cuenta del club correspondiente.
+- **RN-0052** (DEC-010; EXTRAIDA_NO_VALIDADA; fuente `0ae618e5-784f-4879-b0bf-5f7d1b490346`): Cada club tendrá un identificador público único (`Slug`).
+- **RN-0053** (DEC-010; EXTRAIDA_NO_VALIDADA; fuente `0ae618e5-784f-4879-b0bf-5f7d1b490346`): El portal público estará disponible en `/{slug}`.
+- **RN-0054** (DEC-010; EXTRAIDA_NO_VALIDADA; fuente `0ae618e5-784f-4879-b0bf-5f7d1b490346`): El acceso administrativo estará disponible en `/{slug}/admin`.
+- **RN-0055** (DEC-010; EXTRAIDA_NO_VALIDADA; fuente `0ae618e5-784f-4879-b0bf-5f7d1b490346`): El sistema identificará al club mediante el slug de la URL.
+- **RN-0056** (DEC-010; EXTRAIDA_NO_VALIDADA; fuente `0ae618e5-784f-4879-b0bf-5f7d1b490346`): Un administrador solo podrá acceder al panel del club al que pertenece.
+- **RN-0057** (DEC-010; EXTRAIDA_NO_VALIDADA; fuente `0ae618e5-784f-4879-b0bf-5f7d1b490346`): No se permitirá registrar dos clubes con el mismo slug.
+- **RN-0058** (DEC-010; EXTRAIDA_NO_VALIDADA; fuente `0ae618e5-784f-4879-b0bf-5f7d1b490346`): Las rutas administrativas deberán validar autenticación y pertenencia al club.
+- **RN-0059** (DEC-011; EXTRAIDA_NO_VALIDADA; fuente `2352f88f-6dba-4348-86da-b70ea4076e2e`): Cada club podrá configurar su nombre visible.
+- **RN-0060** (DEC-011; EXTRAIDA_NO_VALIDADA; fuente `2352f88f-6dba-4348-86da-b70ea4076e2e`): Cada club podrá cargar su escudo o logotipo.
+- **RN-0061** (DEC-011; EXTRAIDA_NO_VALIDADA; fuente `2352f88f-6dba-4348-86da-b70ea4076e2e`): Cada club podrá configurar un color principal y uno secundario.
+- **RN-0062** (DEC-011; EXTRAIDA_NO_VALIDADA; fuente `2352f88f-6dba-4348-86da-b70ea4076e2e`): Cada club podrá cargar una imagen de portada.
+- **RN-0063** (DEC-011; EXTRAIDA_NO_VALIDADA; fuente `2352f88f-6dba-4348-86da-b70ea4076e2e`): La personalización se aplicará al portal público y a la identidad visual del panel administrativo.
+- **RN-0064** (DEC-011; EXTRAIDA_NO_VALIDADA; fuente `2352f88f-6dba-4348-86da-b70ea4076e2e`): Todos los clubes utilizarán la misma estructura funcional.
+- **RN-0065** (DEC-011; EXTRAIDA_NO_VALIDADA; fuente `2352f88f-6dba-4348-86da-b70ea4076e2e`): Si un club no configura algún elemento visual, se utilizará un valor predeterminado de la plataforma.
+- **RN-0066** (DEC-012; REVISAR_IMPACTO; fuente `f772308c-f0ba-4498-a4c2-a1eaff1b6863`): El superadministrador puede modificar la identidad visual de cualquier club.
+- **RN-0067** (DEC-012; REVISAR_IMPACTO; fuente `f772308c-f0ba-4498-a4c2-a1eaff1b6863`): Los administradores de un club pueden modificar la identidad visual de su propia institución.
+- **RN-0068** (DEC-012; REVISAR_IMPACTO; fuente `f772308c-f0ba-4498-a4c2-a1eaff1b6863`): Los administradores no pueden modificar la configuración visual de otros clubes.
+- **RN-0069** (DEC-012; REVISAR_IMPACTO; fuente `f772308c-f0ba-4498-a4c2-a1eaff1b6863`): Los cambios de identidad visual se reflejarán en el portal público y en el panel administrativo.
+- **RN-0070** (DEC-012; REVISAR_IMPACTO; fuente `f772308c-f0ba-4498-a4c2-a1eaff1b6863`): Los cambios deberán quedar registrados para conocer quién los realizó y cuándo.
+- **RN-0071** (DEC-013; EXTRAIDA_NO_VALIDADA; fuente `e4121e26-9bfb-4db6-a893-52e80ffd22dd`): Los administradores podrán registrar jugadores individualmente mediante un formulario.
+- **RN-0072** (DEC-013; EXTRAIDA_NO_VALIDADA; fuente `e4121e26-9bfb-4db6-a893-52e80ffd22dd`): Los administradores podrán importar múltiples jugadores desde un archivo Excel.
+- **RN-0073** (DEC-013; EXTRAIDA_NO_VALIDADA; fuente `e4121e26-9bfb-4db6-a893-52e80ffd22dd`): Los jugadores registrados pertenecerán al club desde el cual se realiza la operación.
+- **RN-0074** (DEC-013; EXTRAIDA_NO_VALIDADA; fuente `e4121e26-9bfb-4db6-a893-52e80ffd22dd`): Un administrador no podrá registrar jugadores en otro club.
+- **RN-0075** (DEC-014; EXTRAIDA_NO_VALIDADA; fuente `93f5b8e2-10af-4ef6-b94f-b78273d1ae04`): Todo jugador debe tener DNI, nombre, apellido y categoría.
+- **RN-0076** (DEC-014; EXTRAIDA_NO_VALIDADA; fuente `93f5b8e2-10af-4ef6-b94f-b78273d1ae04`): La fecha de nacimiento, teléfono, email y nombre del tutor serán opcionales.
+- **RN-0077** (DEC-014; EXTRAIDA_NO_VALIDADA; fuente `93f5b8e2-10af-4ef6-b94f-b78273d1ae04`): Los administradores podrán modificar los datos de los jugadores de su propio club.
+- **RN-0078** (DEC-014; EXTRAIDA_NO_VALIDADA; fuente `93f5b8e2-10af-4ef6-b94f-b78273d1ae04`): La ausencia de datos opcionales no impedirá registrar un jugador.
+- **RN-0079** (DEC-014; EXTRAIDA_NO_VALIDADA; fuente `93f5b8e2-10af-4ef6-b94f-b78273d1ae04`): La categoría seleccionada deberá pertenecer al mismo club que el jugador.
+- **RN-0080** (DEC-015; EXTRAIDA_NO_VALIDADA; fuente `3d10b2f8-9955-4a5c-b4a1-f2920b8a2956`): Cada DNI identificará a un único jugador global en la plataforma.
+- **RN-0081** (DEC-015; EXTRAIDA_NO_VALIDADA; fuente `3d10b2f8-9955-4a5c-b4a1-f2920b8a2956`): Un jugador podrá estar vinculado a múltiples clubes.
+- **RN-0082** (DEC-015; EXTRAIDA_NO_VALIDADA; fuente `3d10b2f8-9955-4a5c-b4a1-f2920b8a2956`): Cada club gestionará independientemente la categoría, el estado, las cuotas y los pagos de ese jugador.
+- **RN-0083** (DEC-015; EXTRAIDA_NO_VALIDADA; fuente `3d10b2f8-9955-4a5c-b4a1-f2920b8a2956`): Un jugador no podrá tener dos vinculaciones duplicadas con el mismo club.
+- **RN-0084** (DEC-015; EXTRAIDA_NO_VALIDADA; fuente `3d10b2f8-9955-4a5c-b4a1-f2920b8a2956`): La baja de un jugador en un club no afectará su vinculación con otros clubes.
+- **RN-0085** (DEC-015; EXTRAIDA_NO_VALIDADA; fuente `3d10b2f8-9955-4a5c-b4a1-f2920b8a2956`): Los administradores no podrán consultar cuotas ni pagos de otros clubes por el solo hecho de compartir un jugador.
+- **RN-0086** (DEC-016; EXTRAIDA_NO_VALIDADA; fuente `0b7ad6e2-06b6-4aa8-8681-35c828ad4fb7`): Un club podrá administrar múltiples disciplinas deportivas.
+- **RN-0087** (DEC-016; EXTRAIDA_NO_VALIDADA; fuente `0b7ad6e2-06b6-4aa8-8681-35c828ad4fb7`): Un jugador podrá estar inscripto en varias disciplinas del mismo club.
+- **RN-0088** (DEC-016; EXTRAIDA_NO_VALIDADA; fuente `0b7ad6e2-06b6-4aa8-8681-35c828ad4fb7`): Cada inscripción tendrá su propia categoría.
+- **RN-0089** (DEC-016; EXTRAIDA_NO_VALIDADA; fuente `0b7ad6e2-06b6-4aa8-8681-35c828ad4fb7`): Las cuotas serán independientes por inscripción y disciplina.
+- **RN-0090** (DEC-016; EXTRAIDA_NO_VALIDADA; fuente `0b7ad6e2-06b6-4aa8-8681-35c828ad4fb7`): La baja de una inscripción no afectará las demás inscripciones del jugador.
+- **RN-0091** (DEC-016; EXTRAIDA_NO_VALIDADA; fuente `0b7ad6e2-06b6-4aa8-8681-35c828ad4fb7`): Las cuotas y pagos históricos deberán conservarse aunque una inscripción sea dada de baja.
+- **RN-0092** (DEC-017; EXTRAIDA_NO_VALIDADA; fuente `e6da1af3-3743-4c1c-a456-9ef5d552c533`): Cada DNI identifica a un único jugador global.
+- **RN-0093** (DEC-017; EXTRAIDA_NO_VALIDADA; fuente `e6da1af3-3743-4c1c-a456-9ef5d552c533`): Cada club mantiene su propia ficha de datos personales para ese jugador.
+- **RN-0094** (DEC-017; EXTRAIDA_NO_VALIDADA; fuente `e6da1af3-3743-4c1c-a456-9ef5d552c533`): Modificar nombre, apellido, fecha de nacimiento, teléfono, email o tutor en un club no afecta a otros clubes.
+- **RN-0095** (DEC-017; EXTRAIDA_NO_VALIDADA; fuente `e6da1af3-3743-4c1c-a456-9ef5d552c533`): Los administradores solo pueden consultar y modificar las fichas correspondientes a su club.
+- **RN-0096** (DEC-017; EXTRAIDA_NO_VALIDADA; fuente `e6da1af3-3743-4c1c-a456-9ef5d552c533`): Un jugador puede estar registrado en varios clubes y tener varias inscripciones deportivas dentro de cada uno.
+- **RN-0097** (DEC-017; EXTRAIDA_NO_VALIDADA; fuente `e6da1af3-3743-4c1c-a456-9ef5d552c533`): Las cuotas y categorías pertenecen a cada inscripción deportiva, no al registro global del jugador.
+- **RN-0098** (DEC-018; EXTRAIDA_NO_VALIDADA; fuente `9220003c-c444-452b-93f6-966eabe71dfc`): Se podrá dar de baja una inscripción deportiva individualmente.
+- **RN-0099** (DEC-018; SUSTITUIDA_CON-013; fuente `9220003c-c444-452b-93f6-966eabe71dfc`): Se podrá dar de baja a un jugador de todas las disciplinas de un club.
+- **RN-0100** (DEC-018; EXTRAIDA_NO_VALIDADA; fuente `9220003c-c444-452b-93f6-966eabe71dfc`): Las bajas serán lógicas y conservarán el historial de cuotas y pagos.
+- **RN-0101** (DEC-018; EXTRAIDA_NO_VALIDADA; fuente `9220003c-c444-452b-93f6-966eabe71dfc`): La baja en una disciplina no afectará las demás disciplinas ni otros clubes.
+- **RN-0102** (DEC-019; REVISAR_IMPACTO; fuente `c06d956e-b271-4cf6-84a1-7f7a9f297be0`): No existirá el rol de administrador general del club.
+- **RN-0103** (DEC-019; REVISAR_IMPACTO; fuente `c06d956e-b271-4cf6-84a1-7f7a9f297be0`): Cada administrador estará asociado a un club y una disciplina.
+- **RN-0104** (DEC-019; REVISAR_IMPACTO; fuente `c06d956e-b271-4cf6-84a1-7f7a9f297be0`): Los administradores podrán gestionar únicamente los jugadores, categorías, inscripciones, cuotas y pagos de su disciplina.
+- **RN-0105** (DEC-019; REVISAR_IMPACTO; fuente `c06d956e-b271-4cf6-84a1-7f7a9f297be0`): Dos disciplinas del mismo club tendrán administraciones independientes.
+- **RN-0106** (DEC-019; REVISAR_IMPACTO; fuente `c06d956e-b271-4cf6-84a1-7f7a9f297be0`): El superadministrador tendrá acceso global a todos los clubes y disciplinas.
+- **RN-0107** (DEC-019; REVISAR_IMPACTO; fuente `c06d956e-b271-4cf6-84a1-7f7a9f297be0`): Los permisos deberán validarse en el backend para evitar accesos no autorizados.
+- **RN-0108** (DEC-020; REVISAR_IMPACTO; fuente `089f40a8-cefc-4425-ba75-6210074bbb29`): El superadministrador crea el primer administrador de cada disciplina.
+- **RN-0109** (DEC-020; REVISAR_IMPACTO; fuente `089f40a8-cefc-4425-ba75-6210074bbb29`): Los administradores pueden crear nuevas cuentas administrativas dentro de su disciplina.
+- **RN-0110** (DEC-020; REVISAR_IMPACTO; fuente `089f40a8-cefc-4425-ba75-6210074bbb29`): Los administradores pueden modificar y desactivar otras cuentas de su misma disciplina.
+- **RN-0111** (DEC-020; REVISAR_IMPACTO; fuente `089f40a8-cefc-4425-ba75-6210074bbb29`): Ningún administrador puede gestionar cuentas de otra disciplina, aunque pertenezca al mismo club.
+- **RN-0112** (DEC-020; REVISAR_IMPACTO; fuente `089f40a8-cefc-4425-ba75-6210074bbb29`): El superadministrador puede gestionar las cuentas de todas las disciplinas.
+- **RN-0113** (DEC-020; REVISAR_IMPACTO; fuente `089f40a8-cefc-4425-ba75-6210074bbb29`): Todas las cuentas administrativas de una misma disciplina tendrán los mismos permisos funcionales.
+- **RN-0114** (DEC-021; EXTRAIDA_NO_VALIDADA; fuente `6401d32a-c58d-4897-a1e0-7a5a7a72cdfb`): El delegado general puede modificar los datos generales y la identidad visual de su club.
+- **RN-0115** (DEC-021; EXTRAIDA_NO_VALIDADA; fuente `6401d32a-c58d-4897-a1e0-7a5a7a72cdfb`): Puede agregar y administrar disciplinas dentro de su club.
+- **RN-0116** (DEC-021; EXTRAIDA_NO_VALIDADA; fuente `6401d32a-c58d-4897-a1e0-7a5a7a72cdfb`): Puede gestionar las cuentas administrativas de las disciplinas de su club.
+- **RN-0117** (DEC-021; EXTRAIDA_NO_VALIDADA; fuente `6401d32a-c58d-4897-a1e0-7a5a7a72cdfb`): Puede consultar jugadores, categorías, inscripciones, cuotas y pagos de todas las disciplinas.
+- **RN-0118** (DEC-021; EXTRAIDA_NO_VALIDADA; fuente `6401d32a-c58d-4897-a1e0-7a5a7a72cdfb`): No puede crear, modificar ni dar de baja jugadores o inscripciones deportivas.
+- **RN-0119** (DEC-021; EXTRAIDA_NO_VALIDADA; fuente `6401d32a-c58d-4897-a1e0-7a5a7a72cdfb`): No puede generar, modificar, anular ni registrar pagos o cuotas de las disciplinas.
+- **RN-0120** (DEC-021; EXTRAIDA_NO_VALIDADA; fuente `6401d32a-c58d-4897-a1e0-7a5a7a72cdfb`): No puede acceder a la información de otros clubes.
+- **RN-0121** (DEC-022; EXTRAIDA_NO_VALIDADA; fuente `02ab4130-2b06-4551-b7e6-e43925d6e724`): Un club podrá tener uno o varios delegados generales.
+- **RN-0122** (DEC-022; EXTRAIDA_NO_VALIDADA; fuente `02ab4130-2b06-4551-b7e6-e43925d6e724`): Todos los delegados generales de un mismo club tendrán los mismos permisos.
+- **RN-0123** (DEC-022; EXTRAIDA_NO_VALIDADA; fuente `02ab4130-2b06-4551-b7e6-e43925d6e724`): El superadministrador creará el primer delegado general.
+- **RN-0124** (DEC-022; EXTRAIDA_NO_VALIDADA; fuente `02ab4130-2b06-4551-b7e6-e43925d6e724`): Los delegados generales podrán crear, modificar y desactivar otros delegados de su club.
+- **RN-0125** (DEC-022; EXTRAIDA_NO_VALIDADA; fuente `02ab4130-2b06-4551-b7e6-e43925d6e724`): El superadministrador podrá gestionar los delegados de cualquier club.
+- **RN-0126** (DEC-022; EXTRAIDA_NO_VALIDADA; fuente `02ab4130-2b06-4551-b7e6-e43925d6e724`): Ningún delegado podrá gestionar cuentas de otro club.
+- **RN-0127** (DEC-022; EXTRAIDA_NO_VALIDADA; fuente `02ab4130-2b06-4551-b7e6-e43925d6e724`): La cantidad de delegados no tendrá un límite funcional predefinido.
+- **RN-0128** (DEC-023; EXTRAIDA_NO_VALIDADA; fuente `3331ad23-bb93-4e01-a238-5afd013af408`): El superadministrador puede crear disciplinas en cualquier club.
+- **RN-0129** (DEC-023; EXTRAIDA_NO_VALIDADA; fuente `3331ad23-bb93-4e01-a238-5afd013af408`): Los delegados generales pueden crear disciplinas en su propio club.
+- **RN-0130** (DEC-023; EXTRAIDA_NO_VALIDADA; fuente `3331ad23-bb93-4e01-a238-5afd013af408`): La creación de disciplinas no requiere aprobación previa.
+- **RN-0131** (DEC-023; EXTRAIDA_NO_VALIDADA; fuente `3331ad23-bb93-4e01-a238-5afd013af408`): Los administradores de disciplina no pueden crear nuevas disciplinas.
+- **RN-0132** (DEC-023; EXTRAIDA_NO_VALIDADA; fuente `3331ad23-bb93-4e01-a238-5afd013af408`): Un club puede comenzar con una sola disciplina y agregar otras posteriormente.
+- **RN-0133** (DEC-023; EXTRAIDA_NO_VALIDADA; fuente `3331ad23-bb93-4e01-a238-5afd013af408`): Agregar una disciplina no modifica las inscripciones, cuotas ni pagos existentes de las demás disciplinas.
+- **RN-0134** (DEC-023; EXTRAIDA_NO_VALIDADA; fuente `3331ad23-bb93-4e01-a238-5afd013af408`): Cada nueva disciplina tendrá su propia administración, categorías, inscripciones y cuotas.
+- **RN-0135** (DEC-024; EXTRAIDA_NO_VALIDADA; fuente `3b1e95af-2891-4e49-b084-3d0890dd96c1`): Las disciplinas podrán desactivarse sin eliminar sus registros.
+- **RN-0136** (DEC-024; EXTRAIDA_NO_VALIDADA; fuente `3b1e95af-2891-4e49-b084-3d0890dd96c1`): Se conservarán jugadores, categorías, inscripciones, cuotas y pagos históricos.
+- **RN-0137** (DEC-024; EXTRAIDA_NO_VALIDADA; fuente `3b1e95af-2891-4e49-b084-3d0890dd96c1`): Una disciplina inactiva no podrá registrar nuevas inscripciones.
+- **RN-0138** (DEC-024; EXTRAIDA_NO_VALIDADA; fuente `3b1e95af-2891-4e49-b084-3d0890dd96c1`): No se generarán nuevas cuotas mientras la disciplina esté inactiva.
+- **RN-0139** (DEC-024; EXTRAIDA_NO_VALIDADA; fuente `3b1e95af-2891-4e49-b084-3d0890dd96c1`): Los jugadores podrán pagar deudas generadas antes de la desactivación.
+- **RN-0140** (DEC-024; EXTRAIDA_NO_VALIDADA; fuente `3b1e95af-2891-4e49-b084-3d0890dd96c1`): Una disciplina podrá reactivarse y recuperar su configuración e historial.
+- **RN-0141** (DEC-024; EXTRAIDA_NO_VALIDADA; fuente `3b1e95af-2891-4e49-b084-3d0890dd96c1`): La desactivación de una disciplina no afectará a las demás disciplinas del club.
+- **RN-0142** (DEC-025; EXTRAIDA_NO_VALIDADA; fuente `99dd6cf4-f9b9-4342-bf81-5bb5de0159fa`): Solo el superadministrador puede desactivar una disciplina.
+- **RN-0143** (DEC-025; EXTRAIDA_NO_VALIDADA; fuente `99dd6cf4-f9b9-4342-bf81-5bb5de0159fa`): Solo el superadministrador puede reactivar una disciplina.
+- **RN-0144** (DEC-025; EXTRAIDA_NO_VALIDADA; fuente `99dd6cf4-f9b9-4342-bf81-5bb5de0159fa`): Los delegados generales pueden crear y configurar disciplinas, pero no desactivarlas ni reactivarlas.
+- **RN-0145** (DEC-025; EXTRAIDA_NO_VALIDADA; fuente `99dd6cf4-f9b9-4342-bf81-5bb5de0159fa`): Los administradores de disciplina no pueden modificar el estado de actividad de ninguna disciplina.
+- **RN-0146** (DEC-025; EXTRAIDA_NO_VALIDADA; fuente `99dd6cf4-f9b9-4342-bf81-5bb5de0159fa`): Toda desactivación o reactivación debe registrar quién la realizó y cuándo.
+- **RN-0147** (DEC-025; EXTRAIDA_NO_VALIDADA; fuente `99dd6cf4-f9b9-4342-bf81-5bb5de0159fa`): Los permisos se validarán en el backend, independientemente de los controles visibles en la interfaz.
+- **RN-0148** (DEC-026; EXTRAIDA_NO_VALIDADA; fuente `3e08ac5b-b265-4e68-8e9c-eea09327983d`): Durante la inactividad no se generan nuevas cuotas.
+- **RN-0149** (DEC-026; EXTRAIDA_NO_VALIDADA; fuente `3e08ac5b-b265-4e68-8e9c-eea09327983d`): Al reactivar una disciplina, no se generan cuotas por los períodos inactivos.
+- **RN-0150** (DEC-026; EXTRAIDA_NO_VALIDADA; fuente `3e08ac5b-b265-4e68-8e9c-eea09327983d`): La generación de nuevas cuotas se reanuda a partir de la reactivación, según la configuración de la disciplina.
+- **RN-0151** (DEC-026; EXTRAIDA_NO_VALIDADA; fuente `3e08ac5b-b265-4e68-8e9c-eea09327983d`): Las cuotas pendientes anteriores a la desactivación conservan su estado y podrán pagarse.
+- **RN-0152** (DEC-026; EXTRAIDA_NO_VALIDADA; fuente `3e08ac5b-b265-4e68-8e9c-eea09327983d`): Los pagos históricos permanecen registrados.
+- **RN-0153** (DEC-026; EXTRAIDA_NO_VALIDADA; fuente `3e08ac5b-b265-4e68-8e9c-eea09327983d`): El sistema deberá conservar las fechas de desactivación y reactivación para identificar los períodos inactivos.
+- **RN-0154** (DEC-027; EXTRAIDA_NO_VALIDADA; fuente `6f592877-012a-4586-97df-1e8205f5db78`): Cada categoría pertenece a una disciplina específica de un club.
+- **RN-0155** (DEC-027; EXTRAIDA_NO_VALIDADA; fuente `6f592877-012a-4586-97df-1e8205f5db78`): Los administradores pueden crear categorías exclusivamente en su disciplina.
+- **RN-0156** (DEC-027; EXTRAIDA_NO_VALIDADA; fuente `6f592877-012a-4586-97df-1e8205f5db78`): Los administradores pueden modificar y desactivar las categorías de su disciplina.
+- **RN-0157** (DEC-027; EXTRAIDA_NO_VALIDADA; fuente `6f592877-012a-4586-97df-1e8205f5db78`): Los delegados generales pueden consultar las categorías de todas las disciplinas de su club, sin modificarlas.
+- **RN-0158** (DEC-027; EXTRAIDA_NO_VALIDADA; fuente `6f592877-012a-4586-97df-1e8205f5db78`): El superadministrador conserva permisos globales.
+- **RN-0159** (DEC-027; EXTRAIDA_NO_VALIDADA; fuente `6f592877-012a-4586-97df-1e8205f5db78`): Los administradores de una disciplina no pueden gestionar categorías de otra disciplina.
+- **RN-0160** (DEC-028; EXTRAIDA_NO_VALIDADA; fuente `e3c73641-eeab-475c-891c-b9f5abc9ea2a`): Un jugador podrá tener una única categoría activa por disciplina y club.
+- **RN-0161** (DEC-028; EXTRAIDA_NO_VALIDADA; fuente `e3c73641-eeab-475c-891c-b9f5abc9ea2a`): Un jugador podrá cambiar de categoría sin perder su inscripción deportiva.
+- **RN-0162** (DEC-028; EXTRAIDA_NO_VALIDADA; fuente `e3c73641-eeab-475c-891c-b9f5abc9ea2a`): Cada cambio de categoría conservará un registro histórico.
+- **RN-0163** (DEC-028; EXTRAIDA_NO_VALIDADA; fuente `e3c73641-eeab-475c-891c-b9f5abc9ea2a`): El historial identificará la categoría anterior, la nueva y la fecha del cambio.
+- **RN-0164** (DEC-028; EXTRAIDA_NO_VALIDADA; fuente `e3c73641-eeab-475c-891c-b9f5abc9ea2a`): Participar ocasionalmente en otra categoría no generará automáticamente una segunda inscripción ni una cuota adicional.
+- **RN-0165** (DEC-028; EXTRAIDA_NO_VALIDADA; fuente `e3c73641-eeab-475c-891c-b9f5abc9ea2a`): Los administradores podrán consultar los cambios históricos de categoría de los jugadores de su disciplina.
+- **RN-0166** (DEC-029; EXTRAIDA_NO_VALIDADA; fuente `7c2b212d-1d7e-482a-9ada-c998e923fe43`): Los cambios de categoría no modifican el importe de la cuota del mes en curso.
+- **RN-0167** (DEC-029; EXTRAIDA_NO_VALIDADA; fuente `7c2b212d-1d7e-482a-9ada-c998e923fe43`): El importe correspondiente a la nueva categoría se aplicará desde el primer día del mes siguiente.
+- **RN-0168** (DEC-029; EXTRAIDA_NO_VALIDADA; fuente `7c2b212d-1d7e-482a-9ada-c998e923fe43`): Las cuotas ya generadas conservarán sus importes originales.
+- **RN-0169** (DEC-029; EXTRAIDA_NO_VALIDADA; fuente `7c2b212d-1d7e-482a-9ada-c998e923fe43`): La regla se aplica tanto a cuotas pagadas como pendientes.
+- **RN-0170** (DEC-029; EXTRAIDA_NO_VALIDADA; fuente `7c2b212d-1d7e-482a-9ada-c998e923fe43`): El sistema conservará el historial del cambio, incluyendo su fecha y las categorías involucradas.
+- **RN-0171** (DEC-029; EXTRAIDA_NO_VALIDADA; fuente `7c2b212d-1d7e-482a-9ada-c998e923fe43`): El cambio no generará automáticamente una cuota adicional.
+- **RN-0172** (DEC-030; EXTRAIDA_NO_VALIDADA; fuente `4ce64d97-08cb-4ed4-a922-d80735074b93`): Cada categoría tendrá un importe mensual base configurable.
+- **RN-0173** (DEC-030; EXTRAIDA_NO_VALIDADA; fuente `4ce64d97-08cb-4ed4-a922-d80735074b93`): Los administradores de cada disciplina podrán configurar los importes de sus categorías.
+- **RN-0174** (DEC-030; EXTRAIDA_NO_VALIDADA; fuente `4ce64d97-08cb-4ed4-a922-d80735074b93`): Se podrán establecer excepciones individuales para jugadores de una categoría.
+- **RN-0175** (DEC-030; EXTRAIDA_NO_VALIDADA; fuente `4ce64d97-08cb-4ed4-a922-d80735074b93`): Cuando exista una excepción vigente, el importe individual prevalecerá sobre el importe base de la categoría.
+- **RN-0176** (DEC-030; EXTRAIDA_NO_VALIDADA; fuente `4ce64d97-08cb-4ed4-a922-d80735074b93`): Las excepciones estarán vinculadas a la inscripción del jugador en una disciplina, sin afectar sus inscripciones en otras disciplinas o clubes.
+- **RN-0177** (DEC-030; EXTRAIDA_NO_VALIDADA; fuente `4ce64d97-08cb-4ed4-a922-d80735074b93`): Los importes de las cuotas ya generadas no se modificarán automáticamente al cambiar el valor base o una excepción.
+- **RN-0178** (DEC-030; EXTRAIDA_NO_VALIDADA; fuente `4ce64d97-08cb-4ed4-a922-d80735074b93`): Se conservará un historial de las modificaciones de importes y excepciones.
+- **RN-0179** (DEC-032; EXTRAIDA_NO_VALIDADA; fuente `c0c8f77e-92f2-4cd4-8332-d5d86587e504`): Cada tipo de beca pertenecerá a una disciplina específica de un club.
+- **RN-0180** (DEC-032; EXTRAIDA_NO_VALIDADA; fuente `c0c8f77e-92f2-4cd4-8332-d5d86587e504`): Los administradores podrán crear, modificar y desactivar tipos de becas exclusivamente dentro de su disciplina.
+- **RN-0181** (DEC-032; EXTRAIDA_NO_VALIDADA; fuente `c0c8f77e-92f2-4cd4-8332-d5d86587e504`): Los tipos de becas no se compartirán entre disciplinas.
+- **RN-0182** (DEC-032; EXTRAIDA_NO_VALIDADA; fuente `c0c8f77e-92f2-4cd4-8332-d5d86587e504`): Los administradores podrán asignar becas únicamente a jugadores inscriptos en su disciplina.
+- **RN-0183** (DEC-032; EXTRAIDA_NO_VALIDADA; fuente `c0c8f77e-92f2-4cd4-8332-d5d86587e504`): Los delegados generales podrán consultar las becas y sus asignaciones en todas las disciplinas de su club, sin modificarlas.
+- **RN-0184** (DEC-032; EXTRAIDA_NO_VALIDADA; fuente `c0c8f77e-92f2-4cd4-8332-d5d86587e504`): El superadministrador conservará acceso global.
+- **RN-0185** (DEC-032; EXTRAIDA_NO_VALIDADA; fuente `c0c8f77e-92f2-4cd4-8332-d5d86587e504`): Cada beca tendrá reglas de cálculo reutilizables, evitando configurar manualmente el descuento de cada jugador.
+- **RN-0186** (DEC-033; EXTRAIDA_NO_VALIDADA; fuente `8f2fca56-57d1-4f29-9dad-5af33998e5e9`): Cada asignación de beca tendrá una fecha de inicio.
+- **RN-0187** (DEC-033; EXTRAIDA_NO_VALIDADA; fuente `8f2fca56-57d1-4f29-9dad-5af33998e5e9`): La fecha de finalización será opcional.
+- **RN-0188** (DEC-033; EXTRAIDA_NO_VALIDADA; fuente `8f2fca56-57d1-4f29-9dad-5af33998e5e9`): Las becas sin fecha de finalización permanecerán vigentes hasta su desactivación manual.
+- **RN-0189** (DEC-033; EXTRAIDA_NO_VALIDADA; fuente `8f2fca56-57d1-4f29-9dad-5af33998e5e9`): Las becas con fecha de finalización dejarán de aplicarse automáticamente cuando termine su vigencia.
+- **RN-0190** (DEC-033; EXTRAIDA_NO_VALIDADA; fuente `8f2fca56-57d1-4f29-9dad-5af33998e5e9`): Al finalizar una beca, el jugador volverá a pagar el importe correspondiente a su categoría, salvo que tenga otra excepción vigente.
+- **RN-0191** (DEC-033; EXTRAIDA_NO_VALIDADA; fuente `8f2fca56-57d1-4f29-9dad-5af33998e5e9`): Las cuotas ya generadas conservarán sus importes originales.
+- **RN-0192** (DEC-033; EXTRAIDA_NO_VALIDADA; fuente `8f2fca56-57d1-4f29-9dad-5af33998e5e9`): El sistema conservará el historial de asignaciones, modificaciones y finalizaciones de becas.
+- **RN-0193** (DEC-034; EXTRAIDA_NO_VALIDADA; fuente `02e42b1c-be0a-4739-94ce-c31e366d4d61`): Al asignar una beca, el administrador seleccionará cuándo comienza su efecto económico.
+- **RN-0194** (DEC-034; EXTRAIDA_NO_VALIDADA; fuente `02e42b1c-be0a-4739-94ce-c31e366d4d61`): Podrá aplicarse a la cuota impaga del mes actual.
+- **RN-0195** (DEC-034; EXTRAIDA_NO_VALIDADA; fuente `02e42b1c-be0a-4739-94ce-c31e366d4d61`): Alternativamente, podrá comenzar a aplicarse desde el mes siguiente.
+- **RN-0196** (DEC-034; EXTRAIDA_NO_VALIDADA; fuente `02e42b1c-be0a-4739-94ce-c31e366d4d61`): Las cuotas ya pagadas no se modificarán automáticamente.
+- **RN-0197** (DEC-034; EXTRAIDA_NO_VALIDADA; fuente `02e42b1c-be0a-4739-94ce-c31e366d4d61`): Si se aplica al mes actual, el sistema recalculará el importe pendiente según las reglas de la beca.
+- **RN-0198** (DEC-034; EXTRAIDA_NO_VALIDADA; fuente `02e42b1c-be0a-4739-94ce-c31e366d4d61`): Se conservará el historial del importe original, el nuevo importe, la beca aplicada y el administrador responsable.
+- **RN-0199** (DEC-034; EXTRAIDA_NO_VALIDADA; fuente `02e42b1c-be0a-4739-94ce-c31e366d4d61`): La decisión afectará únicamente las cuotas del jugador dentro de esa disciplina.
+- **RN-0200** (DEC-035; EXTRAIDA_NO_VALIDADA; fuente `ffddc99c-7807-43b6-a007-24f3bab4d368`): Cada jugador podrá tener como máximo un beneficio económico aplicable por disciplina y período.
+- **RN-0201** (DEC-035; EXTRAIDA_NO_VALIDADA; fuente `ffddc99c-7807-43b6-a007-24f3bab4d368`): Los beneficios admitidos serán becas preconfiguradas, descuentos porcentuales e importes fijos personalizados.
+- **RN-0202** (DEC-035; EXTRAIDA_NO_VALIDADA; fuente `ffddc99c-7807-43b6-a007-24f3bab4d368`): No se permitirá acumular dos o más beneficios sobre una misma cuota.
+- **RN-0203** (DEC-035; EXTRAIDA_NO_VALIDADA; fuente `ffddc99c-7807-43b6-a007-24f3bab4d368`): El sistema validará si existe un beneficio vigente antes de asignar uno nuevo.
+- **RN-0204** (DEC-035; EXTRAIDA_NO_VALIDADA; fuente `ffddc99c-7807-43b6-a007-24f3bab4d368`): Los cambios de beneficio conservarán el historial de asignaciones y sus fechas de vigencia.
+- **RN-0205** (DEC-035; EXTRAIDA_NO_VALIDADA; fuente `ffddc99c-7807-43b6-a007-24f3bab4d368`): Un beneficio de futsal no afectará las cuotas del mismo jugador en básquet ni en otros clubes.
+- **RN-0206** (DEC-036; EXTRAIDA_NO_VALIDADA; fuente `13db0e12-ede7-43b8-a98f-5ced26786d9b`): El sistema detectará si el jugador ya tiene un beneficio vigente.
+- **RN-0207** (DEC-036; EXTRAIDA_NO_VALIDADA; fuente `13db0e12-ede7-43b8-a98f-5ced26786d9b`): Permitirá reemplazarlo por otro en una única operación.
+- **RN-0208** (DEC-036; EXTRAIDA_NO_VALIDADA; fuente `13db0e12-ede7-43b8-a98f-5ced26786d9b`): Antes del reemplazo, mostrará el beneficio anterior y el nuevo, solicitando confirmación.
+- **RN-0209** (DEC-036; EXTRAIDA_NO_VALIDADA; fuente `13db0e12-ede7-43b8-a98f-5ced26786d9b`): El beneficio anterior finalizará su aplicación cuando comience la del nuevo, evitando superposiciones.
+- **RN-0210** (DEC-036; EXTRAIDA_NO_VALIDADA; fuente `13db0e12-ede7-43b8-a98f-5ced26786d9b`): El reemplazo respetará la fecha de aplicación seleccionada por el administrador, según DEC-034.
+- **RN-0211** (DEC-036; EXTRAIDA_NO_VALIDADA; fuente `13db0e12-ede7-43b8-a98f-5ced26786d9b`): Las cuotas ya pagadas no serán modificadas automáticamente.
+- **RN-0212** (DEC-036; EXTRAIDA_NO_VALIDADA; fuente `13db0e12-ede7-43b8-a98f-5ced26786d9b`): Se registrarán el beneficio anterior, el nuevo, las fechas y el administrador responsable.
+- **RN-0213** (DEC-037; EXTRAIDA_NO_VALIDADA; fuente `d6484fa5-d7be-4960-9b23-00518c74783d`): Los administradores podrán modificar las condiciones de los tipos de becas de su disciplina.
+- **RN-0214** (DEC-037; EXTRAIDA_NO_VALIDADA; fuente `d6484fa5-d7be-4960-9b23-00518c74783d`): Al modificar un tipo de beca, el sistema permitirá elegir el alcance del cambio.
+- **RN-0215** (DEC-037; EXTRAIDA_NO_VALIDADA; fuente `d6484fa5-d7be-4960-9b23-00518c74783d`): Si se selecciona actualizar beneficiarios actuales, las nuevas condiciones se aplicarán a sus próximas cuotas.
+- **RN-0216** (DEC-037; EXTRAIDA_NO_VALIDADA; fuente `d6484fa5-d7be-4960-9b23-00518c74783d`): Si se selecciona solo nuevas asignaciones, los beneficiarios actuales conservarán las condiciones anteriores.
+- **RN-0217** (DEC-037; EXTRAIDA_NO_VALIDADA; fuente `d6484fa5-d7be-4960-9b23-00518c74783d`): El sistema conservará las versiones históricas de las reglas de cada tipo de beca.
+- **RN-0218** (DEC-037; EXTRAIDA_NO_VALIDADA; fuente `d6484fa5-d7be-4960-9b23-00518c74783d`): Las cuotas ya pagadas no podrán modificarse automáticamente.
+- **RN-0219** (DEC-037; EXTRAIDA_NO_VALIDADA; fuente `d6484fa5-d7be-4960-9b23-00518c74783d`): Cada modificación registrará fecha, administrador responsable, valores anteriores, valores nuevos y alcance seleccionado.
+- **RN-0220** (DEC-038; EXTRAIDA_NO_VALIDADA; fuente `5602b1f2-3851-4aa2-b962-225cc10bedf3`): Los administradores podrán modificar el importe base de las categorías de su disciplina.
+- **RN-0221** (DEC-038; EXTRAIDA_NO_VALIDADA; fuente `5602b1f2-3851-4aa2-b962-225cc10bedf3`): Los cambios de importe se aplicarán desde el mes calendario siguiente.
+- **RN-0222** (DEC-038; EXTRAIDA_NO_VALIDADA; fuente `5602b1f2-3851-4aa2-b962-225cc10bedf3`): Las cuotas ya generadas conservarán su importe original, independientemente de su estado de pago.
+- **RN-0223** (DEC-038; EXTRAIDA_NO_VALIDADA; fuente `5602b1f2-3851-4aa2-b962-225cc10bedf3`): No se recalcularán automáticamente las cuotas pendientes cuando cambie el importe base.
+- **RN-0224** (DEC-038; EXTRAIDA_NO_VALIDADA; fuente `5602b1f2-3851-4aa2-b962-225cc10bedf3`): El sistema conservará un historial de los importes anteriores, nuevos, fechas de vigencia y administrador responsable.
+- **RN-0225** (DEC-038; EXTRAIDA_NO_VALIDADA; fuente `5602b1f2-3851-4aa2-b962-225cc10bedf3`): La modificación afectará únicamente a la categoría correspondiente, dentro de su disciplina y club.
+- **RN-0226** (DEC-039; EXTRAIDA_NO_VALIDADA; fuente `bfb61e4e-ad1d-4b15-b356-d0f1d653dc1f`): El sistema generará automáticamente las cuotas mensuales.
+- **RN-0227** (DEC-039; EXTRAIDA_NO_VALIDADA; fuente `bfb61e4e-ad1d-4b15-b356-d0f1d653dc1f`): Cada disciplina podrá configurar el día del mes en que se generan sus cuotas.
+- **RN-0228** (DEC-039; EXTRAIDA_NO_VALIDADA; fuente `bfb61e4e-ad1d-4b15-b356-d0f1d653dc1f`): La generación utilizará los importes vigentes de las categorías y los beneficios individuales aplicables.
+- **RN-0229** (DEC-039; EXTRAIDA_NO_VALIDADA; fuente `bfb61e4e-ad1d-4b15-b356-d0f1d653dc1f`): Se generarán cuotas únicamente para inscripciones habilitadas, respetando el estado del club y de la disciplina.
+- **RN-0230** (DEC-039; EXTRAIDA_NO_VALIDADA; fuente `bfb61e4e-ad1d-4b15-b356-d0f1d653dc1f`): El sistema impedirá generar cuotas duplicadas para una misma inscripción y período mensual.
+- **RN-0231** (DEC-039; EXTRAIDA_NO_VALIDADA; fuente `bfb61e4e-ad1d-4b15-b356-d0f1d653dc1f`): Los administradores podrán consultar el resultado de cada ejecución automática.
+- **RN-0232** (DEC-039; EXTRAIDA_NO_VALIDADA; fuente `bfb61e4e-ad1d-4b15-b356-d0f1d653dc1f`): Se registrarán las ejecuciones, errores y cuotas generadas para facilitar la auditoría.
+- **RN-0233** (DEC-039; EXTRAIDA_NO_VALIDADA; fuente `bfb61e4e-ad1d-4b15-b356-d0f1d653dc1f`): Los administradores no dispondrán de una acción para generar manualmente las cuotas mensuales.
+- **RN-0234** (DEC-040; EXTRAIDA_NO_VALIDADA; fuente `6c426153-b73e-4e27-8724-4a1ea653b6bd`): Cada disciplina tendrá su propia configuración de generación mensual de cuotas.
+- **RN-0235** (DEC-040; EXTRAIDA_NO_VALIDADA; fuente `6c426153-b73e-4e27-8724-4a1ea653b6bd`): Los administradores podrán establecer y modificar el día de generación de su disciplina.
+- **RN-0236** (DEC-040; EXTRAIDA_NO_VALIDADA; fuente `6c426153-b73e-4e27-8724-4a1ea653b6bd`): Todas las categorías de una misma disciplina compartirán ese día de generación.
+- **RN-0237** (DEC-040; EXTRAIDA_NO_VALIDADA; fuente `6c426153-b73e-4e27-8724-4a1ea653b6bd`): El calendario de una disciplina será independiente del de las demás.
+- **RN-0238** (DEC-040; EXTRAIDA_NO_VALIDADA; fuente `6c426153-b73e-4e27-8724-4a1ea653b6bd`): Los delegados generales podrán consultar la configuración de todas las disciplinas de su club, sin modificarla.
+- **RN-0239** (DEC-040; EXTRAIDA_NO_VALIDADA; fuente `6c426153-b73e-4e27-8724-4a1ea653b6bd`): El sistema registrará los cambios de configuración y el administrador responsable.
+- **RN-0240** (DEC-040; EXTRAIDA_NO_VALIDADA; fuente `6c426153-b73e-4e27-8724-4a1ea653b6bd`): La generación respetará los estados de actividad del club, la disciplina y las inscripciones.
+- **RN-0241** (DEC-041; EXTRAIDA_NO_VALIDADA; fuente `5d8d34f4-e8eb-4737-8b67-8541c8779bb8`): Cada disciplina tendrá un día de vencimiento mensual configurable.
+- **RN-0242** (DEC-041; EXTRAIDA_NO_VALIDADA; fuente `5d8d34f4-e8eb-4737-8b67-8541c8779bb8`): Los administradores podrán modificar el vencimiento de su propia disciplina.
+- **RN-0243** (DEC-041; EXTRAIDA_NO_VALIDADA; fuente `5d8d34f4-e8eb-4737-8b67-8541c8779bb8`): Todas las categorías de una misma disciplina compartirán la configuración de vencimiento.
+- **RN-0244** (DEC-041; EXTRAIDA_NO_VALIDADA; fuente `5d8d34f4-e8eb-4737-8b67-8541c8779bb8`): Las disciplinas de un mismo club podrán tener distintos días de vencimiento.
+- **RN-0245** (DEC-041; EXTRAIDA_NO_VALIDADA; fuente `5d8d34f4-e8eb-4737-8b67-8541c8779bb8`): Cada cuota generada conservará su fecha de vencimiento, aunque posteriormente se modifique la configuración de la disciplina.
+- **RN-0246** (DEC-041; EXTRAIDA_NO_VALIDADA; fuente `5d8d34f4-e8eb-4737-8b67-8541c8779bb8`): Los delegados generales podrán consultar los calendarios de vencimiento, sin modificarlos.
+- **RN-0247** (DEC-041; EXTRAIDA_NO_VALIDADA; fuente `5d8d34f4-e8eb-4737-8b67-8541c8779bb8`): Se registrará el historial de modificaciones de esta configuración.
+- **RN-0248** (DEC-042; EXTRAIDA_NO_VALIDADA; fuente `cd7bca03-4c23-4f0b-b341-5eab94391d96`): Cada disciplina podrá activar o desactivar los recargos por mora.
+- **RN-0249** (DEC-042; EXTRAIDA_NO_VALIDADA; fuente `cd7bca03-4c23-4f0b-b341-5eab94391d96`): Los administradores configurarán los recargos exclusivamente para su disciplina.
+- **RN-0250** (DEC-042; EXTRAIDA_NO_VALIDADA; fuente `cd7bca03-4c23-4f0b-b341-5eab94391d96`): Si los recargos están desactivados, las cuotas vencidas podrán pagarse sin penalización económica.
+- **RN-0251** (DEC-042; EXTRAIDA_NO_VALIDADA; fuente `cd7bca03-4c23-4f0b-b341-5eab94391d96`): Si están activados, el sistema calculará el recargo según las condiciones configuradas.
+- **RN-0252** (DEC-042; EXTRAIDA_NO_VALIDADA; fuente `cd7bca03-4c23-4f0b-b341-5eab94391d96`): Los recargos de una disciplina no afectarán las cuotas de otras disciplinas.
+- **RN-0253** (DEC-042; EXTRAIDA_NO_VALIDADA; fuente `cd7bca03-4c23-4f0b-b341-5eab94391d96`): Los delegados generales podrán consultar la configuración de recargos, sin modificarla.
+- **RN-0254** (DEC-042; EXTRAIDA_NO_VALIDADA; fuente `cd7bca03-4c23-4f0b-b341-5eab94391d96`): Se conservará el historial de cambios de configuración y el administrador responsable.
+- **RN-0255** (DEC-043; EXTRAIDA_NO_VALIDADA; fuente `06bf1ebc-14b1-407d-91e7-9cca12cc0db8`): Cada disciplina podrá seleccionar una modalidad de recargo.
+- **RN-0256** (DEC-043; EXTRAIDA_NO_VALIDADA; fuente `06bf1ebc-14b1-407d-91e7-9cca12cc0db8`): El recargo fijo sumará un importe determinado a la cuota vencida.
+- **RN-0257** (DEC-043; EXTRAIDA_NO_VALIDADA; fuente `06bf1ebc-14b1-407d-91e7-9cca12cc0db8`): El recargo porcentual aplicará un porcentaje sobre el importe de la cuota.
+- **RN-0258** (DEC-043; EXTRAIDA_NO_VALIDADA; fuente `06bf1ebc-14b1-407d-91e7-9cca12cc0db8`): El recargo progresivo permitirá configurar distintos tramos según los días transcurridos desde el vencimiento.
+- **RN-0259** (DEC-043; EXTRAIDA_NO_VALIDADA; fuente `06bf1ebc-14b1-407d-91e7-9cca12cc0db8`): Los administradores podrán modificar la configuración de recargos de su disciplina.
+- **RN-0260** (DEC-043; EXTRAIDA_NO_VALIDADA; fuente `06bf1ebc-14b1-407d-91e7-9cca12cc0db8`): El sistema calculará el recargo correspondiente al momento de consultar el importe a pagar.
+- **RN-0261** (DEC-043; EXTRAIDA_NO_VALIDADA; fuente `06bf1ebc-14b1-407d-91e7-9cca12cc0db8`): Los recargos deberán mostrarse separados del importe original de la cuota.
+- **RN-0262** (DEC-043; EXTRAIDA_NO_VALIDADA; fuente `06bf1ebc-14b1-407d-91e7-9cca12cc0db8`): Se conservará el historial de configuraciones y los recargos efectivamente cobrados.
+- **RN-0263** (DEC-044; EXTRAIDA_NO_VALIDADA; fuente `9b72c133-d446-46bf-acd7-a94c8e8fd27f`): Cada disciplina podrá configurar su propio período de gracia.
+- **RN-0264** (DEC-044; EXTRAIDA_NO_VALIDADA; fuente `9b72c133-d446-46bf-acd7-a94c8e8fd27f`): El período de gracia se expresará en días corridos.
+- **RN-0265** (DEC-044; EXTRAIDA_NO_VALIDADA; fuente `9b72c133-d446-46bf-acd7-a94c8e8fd27f`): Se permitirá configurar cero días de gracia.
+- **RN-0266** (DEC-044; EXTRAIDA_NO_VALIDADA; fuente `9b72c133-d446-46bf-acd7-a94c8e8fd27f`): Durante el período de gracia, la cuota estará vencida, pero no tendrá recargo.
+- **RN-0267** (DEC-044; EXTRAIDA_NO_VALIDADA; fuente `9b72c133-d446-46bf-acd7-a94c8e8fd27f`): El recargo comenzará a aplicarse el día siguiente al último día de gracia.
+- **RN-0268** (DEC-044; EXTRAIDA_NO_VALIDADA; fuente `9b72c133-d446-46bf-acd7-a94c8e8fd27f`): La configuración será administrada por los administradores de la disciplina.
+- **RN-0269** (DEC-044; EXTRAIDA_NO_VALIDADA; fuente `9b72c133-d446-46bf-acd7-a94c8e8fd27f`): El período de gracia se aplicará a las modalidades de recargo fijo, porcentual y progresivo.
+- **RN-0270** (DEC-044; EXTRAIDA_NO_VALIDADA; fuente `9b72c133-d446-46bf-acd7-a94c8e8fd27f`): Se conservará el historial de modificaciones de esta configuración.
+- **RN-0271** (DEC-045; EXTRAIDA_NO_VALIDADA; fuente `0969bf94-fd57-4987-a481-759ffc5e9288`): Cada cuota conservará la política de recargos vigente cuando fue generada.
+- **RN-0272** (DEC-045; EXTRAIDA_NO_VALIDADA; fuente `0969bf94-fd57-4987-a481-759ffc5e9288`): Los cambios posteriores en la configuración de recargos no afectarán cuotas previamente generadas.
+- **RN-0273** (DEC-045; EXTRAIDA_NO_VALIDADA; fuente `0969bf94-fd57-4987-a481-759ffc5e9288`): Las cuotas impagas continuarán calculando su mora según sus reglas originales.
+- **RN-0274** (DEC-045; EXTRAIDA_NO_VALIDADA; fuente `0969bf94-fd57-4987-a481-759ffc5e9288`): La política histórica incluirá modalidad de recargo, importes o porcentajes, tramos progresivos y días de gracia.
+- **RN-0275** (DEC-045; EXTRAIDA_NO_VALIDADA; fuente `0969bf94-fd57-4987-a481-759ffc5e9288`): Las nuevas cuotas utilizarán la configuración vigente al momento de su generación.
+- **RN-0276** (DEC-045; EXTRAIDA_NO_VALIDADA; fuente `0969bf94-fd57-4987-a481-759ffc5e9288`): El sistema conservará versiones históricas de las políticas de recargos.
+- **RN-0277** (DEC-045; EXTRAIDA_NO_VALIDADA; fuente `0969bf94-fd57-4987-a481-759ffc5e9288`): Los recargos efectivamente cobrados quedarán registrados para auditoría.
+- **RN-0278** (DEC-046; EXTRAIDA_NO_VALIDADA; fuente `520fcf43-416d-4cfc-b563-83b7ab83f828`): El jugador podrá seleccionar una o varias cuotas pendientes.
+- **RN-0279** (DEC-046; EXTRAIDA_NO_VALIDADA; fuente `520fcf43-416d-4cfc-b563-83b7ab83f828`): No será obligatorio pagar las cuotas en orden cronológico.
+- **RN-0280** (DEC-046; EXTRAIDA_NO_VALIDADA; fuente `520fcf43-416d-4cfc-b563-83b7ab83f828`): No será obligatorio cancelar toda la deuda para realizar un pago.
+- **RN-0281** (DEC-046; EXTRAIDA_NO_VALIDADA; fuente `520fcf43-416d-4cfc-b563-83b7ab83f828`): Se podrán agrupar varias cuotas en una única operación de pago.
+- **RN-0282** (DEC-046; EXTRAIDA_NO_VALIDADA; fuente `520fcf43-416d-4cfc-b563-83b7ab83f828`): Cada cuota conservará su estado individual.
+- **RN-0283** (DEC-046; EXTRAIDA_NO_VALIDADA; fuente `520fcf43-416d-4cfc-b563-83b7ab83f828`): El importe a pagar incluirá los recargos correspondientes a las cuotas seleccionadas.
+- **RN-0284** (DEC-046; EXTRAIDA_NO_VALIDADA; fuente `520fcf43-416d-4cfc-b563-83b7ab83f828`): El sistema mostrará el detalle de las cuotas seleccionadas antes de iniciar el pago.
+- **RN-0285** (DEC-046; EXTRAIDA_NO_VALIDADA; fuente `520fcf43-416d-4cfc-b563-83b7ab83f828`): El pago de una cuota no modificará el estado de otras cuotas no incluidas en la operación.
+- **RN-0286** (DEC-047; EXTRAIDA_NO_VALIDADA; fuente `b1c24332-9256-41d9-af9a-a292751d9207`): Cada cuota deberá pagarse por su importe total pendiente.
+- **RN-0287** (DEC-047; EXTRAIDA_NO_VALIDADA; fuente `b1c24332-9256-41d9-af9a-a292751d9207`): No se permitirán pagos parciales de una cuota.
+- **RN-0288** (DEC-047; EXTRAIDA_NO_VALIDADA; fuente `b1c24332-9256-41d9-af9a-a292751d9207`): El jugador podrá agrupar varias cuotas completas en una única operación.
+- **RN-0289** (DEC-047; EXTRAIDA_NO_VALIDADA; fuente `b1c24332-9256-41d9-af9a-a292751d9207`): El importe de cada cuota incluirá los recargos por mora que correspondan.
+- **RN-0290** (DEC-047; EXTRAIDA_NO_VALIDADA; fuente `b1c24332-9256-41d9-af9a-a292751d9207`): Una cuota solo se considerará pagada cuando se confirme el cobro completo.
+- **RN-0291** (DEC-047; EXTRAIDA_NO_VALIDADA; fuente `b1c24332-9256-41d9-af9a-a292751d9207`): Un pago rechazado o fallido no cancelará la deuda.
+- **RN-0292** (DEC-047; EXTRAIDA_NO_VALIDADA; fuente `b1c24332-9256-41d9-af9a-a292751d9207`): Cada cuota conservará su estado individual, aunque forme parte de un pago agrupado.
+- **RN-0293** (DEC-048; EXTRAIDA_NO_VALIDADA; fuente `474475ec-449f-4b2a-9d08-05916fb44bee`): Los administradores podrán registrar pagos externos únicamente de su disciplina.
+- **RN-0294** (DEC-048; EXTRAIDA_NO_VALIDADA; fuente `474475ec-449f-4b2a-9d08-05916fb44bee`): Se admitirán medios como efectivo, transferencia bancaria y otros medios externos.
+- **RN-0295** (DEC-048; EXTRAIDA_NO_VALIDADA; fuente `474475ec-449f-4b2a-9d08-05916fb44bee`): Cada registro incluirá medio de pago, fecha e identificación del administrador responsable.
+- **RN-0296** (DEC-048; EXTRAIDA_NO_VALIDADA; fuente `474475ec-449f-4b2a-9d08-05916fb44bee`): Se permitirá adjuntar un comprobante, pero no será obligatorio.
+- **RN-0297** (DEC-048; EXTRAIDA_NO_VALIDADA; fuente `474475ec-449f-4b2a-9d08-05916fb44bee`): El registro de un pago externo completo cancelará las cuotas correspondientes.
+- **RN-0298** (DEC-048; EXTRAIDA_NO_VALIDADA; fuente `474475ec-449f-4b2a-9d08-05916fb44bee`): No se permitirán pagos externos parciales, respetando DEC-047.
+- **RN-0299** (DEC-048; EXTRAIDA_NO_VALIDADA; fuente `474475ec-449f-4b2a-9d08-05916fb44bee`): Los pagos externos se identificarán separadamente de los procesados por la pasarela.
+- **RN-0300** (DEC-048; EXTRAIDA_NO_VALIDADA; fuente `474475ec-449f-4b2a-9d08-05916fb44bee`): Se conservará el historial de operaciones y sus comprobantes.
+- **RN-0301** (DEC-048; EXTRAIDA_NO_VALIDADA; fuente `474475ec-449f-4b2a-9d08-05916fb44bee`): Los delegados generales podrán consultar estos pagos, sin registrarlos ni modificarlos.
+- **RN-0302** (DEC-049; EXTRAIDA_NO_VALIDADA; fuente `5a932ee6-5f8e-42b5-9f5b-87c8dc1a330c`): El superadministrador configura las condiciones comerciales.
+- **RN-0303** (DEC-049; EXTRAIDA_NO_VALIDADA; fuente `5a932ee6-5f8e-42b5-9f5b-87c8dc1a330c`): La política puede aplicarse a nivel club o a nivel disciplina.
+- **RN-0304** (DEC-049; EXTRAIDA_NO_VALIDADA; fuente `5a932ee6-5f8e-42b5-9f5b-87c8dc1a330c`): El superadministrador define el mínimo mensual de pagos requeridos.
+- **RN-0305** (DEC-049; EXTRAIDA_NO_VALIDADA; fuente `5a932ee6-5f8e-42b5-9f5b-87c8dc1a330c`): Se contabilizan los pagos exitosos procesados mediante la plataforma, no los jugadores únicos.
+- **RN-0306** (DEC-049; EXTRAIDA_NO_VALIDADA; fuente `5a932ee6-5f8e-42b5-9f5b-87c8dc1a330c`): La evaluación se realiza mensualmente.
+- **RN-0307** (DEC-049; EXTRAIDA_NO_VALIDADA; fuente `5a932ee6-5f8e-42b5-9f5b-87c8dc1a330c`): Si se alcanza el mínimo configurado, no se cobra comisión al club o disciplina correspondiente.
+- **RN-0308** (DEC-049; EXTRAIDA_NO_VALIDADA; fuente `5a932ee6-5f8e-42b5-9f5b-87c8dc1a330c`): Cuando la política es por disciplina, el incumplimiento de una no afecta económicamente a las demás.
+- **RN-0309** (DEC-049; EXTRAIDA_NO_VALIDADA; fuente `5a932ee6-5f8e-42b5-9f5b-87c8dc1a330c`): El sistema debe permitir que las disciplinas de un mismo club tengan condiciones comerciales independientes.
+- **RN-0310** (DEC-049; EXTRAIDA_NO_VALIDADA; fuente `5a932ee6-5f8e-42b5-9f5b-87c8dc1a330c`): Los administradores y delegados no pueden modificar estas condiciones; solamente el superadministrador.
+- **RN-0311** (DEC-050; EXTRAIDA_NO_VALIDADA; fuente `2f55445f-2fbd-40bd-b041-02ae42f01987`): El superadministrador podrá elegir entre cargo fijo mensual o cargo por pago faltante.
+- **RN-0312** (DEC-050; EXTRAIDA_NO_VALIDADA; fuente `2f55445f-2fbd-40bd-b041-02ae42f01987`): El importe del cargo será configurable.
+- **RN-0313** (DEC-050; EXTRAIDA_NO_VALIDADA; fuente `2f55445f-2fbd-40bd-b041-02ae42f01987`): La configuración respetará el alcance comercial definido: club o disciplina.
+- **RN-0314** (DEC-050; EXTRAIDA_NO_VALIDADA; fuente `2f55445f-2fbd-40bd-b041-02ae42f01987`): El cargo se calculará solamente cuando los pagos exitosos del mes sean inferiores al mínimo establecido.
+- **RN-0315** (DEC-050; EXTRAIDA_NO_VALIDADA; fuente `2f55445f-2fbd-40bd-b041-02ae42f01987`): Si se alcanza o supera el mínimo, el cargo por incumplimiento será cero.
+- **RN-0316** (DEC-050; EXTRAIDA_NO_VALIDADA; fuente `2f55445f-2fbd-40bd-b041-02ae42f01987`): En modalidad fija, se cobrará el importe configurado, independientemente de cuántos pagos falten.
+- **RN-0317** (DEC-050; EXTRAIDA_NO_VALIDADA; fuente `2f55445f-2fbd-40bd-b041-02ae42f01987`): En modalidad por pago faltante, se multiplicará la cantidad de pagos faltantes por el importe unitario configurado.
+- **RN-0318** (DEC-050; EXTRAIDA_NO_VALIDADA; fuente `2f55445f-2fbd-40bd-b041-02ae42f01987`): El sistema conservará las condiciones comerciales utilizadas para calcular cada cargo mensual.
+- **RN-0319** (DEC-050; EXTRAIDA_NO_VALIDADA; fuente `2f55445f-2fbd-40bd-b041-02ae42f01987`): Solamente el superadministrador podrá modificar estas condiciones.
+- **RN-0320** (DEC-051; EXTRAIDA_NO_VALIDADA; fuente `c2bd1065-6ec5-46c8-9beb-7cf6899feea9`): Cada configuración comercial tendrá un responsable económico identificado.
+- **RN-0321** (DEC-051; EXTRAIDA_NO_VALIDADA; fuente `c2bd1065-6ec5-46c8-9beb-7cf6899feea9`): El responsable podrá ser un club completo o una disciplina específica.
+- **RN-0322** (DEC-051; EXTRAIDA_NO_VALIDADA; fuente `c2bd1065-6ec5-46c8-9beb-7cf6899feea9`): Solamente el superadministrador podrá configurar o modificar al responsable.
+- **RN-0323** (DEC-051; EXTRAIDA_NO_VALIDADA; fuente `c2bd1065-6ec5-46c8-9beb-7cf6899feea9`): Los cargos mensuales se imputarán al responsable económico correspondiente.
+- **RN-0324** (DEC-051; EXTRAIDA_NO_VALIDADA; fuente `c2bd1065-6ec5-46c8-9beb-7cf6899feea9`): Una disciplina independiente no generará cargos para otras disciplinas del mismo club.
+- **RN-0325** (DEC-051; EXTRAIDA_NO_VALIDADA; fuente `c2bd1065-6ec5-46c8-9beb-7cf6899feea9`): El sistema conservará el historial de responsables comerciales y condiciones contractuales.
+- **RN-0326** (DEC-052; EXTRAIDA_NO_VALIDADA; fuente `3bc3afc8-469d-4716-9781-39fc0c7c3ea3`): El sistema generará una liquidación mensual cuando el responsable comercial no alcance el mínimo de pagos configurado.
+- **RN-0327** (DEC-052; EXTRAIDA_NO_VALIDADA; fuente `3bc3afc8-469d-4716-9781-39fc0c7c3ea3`): Cada liquidación estará asociada al club o disciplina responsable.
+- **RN-0328** (DEC-052; EXTRAIDA_NO_VALIDADA; fuente `3bc3afc8-469d-4716-9781-39fc0c7c3ea3`): Se permitirá pagar la liquidación mediante la pasarela online.
+- **RN-0329** (DEC-052; EXTRAIDA_NO_VALIDADA; fuente `3bc3afc8-469d-4716-9781-39fc0c7c3ea3`): El superadministrador podrá registrar manualmente pagos externos.
+- **RN-0330** (DEC-052; EXTRAIDA_NO_VALIDADA; fuente `3bc3afc8-469d-4716-9781-39fc0c7c3ea3`): Los pagos externos deberán registrar medio de pago, fecha y responsable de la registración.
+- **RN-0331** (DEC-052; EXTRAIDA_NO_VALIDADA; fuente `3bc3afc8-469d-4716-9781-39fc0c7c3ea3`): Las liquidaciones tendrán estados identificables: pendiente, pagada y vencida.
+- **RN-0332** (DEC-052; EXTRAIDA_NO_VALIDADA; fuente `3bc3afc8-469d-4716-9781-39fc0c7c3ea3`): Se conservará el historial de liquidaciones, pagos y modificaciones.
+- **RN-0333** (DEC-052; EXTRAIDA_NO_VALIDADA; fuente `3bc3afc8-469d-4716-9781-39fc0c7c3ea3`): Los cargos comerciales estarán separados de las cuotas deportivas de los jugadores.
+- **RN-0334** (DEC-053; EXTRAIDA_NO_VALIDADA; fuente `c1f24d18-4514-4cd8-bc49-59cdd59224ac`): El sistema identificará las liquidaciones comerciales vencidas e impagas.
+- **RN-0335** (DEC-053; EXTRAIDA_NO_VALIDADA; fuente `c1f24d18-4514-4cd8-bc49-59cdd59224ac`): El superadministrador recibirá una alerta por los incumplimientos.
+- **RN-0336** (DEC-053; EXTRAIDA_NO_VALIDADA; fuente `c1f24d18-4514-4cd8-bc49-59cdd59224ac`): La existencia de una deuda vencida no provocará una suspensión automática.
+- **RN-0337** (DEC-053; EXTRAIDA_NO_VALIDADA; fuente `c1f24d18-4514-4cd8-bc49-59cdd59224ac`): Solamente el superadministrador podrá decidir la suspensión comercial.
+- **RN-0338** (DEC-053; EXTRAIDA_NO_VALIDADA; fuente `c1f24d18-4514-4cd8-bc49-59cdd59224ac`): El superadministrador podrá permitir la continuidad del servicio aun existiendo deuda.
+- **RN-0339** (DEC-053; EXTRAIDA_NO_VALIDADA; fuente `c1f24d18-4514-4cd8-bc49-59cdd59224ac`): La suspensión se aplicará exclusivamente al responsable comercial definido en el contrato.
+- **RN-0340** (DEC-053; EXTRAIDA_NO_VALIDADA; fuente `c1f24d18-4514-4cd8-bc49-59cdd59224ac`): Si el responsable es una disciplina independiente, las demás disciplinas del club no se verán afectadas.
+- **RN-0341** (DEC-053; EXTRAIDA_NO_VALIDADA; fuente `c1f24d18-4514-4cd8-bc49-59cdd59224ac`): Se conservará un historial de suspensiones, reactivaciones, fechas y responsables.
+- **RN-0342** (DEC-053; EXTRAIDA_NO_VALIDADA; fuente `c1f24d18-4514-4cd8-bc49-59cdd59224ac`): La deuda comercial continuará registrada aunque se suspenda el servicio.
+- **RN-0343** (DEC-054; EXTRAIDA_NO_VALIDADA; fuente `c2fcf417-e627-42b8-a3b0-b8fc779145dd`): Se bloquearán las nuevas inscripciones de jugadores.
+- **RN-0344** (DEC-054; EXTRAIDA_NO_VALIDADA; fuente `c2fcf417-e627-42b8-a3b0-b8fc779145dd`): Se detendrá la generación automática de nuevas cuotas.
+- **RN-0345** (DEC-054; EXTRAIDA_NO_VALIDADA; fuente `c2fcf417-e627-42b8-a3b0-b8fc779145dd`): Los administradores no podrán modificar jugadores, categorías, becas ni configuraciones de la disciplina suspendida.
+- **RN-0346** (DEC-054; EXTRAIDA_NO_VALIDADA; fuente `c2fcf417-e627-42b8-a3b0-b8fc779145dd`): Los administradores conservarán acceso de solo lectura a la información histórica.
+- **RN-0347** (DEC-054; EXTRAIDA_NO_VALIDADA; fuente `c2fcf417-e627-42b8-a3b0-b8fc779145dd`): Los jugadores podrán consultar sus cuotas e historial de pagos.
+- **RN-0348** (DEC-054; EXTRAIDA_NO_VALIDADA; fuente `c2fcf417-e627-42b8-a3b0-b8fc779145dd`): Se permitirá pagar cuotas generadas antes de la suspensión, incluyendo los recargos correspondientes.
+- **RN-0349** (DEC-054; EXTRAIDA_NO_VALIDADA; fuente `c2fcf417-e627-42b8-a3b0-b8fc779145dd`): Los datos y registros históricos permanecerán intactos.
+- **RN-0350** (DEC-054; EXTRAIDA_NO_VALIDADA; fuente `c2fcf417-e627-42b8-a3b0-b8fc779145dd`): La suspensión afectará exclusivamente al responsable comercial correspondiente.
+- **RN-0351** (DEC-054; EXTRAIDA_NO_VALIDADA; fuente `c2fcf417-e627-42b8-a3b0-b8fc779145dd`): Solamente el superadministrador podrá levantar la suspensión comercial.
+- **RN-0352** (DEC-055; EXTRAIDA_NO_VALIDADA; fuente `948fabe4-ae2a-46ad-8641-681da4ace9c7`): Solamente el superadministrador podrá reactivar un responsable suspendido comercialmente.
+- **RN-0353** (DEC-055; EXTRAIDA_NO_VALIDADA; fuente `948fabe4-ae2a-46ad-8641-681da4ace9c7`): Durante la reactivación deberá decidir si genera las cuotas de los meses suspendidos.
+- **RN-0354** (DEC-055; EXTRAIDA_NO_VALIDADA; fuente `948fabe4-ae2a-46ad-8641-681da4ace9c7`): Si decide no generarlas, esos períodos quedarán sin nuevas cuotas.
+- **RN-0355** (DEC-055; EXTRAIDA_NO_VALIDADA; fuente `948fabe4-ae2a-46ad-8641-681da4ace9c7`): Si decide generarlas, el sistema creará las cuotas correspondientes a los períodos omitidos.
+- **RN-0356** (DEC-055; EXTRAIDA_NO_VALIDADA; fuente `948fabe4-ae2a-46ad-8641-681da4ace9c7`): La generación retroactiva deberá respetar las inscripciones y condiciones económicas aplicables a cada período.
+- **RN-0357** (DEC-055; EXTRAIDA_NO_VALIDADA; fuente `948fabe4-ae2a-46ad-8641-681da4ace9c7`): Se evitará generar cuotas duplicadas para un mismo jugador, disciplina y período.
+- **RN-0358** (DEC-055; EXTRAIDA_NO_VALIDADA; fuente `948fabe4-ae2a-46ad-8641-681da4ace9c7`): Se registrará la decisión, fecha, responsable y cuotas generadas.
+- **RN-0359** (DEC-055; EXTRAIDA_NO_VALIDADA; fuente `948fabe4-ae2a-46ad-8641-681da4ace9c7`): La generación automática normal se retomará después de la reactivación, respetando el calendario configurado.
+- **RN-0360** (DEC-055; EXTRAIDA_NO_VALIDADA; fuente `948fabe4-ae2a-46ad-8641-681da4ace9c7`): Esta posibilidad de retroactividad aplica a suspensiones comerciales, no a la desactivación ordinaria de disciplinas definida anteriormente.
+- **RN-0361** (DEC-056; EXTRAIDA_NO_VALIDADA; fuente `83f8fe66-e386-442c-bf43-424ead6f247b`): El superadministrador decide al reactivar si se habilita la regularización de meses suspendidos, según DEC-055.
+- **RN-0362** (DEC-056; EXTRAIDA_NO_VALIDADA; fuente `83f8fe66-e386-442c-bf43-424ead6f247b`): El sistema prepara una propuesta de cuotas faltantes correspondientes a esos períodos.
+- **RN-0363** (DEC-056; EXTRAIDA_NO_VALIDADA; fuente `83f8fe66-e386-442c-bf43-424ead6f247b`): Las cuotas propuestas no se publicarán ni habilitarán para cobro hasta su confirmación.
+- **RN-0364** (DEC-056; EXTRAIDA_NO_VALIDADA; fuente `83f8fe66-e386-442c-bf43-424ead6f247b`): El administrador de la disciplina podrá revisar los jugadores incluidos.
+- **RN-0365** (DEC-056; EXTRAIDA_NO_VALIDADA; fuente `83f8fe66-e386-442c-bf43-424ead6f247b`): Podrá identificar y registrar pagos externos realizados durante la suspensión.
+- **RN-0366** (DEC-056; EXTRAIDA_NO_VALIDADA; fuente `83f8fe66-e386-442c-bf43-424ead6f247b`): Podrá definir o ajustar las fechas de vencimiento de las cuotas retroactivas.
+- **RN-0367** (DEC-056; EXTRAIDA_NO_VALIDADA; fuente `83f8fe66-e386-442c-bf43-424ead6f247b`): La regularización requerirá confirmación explícita del administrador.
+- **RN-0368** (DEC-056; EXTRAIDA_NO_VALIDADA; fuente `83f8fe66-e386-442c-bf43-424ead6f247b`): El sistema evitará duplicar cuotas o pagos previamente registrados.
+- **RN-0369** (DEC-056; EXTRAIDA_NO_VALIDADA; fuente `83f8fe66-e386-442c-bf43-424ead6f247b`): Se conservará trazabilidad de los cambios, pagos registrados y responsable de la confirmación.
+- **RN-0370** (DEC-056; EXTRAIDA_NO_VALIDADA; fuente `83f8fe66-e386-442c-bf43-424ead6f247b`): Esta operación será una excepción controlada a la generación mensual exclusivamente automática.
+- **RN-0371** (DEC-057; EXTRAIDA_NO_VALIDADA; fuente `d82182b2-0bb6-4f59-b785-1e147eb079fb`): La reactivación comercial restablecerá inmediatamente las funcionalidades administrativas.
+- **RN-0372** (DEC-057; EXTRAIDA_NO_VALIDADA; fuente `d82182b2-0bb6-4f59-b785-1e147eb079fb`): Se habilitarán nuevamente las inscripciones, modificaciones de jugadores, categorías y becas.
+- **RN-0373** (DEC-057; EXTRAIDA_NO_VALIDADA; fuente `d82182b2-0bb6-4f59-b785-1e147eb079fb`): Se retomará la generación automática de cuotas según el calendario de la disciplina.
+- **RN-0374** (DEC-057; EXTRAIDA_NO_VALIDADA; fuente `d82182b2-0bb6-4f59-b785-1e147eb079fb`): El administrador podrá regularizar los meses suspendidos en paralelo con la operación habitual.
+- **RN-0375** (DEC-057; EXTRAIDA_NO_VALIDADA; fuente `d82182b2-0bb6-4f59-b785-1e147eb079fb`): Las cuotas retroactivas en borrador no bloquearán la generación de cuotas actuales.
+- **RN-0376** (DEC-057; EXTRAIDA_NO_VALIDADA; fuente `d82182b2-0bb6-4f59-b785-1e147eb079fb`): Los pagos externos registrados durante la regularización se asociarán a sus períodos correspondientes.
+- **RN-0377** (DEC-057; EXTRAIDA_NO_VALIDADA; fuente `d82182b2-0bb6-4f59-b785-1e147eb079fb`): Se evitará duplicar cuotas entre la generación automática y la regularización histórica.
+- **RN-0378** (DEC-057; EXTRAIDA_NO_VALIDADA; fuente `d82182b2-0bb6-4f59-b785-1e147eb079fb`): El sistema permitirá consultar el estado y avance de la regularización.
+- **RN-0379** (DEC-058; EXTRAIDA_NO_VALIDADA; fuente `9fe5c979-a05c-4b4c-a3b3-a213c9128837`): Solo se contabilizarán operaciones de pago exitosas procesadas por la pasarela integrada.
+- **RN-0380** (DEC-058; EXTRAIDA_NO_VALIDADA; fuente `9fe5c979-a05c-4b4c-a3b3-a213c9128837`): Los pagos externos no sumarán al mínimo mensual, independientemente de su medio de pago.
+- **RN-0381** (DEC-058; EXTRAIDA_NO_VALIDADA; fuente `9fe5c979-a05c-4b4c-a3b3-a213c9128837`): Los pagos externos registrados durante una regularización tampoco sumarán al mínimo.
+- **RN-0382** (DEC-058; EXTRAIDA_NO_VALIDADA; fuente `9fe5c979-a05c-4b4c-a3b3-a213c9128837`): Una operación online que agrupe varias cuotas contará como un solo pago.
+- **RN-0383** (DEC-058; EXTRAIDA_NO_VALIDADA; fuente `9fe5c979-a05c-4b4c-a3b3-a213c9128837`): Los pagos rechazados, cancelados o pendientes no se contabilizarán.
+- **RN-0384** (DEC-058; EXTRAIDA_NO_VALIDADA; fuente `9fe5c979-a05c-4b4c-a3b3-a213c9128837`): Cada operación válida se contabilizará una única vez, evitando duplicados por notificaciones de la pasarela.
+- **RN-0385** (DEC-058; EXTRAIDA_NO_VALIDADA; fuente `9fe5c979-a05c-4b4c-a3b3-a213c9128837`): El sistema mantendrá separado el registro de cobros de cuotas del contador comercial mensual.
+- **RN-0386** (DEC-059; EXTRAIDA_NO_VALIDADA; fuente `b2fd1fd6-5b56-48fd-be0b-7c90b9eab850`): Cada pago online exitoso se contabilizará en el mes calendario de su confirmación.
+- **RN-0387** (DEC-059; EXTRAIDA_NO_VALIDADA; fuente `b2fd1fd6-5b56-48fd-be0b-7c90b9eab850`): El período de las cuotas abonadas no modificará el mes de contabilización comercial.
+- **RN-0388** (DEC-059; EXTRAIDA_NO_VALIDADA; fuente `b2fd1fd6-5b56-48fd-be0b-7c90b9eab850`): Una operación que agrupe varias cuotas contará como un único pago.
+- **RN-0389** (DEC-059; EXTRAIDA_NO_VALIDADA; fuente `b2fd1fd6-5b56-48fd-be0b-7c90b9eab850`): Los pagos externos no se contabilizarán para el mínimo comercial.
+- **RN-0390** (DEC-059; EXTRAIDA_NO_VALIDADA; fuente `b2fd1fd6-5b56-48fd-be0b-7c90b9eab850`): Los pagos pendientes o rechazados no se contabilizarán.
+- **RN-0391** (DEC-059; EXTRAIDA_NO_VALIDADA; fuente `b2fd1fd6-5b56-48fd-be0b-7c90b9eab850`): El sistema conservará la fecha y hora de confirmación del pago.
+- **RN-0392** (DEC-059; EXTRAIDA_NO_VALIDADA; fuente `b2fd1fd6-5b56-48fd-be0b-7c90b9eab850`): Se evitará contabilizar dos veces una operación por notificaciones duplicadas de la pasarela.
+- **RN-0393** (DEC-059; EXTRAIDA_NO_VALIDADA; fuente `b2fd1fd6-5b56-48fd-be0b-7c90b9eab850`): Los reportes comerciales permitirán consultar los pagos computables por mes y responsable comercial.
+- **RN-0394** (DEC-060; EXTRAIDA_NO_VALIDADA; fuente `62fa2664-0bf3-4832-96fc-346c0cfd4425`): El sistema cerrará automáticamente cada período comercial mensual.
+- **RN-0395** (DEC-060; EXTRAIDA_NO_VALIDADA; fuente `62fa2664-0bf3-4832-96fc-346c0cfd4425`): Se contabilizarán únicamente los pagos online exitosos del mes correspondiente.
+- **RN-0396** (DEC-060; EXTRAIDA_NO_VALIDADA; fuente `62fa2664-0bf3-4832-96fc-346c0cfd4425`): Se evaluará el mínimo contratado de cada club o disciplina.
+- **RN-0397** (DEC-060; EXTRAIDA_NO_VALIDADA; fuente `62fa2664-0bf3-4832-96fc-346c0cfd4425`): Cuando exista incumplimiento, se calculará el cargo según la modalidad configurada: fijo o por pago faltante.
+- **RN-0398** (DEC-060; EXTRAIDA_NO_VALIDADA; fuente `62fa2664-0bf3-4832-96fc-346c0cfd4425`): La liquidación se generará inicialmente en estado *Pendiente de aprobación*.
+- **RN-0399** (DEC-060; EXTRAIDA_NO_VALIDADA; fuente `62fa2664-0bf3-4832-96fc-346c0cfd4425`): Solamente el superadministrador podrá aprobar una liquidación comercial.
+- **RN-0400** (DEC-060; EXTRAIDA_NO_VALIDADA; fuente `62fa2664-0bf3-4832-96fc-346c0cfd4425`): Ninguna penalización podrá habilitarse para el cobro antes de su aprobación.
+- **RN-0401** (DEC-060; EXTRAIDA_NO_VALIDADA; fuente `62fa2664-0bf3-4832-96fc-346c0cfd4425`): Se conservarán el detalle del cálculo, la configuración contractual aplicada y los pagos contabilizados.
+- **RN-0402** (DEC-060; EXTRAIDA_NO_VALIDADA; fuente `62fa2664-0bf3-4832-96fc-346c0cfd4425`): Se registrarán la fecha y el responsable de la aprobación.
+- **RN-0403** (DEC-060; EXTRAIDA_NO_VALIDADA; fuente `62fa2664-0bf3-4832-96fc-346c0cfd4425`): El cierre mensual deberá evitar generar liquidaciones duplicadas para el mismo contrato y período.
+- **RN-0404** (DEC-061; HISTORICA_CON-004; fuente `4c52f1dc-b8b3-435d-84d2-c2ba47b9eec6`): Las liquidaciones se generarán automáticamente en estado *Pendiente de aprobación*.
+- **RN-0404** (DEC-061; VERSION_CORREGIDA_CON-004; fuente `6f76bfdc-b54a-4b58-8ce3-0f1e7e8e2495`): Las liquidaciones se generan pendientes de aprobación.
+- **RN-0405** (DEC-061; HISTORICA_CON-004; fuente `4c52f1dc-b8b3-435d-84d2-c2ba47b9eec6`): El superadministrador podrá aprobar o rechazar cada liquidación.
+- **RN-0405** (DEC-061; VERSION_CORREGIDA_CON-004; fuente `6f76bfdc-b54a-4b58-8ce3-0f1e7e8e2495`): El superadministrador puede aprobar, condonar totalmente o ajustar parcialmente.
+- **RN-0406** (DEC-061; HISTORICA_CON-004; fuente `4c52f1dc-b8b3-435d-84d2-c2ba47b9eec6`): No se permitirá modificar manualmente el importe calculado.
+- **RN-0406** (DEC-061; VERSION_CORREGIDA_CON-004; fuente `6f76bfdc-b54a-4b58-8ce3-0f1e7e8e2495`): Toda condonación o ajuste requiere una justificación obligatoria.
+- **RN-0407** (DEC-061; HISTORICA_CON-004; fuente `4c52f1dc-b8b3-435d-84d2-c2ba47b9eec6`): Una liquidación aprobada quedará habilitada para su cobro.
+- **RN-0407** (DEC-061; VERSION_CORREGIDA_CON-004; fuente `6f76bfdc-b54a-4b58-8ce3-0f1e7e8e2495`): El importe calculado originalmente nunca se sobrescribe.
+- **RN-0408** (DEC-061; HISTORICA_CON-004; fuente `4c52f1dc-b8b3-435d-84d2-c2ba47b9eec6`): Una liquidación rechazada no generará una deuda exigible al responsable comercial.
+- **RN-0408** (DEC-061; VERSION_CORREGIDA_CON-004; fuente `6f76bfdc-b54a-4b58-8ce3-0f1e7e8e2495`): Se registra el importe final aprobado.
+- **RN-0409** (DEC-061; HISTORICA_CON-004; fuente `4c52f1dc-b8b3-435d-84d2-c2ba47b9eec6`): Se conservarán el importe original, el resultado de la revisión, la fecha y el superadministrador responsable.
+- **RN-0409** (DEC-061; VERSION_CORREGIDA_CON-004; fuente `6f76bfdc-b54a-4b58-8ce3-0f1e7e8e2495`): Una condonación total deja la liquidación sin saldo exigible.
+- **RN-0410** (DEC-061; HISTORICA_CON-004; fuente `4c52f1dc-b8b3-435d-84d2-c2ba47b9eec6`): Las liquidaciones rechazadas permanecerán en el historial para auditoría.
+- **RN-0410** (DEC-061; VERSION_CORREGIDA_CON-004; fuente `6f76bfdc-b54a-4b58-8ce3-0f1e7e8e2495`): Una aprobación o ajuste habilita el cobro del importe final.
+- **RN-0411** (DEC-061; HISTORICA_CON-004; fuente `4c52f1dc-b8b3-435d-84d2-c2ba47b9eec6`): Una misma liquidación no podrá aprobarse y rechazarse simultáneamente.
+- **RN-0411** (DEC-061; VERSION_CORREGIDA_CON-004; fuente `6f76bfdc-b54a-4b58-8ce3-0f1e7e8e2495`): Se registra fecha, responsable, motivo y valores anteriores y finales para auditoría.
+- **RN-0412** (DEC-062; EXTRAIDA_NO_VALIDADA; fuente `c38117eb-d0a0-47db-9508-fd379478ec85`): El superadministrador podrá consultar todas las liquidaciones, ajustes y condonaciones de la plataforma.
+- **RN-0413** (DEC-062; EXTRAIDA_NO_VALIDADA; fuente `c38117eb-d0a0-47db-9508-fd379478ec85`): Cada responsable comercial podrá consultar únicamente las liquidaciones que le correspondan.
+- **RN-0414** (DEC-062; EXTRAIDA_NO_VALIDADA; fuente `c38117eb-d0a0-47db-9508-fd379478ec85`): Se mostrará el importe originalmente calculado.
+- **RN-0415** (DEC-062; EXTRAIDA_NO_VALIDADA; fuente `c38117eb-d0a0-47db-9508-fd379478ec85`): Se mostrará el importe final aprobado, después de aplicar cualquier ajuste o condonación.
+- **RN-0416** (DEC-062; EXTRAIDA_NO_VALIDADA; fuente `c38117eb-d0a0-47db-9508-fd379478ec85`): La justificación registrada por el superadministrador será visible para el responsable comercial.
+- **RN-0417** (DEC-062; EXTRAIDA_NO_VALIDADA; fuente `c38117eb-d0a0-47db-9508-fd379478ec85`): Se identificará la fecha de la decisión y el responsable de realizarla.
+- **RN-0418** (DEC-062; EXTRAIDA_NO_VALIDADA; fuente `c38117eb-d0a0-47db-9508-fd379478ec85`): Las disciplinas independientes no podrán consultar las condiciones ni los ajustes comerciales de otras disciplinas.
+- **RN-0419** (DEC-062; EXTRAIDA_NO_VALIDADA; fuente `c38117eb-d0a0-47db-9508-fd379478ec85`): Los registros históricos permanecerán disponibles para auditoría.
+- **RN-0420** (DEC-063; EXTRAIDA_NO_VALIDADA; fuente `e0efbc6d-adc7-44a4-ba47-9666bf634b08`): El superadministrador podrá modificar el mínimo mensual de pagos de cada contrato comercial.
+- **RN-0421** (DEC-063; EXTRAIDA_NO_VALIDADA; fuente `e0efbc6d-adc7-44a4-ba47-9666bf634b08`): El nuevo mínimo se aplicará a todo el mes calendario en curso.
+- **RN-0422** (DEC-063; EXTRAIDA_NO_VALIDADA; fuente `e0efbc6d-adc7-44a4-ba47-9666bf634b08`): El cambio afectará el cálculo de cumplimiento del mes completo, independientemente del día en que se realice.
+- **RN-0423** (DEC-063; EXTRAIDA_NO_VALIDADA; fuente `e0efbc6d-adc7-44a4-ba47-9666bf634b08`): Los pagos exitosos ya contabilizados durante el mes conservarán su validez.
+- **RN-0424** (DEC-063; EXTRAIDA_NO_VALIDADA; fuente `e0efbc6d-adc7-44a4-ba47-9666bf634b08`): El sistema recalculará el cumplimiento mensual utilizando el nuevo mínimo.
+- **RN-0425** (DEC-063; EXTRAIDA_NO_VALIDADA; fuente `e0efbc6d-adc7-44a4-ba47-9666bf634b08`): El nuevo mínimo también se utilizará en los meses siguientes, hasta una nueva modificación.
+- **RN-0426** (DEC-063; EXTRAIDA_NO_VALIDADA; fuente `e0efbc6d-adc7-44a4-ba47-9666bf634b08`): Se conservarán el valor anterior, el nuevo valor, la fecha y el superadministrador responsable.
+- **RN-0427** (DEC-063; EXTRAIDA_NO_VALIDADA; fuente `e0efbc6d-adc7-44a4-ba47-9666bf634b08`): Las liquidaciones de meses anteriores que ya fueron cerrados no se modificarán automáticamente.
+- **RN-0428** (DEC-064; EXTRAIDA_NO_VALIDADA; fuente `cae3bc6c-72dc-4025-8753-fd1a71355258`): El superadministrador podrá modificar el importe de penalización de cada contrato comercial.
+- **RN-0429** (DEC-064; EXTRAIDA_NO_VALIDADA; fuente `cae3bc6c-72dc-4025-8753-fd1a71355258`): El nuevo importe se aplicará al mes calendario en curso completo.
+- **RN-0430** (DEC-064; EXTRAIDA_NO_VALIDADA; fuente `cae3bc6c-72dc-4025-8753-fd1a71355258`): La modificación afectará el cálculo de la penalización mensual, independientemente del día en que se realice.
+- **RN-0431** (DEC-064; EXTRAIDA_NO_VALIDADA; fuente `cae3bc6c-72dc-4025-8753-fd1a71355258`): Se respetará la modalidad de penalización configurada: cargo fijo mensual o importe por pago faltante.
+- **RN-0432** (DEC-064; EXTRAIDA_NO_VALIDADA; fuente `cae3bc6c-72dc-4025-8753-fd1a71355258`): El nuevo importe continuará vigente en los meses siguientes hasta una nueva modificación.
+- **RN-0433** (DEC-064; EXTRAIDA_NO_VALIDADA; fuente `cae3bc6c-72dc-4025-8753-fd1a71355258`): Se conservarán el importe anterior, el nuevo, la fecha y el superadministrador responsable.
+- **RN-0434** (DEC-064; EXTRAIDA_NO_VALIDADA; fuente `cae3bc6c-72dc-4025-8753-fd1a71355258`): Las liquidaciones de períodos anteriores ya cerrados no se recalcularán automáticamente.
+- **RN-0435** (DEC-064; EXTRAIDA_NO_VALIDADA; fuente `cae3bc6c-72dc-4025-8753-fd1a71355258`): El cierre mensual utilizará el importe vigente al momento de calcular la liquidación.
+- **RN-0436** (DEC-065; EXTRAIDA_NO_VALIDADA; fuente `eb79d555-7108-4dd5-90fe-ec53e3c493ae`): El superadministrador podrá cambiar la modalidad de penalización de cada contrato comercial.
+- **RN-0437** (DEC-065; EXTRAIDA_NO_VALIDADA; fuente `eb79d555-7108-4dd5-90fe-ec53e3c493ae`): Las modalidades disponibles serán cargo fijo mensual e importe por pago faltante.
+- **RN-0438** (DEC-065; EXTRAIDA_NO_VALIDADA; fuente `eb79d555-7108-4dd5-90fe-ec53e3c493ae`): La nueva modalidad se aplicará al mes calendario actual completo.
+- **RN-0439** (DEC-065; EXTRAIDA_NO_VALIDADA; fuente `eb79d555-7108-4dd5-90fe-ec53e3c493ae`): El cambio afectará el cálculo del mes en curso, independientemente de la fecha de modificación.
+- **RN-0440** (DEC-065; EXTRAIDA_NO_VALIDADA; fuente `eb79d555-7108-4dd5-90fe-ec53e3c493ae`): El cierre comercial utilizará la modalidad y el importe vigentes al momento del cálculo.
+- **RN-0441** (DEC-065; EXTRAIDA_NO_VALIDADA; fuente `eb79d555-7108-4dd5-90fe-ec53e3c493ae`): La modalidad continuará vigente en los meses siguientes hasta que se modifique nuevamente.
+- **RN-0442** (DEC-065; EXTRAIDA_NO_VALIDADA; fuente `eb79d555-7108-4dd5-90fe-ec53e3c493ae`): Se conservarán la modalidad anterior, la nueva, la fecha y el superadministrador responsable.
+- **RN-0443** (DEC-065; EXTRAIDA_NO_VALIDADA; fuente `eb79d555-7108-4dd5-90fe-ec53e3c493ae`): Las liquidaciones de períodos anteriores ya cerrados no se recalcularán automáticamente.
+- **RN-0444** (DEC-066; EXTRAIDA_NO_VALIDADA; fuente `26ab8490-f169-44ca-8a62-da701d2a7f44`): Cada contrato comercial podrá tener una configuración independiente de período de gracia inicial.
+- **RN-0445** (DEC-066; EXTRAIDA_NO_VALIDADA; fuente `26ab8490-f169-44ca-8a62-da701d2a7f44`): El superadministrador definirá si el mínimo de pagos se exige desde el primer mes.
+- **RN-0446** (DEC-066; EXTRAIDA_NO_VALIDADA; fuente `26ab8490-f169-44ca-8a62-da701d2a7f44`): Cuando exista un período de gracia, no se generarán penalizaciones por incumplimiento del mínimo durante los meses cubiertos.
+- **RN-0447** (DEC-066; EXTRAIDA_NO_VALIDADA; fuente `26ab8490-f169-44ca-8a62-da701d2a7f44`): Los pagos online realizados durante el período de gracia se registrarán normalmente.
+- **RN-0448** (DEC-066; EXTRAIDA_NO_VALIDADA; fuente `26ab8490-f169-44ca-8a62-da701d2a7f44`): Finalizado el período de gracia, comenzará a exigirse el mínimo mensual contratado.
+- **RN-0449** (DEC-066; EXTRAIDA_NO_VALIDADA; fuente `26ab8490-f169-44ca-8a62-da701d2a7f44`): El período de gracia afectará únicamente al responsable comercial correspondiente.
+- **RN-0450** (DEC-066; EXTRAIDA_NO_VALIDADA; fuente `26ab8490-f169-44ca-8a62-da701d2a7f44`): Se conservarán la configuración, las fechas de vigencia y el superadministrador responsable.
+- **RN-0451** (DEC-066; EXTRAIDA_NO_VALIDADA; fuente `26ab8490-f169-44ca-8a62-da701d2a7f44`): El historial permitirá distinguir los meses exentos de penalización de aquellos sujetos al mínimo comercial.
+- **RN-0452** (DEC-067; EXTRAIDA_NO_VALIDADA; fuente `68afb56b-d05a-457b-aac7-b3b3ac6e36a9`): El superadministrador podrá configurar el mes y año de finalización del período de gracia.
+- **RN-0453** (DEC-067; EXTRAIDA_NO_VALIDADA; fuente `68afb56b-d05a-457b-aac7-b3b3ac6e36a9`): El período de gracia incluirá el mes de finalización seleccionado.
+- **RN-0454** (DEC-067; EXTRAIDA_NO_VALIDADA; fuente `68afb56b-d05a-457b-aac7-b3b3ac6e36a9`): Durante los meses cubiertos no se generarán penalizaciones por incumplimiento del mínimo comercial.
+- **RN-0455** (DEC-067; EXTRAIDA_NO_VALIDADA; fuente `68afb56b-d05a-457b-aac7-b3b3ac6e36a9`): La exigencia del mínimo comenzará el primer día del mes siguiente al último mes de gracia.
+- **RN-0456** (DEC-067; EXTRAIDA_NO_VALIDADA; fuente `68afb56b-d05a-457b-aac7-b3b3ac6e36a9`): Cada contrato comercial tendrá su propia configuración independiente.
+- **RN-0457** (DEC-067; EXTRAIDA_NO_VALIDADA; fuente `68afb56b-d05a-457b-aac7-b3b3ac6e36a9`): Los pagos online procesados durante la gracia seguirán registrándose para estadísticas y reportes.
+- **RN-0458** (DEC-067; EXTRAIDA_NO_VALIDADA; fuente `68afb56b-d05a-457b-aac7-b3b3ac6e36a9`): El sistema conservará el historial de configuración y modificaciones.
+- **RN-0459** (DEC-067; EXTRAIDA_NO_VALIDADA; fuente `68afb56b-d05a-457b-aac7-b3b3ac6e36a9`): El vencimiento del período de gracia será automático, sin requerir intervención del superadministrador.
+- **RN-0460** (DEC-068; EXTRAIDA_NO_VALIDADA; fuente `13a07e62-776e-4138-82ff-a8a648ea1d5e`): El superadministrador podrá extender o acortar un período de gracia vigente.
+- **RN-0461** (DEC-068; EXTRAIDA_NO_VALIDADA; fuente `13a07e62-776e-4138-82ff-a8a648ea1d5e`): La modificación se realizará cambiando el mes y año de finalización.
+- **RN-0462** (DEC-068; EXTRAIDA_NO_VALIDADA; fuente `13a07e62-776e-4138-82ff-a8a648ea1d5e`): Los cambios afectarán el mes calendario actual y los meses futuros.
+- **RN-0463** (DEC-068; EXTRAIDA_NO_VALIDADA; fuente `13a07e62-776e-4138-82ff-a8a648ea1d5e`): Si se extiende la gracia para incluir el mes actual, ese mes quedará exento de penalización.
+- **RN-0464** (DEC-068; EXTRAIDA_NO_VALIDADA; fuente `13a07e62-776e-4138-82ff-a8a648ea1d5e`): Si se acorta y el mes actual deja de estar cubierto, se aplicará el mínimo comercial correspondiente.
+- **RN-0465** (DEC-068; EXTRAIDA_NO_VALIDADA; fuente `13a07e62-776e-4138-82ff-a8a648ea1d5e`): No se recalcularán automáticamente liquidaciones de meses anteriores ya cerrados.
+- **RN-0466** (DEC-068; EXTRAIDA_NO_VALIDADA; fuente `13a07e62-776e-4138-82ff-a8a648ea1d5e`): Se conservarán la fecha anterior, la nueva, el momento de modificación y el superadministrador responsable.
+- **RN-0467** (DEC-068; EXTRAIDA_NO_VALIDADA; fuente `13a07e62-776e-4138-82ff-a8a648ea1d5e`): Las modificaciones no afectarán los contratos de otros clubes o disciplinas.
+- **RN-0468** (DEC-069; EXTRAIDA_NO_VALIDADA; fuente `d42aae2a-a840-4ff6-b9d9-73ccb0be1a52`): Cada contrato comercial podrá tener una fecha de finalización.
+- **RN-0469** (DEC-069; EXTRAIDA_NO_VALIDADA; fuente `d42aae2a-a840-4ff6-b9d9-73ccb0be1a52`): Al alcanzar esa fecha, el sistema notificará al superadministrador.
+- **RN-0470** (DEC-069; EXTRAIDA_NO_VALIDADA; fuente `d42aae2a-a840-4ff6-b9d9-73ccb0be1a52`): El vencimiento no provocará una suspensión automática.
+- **RN-0471** (DEC-069; EXTRAIDA_NO_VALIDADA; fuente `d42aae2a-a840-4ff6-b9d9-73ccb0be1a52`): El superadministrador podrá renovar el contrato, suspender comercialmente al responsable o autorizar su funcionamiento temporal.
+- **RN-0472** (DEC-069; EXTRAIDA_NO_VALIDADA; fuente `d42aae2a-a840-4ff6-b9d9-73ccb0be1a52`): Hasta que se tome una decisión, continuarán vigentes las condiciones comerciales anteriores.
+- **RN-0473** (DEC-069; EXTRAIDA_NO_VALIDADA; fuente `d42aae2a-a840-4ff6-b9d9-73ccb0be1a52`): Durante esa continuidad, se seguirán contabilizando pagos y evaluando mínimos comerciales.
+- **RN-0474** (DEC-069; EXTRAIDA_NO_VALIDADA; fuente `d42aae2a-a840-4ff6-b9d9-73ccb0be1a52`): Una suspensión comercial respetará las reglas ya definidas para cuotas pendientes, historial y reactivación.
+- **RN-0475** (DEC-069; EXTRAIDA_NO_VALIDADA; fuente `d42aae2a-a840-4ff6-b9d9-73ccb0be1a52`): Las decisiones afectarán exclusivamente al club o disciplina responsable según el contrato.
+- **RN-0476** (DEC-069; EXTRAIDA_NO_VALIDADA; fuente `d42aae2a-a840-4ff6-b9d9-73ccb0be1a52`): Se registrarán la decisión, fecha, responsable y antecedentes contractuales para auditoría.
+- **RN-0477** (DEC-070; EXTRAIDA_NO_VALIDADA; fuente `18bf97f2-eefa-416c-adf6-70ef4d3c86e9`): Cada renovación generará una nueva versión del contrato comercial.
+- **RN-0478** (DEC-070; EXTRAIDA_NO_VALIDADA; fuente `18bf97f2-eefa-416c-adf6-70ef4d3c86e9`): La nueva versión copiará automáticamente las condiciones del contrato anterior.
+- **RN-0479** (DEC-070; EXTRAIDA_NO_VALIDADA; fuente `18bf97f2-eefa-416c-adf6-70ef4d3c86e9`): El superadministrador podrá modificar mínimos, penalizaciones y fechas antes de confirmar.
+- **RN-0480** (DEC-070; EXTRAIDA_NO_VALIDADA; fuente `18bf97f2-eefa-416c-adf6-70ef4d3c86e9`): La nueva versión permanecerá como borrador hasta su confirmación.
+- **RN-0481** (DEC-070; EXTRAIDA_NO_VALIDADA; fuente `18bf97f2-eefa-416c-adf6-70ef4d3c86e9`): Las versiones anteriores conservarán sus condiciones e historial.
+- **RN-0482** (DEC-070; EXTRAIDA_NO_VALIDADA; fuente `18bf97f2-eefa-416c-adf6-70ef4d3c86e9`): Las liquidaciones históricas mantendrán la referencia a las condiciones utilizadas para calcularlas.
+- **RN-0483** (DEC-070; EXTRAIDA_NO_VALIDADA; fuente `18bf97f2-eefa-416c-adf6-70ef4d3c86e9`): Se registrarán la fecha de renovación y el superadministrador responsable.
+- **RN-0484** (DEC-070; EXTRAIDA_NO_VALIDADA; fuente `18bf97f2-eefa-416c-adf6-70ef4d3c86e9`): No se permitirá que dos versiones del mismo contrato tengan períodos de vigencia superpuestos.
+- **RN-0485** (DEC-071; EXTRAIDA_NO_VALIDADA; fuente `5b20da80-41d8-4e9b-8355-c3b0a11d2453`): El superadministrador configurará el mes y año de inicio de cada renovación.
+- **RN-0486** (DEC-071; EXTRAIDA_NO_VALIDADA; fuente `5b20da80-41d8-4e9b-8355-c3b0a11d2453`): La nueva versión aplicará sus condiciones al mes de inicio completo.
+- **RN-0487** (DEC-071; EXTRAIDA_NO_VALIDADA; fuente `5b20da80-41d8-4e9b-8355-c3b0a11d2453`): Se permitirá programar renovaciones para meses futuros.
+- **RN-0488** (DEC-071; EXTRAIDA_NO_VALIDADA; fuente `5b20da80-41d8-4e9b-8355-c3b0a11d2453`): Hasta el inicio de la nueva versión, continuarán aplicándose las condiciones comerciales anteriores, cuando corresponda.
+- **RN-0489** (DEC-071; EXTRAIDA_NO_VALIDADA; fuente `5b20da80-41d8-4e9b-8355-c3b0a11d2453`): No podrán existir dos versiones vigentes simultáneamente para un mismo contrato.
+- **RN-0490** (DEC-071; EXTRAIDA_NO_VALIDADA; fuente `5b20da80-41d8-4e9b-8355-c3b0a11d2453`): Se conservarán las fechas de vigencia y condiciones de cada versión.
+- **RN-0491** (DEC-071; EXTRAIDA_NO_VALIDADA; fuente `5b20da80-41d8-4e9b-8355-c3b0a11d2453`): Las liquidaciones de períodos anteriores ya cerrados no se recalcularán automáticamente.
+- **RN-0492** (DEC-071; EXTRAIDA_NO_VALIDADA; fuente `5b20da80-41d8-4e9b-8355-c3b0a11d2453`): Se registrarán el superadministrador responsable y la fecha de confirmación.
+- **RN-0493** (DEC-072; EXTRAIDA_NO_VALIDADA; fuente `342d0e02-74a1-4335-9400-c2170bce9fdb`): El superadministrador podrá editar renovaciones confirmadas cuya fecha de inicio sea futura.
+- **RN-0494** (DEC-072; EXTRAIDA_NO_VALIDADA; fuente `342d0e02-74a1-4335-9400-c2170bce9fdb`): Podrá modificar el mínimo mensual de pagos, modalidad e importe de penalización y demás condiciones comerciales.
+- **RN-0495** (DEC-072; EXTRAIDA_NO_VALIDADA; fuente `342d0e02-74a1-4335-9400-c2170bce9fdb`): Las modificaciones no afectarán las condiciones del contrato actualmente vigente.
+- **RN-0496** (DEC-072; EXTRAIDA_NO_VALIDADA; fuente `342d0e02-74a1-4335-9400-c2170bce9fdb`): Cada modificación conservará el valor anterior y el nuevo.
+- **RN-0497** (DEC-072; EXTRAIDA_NO_VALIDADA; fuente `342d0e02-74a1-4335-9400-c2170bce9fdb`): Se registrarán la fecha, hora y el superadministrador responsable.
+- **RN-0498** (DEC-072; EXTRAIDA_NO_VALIDADA; fuente `342d0e02-74a1-4335-9400-c2170bce9fdb`): Al comenzar el mes de vigencia, se aplicará la última configuración confirmada.
+- **RN-0499** (DEC-072; EXTRAIDA_NO_VALIDADA; fuente `342d0e02-74a1-4335-9400-c2170bce9fdb`): Una vez vigente la renovación, se aplicarán las reglas ordinarias de modificaciones comerciales.
+- **RN-0500** (DEC-072; EXTRAIDA_NO_VALIDADA; fuente `342d0e02-74a1-4335-9400-c2170bce9fdb`): Se mantendrá la restricción que impide superponer períodos de vigencia de versiones contractuales.
+- **RN-0501** (DEC-073; EXTRAIDA_NO_VALIDADA; fuente `3a694de0-0b31-4563-ba8e-6212da0f331c`): Solo el superadministrador podrá cancelar renovaciones comerciales programadas.
+- **RN-0502** (DEC-073; EXTRAIDA_NO_VALIDADA; fuente `3a694de0-0b31-4563-ba8e-6212da0f331c`): La cancelación estará permitida únicamente antes del inicio de vigencia de la renovación.
+- **RN-0503** (DEC-073; EXTRAIDA_NO_VALIDADA; fuente `3a694de0-0b31-4563-ba8e-6212da0f331c`): Será obligatorio ingresar una justificación.
+- **RN-0504** (DEC-073; EXTRAIDA_NO_VALIDADA; fuente `3a694de0-0b31-4563-ba8e-6212da0f331c`): La renovación pasará al estado *Cancelada*.
+- **RN-0505** (DEC-073; EXTRAIDA_NO_VALIDADA; fuente `3a694de0-0b31-4563-ba8e-6212da0f331c`): Una renovación cancelada nunca entrará en vigencia automáticamente.
+- **RN-0506** (DEC-073; EXTRAIDA_NO_VALIDADA; fuente `3a694de0-0b31-4563-ba8e-6212da0f331c`): Se conservarán las condiciones originales de la renovación cancelada.
+- **RN-0507** (DEC-073; EXTRAIDA_NO_VALIDADA; fuente `3a694de0-0b31-4563-ba8e-6212da0f331c`): Se registrarán fecha, hora, motivo y superadministrador responsable.
+- **RN-0508** (DEC-073; EXTRAIDA_NO_VALIDADA; fuente `3a694de0-0b31-4563-ba8e-6212da0f331c`): La cancelación no modificará el contrato actualmente vigente.
+- **RN-0509** (DEC-073; EXTRAIDA_NO_VALIDADA; fuente `3a694de0-0b31-4563-ba8e-6212da0f331c`): Al finalizar el contrato actual, se aplicarán las reglas de vencimiento y decisión manual previamente aprobadas.
+- **RN-0510** (DEC-074; EXTRAIDA_NO_VALIDADA; fuente `5afe085a-c451-4874-ba64-45fe2df9b339`): Solo el superadministrador podrá autorizar la continuidad temporal de un contrato vencido.
+- **RN-0511** (DEC-074; EXTRAIDA_NO_VALIDADA; fuente `5afe085a-c451-4874-ba64-45fe2df9b339`): Cada autorización tendrá una fecha límite configurable.
+- **RN-0512** (DEC-074; EXTRAIDA_NO_VALIDADA; fuente `5afe085a-c451-4874-ba64-45fe2df9b339`): Durante la continuidad temporal se mantendrán las condiciones comerciales anteriores.
+- **RN-0513** (DEC-074; EXTRAIDA_NO_VALIDADA; fuente `5afe085a-c451-4874-ba64-45fe2df9b339`): Se seguirán contabilizando pagos online y evaluando los mínimos comerciales correspondientes.
+- **RN-0514** (DEC-074; EXTRAIDA_NO_VALIDADA; fuente `5afe085a-c451-4874-ba64-45fe2df9b339`): Al alcanzar la fecha límite, el sistema generará una alerta para el superadministrador.
+- **RN-0515** (DEC-074; EXTRAIDA_NO_VALIDADA; fuente `5afe085a-c451-4874-ba64-45fe2df9b339`): El vencimiento de la autorización no provocará una suspensión automática.
+- **RN-0516** (DEC-074; EXTRAIDA_NO_VALIDADA; fuente `5afe085a-c451-4874-ba64-45fe2df9b339`): El superadministrador podrá renovar el contrato, extender la autorización temporal o suspender comercialmente al responsable.
+- **RN-0517** (DEC-074; EXTRAIDA_NO_VALIDADA; fuente `5afe085a-c451-4874-ba64-45fe2df9b339`): Mientras no exista una nueva decisión, la operación continuará bajo las condiciones comerciales existentes.
+- **RN-0518** (DEC-074; EXTRAIDA_NO_VALIDADA; fuente `5afe085a-c451-4874-ba64-45fe2df9b339`): Cada autorización, extensión y decisión conservará fecha, responsable e historial de auditoría.
+- **RN-0519** (DEC-075; EXTRAIDA_NO_VALIDADA; fuente `90bbcb38-b542-4512-86aa-5eb498ab9a46`): El sistema generará alertas a los 30, 15 y 7 días calendario antes del vencimiento.
+- **RN-0520** (DEC-075; EXTRAIDA_NO_VALIDADA; fuente `90bbcb38-b542-4512-86aa-5eb498ab9a46`): Las alertas aplicarán a contratos comerciales y autorizaciones de continuidad temporal.
+- **RN-0521** (DEC-075; EXTRAIDA_NO_VALIDADA; fuente `90bbcb38-b542-4512-86aa-5eb498ab9a46`): El destinatario será el superadministrador.
+- **RN-0522** (DEC-075; EXTRAIDA_NO_VALIDADA; fuente `90bbcb38-b542-4512-86aa-5eb498ab9a46`): Los plazos serán fijos para todos los contratos.
+- **RN-0523** (DEC-075; EXTRAIDA_NO_VALIDADA; fuente `90bbcb38-b542-4512-86aa-5eb498ab9a46`): Cada alerta identificará al club o disciplina responsable, el contrato y la fecha de vencimiento.
+- **RN-0524** (DEC-075; EXTRAIDA_NO_VALIDADA; fuente `90bbcb38-b542-4512-86aa-5eb498ab9a46`): No se generarán alertas duplicadas para un mismo vencimiento y plazo.
+- **RN-0525** (DEC-075; EXTRAIDA_NO_VALIDADA; fuente `90bbcb38-b542-4512-86aa-5eb498ab9a46`): Si el contrato se renueva o la autorización se modifica, se actualizará la programación de alertas pendientes.
+- **RN-0526** (DEC-075; EXTRAIDA_NO_VALIDADA; fuente `90bbcb38-b542-4512-86aa-5eb498ab9a46`): Las alertas generadas quedarán registradas para seguimiento y auditoría.
+- **RN-0527** (DEC-076; EXTRAIDA_NO_VALIDADA; fuente `0c14ce12-9186-491d-b794-d10eb7ffc9b3`): Todas las alertas comerciales se mostrarán en el panel del superadministrador.
+- **RN-0528** (DEC-076; EXTRAIDA_NO_VALIDADA; fuente `0c14ce12-9186-491d-b794-d10eb7ffc9b3`): No se enviarán notificaciones comerciales por correo electrónico.
+- **RN-0529** (DEC-076; EXTRAIDA_NO_VALIDADA; fuente `0c14ce12-9186-491d-b794-d10eb7ffc9b3`): El panel tendrá un centro de notificaciones comerciales.
+- **RN-0530** (DEC-076; EXTRAIDA_NO_VALIDADA; fuente `0c14ce12-9186-491d-b794-d10eb7ffc9b3`): Cada notificación identificará al club o disciplina, el motivo y la fecha de vencimiento.
+- **RN-0531** (DEC-076; EXTRAIDA_NO_VALIDADA; fuente `0c14ce12-9186-491d-b794-d10eb7ffc9b3`): Las alertas de 30, 15 y 7 días se generarán automáticamente según lo aprobado en DEC-075.
+- **RN-0532** (DEC-076; EXTRAIDA_NO_VALIDADA; fuente `0c14ce12-9186-491d-b794-d10eb7ffc9b3`): Las notificaciones conservarán su fecha de generación.
+- **RN-0533** (DEC-076; EXTRAIDA_NO_VALIDADA; fuente `0c14ce12-9186-491d-b794-d10eb7ffc9b3`): El sistema evitará generar notificaciones duplicadas.
+- **RN-0534** (DEC-076; EXTRAIDA_NO_VALIDADA; fuente `0c14ce12-9186-491d-b794-d10eb7ffc9b3`): El historial de notificaciones permanecerá disponible para consulta.
+- **RN-0535** (DEC-077; EXTRAIDA_NO_VALIDADA; fuente `08e3b6fd-b8eb-497d-a254-97df043a5da2`): Las notificaciones comerciales tendrán carácter exclusivamente informativo.
+- **RN-0536** (DEC-077; EXTRAIDA_NO_VALIDADA; fuente `08e3b6fd-b8eb-497d-a254-97df043a5da2`): No existirán acciones manuales para marcarlas como leídas o resueltas.
+- **RN-0537** (DEC-077; EXTRAIDA_NO_VALIDADA; fuente `08e3b6fd-b8eb-497d-a254-97df043a5da2`): Las alertas permanecerán visibles mientras exista la situación comercial que las origina.
+- **RN-0538** (DEC-077; EXTRAIDA_NO_VALIDADA; fuente `08e3b6fd-b8eb-497d-a254-97df043a5da2`): Cuando se resuelva la situación, las alertas relacionadas desaparecerán automáticamente de la vista activa.
+- **RN-0539** (DEC-077; EXTRAIDA_NO_VALIDADA; fuente `08e3b6fd-b8eb-497d-a254-97df043a5da2`): La renovación de un contrato actualizará las alertas asociadas a su vencimiento anterior.
+- **RN-0540** (DEC-077; EXTRAIDA_NO_VALIDADA; fuente `08e3b6fd-b8eb-497d-a254-97df043a5da2`): La extensión de una continuidad temporal actualizará las alertas según su nueva fecha límite.
+- **RN-0541** (DEC-077; EXTRAIDA_NO_VALIDADA; fuente `08e3b6fd-b8eb-497d-a254-97df043a5da2`): La desaparición de una alerta no ejecutará ninguna modificación contractual.
+- **RN-0542** (DEC-077; EXTRAIDA_NO_VALIDADA; fuente `08e3b6fd-b8eb-497d-a254-97df043a5da2`): Se conservará un registro técnico de las alertas generadas para auditoría, aunque ya no aparezcan en el panel.
+- **RN-0543** (DEC-078; EXTRAIDA_NO_VALIDADA; fuente `7e2c7375-e22f-4c0c-ac2b-43fb7eb0dc26`): El dashboard mostrará cantidades de clubes, disciplinas y contratos comerciales.
+- **RN-0544** (DEC-078; EXTRAIDA_NO_VALIDADA; fuente `7e2c7375-e22f-4c0c-ac2b-43fb7eb0dc26`): Mostrará pagos online exitosos, importes procesados e ingresos por comisiones de la plataforma.
+- **RN-0545** (DEC-078; EXTRAIDA_NO_VALIDADA; fuente `7e2c7375-e22f-4c0c-ac2b-43fb7eb0dc26`): Incluirá penalizaciones calculadas, aprobadas, pendientes de aprobación y pendientes de cobro.
+- **RN-0546** (DEC-078; EXTRAIDA_NO_VALIDADA; fuente `7e2c7375-e22f-4c0c-ac2b-43fb7eb0dc26`): Mostrará el cumplimiento de los mínimos comerciales de cada contrato.
+- **RN-0547** (DEC-078; EXTRAIDA_NO_VALIDADA; fuente `7e2c7375-e22f-4c0c-ac2b-43fb7eb0dc26`): Incluirá gráficos de evolución mensual de pagos, ingresos y penalizaciones.
+- **RN-0548** (DEC-078; EXTRAIDA_NO_VALIDADA; fuente `7e2c7375-e22f-4c0c-ac2b-43fb7eb0dc26`): Permitirá filtrar por club, disciplina y período.
+- **RN-0549** (DEC-078; EXTRAIDA_NO_VALIDADA; fuente `7e2c7375-e22f-4c0c-ac2b-43fb7eb0dc26`): Los indicadores y gráficos se actualizarán según los filtros seleccionados.
+- **RN-0550** (DEC-078; EXTRAIDA_NO_VALIDADA; fuente `7e2c7375-e22f-4c0c-ac2b-43fb7eb0dc26`): Se distinguirán los pagos online de los pagos externos.
+- **RN-0551** (DEC-078; EXTRAIDA_NO_VALIDADA; fuente `7e2c7375-e22f-4c0c-ac2b-43fb7eb0dc26`): Se respetará la independencia económica de cada disciplina y su responsable contractual.
+- **RN-0552** (DEC-078; EXTRAIDA_NO_VALIDADA; fuente `7e2c7375-e22f-4c0c-ac2b-43fb7eb0dc26`): El dashboard será exclusivo del superadministrador y permitirá consultar información consolidada de toda la plataforma.
+- **RN-0553** (DEC-079; EXTRAIDA_NO_VALIDADA; fuente `f80cd4da-e95a-48cd-9816-32fbba458fc2`): El superadministrador podrá exportar reportes comerciales en formato Excel (`.xlsx`).
+- **RN-0554** (DEC-079; EXTRAIDA_NO_VALIDADA; fuente `f80cd4da-e95a-48cd-9816-32fbba458fc2`): También podrá exportar reportes en formato PDF.
+- **RN-0555** (DEC-079; EXTRAIDA_NO_VALIDADA; fuente `f80cd4da-e95a-48cd-9816-32fbba458fc2`): Las exportaciones respetarán los filtros de club, disciplina y período seleccionados.
+- **RN-0556** (DEC-079; EXTRAIDA_NO_VALIDADA; fuente `f80cd4da-e95a-48cd-9816-32fbba458fc2`): Los reportes incluirán métricas de pagos online, importes procesados y comisiones de la plataforma.
+- **RN-0557** (DEC-079; EXTRAIDA_NO_VALIDADA; fuente `f80cd4da-e95a-48cd-9816-32fbba458fc2`): Incluirán información sobre penalizaciones y liquidaciones comerciales.
+- **RN-0558** (DEC-079; EXTRAIDA_NO_VALIDADA; fuente `f80cd4da-e95a-48cd-9816-32fbba458fc2`): Permitirán consultar el cumplimiento de mínimos comerciales.
+- **RN-0559** (DEC-079; EXTRAIDA_NO_VALIDADA; fuente `f80cd4da-e95a-48cd-9816-32fbba458fc2`): Los reportes identificarán el período, los filtros utilizados y la fecha de generación.
+- **RN-0560** (DEC-079; EXTRAIDA_NO_VALIDADA; fuente `f80cd4da-e95a-48cd-9816-32fbba458fc2`): Las exportaciones conservarán la separación entre pagos online y pagos externos.
+- **RN-0561** (DEC-079; EXTRAIDA_NO_VALIDADA; fuente `f80cd4da-e95a-48cd-9816-32fbba458fc2`): Los importes originales y finales de las penalizaciones se mostrarán diferenciados cuando existan ajustes o condonaciones.
+- **RN-0562** (DEC-079; EXTRAIDA_NO_VALIDADA; fuente `f80cd4da-e95a-48cd-9816-32fbba458fc2`): La exportación global estará disponible únicamente para el superadministrador.
+- **RN-0563** (DEC-080; EXTRAIDA_NO_VALIDADA; fuente `5507f560-3a42-4f4b-b4f1-c493f386cd38`): Cada administrador de disciplina tendrá un dashboard exclusivo de su disciplina.
+- **RN-0564** (DEC-080; EXTRAIDA_NO_VALIDADA; fuente `5507f560-3a42-4f4b-b4f1-c493f386cd38`): El dashboard mostrará jugadores, cuotas generadas, pagos realizados, deudas pendientes y recaudación.
+- **RN-0565** (DEC-080; EXTRAIDA_NO_VALIDADA; fuente `5507f560-3a42-4f4b-b4f1-c493f386cd38`): Incluirá gráficos de evolución, indicadores financieros y filtros por período y categoría.
+- **RN-0566** (DEC-080; EXTRAIDA_NO_VALIDADA; fuente `5507f560-3a42-4f4b-b4f1-c493f386cd38`): Permitirá exportar información en Excel y PDF.
+- **RN-0567** (DEC-080; EXTRAIDA_NO_VALIDADA; fuente `5507f560-3a42-4f4b-b4f1-c493f386cd38`): Los delegados generales tendrán un dashboard consolidado de su club.
+- **RN-0568** (DEC-080; EXTRAIDA_NO_VALIDADA; fuente `5507f560-3a42-4f4b-b4f1-c493f386cd38`): Los delegados podrán consultar estadísticas individuales de cada disciplina de su club.
+- **RN-0569** (DEC-080; EXTRAIDA_NO_VALIDADA; fuente `5507f560-3a42-4f4b-b4f1-c493f386cd38`): El acceso de los delegados a las operaciones deportivas y financieras será exclusivamente de lectura.
+- **RN-0570** (DEC-080; EXTRAIDA_NO_VALIDADA; fuente `5507f560-3a42-4f4b-b4f1-c493f386cd38`): Los administradores de una disciplina no podrán acceder a información privada de otras disciplinas.
+- **RN-0571** (DEC-080; EXTRAIDA_NO_VALIDADA; fuente `5507f560-3a42-4f4b-b4f1-c493f386cd38`): Los usuarios de un club no podrán acceder a información de otros clubes.
+- **RN-0572** (DEC-080; EXTRAIDA_NO_VALIDADA; fuente `5507f560-3a42-4f4b-b4f1-c493f386cd38`): Los indicadores comerciales globales de la plataforma permanecerán reservados al superadministrador.
+- **RN-0573** (DEC-081; EXTRAIDA_NO_VALIDADA; fuente `2f8bb987-778d-496e-aeb7-921494e838d1`): Mostrar el importe nominal de las cuotas cobradas.
+- **RN-0574** (DEC-081; EXTRAIDA_NO_VALIDADA; fuente `2f8bb987-778d-496e-aeb7-921494e838d1`): Diferenciar los cobros online de los pagos externos registrados manualmente.
+- **RN-0575** (DEC-081; EXTRAIDA_NO_VALIDADA; fuente `2f8bb987-778d-496e-aeb7-921494e838d1`): Identificar por separado las comisiones correspondientes a la plataforma.
+- **RN-0576** (DEC-081; EXTRAIDA_NO_VALIDADA; fuente `2f8bb987-778d-496e-aeb7-921494e838d1`): Mostrar los costos de la pasarela de pagos cuando esa información esté disponible.
+- **RN-0577** (DEC-081; EXTRAIDA_NO_VALIDADA; fuente `2f8bb987-778d-496e-aeb7-921494e838d1`): Mostrar el importe neto correspondiente a cada disciplina.
+- **RN-0578** (DEC-081; EXTRAIDA_NO_VALIDADA; fuente `2f8bb987-778d-496e-aeb7-921494e838d1`): Diferenciar el total pagado por el jugador del importe de la cuota deportiva.
+- **RN-0579** (DEC-081; EXTRAIDA_NO_VALIDADA; fuente `2f8bb987-778d-496e-aeb7-921494e838d1`): Evitar contabilizar dos veces una misma operación.
+- **RN-0580** (DEC-081; EXTRAIDA_NO_VALIDADA; fuente `2f8bb987-778d-496e-aeb7-921494e838d1`): Permitir consultar el desglose por operación y de forma consolidada.
+- **RN-0581** (DEC-081; EXTRAIDA_NO_VALIDADA; fuente `2f8bb987-778d-496e-aeb7-921494e838d1`): Aplicar los filtros y permisos establecidos en DEC-080.
+- **RN-0582** (DEC-081; EXTRAIDA_NO_VALIDADA; fuente `2f8bb987-778d-496e-aeb7-921494e838d1`): Incluir el desglose financiero en las exportaciones Excel y PDF.
+- **RN-0583** (DEC-082; EXTRAIDA_NO_VALIDADA; fuente `57d8eaab-1d30-4130-9ae5-c9ff5262b164`): Diferenciar el estado del pago del estado de su liquidación.
+- **RN-0584** (DEC-082; EXTRAIDA_NO_VALIDADA; fuente `57d8eaab-1d30-4130-9ae5-c9ff5262b164`): Registrar pagos aprobados, pendientes de liquidación y liquidados.
+- **RN-0585** (DEC-082; EXTRAIDA_NO_VALIDADA; fuente `57d8eaab-1d30-4130-9ae5-c9ff5262b164`): Consultar automáticamente la información de liquidaciones cuando la pasarela lo permita.
+- **RN-0586** (DEC-082; EXTRAIDA_NO_VALIDADA; fuente `57d8eaab-1d30-4130-9ae5-c9ff5262b164`): Comparar los importes esperados con los efectivamente liquidados.
+- **RN-0587** (DEC-082; EXTRAIDA_NO_VALIDADA; fuente `57d8eaab-1d30-4130-9ae5-c9ff5262b164`): Detectar diferencias de importes, operaciones faltantes y liquidaciones pendientes.
+- **RN-0588** (DEC-082; EXTRAIDA_NO_VALIDADA; fuente `57d8eaab-1d30-4130-9ae5-c9ff5262b164`): Identificar cada diferencia con su operación, club, disciplina y destinatario.
+- **RN-0589** (DEC-082; EXTRAIDA_NO_VALIDADA; fuente `57d8eaab-1d30-4130-9ae5-c9ff5262b164`): Permitir la revisión manual de las diferencias detectadas.
+- **RN-0590** (DEC-082; EXTRAIDA_NO_VALIDADA; fuente `57d8eaab-1d30-4130-9ae5-c9ff5262b164`): Conservar un historial de conciliaciones, resultados y revisiones.
+- **RN-0591** (DEC-082; EXTRAIDA_NO_VALIDADA; fuente `57d8eaab-1d30-4130-9ae5-c9ff5262b164`): Registrar quién realizó una revisión manual, cuándo y qué observaciones agregó.
+- **RN-0592** (DEC-082; EXTRAIDA_NO_VALIDADA; fuente `57d8eaab-1d30-4130-9ae5-c9ff5262b164`): Una conciliación manual no podrá modificar silenciosamente el pago original.
+- **RN-0593** (DEC-082; EXTRAIDA_NO_VALIDADA; fuente `57d8eaab-1d30-4130-9ae5-c9ff5262b164`): Los dashboards financieros distinguirán importes aprobados de importes efectivamente liquidados.
+- **RN-0594** (DEC-082; EXTRAIDA_NO_VALIDADA; fuente `57d8eaab-1d30-4130-9ae5-c9ff5262b164`): La conciliación respetará el aislamiento de información entre clubes y disciplinas.
+- **RN-0595** (DEC-083; EXTRAIDA_NO_VALIDADA; fuente `f5aaa60b-1a58-4222-8420-300fdcf8b08b`): Los administradores de disciplina podrán consultar las diferencias de conciliación correspondientes a su disciplina.
+- **RN-0596** (DEC-083; EXTRAIDA_NO_VALIDADA; fuente `f5aaa60b-1a58-4222-8420-300fdcf8b08b`): Podrán investigar y registrar la resolución de esas diferencias.
+- **RN-0597** (DEC-083; EXTRAIDA_NO_VALIDADA; fuente `f5aaa60b-1a58-4222-8420-300fdcf8b08b`): Ningún administrador podrá gestionar diferencias de otra disciplina.
+- **RN-0598** (DEC-083; EXTRAIDA_NO_VALIDADA; fuente `f5aaa60b-1a58-4222-8420-300fdcf8b08b`): El superadministrador tendrá visibilidad global de las conciliaciones.
+- **RN-0599** (DEC-083; EXTRAIDA_NO_VALIDADA; fuente `f5aaa60b-1a58-4222-8420-300fdcf8b08b`): Los delegados generales podrán consultar las diferencias de todas las disciplinas de su club, exclusivamente en modo lectura.
+- **RN-0600** (DEC-083; EXTRAIDA_NO_VALIDADA; fuente `f5aaa60b-1a58-4222-8420-300fdcf8b08b`): Cada resolución registrará el administrador responsable y la fecha.
+- **RN-0601** (DEC-083; EXTRAIDA_NO_VALIDADA; fuente `f5aaa60b-1a58-4222-8420-300fdcf8b08b`): Se conservará el historial de estados y acciones realizadas.
+- **RN-0602** (DEC-083; EXTRAIDA_NO_VALIDADA; fuente `f5aaa60b-1a58-4222-8420-300fdcf8b08b`): Resolver una diferencia no modificará automáticamente el importe ni el estado del pago original.
+- **RN-0603** (DEC-083; EXTRAIDA_NO_VALIDADA; fuente `f5aaa60b-1a58-4222-8420-300fdcf8b08b`): Las diferencias pendientes y resueltas estarán disponibles en los reportes correspondientes.
+- **RN-0604** (DEC-084; EXTRAIDA_NO_VALIDADA; fuente `ec21859b-b8f9-4184-8357-88339e08a542`): Toda resolución de una diferencia de conciliación requerirá un motivo obligatorio.
+- **RN-0605** (DEC-084; EXTRAIDA_NO_VALIDADA; fuente `ec21859b-b8f9-4184-8357-88339e08a542`): El administrador deberá seleccionar un tipo de resolución.
+- **RN-0606** (DEC-084; EXTRAIDA_NO_VALIDADA; fuente `ec21859b-b8f9-4184-8357-88339e08a542`): Se permitirá adjuntar comprobantes o documentación de manera opcional.
+- **RN-0607** (DEC-084; EXTRAIDA_NO_VALIDADA; fuente `ec21859b-b8f9-4184-8357-88339e08a542`): El sistema registrará automáticamente usuario, fecha y hora de la resolución.
+- **RN-0608** (DEC-084; EXTRAIDA_NO_VALIDADA; fuente `ec21859b-b8f9-4184-8357-88339e08a542`): Se conservarán el importe esperado, el importe liquidado y la diferencia detectada.
+- **RN-0609** (DEC-084; EXTRAIDA_NO_VALIDADA; fuente `ec21859b-b8f9-4184-8357-88339e08a542`): Se almacenará el tipo de resolución seleccionado y la explicación proporcionada.
+- **RN-0610** (DEC-084; EXTRAIDA_NO_VALIDADA; fuente `ec21859b-b8f9-4184-8357-88339e08a542`): El historial conservará los cambios de estado y las intervenciones realizadas.
+- **RN-0611** (DEC-084; EXTRAIDA_NO_VALIDADA; fuente `ec21859b-b8f9-4184-8357-88339e08a542`): Resolver una diferencia no modificará silenciosamente los datos originales del pago.
+- **RN-0612** (DEC-084; EXTRAIDA_NO_VALIDADA; fuente `ec21859b-b8f9-4184-8357-88339e08a542`): El superadministrador podrá auditar las resoluciones de todas las disciplinas.
+- **RN-0613** (DEC-084; EXTRAIDA_NO_VALIDADA; fuente `ec21859b-b8f9-4184-8357-88339e08a542`): Los delegados generales podrán consultar las resoluciones de su club en modo lectura.
+- **RN-0614** (DEC-085; EXTRAIDA_NO_VALIDADA; fuente `d1cf1c9a-0175-41b2-85fd-2250966923b6`): La plataforma tendrá un catálogo global de tipos de resolución de conciliaciones.
+- **RN-0615** (DEC-085; EXTRAIDA_NO_VALIDADA; fuente `d1cf1c9a-0175-41b2-85fd-2250966923b6`): El catálogo incluirá tipos predeterminados desde la configuración inicial.
+- **RN-0616** (DEC-085; EXTRAIDA_NO_VALIDADA; fuente `d1cf1c9a-0175-41b2-85fd-2250966923b6`): El superadministrador podrá crear nuevos tipos de resolución.
+- **RN-0617** (DEC-085; EXTRAIDA_NO_VALIDADA; fuente `d1cf1c9a-0175-41b2-85fd-2250966923b6`): El superadministrador podrá modificar los tipos existentes.
+- **RN-0618** (DEC-085; EXTRAIDA_NO_VALIDADA; fuente `d1cf1c9a-0175-41b2-85fd-2250966923b6`): El superadministrador podrá desactivar tipos sin eliminarlos físicamente.
+- **RN-0619** (DEC-085; EXTRAIDA_NO_VALIDADA; fuente `d1cf1c9a-0175-41b2-85fd-2250966923b6`): Los administradores de disciplina únicamente podrán seleccionar tipos activos.
+- **RN-0620** (DEC-085; EXTRAIDA_NO_VALIDADA; fuente `d1cf1c9a-0175-41b2-85fd-2250966923b6`): Los administradores de disciplina no podrán modificar el catálogo global.
+- **RN-0621** (DEC-085; EXTRAIDA_NO_VALIDADA; fuente `d1cf1c9a-0175-41b2-85fd-2250966923b6`): Los tipos desactivados no estarán disponibles para nuevas resoluciones.
+- **RN-0622** (DEC-085; EXTRAIDA_NO_VALIDADA; fuente `d1cf1c9a-0175-41b2-85fd-2250966923b6`): Las conciliaciones históricas conservarán el tipo y su descripción utilizados originalmente.
+- **RN-0623** (DEC-085; EXTRAIDA_NO_VALIDADA; fuente `d1cf1c9a-0175-41b2-85fd-2250966923b6`): Las modificaciones del catálogo quedarán registradas con usuario, fecha y valores anteriores y nuevos.
+- **RN-0624** (DEC-086; EXTRAIDA_NO_VALIDADA; fuente `fe675ee7-2ca7-447e-af81-c8fd839332ef`): El superadministrador podrá configurar el plazo de alerta para diferencias pendientes.
+- **RN-0625** (DEC-086; EXTRAIDA_NO_VALIDADA; fuente `fe675ee7-2ca7-447e-af81-c8fd839332ef`): El plazo se expresará en días calendario.
+- **RN-0626** (DEC-086; EXTRAIDA_NO_VALIDADA; fuente `fe675ee7-2ca7-447e-af81-c8fd839332ef`): El sistema calculará el tiempo transcurrido desde la detección de cada diferencia.
+- **RN-0627** (DEC-086; EXTRAIDA_NO_VALIDADA; fuente `fe675ee7-2ca7-447e-af81-c8fd839332ef`): Cuando se supere el plazo configurado, se generará una alerta interna.
+- **RN-0628** (DEC-086; EXTRAIDA_NO_VALIDADA; fuente `fe675ee7-2ca7-447e-af81-c8fd839332ef`): La alerta será visible para los administradores de la disciplina afectada.
+- **RN-0629** (DEC-086; EXTRAIDA_NO_VALIDADA; fuente `fe675ee7-2ca7-447e-af81-c8fd839332ef`): El superadministrador también recibirá la alerta en su panel global.
+- **RN-0630** (DEC-086; EXTRAIDA_NO_VALIDADA; fuente `fe675ee7-2ca7-447e-af81-c8fd839332ef`): No se enviarán correos electrónicos para estas alertas.
+- **RN-0631** (DEC-086; EXTRAIDA_NO_VALIDADA; fuente `fe675ee7-2ca7-447e-af81-c8fd839332ef`): El sistema evitará generar alertas duplicadas por una misma diferencia pendiente.
+- **RN-0632** (DEC-086; EXTRAIDA_NO_VALIDADA; fuente `fe675ee7-2ca7-447e-af81-c8fd839332ef`): Cuando se resuelva la diferencia, la alerta desaparecerá automáticamente de la vista activa.
+- **RN-0633** (DEC-086; EXTRAIDA_NO_VALIDADA; fuente `fe675ee7-2ca7-447e-af81-c8fd839332ef`): Se conservará el historial técnico de las alertas generadas.
+- **RN-0634** (DEC-086; EXTRAIDA_NO_VALIDADA; fuente `fe675ee7-2ca7-447e-af81-c8fd839332ef`): Las alertas no modificarán automáticamente el estado de la conciliación ni del pago original.
+- **RN-0635** (DEC-087; EXTRAIDA_NO_VALIDADA; fuente `76036290-0f32-42d3-9df7-3375551f4e28`): Existirá un único plazo global para alertar sobre diferencias de conciliación pendientes.
+- **RN-0636** (DEC-087; EXTRAIDA_NO_VALIDADA; fuente `76036290-0f32-42d3-9df7-3375551f4e28`): Solo el superadministrador podrá configurar o modificar ese plazo.
+- **RN-0637** (DEC-087; EXTRAIDA_NO_VALIDADA; fuente `76036290-0f32-42d3-9df7-3375551f4e28`): El plazo se expresará en días calendario.
+- **RN-0638** (DEC-087; EXTRAIDA_NO_VALIDADA; fuente `76036290-0f32-42d3-9df7-3375551f4e28`): La configuración se aplicará a todos los clubes y disciplinas.
+- **RN-0639** (DEC-087; EXTRAIDA_NO_VALIDADA; fuente `76036290-0f32-42d3-9df7-3375551f4e28`): No existirán excepciones de plazo por club ni por disciplina.
+- **RN-0640** (DEC-087; EXTRAIDA_NO_VALIDADA; fuente `76036290-0f32-42d3-9df7-3375551f4e28`): Las modificaciones del plazo quedarán registradas con usuario, fecha y valores anteriores y nuevos.
+- **RN-0641** (DEC-087; EXTRAIDA_NO_VALIDADA; fuente `76036290-0f32-42d3-9df7-3375551f4e28`): El sistema evaluará las diferencias pendientes utilizando el plazo global vigente.
+- **RN-0642** (DEC-087; EXTRAIDA_NO_VALIDADA; fuente `76036290-0f32-42d3-9df7-3375551f4e28`): Las alertas se mostrarán únicamente dentro de la plataforma, según DEC-086.
+- **RN-0643** (DEC-088; EXTRAIDA_NO_VALIDADA; fuente `a3d22681-e771-4924-b0f5-3db810823dff`): La conciliación automática tendrá una frecuencia de ejecución configurable.
+- **RN-0644** (DEC-088; EXTRAIDA_NO_VALIDADA; fuente `a3d22681-e771-4924-b0f5-3db810823dff`): Solo el superadministrador podrá modificar esa frecuencia.
+- **RN-0645** (DEC-088; EXTRAIDA_NO_VALIDADA; fuente `a3d22681-e771-4924-b0f5-3db810823dff`): La frecuencia será global y se aplicará a todos los clubes y disciplinas.
+- **RN-0646** (DEC-088; EXTRAIDA_NO_VALIDADA; fuente `a3d22681-e771-4924-b0f5-3db810823dff`): La configuración deberá respetar los límites y capacidades de consulta de la pasarela.
+- **RN-0647** (DEC-088; EXTRAIDA_NO_VALIDADA; fuente `a3d22681-e771-4924-b0f5-3db810823dff`): El sistema ejecutará las conciliaciones automáticamente según la frecuencia vigente.
+- **RN-0648** (DEC-088; EXTRAIDA_NO_VALIDADA; fuente `a3d22681-e771-4924-b0f5-3db810823dff`): Cada ejecución registrará fecha, hora, resultado y cantidad de operaciones procesadas.
+- **RN-0649** (DEC-088; EXTRAIDA_NO_VALIDADA; fuente `a3d22681-e771-4924-b0f5-3db810823dff`): Se evitará procesar simultáneamente una misma conciliación de forma incompatible o generar registros duplicados.
+- **RN-0650** (DEC-088; EXTRAIDA_NO_VALIDADA; fuente `a3d22681-e771-4924-b0f5-3db810823dff`): Los cambios de frecuencia quedarán registrados para auditoría.
+- **RN-0651** (DEC-088; EXTRAIDA_NO_VALIDADA; fuente `a3d22681-e771-4924-b0f5-3db810823dff`): Si la pasarela no está disponible, el sistema registrará el error sin modificar incorrectamente los estados financieros.
+- **RN-0652** (DEC-088; EXTRAIDA_NO_VALIDADA; fuente `a3d22681-e771-4924-b0f5-3db810823dff`): Una ejecución posterior podrá volver a consultar las operaciones que continúen pendientes.
+- **RN-0653** (DEC-089; EXTRAIDA_NO_VALIDADA; fuente `b8e3671d-4df5-4d69-87e7-3fb158c090c3`): El superadministrador podrá iniciar conciliaciones manuales de cualquier club o disciplina.
+- **RN-0654** (DEC-089; EXTRAIDA_NO_VALIDADA; fuente `b8e3671d-4df5-4d69-87e7-3fb158c090c3`): Los administradores de disciplina podrán iniciar conciliaciones manuales de sus propias operaciones.
+- **RN-0655** (DEC-089; EXTRAIDA_NO_VALIDADA; fuente `b8e3671d-4df5-4d69-87e7-3fb158c090c3`): Un administrador no podrá ejecutar conciliaciones sobre otras disciplinas.
+- **RN-0656** (DEC-089; EXTRAIDA_NO_VALIDADA; fuente `b8e3671d-4df5-4d69-87e7-3fb158c090c3`): Los delegados generales podrán consultar los resultados de conciliación de su club, pero no iniciar ejecuciones.
+- **RN-0657** (DEC-089; EXTRAIDA_NO_VALIDADA; fuente `b8e3671d-4df5-4d69-87e7-3fb158c090c3`): Las ejecuciones manuales deberán respetar los límites de consulta y disponibilidad de la pasarela.
+- **RN-0658** (DEC-089; EXTRAIDA_NO_VALIDADA; fuente `b8e3671d-4df5-4d69-87e7-3fb158c090c3`): El sistema evitará ejecuciones simultáneas incompatibles y resultados duplicados.
+- **RN-0659** (DEC-089; EXTRAIDA_NO_VALIDADA; fuente `b8e3671d-4df5-4d69-87e7-3fb158c090c3`): Cada ejecución manual registrará el usuario responsable, fecha, hora y alcance.
+- **RN-0660** (DEC-089; EXTRAIDA_NO_VALIDADA; fuente `b8e3671d-4df5-4d69-87e7-3fb158c090c3`): Se registrarán los resultados, las operaciones procesadas y los errores detectados.
+- **RN-0661** (DEC-089; EXTRAIDA_NO_VALIDADA; fuente `b8e3671d-4df5-4d69-87e7-3fb158c090c3`): Una ejecución manual no modificará la frecuencia de conciliación automática configurada.
+- **RN-0662** (DEC-089; EXTRAIDA_NO_VALIDADA; fuente `b8e3671d-4df5-4d69-87e7-3fb158c090c3`): Los resultados se integrarán al historial de conciliaciones y podrán generar o actualizar diferencias pendientes.
+- **RN-0663** (DEC-090; EXTRAIDA_NO_VALIDADA; fuente `fc2c67f1-06ab-4c84-93cf-1552ac7ba1a8`): El usuario podrá iniciar una conciliación de todas las operaciones pendientes dentro de su ámbito autorizado.
+- **RN-0664** (DEC-090; EXTRAIDA_NO_VALIDADA; fuente `fc2c67f1-06ab-4c84-93cf-1552ac7ba1a8`): Podrá seleccionar un rango de fechas para ejecutar la conciliación.
+- **RN-0665** (DEC-090; EXTRAIDA_NO_VALIDADA; fuente `fc2c67f1-06ab-4c84-93cf-1552ac7ba1a8`): Podrá conciliar una operación individual mediante su identificador.
+- **RN-0666** (DEC-090; EXTRAIDA_NO_VALIDADA; fuente `fc2c67f1-06ab-4c84-93cf-1552ac7ba1a8`): El sistema validará que las operaciones seleccionadas pertenezcan al club o disciplina autorizado.
+- **RN-0667** (DEC-090; EXTRAIDA_NO_VALIDADA; fuente `fc2c67f1-06ab-4c84-93cf-1552ac7ba1a8`): El superadministrador podrá utilizar cualquiera de las modalidades sobre cualquier club o disciplina.
+- **RN-0668** (DEC-090; EXTRAIDA_NO_VALIDADA; fuente `fc2c67f1-06ab-4c84-93cf-1552ac7ba1a8`): Los administradores de disciplina solo podrán conciliar operaciones de su disciplina.
+- **RN-0669** (DEC-090; EXTRAIDA_NO_VALIDADA; fuente `fc2c67f1-06ab-4c84-93cf-1552ac7ba1a8`): Las consultas respetarán las capacidades y limitaciones de la pasarela.
+- **RN-0670** (DEC-090; EXTRAIDA_NO_VALIDADA; fuente `fc2c67f1-06ab-4c84-93cf-1552ac7ba1a8`): Cada ejecución registrará el alcance seleccionado y sus parámetros.
+- **RN-0671** (DEC-090; EXTRAIDA_NO_VALIDADA; fuente `fc2c67f1-06ab-4c84-93cf-1552ac7ba1a8`): El sistema evitará generar registros de conciliación duplicados.
+- **RN-0672** (DEC-090; EXTRAIDA_NO_VALIDADA; fuente `fc2c67f1-06ab-4c84-93cf-1552ac7ba1a8`): Los resultados se incorporarán al historial y actualizarán las diferencias correspondientes sin modificar silenciosamente los pagos originales.
+- **RN-0673** (DEC-091; EXTRAIDA_NO_VALIDADA; fuente `77f5302f-9d91-417c-95f6-11b5d8443c40`): El superadministrador podrá configurar la cantidad máxima de reintentos.
+- **RN-0674** (DEC-091; EXTRAIDA_NO_VALIDADA; fuente `77f5302f-9d91-417c-95f6-11b5d8443c40`): Podrá configurar el intervalo de tiempo entre reintentos.
+- **RN-0675** (DEC-091; EXTRAIDA_NO_VALIDADA; fuente `77f5302f-9d91-417c-95f6-11b5d8443c40`): La configuración será global para todas las disciplinas.
+- **RN-0676** (DEC-091; EXTRAIDA_NO_VALIDADA; fuente `77f5302f-9d91-417c-95f6-11b5d8443c40`): Ante un error recuperable de la pasarela, el sistema realizará reintentos automáticos según la configuración vigente.
+- **RN-0677** (DEC-091; EXTRAIDA_NO_VALIDADA; fuente `77f5302f-9d91-417c-95f6-11b5d8443c40`): Las operaciones conciliadas exitosamente conservarán sus resultados.
+- **RN-0678** (DEC-091; EXTRAIDA_NO_VALIDADA; fuente `77f5302f-9d91-417c-95f6-11b5d8443c40`): Solo se volverán a procesar las operaciones fallidas o pendientes.
+- **RN-0679** (DEC-091; EXTRAIDA_NO_VALIDADA; fuente `77f5302f-9d91-417c-95f6-11b5d8443c40`): El sistema evitará generar conciliaciones o resultados duplicados.
+- **RN-0680** (DEC-091; EXTRAIDA_NO_VALIDADA; fuente `77f5302f-9d91-417c-95f6-11b5d8443c40`): Cada intento registrará fecha, hora, operación, resultado y error, cuando corresponda.
+- **RN-0681** (DEC-091; EXTRAIDA_NO_VALIDADA; fuente `77f5302f-9d91-417c-95f6-11b5d8443c40`): Si se agotan los reintentos, las operaciones sin conciliar permanecerán identificadas para su recuperación posterior.
+- **RN-0682** (DEC-091; EXTRAIDA_NO_VALIDADA; fuente `77f5302f-9d91-417c-95f6-11b5d8443c40`): Los reintentos respetarán los límites de consulta de la pasarela.
+- **RN-0683** (DEC-091; EXTRAIDA_NO_VALIDADA; fuente `77f5302f-9d91-417c-95f6-11b5d8443c40`): La recuperación no modificará silenciosamente los pagos originales.
+- **RN-0684** (DEC-091; EXTRAIDA_NO_VALIDADA; fuente `77f5302f-9d91-417c-95f6-11b5d8443c40`): El historial permitirá identificar ejecuciones exitosas, parcialmente exitosas y fallidas.
+- **RN-0685** (DEC-092; EXTRAIDA_NO_VALIDADA; fuente `2df35ebb-ae0c-43af-928c-bf6c47cd5975`): Cuando se agoten los reintentos configurados, las operaciones sin conciliar quedarán identificadas como pendientes por error.
+- **RN-0686** (DEC-092; EXTRAIDA_NO_VALIDADA; fuente `2df35ebb-ae0c-43af-928c-bf6c47cd5975`): El sistema generará una alerta interna para el superadministrador.
+- **RN-0687** (DEC-092; EXTRAIDA_NO_VALIDADA; fuente `2df35ebb-ae0c-43af-928c-bf6c47cd5975`): Los administradores de las disciplinas afectadas también recibirán la alerta en sus respectivos paneles.
+- **RN-0688** (DEC-092; EXTRAIDA_NO_VALIDADA; fuente `2df35ebb-ae0c-43af-928c-bf6c47cd5975`): Las alertas identificarán las operaciones afectadas, la fecha del fallo y el motivo informado.
+- **RN-0689** (DEC-092; EXTRAIDA_NO_VALIDADA; fuente `2df35ebb-ae0c-43af-928c-bf6c47cd5975`): Se conservarán los resultados de las operaciones conciliadas exitosamente.
+- **RN-0690** (DEC-092; EXTRAIDA_NO_VALIDADA; fuente `2df35ebb-ae0c-43af-928c-bf6c47cd5975`): Los usuarios autorizados podrán iniciar una conciliación manual para recuperar las operaciones pendientes.
+- **RN-0691** (DEC-092; EXTRAIDA_NO_VALIDADA; fuente `2df35ebb-ae0c-43af-928c-bf6c47cd5975`): Las recuperaciones respetarán los permisos y alcances definidos en DEC-089 y DEC-090.
+- **RN-0692** (DEC-092; EXTRAIDA_NO_VALIDADA; fuente `2df35ebb-ae0c-43af-928c-bf6c47cd5975`): El sistema evitará ejecuciones incompatibles y resultados duplicados.
+- **RN-0693** (DEC-092; EXTRAIDA_NO_VALIDADA; fuente `2df35ebb-ae0c-43af-928c-bf6c47cd5975`): Las alertas desaparecerán de la vista activa cuando se hayan recuperado las operaciones afectadas.
+- **RN-0694** (DEC-092; EXTRAIDA_NO_VALIDADA; fuente `2df35ebb-ae0c-43af-928c-bf6c47cd5975`): Se conservará el historial de errores, alertas, reintentos y recuperaciones.
+- **RN-0695** (DEC-092; EXTRAIDA_NO_VALIDADA; fuente `2df35ebb-ae0c-43af-928c-bf6c47cd5975`): No se enviarán correos electrónicos para estas alertas.
+- **RN-0696** (DEC-093; EXTRAIDA_NO_VALIDADA; fuente `332c4c37-7fc1-4273-ae43-f9757a125388`): Se conservará el historial completo de todas las conciliaciones financieras.
+- **RN-0697** (DEC-093; EXTRAIDA_NO_VALIDADA; fuente `332c4c37-7fc1-4273-ae43-f9757a125388`): No se eliminarán automáticamente registros por su antigüedad.
+- **RN-0698** (DEC-093; EXTRAIDA_NO_VALIDADA; fuente `332c4c37-7fc1-4273-ae43-f9757a125388`): Se conservarán ejecuciones automáticas y manuales, con sus resultados.
+- **RN-0699** (DEC-093; EXTRAIDA_NO_VALIDADA; fuente `332c4c37-7fc1-4273-ae43-f9757a125388`): Se mantendrá el historial de diferencias detectadas y sus resoluciones.
+- **RN-0700** (DEC-093; EXTRAIDA_NO_VALIDADA; fuente `332c4c37-7fc1-4273-ae43-f9757a125388`): Se conservarán los registros de errores, reintentos y recuperaciones.
+- **RN-0701** (DEC-093; EXTRAIDA_NO_VALIDADA; fuente `332c4c37-7fc1-4273-ae43-f9757a125388`): Las acciones de los usuarios mantendrán su trazabilidad, incluyendo responsable, fecha y modificaciones.
+- **RN-0702** (DEC-093; EXTRAIDA_NO_VALIDADA; fuente `332c4c37-7fc1-4273-ae43-f9757a125388`): El sistema podrá archivar información histórica para mejorar el rendimiento.
+- **RN-0703** (DEC-093; EXTRAIDA_NO_VALIDADA; fuente `332c4c37-7fc1-4273-ae43-f9757a125388`): El archivado no implicará la eliminación de los registros ni la pérdida de su trazabilidad.
+- **RN-0704** (DEC-093; EXTRAIDA_NO_VALIDADA; fuente `332c4c37-7fc1-4273-ae43-f9757a125388`): Los usuarios autorizados podrán consultar información histórica respetando los permisos de club y disciplina.
+- **RN-0705** (DEC-093; EXTRAIDA_NO_VALIDADA; fuente `332c4c37-7fc1-4273-ae43-f9757a125388`): La conservación y el tratamiento de datos deberán ajustarse a las obligaciones legales y de protección de datos aplicables, incluso cuando exijan su eliminación o anonimización.
+- **RN-0706** (DEC-094; EXTRAIDA_NO_VALIDADA; fuente `d7031e9b-8346-4e06-9af4-6d5062d5a06b`): El superadministrador podrá configurar la antigüedad mínima para archivar conciliaciones.
+- **RN-0707** (DEC-094; EXTRAIDA_NO_VALIDADA; fuente `d7031e9b-8346-4e06-9af4-6d5062d5a06b`): La antigüedad se expresará en meses.
+- **RN-0708** (DEC-094; EXTRAIDA_NO_VALIDADA; fuente `d7031e9b-8346-4e06-9af4-6d5062d5a06b`): La configuración será global para todos los clubes y disciplinas.
+- **RN-0709** (DEC-094; EXTRAIDA_NO_VALIDADA; fuente `d7031e9b-8346-4e06-9af4-6d5062d5a06b`): El sistema identificará automáticamente los registros que cumplan la antigüedad configurada.
+- **RN-0710** (DEC-094; EXTRAIDA_NO_VALIDADA; fuente `d7031e9b-8346-4e06-9af4-6d5062d5a06b`): El archivado se realizará automáticamente, sin requerir intervención manual en cada ejecución.
+- **RN-0711** (DEC-094; EXTRAIDA_NO_VALIDADA; fuente `d7031e9b-8346-4e06-9af4-6d5062d5a06b`): El archivado no eliminará los registros financieros ni sus auditorías.
+- **RN-0712** (DEC-094; EXTRAIDA_NO_VALIDADA; fuente `d7031e9b-8346-4e06-9af4-6d5062d5a06b`): Las conciliaciones archivadas continuarán disponibles para consultas históricas autorizadas.
+- **RN-0713** (DEC-094; EXTRAIDA_NO_VALIDADA; fuente `d7031e9b-8346-4e06-9af4-6d5062d5a06b`): Los permisos de acceso se mantendrán tanto para registros activos como archivados.
+- **RN-0714** (DEC-094; EXTRAIDA_NO_VALIDADA; fuente `d7031e9b-8346-4e06-9af4-6d5062d5a06b`): Los cambios en la configuración de archivado quedarán auditados.
+- **RN-0715** (DEC-094; EXTRAIDA_NO_VALIDADA; fuente `d7031e9b-8346-4e06-9af4-6d5062d5a06b`): El archivado no deberá interferir con conciliaciones o diferencias todavía pendientes de resolución.
+- **RN-0716** (DEC-094; EXTRAIDA_NO_VALIDADA; fuente `d7031e9b-8346-4e06-9af4-6d5062d5a06b`): La conservación de información respetará las obligaciones legales aplicables, según DEC-093.
+- **RN-0717** (DEC-095; EXTRAIDA_NO_VALIDADA; fuente `6629c31c-b616-4ee7-81d5-8ef0df490bc5`): Existirá un único módulo de consulta de conciliaciones recientes y archivadas.
+- **RN-0718** (DEC-095; EXTRAIDA_NO_VALIDADA; fuente `6629c31c-b616-4ee7-81d5-8ef0df490bc5`): Los usuarios podrán filtrar por período, club, disciplina, estado e identificador de operación, según sus permisos.
+- **RN-0719** (DEC-095; EXTRAIDA_NO_VALIDADA; fuente `6629c31c-b616-4ee7-81d5-8ef0df490bc5`): El sistema identificará automáticamente si la información solicitada está en almacenamiento operativo o archivado.
+- **RN-0720** (DEC-095; EXTRAIDA_NO_VALIDADA; fuente `6629c31c-b616-4ee7-81d5-8ef0df490bc5`): Los registros archivados se recuperarán para consulta sin intervención manual del usuario.
+- **RN-0721** (DEC-095; EXTRAIDA_NO_VALIDADA; fuente `6629c31c-b616-4ee7-81d5-8ef0df490bc5`): La interfaz mantendrá una experiencia de búsqueda uniforme para ambos tipos de registros.
+- **RN-0722** (DEC-095; EXTRAIDA_NO_VALIDADA; fuente `6629c31c-b616-4ee7-81d5-8ef0df490bc5`): Se informará al usuario cuando una consulta histórica requiera mayor tiempo de procesamiento.
+- **RN-0723** (DEC-095; EXTRAIDA_NO_VALIDADA; fuente `6629c31c-b616-4ee7-81d5-8ef0df490bc5`): Los administradores de disciplina solo podrán consultar conciliaciones de su propia disciplina.
+- **RN-0724** (DEC-095; EXTRAIDA_NO_VALIDADA; fuente `6629c31c-b616-4ee7-81d5-8ef0df490bc5`): Los delegados generales podrán consultar el historial de las disciplinas de su club en modo lectura.
+- **RN-0725** (DEC-095; EXTRAIDA_NO_VALIDADA; fuente `6629c31c-b616-4ee7-81d5-8ef0df490bc5`): El superadministrador podrá consultar el historial global de la plataforma.
+- **RN-0726** (DEC-095; EXTRAIDA_NO_VALIDADA; fuente `6629c31c-b616-4ee7-81d5-8ef0df490bc5`): Las consultas históricas conservarán el detalle de operaciones, diferencias, resoluciones y auditorías.
+- **RN-0727** (DEC-095; EXTRAIDA_NO_VALIDADA; fuente `6629c31c-b616-4ee7-81d5-8ef0df490bc5`): Consultar información archivada no modificará su estado ni sus registros originales.
+- **RN-0728** (DEC-096; EXTRAIDA_NO_VALIDADA; fuente `a207b1c0-000a-4df3-b3ec-497350472f73`): Se permitirá exportar conciliaciones recientes y archivadas en Excel (`.xlsx`).
+- **RN-0729** (DEC-096; EXTRAIDA_NO_VALIDADA; fuente `a207b1c0-000a-4df3-b3ec-497350472f73`): También se permitirá exportarlas en PDF.
+- **RN-0730** (DEC-096; EXTRAIDA_NO_VALIDADA; fuente `a207b1c0-000a-4df3-b3ec-497350472f73`): Las exportaciones incluirán el detalle de las operaciones conciliadas.
+- **RN-0731** (DEC-096; EXTRAIDA_NO_VALIDADA; fuente `a207b1c0-000a-4df3-b3ec-497350472f73`): Se incluirán las diferencias detectadas y sus importes.
+- **RN-0732** (DEC-096; EXTRAIDA_NO_VALIDADA; fuente `a207b1c0-000a-4df3-b3ec-497350472f73`): Se incluirán los tipos de resolución, motivos y responsables.
+- **RN-0733** (DEC-096; EXTRAIDA_NO_VALIDADA; fuente `a207b1c0-000a-4df3-b3ec-497350472f73`): Los reportes incorporarán la trazabilidad de ejecuciones, reintentos y modificaciones.
+- **RN-0734** (DEC-096; EXTRAIDA_NO_VALIDADA; fuente `a207b1c0-000a-4df3-b3ec-497350472f73`): Las exportaciones respetarán los filtros de período, club, disciplina, estado e identificador.
+- **RN-0735** (DEC-096; EXTRAIDA_NO_VALIDADA; fuente `a207b1c0-000a-4df3-b3ec-497350472f73`): Se aplicarán los mismos permisos de acceso definidos para las consultas.
+- **RN-0736** (DEC-096; EXTRAIDA_NO_VALIDADA; fuente `a207b1c0-000a-4df3-b3ec-497350472f73`): Cada exportación registrará usuario, fecha, hora, formato y alcance de los datos.
+- **RN-0737** (DEC-096; EXTRAIDA_NO_VALIDADA; fuente `a207b1c0-000a-4df3-b3ec-497350472f73`): Los registros de exportación permanecerán disponibles para auditoría.
+- **RN-0738** (DEC-096; EXTRAIDA_NO_VALIDADA; fuente `a207b1c0-000a-4df3-b3ec-497350472f73`): La exportación de información archivada no modificará los registros originales.
+- **RN-0739** (DEC-096; EXTRAIDA_NO_VALIDADA; fuente `a207b1c0-000a-4df3-b3ec-497350472f73`): Si una exportación requiere recuperar un volumen importante de información histórica, el sistema informará su estado de procesamiento.
+- **RN-0740** (DEC-097; EXTRAIDA_NO_VALIDADA; fuente `c8dced5c-5f12-483c-9ce6-b4f3295a8c06`): Las exportaciones pequeñas se generarán y descargarán inmediatamente.
+- **RN-0741** (DEC-097; EXTRAIDA_NO_VALIDADA; fuente `c8dced5c-5f12-483c-9ce6-b4f3295a8c06`): Las exportaciones grandes se procesarán mediante tareas en segundo plano.
+- **RN-0742** (DEC-097; EXTRAIDA_NO_VALIDADA; fuente `c8dced5c-5f12-483c-9ce6-b4f3295a8c06`): El usuario podrá continuar utilizando la plataforma mientras se genera un archivo.
+- **RN-0743** (DEC-097; EXTRAIDA_NO_VALIDADA; fuente `c8dced5c-5f12-483c-9ce6-b4f3295a8c06`): El sistema determinará si una exportación requiere procesamiento en segundo plano según su volumen estimado.
+- **RN-0744** (DEC-097; EXTRAIDA_NO_VALIDADA; fuente `c8dced5c-5f12-483c-9ce6-b4f3295a8c06`): Cada solicitud tendrá un identificador único.
+- **RN-0745** (DEC-097; EXTRAIDA_NO_VALIDADA; fuente `c8dced5c-5f12-483c-9ce6-b4f3295a8c06`): Se registrarán los estados: pendiente, en proceso, completada y fallida.
+- **RN-0746** (DEC-097; EXTRAIDA_NO_VALIDADA; fuente `c8dced5c-5f12-483c-9ce6-b4f3295a8c06`): Los usuarios podrán consultar el historial de sus solicitudes.
+- **RN-0747** (DEC-097; EXTRAIDA_NO_VALIDADA; fuente `c8dced5c-5f12-483c-9ce6-b4f3295a8c06`): Los archivos completados estarán disponibles para su descarga según los permisos correspondientes.
+- **RN-0748** (DEC-097; EXTRAIDA_NO_VALIDADA; fuente `c8dced5c-5f12-483c-9ce6-b4f3295a8c06`): Las solicitudes fallidas podrán reintentarse sin duplicar registros financieros.
+- **RN-0749** (DEC-097; EXTRAIDA_NO_VALIDADA; fuente `c8dced5c-5f12-483c-9ce6-b4f3295a8c06`): Los reintentos conservarán la trazabilidad de la solicitud original.
+- **RN-0750** (DEC-097; EXTRAIDA_NO_VALIDADA; fuente `c8dced5c-5f12-483c-9ce6-b4f3295a8c06`): Se registrarán el usuario solicitante, los filtros, el formato, las fechas y los resultados.
+- **RN-0751** (DEC-097; EXTRAIDA_NO_VALIDADA; fuente `c8dced5c-5f12-483c-9ce6-b4f3295a8c06`): Los procesos de exportación respetarán los permisos y el aislamiento entre clubes y disciplinas.
+- **RN-0752** (DEC-098; EXTRAIDA_NO_VALIDADA; fuente `0d2a5aae-6b1d-4f14-94e6-48658b8ffc7c`): El superadministrador podrá configurar el plazo de retención de archivos exportados, expresado en días.
+- **RN-0753** (DEC-098; EXTRAIDA_NO_VALIDADA; fuente `0d2a5aae-6b1d-4f14-94e6-48658b8ffc7c`): La configuración será global para todos los clubes y disciplinas.
+- **RN-0754** (DEC-098; EXTRAIDA_NO_VALIDADA; fuente `0d2a5aae-6b1d-4f14-94e6-48658b8ffc7c`): El plazo comenzará cuando el archivo termine de generarse correctamente.
+- **RN-0755** (DEC-098; EXTRAIDA_NO_VALIDADA; fuente `0d2a5aae-6b1d-4f14-94e6-48658b8ffc7c`): Los archivos Excel y PDF permanecerán disponibles para descarga durante el período configurado.
+- **RN-0756** (DEC-098; EXTRAIDA_NO_VALIDADA; fuente `0d2a5aae-6b1d-4f14-94e6-48658b8ffc7c`): Al vencer el plazo, el sistema eliminará automáticamente los archivos generados.
+- **RN-0757** (DEC-098; EXTRAIDA_NO_VALIDADA; fuente `0d2a5aae-6b1d-4f14-94e6-48658b8ffc7c`): La eliminación de archivos no afectará los registros financieros originales.
+- **RN-0758** (DEC-098; EXTRAIDA_NO_VALIDADA; fuente `0d2a5aae-6b1d-4f14-94e6-48658b8ffc7c`): El historial de solicitudes de exportación permanecerá disponible para auditoría.
+- **RN-0759** (DEC-098; EXTRAIDA_NO_VALIDADA; fuente `0d2a5aae-6b1d-4f14-94e6-48658b8ffc7c`): Los usuarios podrán solicitar una nueva exportación cuando el archivo anterior haya vencido.
+- **RN-0760** (DEC-098; EXTRAIDA_NO_VALIDADA; fuente `0d2a5aae-6b1d-4f14-94e6-48658b8ffc7c`): Las nuevas exportaciones respetarán los permisos y filtros correspondientes.
+- **RN-0761** (DEC-098; EXTRAIDA_NO_VALIDADA; fuente `0d2a5aae-6b1d-4f14-94e6-48658b8ffc7c`): El sistema identificará los archivos vencidos y evitará ofrecer enlaces de descarga inválidos.
+- **RN-0762** (DEC-098; EXTRAIDA_NO_VALIDADA; fuente `0d2a5aae-6b1d-4f14-94e6-48658b8ffc7c`): Los cambios en la configuración de retención quedarán auditados.
+- **RN-0763** (DEC-098; EXTRAIDA_NO_VALIDADA; fuente `0d2a5aae-6b1d-4f14-94e6-48658b8ffc7c`): Las eliminaciones automáticas se registrarán con fecha, archivo y resultado.
+- **RN-0764** (DEC-099; EXTRAIDA_NO_VALIDADA; fuente `65713ba6-3dba-4bdc-8620-3fa14e81adc6`): Los archivos exportados no serán exclusivos del usuario que los generó.
+- **RN-0765** (DEC-099; EXTRAIDA_NO_VALIDADA; fuente `65713ba6-3dba-4bdc-8620-3fa14e81adc6`): Solo podrán descargarlos usuarios autenticados y autorizados.
+- **RN-0766** (DEC-099; EXTRAIDA_NO_VALIDADA; fuente `65713ba6-3dba-4bdc-8620-3fa14e81adc6`): Los administradores de disciplina podrán acceder únicamente a archivos correspondientes a su disciplina.
+- **RN-0767** (DEC-099; EXTRAIDA_NO_VALIDADA; fuente `65713ba6-3dba-4bdc-8620-3fa14e81adc6`): Los delegados generales podrán descargar archivos correspondientes a las disciplinas de su club, según sus permisos de lectura.
+- **RN-0768** (DEC-099; EXTRAIDA_NO_VALIDADA; fuente `65713ba6-3dba-4bdc-8620-3fa14e81adc6`): El superadministrador tendrá acceso global a los archivos exportados.
+- **RN-0769** (DEC-099; EXTRAIDA_NO_VALIDADA; fuente `65713ba6-3dba-4bdc-8620-3fa14e81adc6`): El sistema verificará los permisos vigentes en cada solicitud de descarga.
+- **RN-0770** (DEC-099; EXTRAIDA_NO_VALIDADA; fuente `65713ba6-3dba-4bdc-8620-3fa14e81adc6`): Si un usuario pierde los permisos necesarios, dejará de poder descargar los archivos afectados.
+- **RN-0771** (DEC-099; EXTRAIDA_NO_VALIDADA; fuente `65713ba6-3dba-4bdc-8620-3fa14e81adc6`): No se permitirán descargas mediante enlaces públicos sin autorización.
+- **RN-0772** (DEC-099; EXTRAIDA_NO_VALIDADA; fuente `65713ba6-3dba-4bdc-8620-3fa14e81adc6`): El sistema verificará que el contenido del archivo esté dentro del alcance autorizado para el usuario.
+- **RN-0773** (DEC-099; EXTRAIDA_NO_VALIDADA; fuente `65713ba6-3dba-4bdc-8620-3fa14e81adc6`): Cada descarga registrará usuario, fecha, hora, archivo y resultado.
+- **RN-0774** (DEC-099; EXTRAIDA_NO_VALIDADA; fuente `65713ba6-3dba-4bdc-8620-3fa14e81adc6`): Los intentos de descarga rechazados quedarán registrados para auditoría de seguridad.
+- **RN-0775** (DEC-099; EXTRAIDA_NO_VALIDADA; fuente `65713ba6-3dba-4bdc-8620-3fa14e81adc6`): Los archivos vencidos según DEC-098 no podrán descargarse, aunque el usuario tenga permisos.
+- **RN-0776** (DEC-100; EXTRAIDA_NO_VALIDADA; fuente `b8fa336f-7807-44ec-9521-15a3c8e602c4`): Las descargas deberán iniciarse desde una sesión autenticada.
+- **RN-0777** (DEC-100; EXTRAIDA_NO_VALIDADA; fuente `b8fa336f-7807-44ec-9521-15a3c8e602c4`): El sistema validará los permisos vigentes del usuario antes de autorizar cada descarga.
+- **RN-0778** (DEC-100; EXTRAIDA_NO_VALIDADA; fuente `b8fa336f-7807-44ec-9521-15a3c8e602c4`): Se comprobará que el archivo corresponda al club y las disciplinas autorizadas.
+- **RN-0779** (DEC-100; EXTRAIDA_NO_VALIDADA; fuente `b8fa336f-7807-44ec-9521-15a3c8e602c4`): Cada descarga autorizada utilizará un enlace temporal protegido.
+- **RN-0780** (DEC-100; EXTRAIDA_NO_VALIDADA; fuente `b8fa336f-7807-44ec-9521-15a3c8e602c4`): Los enlaces tendrán un tiempo de expiración corto y configurable técnicamente.
+- **RN-0781** (DEC-100; EXTRAIDA_NO_VALIDADA; fuente `b8fa336f-7807-44ec-9521-15a3c8e602c4`): Los enlaces estarán vinculados a la autorización del usuario solicitante.
+- **RN-0782** (DEC-100; EXTRAIDA_NO_VALIDADA; fuente `b8fa336f-7807-44ec-9521-15a3c8e602c4`): Un tercero no podrá descargar el archivo simplemente por conocer el enlace.
+- **RN-0783** (DEC-100; EXTRAIDA_NO_VALIDADA; fuente `b8fa336f-7807-44ec-9521-15a3c8e602c4`): Los enlaces vencidos serán rechazados.
+- **RN-0784** (DEC-100; EXTRAIDA_NO_VALIDADA; fuente `b8fa336f-7807-44ec-9521-15a3c8e602c4`): Si los permisos del usuario fueron revocados, se impedirá la descarga.
+- **RN-0785** (DEC-100; EXTRAIDA_NO_VALIDADA; fuente `b8fa336f-7807-44ec-9521-15a3c8e602c4`): Los archivos eliminados por vencimiento según DEC-098 no podrán descargarse.
+- **RN-0786** (DEC-100; EXTRAIDA_NO_VALIDADA; fuente `b8fa336f-7807-44ec-9521-15a3c8e602c4`): Cada solicitud de descarga registrará usuario, fecha, hora, archivo y resultado.
+- **RN-0787** (DEC-100; EXTRAIDA_NO_VALIDADA; fuente `b8fa336f-7807-44ec-9521-15a3c8e602c4`): Los accesos rechazados quedarán registrados para auditoría.
+- **RN-0788** (DEC-100; EXTRAIDA_NO_VALIDADA; fuente `b8fa336f-7807-44ec-9521-15a3c8e602c4`): La protección de los enlaces deberá impedir que se utilicen para acceder a archivos de otros clubes o disciplinas.
+- **RN-0789** (DEC-101; EXTRAIDA_NO_VALIDADA; fuente `7b7affad-3ce5-4624-8b70-076475630035`): Los archivos Excel y PDF generados se almacenarán en repositorios privados.
+- **RN-0790** (DEC-101; EXTRAIDA_NO_VALIDADA; fuente `7b7affad-3ce5-4624-8b70-076475630035`): Los archivos estarán cifrados mientras permanezcan almacenados.
+- **RN-0791** (DEC-101; EXTRAIDA_NO_VALIDADA; fuente `7b7affad-3ce5-4624-8b70-076475630035`): Existirá segregación lógica de archivos por club y disciplina.
+- **RN-0792** (DEC-101; EXTRAIDA_NO_VALIDADA; fuente `7b7affad-3ce5-4624-8b70-076475630035`): Ningún usuario podrá acceder directamente al almacenamiento sin pasar por los controles de autorización.
+- **RN-0793** (DEC-101; EXTRAIDA_NO_VALIDADA; fuente `7b7affad-3ce5-4624-8b70-076475630035`): El backend verificará los permisos vigentes antes de entregar un archivo.
+- **RN-0794** (DEC-101; EXTRAIDA_NO_VALIDADA; fuente `7b7affad-3ce5-4624-8b70-076475630035`): Las claves de cifrado se gestionarán mediante mecanismos seguros, separados del contenido almacenado.
+- **RN-0795** (DEC-101; EXTRAIDA_NO_VALIDADA; fuente `7b7affad-3ce5-4624-8b70-076475630035`): Las credenciales y claves no se expondrán en enlaces de descarga ni en respuestas públicas.
+- **RN-0796** (DEC-101; EXTRAIDA_NO_VALIDADA; fuente `7b7affad-3ce5-4624-8b70-076475630035`): Se registrarán las operaciones de acceso, descarga y eliminación de archivos.
+- **RN-0797** (DEC-101; EXTRAIDA_NO_VALIDADA; fuente `7b7affad-3ce5-4624-8b70-076475630035`): Los archivos se eliminarán al vencer el plazo configurado en DEC-098.
+- **RN-0798** (DEC-101; EXTRAIDA_NO_VALIDADA; fuente `7b7affad-3ce5-4624-8b70-076475630035`): La eliminación de archivos no afectará los registros financieros originales ni sus auditorías.
+- **RN-0799** (DEC-101; EXTRAIDA_NO_VALIDADA; fuente `7b7affad-3ce5-4624-8b70-076475630035`): Los controles de almacenamiento serán coherentes con las autorizaciones y enlaces temporales definidos en DEC-099 y DEC-100.
+- **RN-0800** (DEC-101; EXTRAIDA_NO_VALIDADA; fuente `7b7affad-3ce5-4624-8b70-076475630035`): El sistema impedirá que errores en la identificación de club o disciplina expongan archivos de otros ámbitos.
+- **RN-0801** (DEC-102; EXTRAIDA_NO_VALIDADA; fuente `7f6e4393-a02a-465f-9fd0-701ea051b0d5`): El superadministrador podrá configurar la cantidad máxima de reintentos automáticos de exportaciones.
+- **RN-0802** (DEC-102; EXTRAIDA_NO_VALIDADA; fuente `7f6e4393-a02a-465f-9fd0-701ea051b0d5`): Podrá configurar el intervalo de tiempo entre reintentos.
+- **RN-0803** (DEC-102; EXTRAIDA_NO_VALIDADA; fuente `7f6e4393-a02a-465f-9fd0-701ea051b0d5`): La configuración será global para todos los clubes y disciplinas.
+- **RN-0804** (DEC-102; EXTRAIDA_NO_VALIDADA; fuente `7f6e4393-a02a-465f-9fd0-701ea051b0d5`): Las exportaciones grandes fallidas por errores recuperables se reintentarán automáticamente.
+- **RN-0805** (DEC-102; EXTRAIDA_NO_VALIDADA; fuente `7f6e4393-a02a-465f-9fd0-701ea051b0d5`): El sistema podrá recuperar tareas interrumpidas por reinicios o fallos del servidor.
+- **RN-0806** (DEC-102; EXTRAIDA_NO_VALIDADA; fuente `7f6e4393-a02a-465f-9fd0-701ea051b0d5`): Los reintentos no deberán generar archivos finales duplicados para una misma solicitud.
+- **RN-0807** (DEC-102; EXTRAIDA_NO_VALIDADA; fuente `7f6e4393-a02a-465f-9fd0-701ea051b0d5`): Cada intento registrará fecha, hora, resultado y causa del error, cuando corresponda.
+- **RN-0808** (DEC-102; EXTRAIDA_NO_VALIDADA; fuente `7f6e4393-a02a-465f-9fd0-701ea051b0d5`): Las solicitudes conservarán su identificador original durante los reintentos automáticos.
+- **RN-0809** (DEC-102; EXTRAIDA_NO_VALIDADA; fuente `7f6e4393-a02a-465f-9fd0-701ea051b0d5`): Cuando se agoten los reintentos, la solicitud quedará en estado *fallida*.
+- **RN-0810** (DEC-102; EXTRAIDA_NO_VALIDADA; fuente `7f6e4393-a02a-465f-9fd0-701ea051b0d5`): Los usuarios autorizados podrán iniciar manualmente una nueva ejecución de una exportación fallida.
+- **RN-0811** (DEC-102; EXTRAIDA_NO_VALIDADA; fuente `7f6e4393-a02a-465f-9fd0-701ea051b0d5`): Las recuperaciones respetarán los permisos, filtros y controles de seguridad definidos anteriormente.
+- **RN-0812** (DEC-102; EXTRAIDA_NO_VALIDADA; fuente `7f6e4393-a02a-465f-9fd0-701ea051b0d5`): Los archivos incompletos no estarán disponibles para descarga.
+- **RN-0813** (DEC-102; EXTRAIDA_NO_VALIDADA; fuente `7f6e4393-a02a-465f-9fd0-701ea051b0d5`): El historial conservará la trazabilidad de todos los intentos y recuperaciones.
+- **RN-0814** (DEC-103; EXTRAIDA_NO_VALIDADA; fuente `528439cc-d4d8-4c81-8a9e-714827acb7ef`): Las exportaciones en segundo plano generarán una notificación interna al completarse correctamente.
+- **RN-0815** (DEC-103; EXTRAIDA_NO_VALIDADA; fuente `528439cc-d4d8-4c81-8a9e-714827acb7ef`): También se notificará cuando una exportación falle definitivamente tras agotar los reintentos.
+- **RN-0816** (DEC-103; EXTRAIDA_NO_VALIDADA; fuente `528439cc-d4d8-4c81-8a9e-714827acb7ef`): Las notificaciones se dirigirán al usuario que solicitó la exportación.
+- **RN-0817** (DEC-103; EXTRAIDA_NO_VALIDADA; fuente `528439cc-d4d8-4c81-8a9e-714827acb7ef`): Las notificaciones estarán disponibles dentro de la plataforma.
+- **RN-0818** (DEC-103; EXTRAIDA_NO_VALIDADA; fuente `528439cc-d4d8-4c81-8a9e-714827acb7ef`): No se enviarán correos electrónicos por estos eventos.
+- **RN-0819** (DEC-103; EXTRAIDA_NO_VALIDADA; fuente `528439cc-d4d8-4c81-8a9e-714827acb7ef`): No se incluirán archivos Excel o PDF adjuntos a las notificaciones.
+- **RN-0820** (DEC-103; EXTRAIDA_NO_VALIDADA; fuente `528439cc-d4d8-4c81-8a9e-714827acb7ef`): Cada notificación identificará la exportación y su estado final.
+- **RN-0821** (DEC-103; EXTRAIDA_NO_VALIDADA; fuente `528439cc-d4d8-4c81-8a9e-714827acb7ef`): Las notificaciones permitirán acceder al centro de exportaciones.
+- **RN-0822** (DEC-103; EXTRAIDA_NO_VALIDADA; fuente `528439cc-d4d8-4c81-8a9e-714827acb7ef`): El acceso desde una notificación no omitirá las verificaciones de permisos.
+- **RN-0823** (DEC-103; EXTRAIDA_NO_VALIDADA; fuente `528439cc-d4d8-4c81-8a9e-714827acb7ef`): Los archivos vencidos o eliminados no podrán descargarse desde una notificación antigua.
+- **RN-0824** (DEC-103; EXTRAIDA_NO_VALIDADA; fuente `528439cc-d4d8-4c81-8a9e-714827acb7ef`): El sistema evitará notificaciones duplicadas por reintentos automáticos.
+- **RN-0825** (DEC-103; EXTRAIDA_NO_VALIDADA; fuente `528439cc-d4d8-4c81-8a9e-714827acb7ef`): Los eventos de notificación conservarán su trazabilidad.
+- **RN-0826** (DEC-104; EXTRAIDA_NO_VALIDADA; fuente `aae06cee-31d1-4977-aa6e-6e8bc7b62794`): Cada usuario dispondrá de un centro de notificaciones interno.
+- **RN-0827** (DEC-104; EXTRAIDA_NO_VALIDADA; fuente `aae06cee-31d1-4977-aa6e-6e8bc7b62794`): Las notificaciones de exportaciones tendrán estados *leída* y *no leída*.
+- **RN-0828** (DEC-104; EXTRAIDA_NO_VALIDADA; fuente `aae06cee-31d1-4977-aa6e-6e8bc7b62794`): Las notificaciones nuevas se registrarán inicialmente como no leídas.
+- **RN-0829** (DEC-104; EXTRAIDA_NO_VALIDADA; fuente `aae06cee-31d1-4977-aa6e-6e8bc7b62794`): El usuario podrá marcar individualmente una notificación como leída.
+- **RN-0830** (DEC-104; EXTRAIDA_NO_VALIDADA; fuente `aae06cee-31d1-4977-aa6e-6e8bc7b62794`): El usuario podrá marcar todas sus notificaciones como leídas mediante una acción masiva.
+- **RN-0831** (DEC-104; EXTRAIDA_NO_VALIDADA; fuente `aae06cee-31d1-4977-aa6e-6e8bc7b62794`): Se mostrará un contador de notificaciones no leídas.
+- **RN-0832** (DEC-104; EXTRAIDA_NO_VALIDADA; fuente `aae06cee-31d1-4977-aa6e-6e8bc7b62794`): El usuario podrá consultar notificaciones anteriores.
+- **RN-0833** (DEC-104; EXTRAIDA_NO_VALIDADA; fuente `aae06cee-31d1-4977-aa6e-6e8bc7b62794`): Las notificaciones estarán asociadas al usuario destinatario y a la exportación correspondiente.
+- **RN-0834** (DEC-104; EXTRAIDA_NO_VALIDADA; fuente `aae06cee-31d1-4977-aa6e-6e8bc7b62794`): Un usuario no podrá consultar ni modificar las notificaciones privadas de otro usuario.
+- **RN-0835** (DEC-104; EXTRAIDA_NO_VALIDADA; fuente `aae06cee-31d1-4977-aa6e-6e8bc7b62794`): Marcar una notificación como leída no modificará el estado de la exportación.
+- **RN-0836** (DEC-104; EXTRAIDA_NO_VALIDADA; fuente `aae06cee-31d1-4977-aa6e-6e8bc7b62794`): La lectura de una notificación no eliminará ni extenderá la disponibilidad del archivo.
+- **RN-0837** (DEC-104; EXTRAIDA_NO_VALIDADA; fuente `aae06cee-31d1-4977-aa6e-6e8bc7b62794`): El historial de exportaciones y sus auditorías permanecerá independiente del estado de lectura.
+- **RN-0838** (DEC-104; EXTRAIDA_NO_VALIDADA; fuente `aae06cee-31d1-4977-aa6e-6e8bc7b62794`): Las notificaciones históricas respetarán las restricciones de acceso a la información asociada.
+- **RN-0839** (DEC-105; EXTRAIDA_NO_VALIDADA; fuente `d99d4980-aea8-4501-b575-c6555e296d9c`): El superadministrador podrá configurar el período de visibilidad de las notificaciones internas.
+- **RN-0840** (DEC-105; EXTRAIDA_NO_VALIDADA; fuente `d99d4980-aea8-4501-b575-c6555e296d9c`): El período se expresará en días.
+- **RN-0841** (DEC-105; EXTRAIDA_NO_VALIDADA; fuente `d99d4980-aea8-4501-b575-c6555e296d9c`): La configuración será global para todos los clubes y disciplinas.
+- **RN-0842** (DEC-105; EXTRAIDA_NO_VALIDADA; fuente `d99d4980-aea8-4501-b575-c6555e296d9c`): El plazo comenzará desde la fecha de creación de cada notificación.
+- **RN-0843** (DEC-105; EXTRAIDA_NO_VALIDADA; fuente `d99d4980-aea8-4501-b575-c6555e296d9c`): Las notificaciones vencidas se retirarán automáticamente del centro de notificaciones.
+- **RN-0844** (DEC-105; EXTRAIDA_NO_VALIDADA; fuente `d99d4980-aea8-4501-b575-c6555e296d9c`): La política se aplicará tanto a notificaciones leídas como no leídas.
+- **RN-0845** (DEC-105; EXTRAIDA_NO_VALIDADA; fuente `d99d4980-aea8-4501-b575-c6555e296d9c`): Las notificaciones retiradas dejarán de contabilizarse como pendientes de lectura.
+- **RN-0846** (DEC-105; EXTRAIDA_NO_VALIDADA; fuente `d99d4980-aea8-4501-b575-c6555e296d9c`): La eliminación de visibilidad no afectará los registros financieros originales.
+- **RN-0847** (DEC-105; EXTRAIDA_NO_VALIDADA; fuente `d99d4980-aea8-4501-b575-c6555e296d9c`): Se conservarán las solicitudes de exportación y sus auditorías.
+- **RN-0848** (DEC-105; EXTRAIDA_NO_VALIDADA; fuente `d99d4980-aea8-4501-b575-c6555e296d9c`): Los cambios en la configuración de retención quedarán auditados.
+- **RN-0849** (DEC-105; EXTRAIDA_NO_VALIDADA; fuente `d99d4980-aea8-4501-b575-c6555e296d9c`): El sistema registrará las ejecuciones de limpieza de notificaciones.
+- **RN-0850** (DEC-105; EXTRAIDA_NO_VALIDADA; fuente `d99d4980-aea8-4501-b575-c6555e296d9c`): La retención de notificaciones será independiente de la retención de archivos exportados definida en DEC-098.
+- **RN-0851** (DEC-106; EXTRAIDA_NO_VALIDADA; fuente `0a3738fa-2cfb-4edb-8244-cff9aee33ce6`): Las notificaciones internas se clasificarán en críticas e informativas.
+- **RN-0852** (DEC-106; EXTRAIDA_NO_VALIDADA; fuente `0a3738fa-2cfb-4edb-8244-cff9aee33ce6`): Las notificaciones críticas serán obligatorias para los usuarios destinatarios según sus roles y permisos.
+- **RN-0853** (DEC-106; EXTRAIDA_NO_VALIDADA; fuente `0a3738fa-2cfb-4edb-8244-cff9aee33ce6`): Los usuarios no podrán desactivar individualmente las notificaciones críticas.
+- **RN-0854** (DEC-106; EXTRAIDA_NO_VALIDADA; fuente `0a3738fa-2cfb-4edb-8244-cff9aee33ce6`): Cada usuario podrá activar o desactivar categorías informativas desde sus preferencias.
+- **RN-0855** (DEC-106; EXTRAIDA_NO_VALIDADA; fuente `0a3738fa-2cfb-4edb-8244-cff9aee33ce6`): Las preferencias serán individuales y no afectarán las configuraciones de otros usuarios.
+- **RN-0856** (DEC-106; EXTRAIDA_NO_VALIDADA; fuente `0a3738fa-2cfb-4edb-8244-cff9aee33ce6`): El superadministrador administrará globalmente la clasificación de categorías.
+- **RN-0857** (DEC-106; EXTRAIDA_NO_VALIDADA; fuente `0a3738fa-2cfb-4edb-8244-cff9aee33ce6`): Los administradores de clubes y disciplinas no podrán modificar la clasificación global.
+- **RN-0858** (DEC-106; EXTRAIDA_NO_VALIDADA; fuente `0a3738fa-2cfb-4edb-8244-cff9aee33ce6`): Los fallos persistentes de conciliación podrán clasificarse como eventos críticos.
+- **RN-0859** (DEC-106; EXTRAIDA_NO_VALIDADA; fuente `0a3738fa-2cfb-4edb-8244-cff9aee33ce6`): Las notificaciones de exportaciones completadas podrán clasificarse como informativas.
+- **RN-0860** (DEC-106; EXTRAIDA_NO_VALIDADA; fuente `0a3738fa-2cfb-4edb-8244-cff9aee33ce6`): Las preferencias no modificarán el historial de operaciones, exportaciones ni auditorías.
+- **RN-0861** (DEC-106; EXTRAIDA_NO_VALIDADA; fuente `0a3738fa-2cfb-4edb-8244-cff9aee33ce6`): Las notificaciones respetarán los permisos y el alcance de cada usuario.
+- **RN-0862** (DEC-106; EXTRAIDA_NO_VALIDADA; fuente `0a3738fa-2cfb-4edb-8244-cff9aee33ce6`): Los cambios de clasificación global quedarán auditados.
+- **RN-0863** (DEC-106; EXTRAIDA_NO_VALIDADA; fuente `0a3738fa-2cfb-4edb-8244-cff9aee33ce6`): La configuración de preferencias no habilitará el envío por correo electrónico de avisos definidos exclusivamente como internos.
+- **RN-0864** (DEC-107; EXTRAIDA_NO_VALIDADA; fuente `c513e38d-de12-4708-ad8a-e7eaf2b81548`): Los cambios de clasificación realizados por el superadministrador tendrán efecto inmediato.
+- **RN-0865** (DEC-107; EXTRAIDA_NO_VALIDADA; fuente `c513e38d-de12-4708-ad8a-e7eaf2b81548`): Una categoría reclasificada como crítica será obligatoria para todos sus destinatarios autorizados.
+- **RN-0866** (DEC-107; EXTRAIDA_NO_VALIDADA; fuente `c513e38d-de12-4708-ad8a-e7eaf2b81548`): La obligatoriedad prevalecerá sobre las preferencias individuales que tuvieran desactivada esa categoría.
+- **RN-0867** (DEC-107; EXTRAIDA_NO_VALIDADA; fuente `c513e38d-de12-4708-ad8a-e7eaf2b81548`): El sistema conservará las preferencias individuales anteriores al cambio.
+- **RN-0868** (DEC-107; EXTRAIDA_NO_VALIDADA; fuente `c513e38d-de12-4708-ad8a-e7eaf2b81548`): Si la categoría vuelve a ser informativa, se restaurarán las preferencias individuales conservadas.
+- **RN-0869** (DEC-107; EXTRAIDA_NO_VALIDADA; fuente `c513e38d-de12-4708-ad8a-e7eaf2b81548`): Los usuarios podrán modificar nuevamente sus preferencias cuando la categoría sea informativa.
+- **RN-0870** (DEC-107; EXTRAIDA_NO_VALIDADA; fuente `c513e38d-de12-4708-ad8a-e7eaf2b81548`): Cada cambio registrará el superadministrador responsable, la fecha y la hora.
+- **RN-0871** (DEC-107; EXTRAIDA_NO_VALIDADA; fuente `c513e38d-de12-4708-ad8a-e7eaf2b81548`): Se conservarán la clasificación anterior y la nueva.
+- **RN-0872** (DEC-107; EXTRAIDA_NO_VALIDADA; fuente `c513e38d-de12-4708-ad8a-e7eaf2b81548`): Los cambios no modificarán retroactivamente las notificaciones ya generadas.
+- **RN-0873** (DEC-107; EXTRAIDA_NO_VALIDADA; fuente `c513e38d-de12-4708-ad8a-e7eaf2b81548`): Las notificaciones futuras utilizarán la clasificación vigente al momento de generarse.
+- **RN-0874** (DEC-107; EXTRAIDA_NO_VALIDADA; fuente `c513e38d-de12-4708-ad8a-e7eaf2b81548`): Los cambios no ampliarán los permisos ni el alcance de los destinatarios.
+- **RN-0875** (DEC-107; EXTRAIDA_NO_VALIDADA; fuente `c513e38d-de12-4708-ad8a-e7eaf2b81548`): El historial de cambios permanecerá disponible para auditoría.
+- **RN-0876** (DEC-108; EXTRAIDA_NO_VALIDADA; fuente `76db966e-61a1-4451-9c36-2b092a2cb9b4`): Existirá un catálogo global de categorías de notificaciones.
+- **RN-0877** (DEC-108; EXTRAIDA_NO_VALIDADA; fuente `76db966e-61a1-4451-9c36-2b092a2cb9b4`): El sistema incluirá categorías predefinidas para los eventos implementados.
+- **RN-0878** (DEC-108; EXTRAIDA_NO_VALIDADA; fuente `76db966e-61a1-4451-9c36-2b092a2cb9b4`): El superadministrador podrá crear nuevas categorías.
+- **RN-0879** (DEC-108; EXTRAIDA_NO_VALIDADA; fuente `76db966e-61a1-4451-9c36-2b092a2cb9b4`): Podrá editar el nombre, la descripción y la clasificación de las categorías administrables.
+- **RN-0880** (DEC-108; EXTRAIDA_NO_VALIDADA; fuente `76db966e-61a1-4451-9c36-2b092a2cb9b4`): Cada categoría estará asociada a uno o más eventos reales del sistema.
+- **RN-0881** (DEC-108; EXTRAIDA_NO_VALIDADA; fuente `76db966e-61a1-4451-9c36-2b092a2cb9b4`): Las categorías tendrán una clasificación crítica o informativa, conforme a DEC-106.
+- **RN-0882** (DEC-108; EXTRAIDA_NO_VALIDADA; fuente `76db966e-61a1-4451-9c36-2b092a2cb9b4`): El superadministrador podrá desactivar categorías cuando no sean necesarias.
+- **RN-0883** (DEC-108; EXTRAIDA_NO_VALIDADA; fuente `76db966e-61a1-4451-9c36-2b092a2cb9b4`): No se permitirá desactivar una categoría si eso impide entregar notificaciones críticas obligatorias.
+- **RN-0884** (DEC-108; EXTRAIDA_NO_VALIDADA; fuente `76db966e-61a1-4451-9c36-2b092a2cb9b4`): Las categorías desactivadas dejarán de utilizarse para generar nuevas notificaciones, salvo que exista una obligación crítica que deba preservarse.
+- **RN-0885** (DEC-108; EXTRAIDA_NO_VALIDADA; fuente `76db966e-61a1-4451-9c36-2b092a2cb9b4`): La desactivación no eliminará las notificaciones históricas ni sus auditorías.
+- **RN-0886** (DEC-108; EXTRAIDA_NO_VALIDADA; fuente `76db966e-61a1-4451-9c36-2b092a2cb9b4`): Los cambios de clasificación respetarán las reglas de aplicación inmediata y conservación de preferencias definidas en DEC-107.
+- **RN-0887** (DEC-108; EXTRAIDA_NO_VALIDADA; fuente `76db966e-61a1-4451-9c36-2b092a2cb9b4`): Cada modificación registrará usuario responsable, fecha, hora y valores anteriores y nuevos.
+- **RN-0888** (DEC-108; EXTRAIDA_NO_VALIDADA; fuente `76db966e-61a1-4451-9c36-2b092a2cb9b4`): Solo el superadministrador podrá administrar el catálogo global.
+- **RN-0889** (DEC-109; EXTRAIDA_NO_VALIDADA; fuente `4ce2b256-cf21-4918-af68-b1246b194a6a`): Existirá un catálogo de eventos del sistema que pueden generar notificaciones.
+- **RN-0890** (DEC-109; EXTRAIDA_NO_VALIDADA; fuente `4ce2b256-cf21-4918-af68-b1246b194a6a`): Solo podrán configurarse eventos que estén implementados en la plataforma.
+- **RN-0891** (DEC-109; EXTRAIDA_NO_VALIDADA; fuente `4ce2b256-cf21-4918-af68-b1246b194a6a`): El superadministrador podrá asociar cada evento con una categoría de notificación activa.
+- **RN-0892** (DEC-109; EXTRAIDA_NO_VALIDADA; fuente `4ce2b256-cf21-4918-af68-b1246b194a6a`): Podrá configurar los roles destinatarios de cada evento.
+- **RN-0893** (DEC-109; EXTRAIDA_NO_VALIDADA; fuente `4ce2b256-cf21-4918-af68-b1246b194a6a`): Los destinatarios se determinarán según el rol y el ámbito correspondiente al evento.
+- **RN-0894** (DEC-109; EXTRAIDA_NO_VALIDADA; fuente `4ce2b256-cf21-4918-af68-b1246b194a6a`): Los administradores de disciplina solo recibirán notificaciones relacionadas con sus disciplinas autorizadas.
+- **RN-0895** (DEC-109; EXTRAIDA_NO_VALIDADA; fuente `4ce2b256-cf21-4918-af68-b1246b194a6a`): Los delegados generales solo recibirán notificaciones correspondientes a sus clubes.
+- **RN-0896** (DEC-109; EXTRAIDA_NO_VALIDADA; fuente `4ce2b256-cf21-4918-af68-b1246b194a6a`): El superadministrador podrá recibir notificaciones de alcance global.
+- **RN-0897** (DEC-109; EXTRAIDA_NO_VALIDADA; fuente `4ce2b256-cf21-4918-af68-b1246b194a6a`): Los destinatarios obligatorios de eventos críticos no podrán eliminarse de su configuración.
+- **RN-0898** (DEC-109; EXTRAIDA_NO_VALIDADA; fuente `4ce2b256-cf21-4918-af68-b1246b194a6a`): Las asociaciones no podrán ampliar los permisos de acceso a información financiera o personal.
+- **RN-0899** (DEC-109; EXTRAIDA_NO_VALIDADA; fuente `4ce2b256-cf21-4918-af68-b1246b194a6a`): Los cambios se aplicarán a los eventos futuros, sin modificar las notificaciones históricas.
+- **RN-0900** (DEC-109; EXTRAIDA_NO_VALIDADA; fuente `4ce2b256-cf21-4918-af68-b1246b194a6a`): Cada modificación registrará usuario, fecha, hora y configuración anterior y nueva.
+- **RN-0901** (DEC-109; EXTRAIDA_NO_VALIDADA; fuente `4ce2b256-cf21-4918-af68-b1246b194a6a`): Las asociaciones respetarán la clasificación y las preferencias definidas en DEC-106 y DEC-107.
+- **RN-0902** (DEC-109; EXTRAIDA_NO_VALIDADA; fuente `4ce2b256-cf21-4918-af68-b1246b194a6a`): Crear una categoría no permitirá generar eventos inexistentes en el software.
+- **RN-0903** (DEC-110; EXTRAIDA_NO_VALIDADA; fuente `0746a675-e182-4847-9422-9b212bac395c`): Cada incidente notificable tendrá un identificador único.
+- **RN-0904** (DEC-110; EXTRAIDA_NO_VALIDADA; fuente `0746a675-e182-4847-9422-9b212bac395c`): El sistema asociará las notificaciones al incidente que las originó.
+- **RN-0905** (DEC-110; EXTRAIDA_NO_VALIDADA; fuente `0746a675-e182-4847-9422-9b212bac395c`): Existirá como máximo una notificación activa por incidente y destinatario.
+- **RN-0906** (DEC-110; EXTRAIDA_NO_VALIDADA; fuente `0746a675-e182-4847-9422-9b212bac395c`): Los reintentos automáticos de una operación no generarán notificaciones duplicadas del mismo incidente.
+- **RN-0907** (DEC-110; EXTRAIDA_NO_VALIDADA; fuente `0746a675-e182-4847-9422-9b212bac395c`): Las nuevas ocurrencias del mismo incidente actualizarán su información y estado.
+- **RN-0908** (DEC-110; EXTRAIDA_NO_VALIDADA; fuente `0746a675-e182-4847-9422-9b212bac395c`): La resolución del incidente actualizará el estado de la notificación correspondiente.
+- **RN-0909** (DEC-110; EXTRAIDA_NO_VALIDADA; fuente `0746a675-e182-4847-9422-9b212bac395c`): Un incidente nuevo e independiente podrá generar una nueva notificación, aunque pertenezca a la misma categoría.
+- **RN-0910** (DEC-110; EXTRAIDA_NO_VALIDADA; fuente `0746a675-e182-4847-9422-9b212bac395c`): El sistema conservará el historial de intentos y errores asociados al incidente.
+- **RN-0911** (DEC-110; EXTRAIDA_NO_VALIDADA; fuente `0746a675-e182-4847-9422-9b212bac395c`): La agrupación no eliminará registros técnicos ni auditorías.
+- **RN-0912** (DEC-110; EXTRAIDA_NO_VALIDADA; fuente `0746a675-e182-4847-9422-9b212bac395c`): Las notificaciones agrupadas respetarán los destinatarios y ámbitos autorizados.
+- **RN-0913** (DEC-110; EXTRAIDA_NO_VALIDADA; fuente `0746a675-e182-4847-9422-9b212bac395c`): El sistema deberá impedir duplicados incluso ante procesamiento concurrente o reintentos de entrega.
+- **RN-0914** (DEC-110; EXTRAIDA_NO_VALIDADA; fuente `0746a675-e182-4847-9422-9b212bac395c`): El estado del incidente será independiente del estado leída/no leída de cada destinatario.
+- **RN-0915** (DEC-110; EXTRAIDA_NO_VALIDADA; fuente `0746a675-e182-4847-9422-9b212bac395c`): La agrupación no modificará los registros originales de pagos, conciliaciones o exportaciones.
+- **RN-0916** (DEC-111; EXTRAIDA_NO_VALIDADA; fuente `4b32cd7f-768d-42d5-957b-6be191efacbc`): Las notificaciones vinculadas a incidentes tendrán un estado de resolución.
+- **RN-0917** (DEC-111; EXTRAIDA_NO_VALIDADA; fuente `4b32cd7f-768d-42d5-957b-6be191efacbc`): Cuando el incidente se resuelva, sus notificaciones asociadas pasarán automáticamente a estado *resuelta*.
+- **RN-0918** (DEC-111; EXTRAIDA_NO_VALIDADA; fuente `4b32cd7f-768d-42d5-957b-6be191efacbc`): Las notificaciones resueltas dejarán de aparecer entre los incidentes activos.
+- **RN-0919** (DEC-111; EXTRAIDA_NO_VALIDADA; fuente `4b32cd7f-768d-42d5-957b-6be191efacbc`): Permanecerán disponibles en el historial del destinatario hasta vencer su período de retención.
+- **RN-0920** (DEC-111; EXTRAIDA_NO_VALIDADA; fuente `4b32cd7f-768d-42d5-957b-6be191efacbc`): Se registrarán la fecha y hora de resolución del incidente.
+- **RN-0921** (DEC-111; EXTRAIDA_NO_VALIDADA; fuente `4b32cd7f-768d-42d5-957b-6be191efacbc`): La resolución no generará una segunda notificación para el mismo incidente.
+- **RN-0922** (DEC-111; EXTRAIDA_NO_VALIDADA; fuente `4b32cd7f-768d-42d5-957b-6be191efacbc`): El estado de lectura será independiente del estado de resolución.
+- **RN-0923** (DEC-111; EXTRAIDA_NO_VALIDADA; fuente `4b32cd7f-768d-42d5-957b-6be191efacbc`): Una notificación podrá estar resuelta y continuar sin leer.
+- **RN-0924** (DEC-111; EXTRAIDA_NO_VALIDADA; fuente `4b32cd7f-768d-42d5-957b-6be191efacbc`): La resolución no marcará automáticamente la notificación como leída.
+- **RN-0925** (DEC-111; EXTRAIDA_NO_VALIDADA; fuente `4b32cd7f-768d-42d5-957b-6be191efacbc`): Cada destinatario conservará su propio estado de lectura.
+- **RN-0926** (DEC-111; EXTRAIDA_NO_VALIDADA; fuente `4b32cd7f-768d-42d5-957b-6be191efacbc`): El historial técnico y las auditorías permanecerán disponibles según sus políticas de conservación.
+- **RN-0927** (DEC-111; EXTRAIDA_NO_VALIDADA; fuente `4b32cd7f-768d-42d5-957b-6be191efacbc`): La expiración de visibilidad respetará la configuración global establecida en DEC-105.
+- **RN-0928** (DEC-111; EXTRAIDA_NO_VALIDADA; fuente `4b32cd7f-768d-42d5-957b-6be191efacbc`): La actualización del estado no modificará los datos financieros ni las operaciones originales.
+- **RN-0929** (DEC-112; EXTRAIDA_NO_VALIDADA; fuente `fc8ce25a-52ff-47c0-9a56-ace62928546c`): El centro de notificaciones permitirá consultar el historial visible del usuario.
+- **RN-0930** (DEC-112; EXTRAIDA_NO_VALIDADA; fuente `fc8ce25a-52ff-47c0-9a56-ace62928546c`): Se podrá filtrar por estado de lectura: todas, leídas y no leídas.
+- **RN-0931** (DEC-112; EXTRAIDA_NO_VALIDADA; fuente `fc8ce25a-52ff-47c0-9a56-ace62928546c`): Se podrá filtrar por estado del incidente: activo o resuelto, cuando corresponda.
+- **RN-0932** (DEC-112; EXTRAIDA_NO_VALIDADA; fuente `fc8ce25a-52ff-47c0-9a56-ace62928546c`): Se podrá filtrar por categoría de notificación.
+- **RN-0933** (DEC-112; EXTRAIDA_NO_VALIDADA; fuente `fc8ce25a-52ff-47c0-9a56-ace62928546c`): Se podrá filtrar por clasificación crítica o informativa.
+- **RN-0934** (DEC-112; EXTRAIDA_NO_VALIDADA; fuente `fc8ce25a-52ff-47c0-9a56-ace62928546c`): Se podrá filtrar por rango de fechas.
+- **RN-0935** (DEC-112; EXTRAIDA_NO_VALIDADA; fuente `fc8ce25a-52ff-47c0-9a56-ace62928546c`): Los usuarios con acceso a varios clubes podrán filtrar por los clubes autorizados.
+- **RN-0936** (DEC-112; EXTRAIDA_NO_VALIDADA; fuente `fc8ce25a-52ff-47c0-9a56-ace62928546c`): Los usuarios con acceso a varias disciplinas podrán filtrar por las disciplinas autorizadas.
+- **RN-0937** (DEC-112; EXTRAIDA_NO_VALIDADA; fuente `fc8ce25a-52ff-47c0-9a56-ace62928546c`): Se permitirá buscar por texto dentro de la información visible de las notificaciones.
+- **RN-0938** (DEC-112; EXTRAIDA_NO_VALIDADA; fuente `fc8ce25a-52ff-47c0-9a56-ace62928546c`): Se permitirá buscar por identificador de incidente.
+- **RN-0939** (DEC-112; EXTRAIDA_NO_VALIDADA; fuente `fc8ce25a-52ff-47c0-9a56-ace62928546c`): Las notificaciones se ordenarán por fecha, mostrando primero las más recientes.
+- **RN-0940** (DEC-112; EXTRAIDA_NO_VALIDADA; fuente `fc8ce25a-52ff-47c0-9a56-ace62928546c`): Los resultados tendrán paginación.
+- **RN-0941** (DEC-112; EXTRAIDA_NO_VALIDADA; fuente `fc8ce25a-52ff-47c0-9a56-ace62928546c`): Los filtros y búsquedas deberán respetar los permisos vigentes del usuario.
+- **RN-0942** (DEC-112; EXTRAIDA_NO_VALIDADA; fuente `fc8ce25a-52ff-47c0-9a56-ace62928546c`): La búsqueda no permitirá consultar notificaciones de otros destinatarios sin autorización.
+- **RN-0943** (DEC-112; EXTRAIDA_NO_VALIDADA; fuente `fc8ce25a-52ff-47c0-9a56-ace62928546c`): Las notificaciones retiradas por vencimiento de retención no aparecerán en los resultados.
+- **RN-0944** (DEC-112; EXTRAIDA_NO_VALIDADA; fuente `fc8ce25a-52ff-47c0-9a56-ace62928546c`): Los filtros no modificarán el estado de lectura ni el estado de resolución.
+- **RN-0945** (DEC-113; EXTRAIDA_NO_VALIDADA; fuente `2fb35a82-e528-4153-a865-9bab3f68d33b`): El sistema permitirá entregar notificaciones internas en tiempo real a usuarios conectados.
+- **RN-0946** (DEC-113; EXTRAIDA_NO_VALIDADA; fuente `2fb35a82-e528-4153-a865-9bab3f68d33b`): Las nuevas notificaciones aparecerán sin necesidad de recargar la página.
+- **RN-0947** (DEC-113; EXTRAIDA_NO_VALIDADA; fuente `2fb35a82-e528-4153-a865-9bab3f68d33b`): El contador de notificaciones no leídas se actualizará automáticamente.
+- **RN-0948** (DEC-113; EXTRAIDA_NO_VALIDADA; fuente `2fb35a82-e528-4153-a865-9bab3f68d33b`): Los cambios de estado de lectura y resolución se reflejarán en la interfaz.
+- **RN-0949** (DEC-113; EXTRAIDA_NO_VALIDADA; fuente `2fb35a82-e528-4153-a865-9bab3f68d33b`): Las notificaciones se almacenarán de forma persistente, independientemente de que el destinatario esté conectado.
+- **RN-0950** (DEC-113; EXTRAIDA_NO_VALIDADA; fuente `2fb35a82-e528-4153-a865-9bab3f68d33b`): Una desconexión temporal no provocará la pérdida de notificaciones.
+- **RN-0951** (DEC-113; EXTRAIDA_NO_VALIDADA; fuente `2fb35a82-e528-4153-a865-9bab3f68d33b`): Si falla el canal de tiempo real, el sistema dispondrá de un mecanismo de consulta periódica como respaldo.
+- **RN-0952** (DEC-113; EXTRAIDA_NO_VALIDADA; fuente `2fb35a82-e528-4153-a865-9bab3f68d33b`): Al restablecerse la conexión, se sincronizarán las notificaciones y sus estados vigentes.
+- **RN-0953** (DEC-113; EXTRAIDA_NO_VALIDADA; fuente `2fb35a82-e528-4153-a865-9bab3f68d33b`): La sincronización evitará duplicados, respetando la agrupación por incidente definida en DEC-110.
+- **RN-0954** (DEC-113; EXTRAIDA_NO_VALIDADA; fuente `2fb35a82-e528-4153-a865-9bab3f68d33b`): Las actualizaciones se enviarán exclusivamente a los destinatarios autorizados.
+- **RN-0955** (DEC-113; EXTRAIDA_NO_VALIDADA; fuente `2fb35a82-e528-4153-a865-9bab3f68d33b`): El sistema validará la autenticación y los permisos de las conexiones.
+- **RN-0956** (DEC-113; EXTRAIDA_NO_VALIDADA; fuente `2fb35a82-e528-4153-a865-9bab3f68d33b`): La recuperación respetará la retención de notificaciones establecida en DEC-105.
+- **RN-0957** (DEC-113; EXTRAIDA_NO_VALIDADA; fuente `2fb35a82-e528-4153-a865-9bab3f68d33b`): Los errores de entrega y sincronización quedarán registrados para diagnóstico.
+- **RN-0958** (DEC-113; EXTRAIDA_NO_VALIDADA; fuente `2fb35a82-e528-4153-a865-9bab3f68d33b`): La falta de conexión en tiempo real no impedirá que el usuario utilice las demás funcionalidades disponibles de la plataforma.
+- **RN-0959** (DEC-114; EXTRAIDA_NO_VALIDADA; fuente `06ef2f5d-b48a-44cd-a571-5b885a594e47`): Los estados de lectura se almacenarán por cuenta de usuario, no por dispositivo.
+- **RN-0960** (DEC-114; EXTRAIDA_NO_VALIDADA; fuente `06ef2f5d-b48a-44cd-a571-5b885a594e47`): Todas las sesiones activas de una misma cuenta compartirán el estado de las notificaciones.
+- **RN-0961** (DEC-114; EXTRAIDA_NO_VALIDADA; fuente `06ef2f5d-b48a-44cd-a571-5b885a594e47`): Marcar una notificación como leída actualizará automáticamente las demás sesiones conectadas.
+- **RN-0962** (DEC-114; EXTRAIDA_NO_VALIDADA; fuente `06ef2f5d-b48a-44cd-a571-5b885a594e47`): La acción de marcar todas como leídas se sincronizará entre sesiones.
+- **RN-0963** (DEC-114; EXTRAIDA_NO_VALIDADA; fuente `06ef2f5d-b48a-44cd-a571-5b885a594e47`): Los contadores de notificaciones no leídas serán consistentes entre dispositivos.
+- **RN-0964** (DEC-114; EXTRAIDA_NO_VALIDADA; fuente `06ef2f5d-b48a-44cd-a571-5b885a594e47`): Las preferencias individuales se almacenarán centralmente por cuenta.
+- **RN-0965** (DEC-114; EXTRAIDA_NO_VALIDADA; fuente `06ef2f5d-b48a-44cd-a571-5b885a594e47`): Los cambios de preferencias se reflejarán en las demás sesiones activas.
+- **RN-0966** (DEC-114; EXTRAIDA_NO_VALIDADA; fuente `06ef2f5d-b48a-44cd-a571-5b885a594e47`): Las sesiones desconectadas recuperarán los estados vigentes al reconectarse.
+- **RN-0967** (DEC-114; EXTRAIDA_NO_VALIDADA; fuente `06ef2f5d-b48a-44cd-a571-5b885a594e47`): La sincronización evitará duplicados y operaciones inconsistentes.
+- **RN-0968** (DEC-114; EXTRAIDA_NO_VALIDADA; fuente `06ef2f5d-b48a-44cd-a571-5b885a594e47`): Las cuentas independientes no compartirán notificaciones, aunque utilicen el mismo correo electrónico.
+- **RN-0969** (DEC-114; EXTRAIDA_NO_VALIDADA; fuente `06ef2f5d-b48a-44cd-a571-5b885a594e47`): Cada sesión deberá estar autenticada para recibir actualizaciones.
+- **RN-0970** (DEC-114; EXTRAIDA_NO_VALIDADA; fuente `06ef2f5d-b48a-44cd-a571-5b885a594e47`): Al perder permisos o cerrar sesión, se interrumpirá el acceso a las notificaciones correspondientes.
+- **RN-0971** (DEC-114; EXTRAIDA_NO_VALIDADA; fuente `06ef2f5d-b48a-44cd-a571-5b885a594e47`): Los cambios de estado respetarán la retención y los permisos definidos anteriormente.
+- **RN-0972** (DEC-114; EXTRAIDA_NO_VALIDADA; fuente `06ef2f5d-b48a-44cd-a571-5b885a594e47`): La sincronización no modificará el historial financiero ni los registros de auditoría.
+- **RN-0973** (DEC-115; EXTRAIDA_NO_VALIDADA; fuente `9d965e9a-4d6c-4b20-90cc-317eef11ba2e`): Las notificaciones críticas generarán un aviso visual destacado dentro de la plataforma.
+- **RN-0974** (DEC-115; EXTRAIDA_NO_VALIDADA; fuente `9d965e9a-4d6c-4b20-90cc-317eef11ba2e`): Los avisos críticos no bloquearán la interacción con el sistema.
+- **RN-0975** (DEC-115; EXTRAIDA_NO_VALIDADA; fuente `9d965e9a-4d6c-4b20-90cc-317eef11ba2e`): Las notificaciones informativas actualizarán el centro y su contador sin generar avisos emergentes.
+- **RN-0976** (DEC-115; EXTRAIDA_NO_VALIDADA; fuente `9d965e9a-4d6c-4b20-90cc-317eef11ba2e`): Los avisos críticos incluirán información suficiente para identificar el problema.
+- **RN-0977** (DEC-115; EXTRAIDA_NO_VALIDADA; fuente `9d965e9a-4d6c-4b20-90cc-317eef11ba2e`): Los avisos podrán incluir un acceso al detalle del incidente, sujeto a los permisos del usuario.
+- **RN-0978** (DEC-115; EXTRAIDA_NO_VALIDADA; fuente `9d965e9a-4d6c-4b20-90cc-317eef11ba2e`): El usuario podrá cerrar el aviso visual sin eliminar la notificación.
+- **RN-0979** (DEC-115; EXTRAIDA_NO_VALIDADA; fuente `9d965e9a-4d6c-4b20-90cc-317eef11ba2e`): Cerrar el aviso no marcará automáticamente la notificación como leída.
+- **RN-0980** (DEC-115; EXTRAIDA_NO_VALIDADA; fuente `9d965e9a-4d6c-4b20-90cc-317eef11ba2e`): Cerrar el aviso no modificará el estado del incidente.
+- **RN-0981** (DEC-115; EXTRAIDA_NO_VALIDADA; fuente `9d965e9a-4d6c-4b20-90cc-317eef11ba2e`): Los reintentos de un mismo incidente no generarán avisos emergentes duplicados.
+- **RN-0982** (DEC-115; EXTRAIDA_NO_VALIDADA; fuente `9d965e9a-4d6c-4b20-90cc-317eef11ba2e`): Un incidente nuevo e independiente podrá generar un nuevo aviso crítico.
+- **RN-0983** (DEC-115; EXTRAIDA_NO_VALIDADA; fuente `9d965e9a-4d6c-4b20-90cc-317eef11ba2e`): Los avisos respetarán los destinatarios obligatorios y los ámbitos autorizados.
+- **RN-0984** (DEC-115; EXTRAIDA_NO_VALIDADA; fuente `9d965e9a-4d6c-4b20-90cc-317eef11ba2e`): La presentación no dependerá de permisos de notificaciones del navegador.
+- **RN-0985** (DEC-115; EXTRAIDA_NO_VALIDADA; fuente `9d965e9a-4d6c-4b20-90cc-317eef11ba2e`): Las notificaciones seguirán disponibles en el centro aunque se cierre su aviso visual.
+- **RN-0986** (DEC-115; EXTRAIDA_NO_VALIDADA; fuente `9d965e9a-4d6c-4b20-90cc-317eef11ba2e`): Los cambios de clasificación de categorías respetarán DEC-107 para los avisos futuros.
+- **RN-0987** (DEC-116; EXTRAIDA_NO_VALIDADA; fuente `4e9b2ee8-7737-4c6d-a100-8c7fa87591a3`): Las notificaciones estarán vinculadas a sus destinatarios y al ámbito de club o disciplina correspondiente.
+- **RN-0988** (DEC-116; EXTRAIDA_NO_VALIDADA; fuente `4e9b2ee8-7737-4c6d-a100-8c7fa87591a3`): La pérdida de permisos revocará inmediatamente la recepción de nuevas notificaciones del ámbito afectado.
+- **RN-0989** (DEC-116; EXTRAIDA_NO_VALIDADA; fuente `4e9b2ee8-7737-4c6d-a100-8c7fa87591a3`): El usuario dejará de poder consultar las notificaciones históricas de ese ámbito.
+- **RN-0990** (DEC-116; EXTRAIDA_NO_VALIDADA; fuente `4e9b2ee8-7737-4c6d-a100-8c7fa87591a3`): La revocación se aplicará también a las sesiones que permanezcan abiertas.
+- **RN-0991** (DEC-116; EXTRAIDA_NO_VALIDADA; fuente `4e9b2ee8-7737-4c6d-a100-8c7fa87591a3`): Los enlaces anteriores hacia notificaciones o incidentes protegidos dejarán de conceder acceso.
+- **RN-0992** (DEC-116; EXTRAIDA_NO_VALIDADA; fuente `4e9b2ee8-7737-4c6d-a100-8c7fa87591a3`): El sistema revalidará los permisos al consultar una notificación o su información asociada.
+- **RN-0993** (DEC-116; EXTRAIDA_NO_VALIDADA; fuente `4e9b2ee8-7737-4c6d-a100-8c7fa87591a3`): La revocación no eliminará los registros históricos ni las auditorías internas.
+- **RN-0994** (DEC-116; EXTRAIDA_NO_VALIDADA; fuente `4e9b2ee8-7737-4c6d-a100-8c7fa87591a3`): Los registros conservarán las políticas de retención correspondientes.
+- **RN-0995** (DEC-116; EXTRAIDA_NO_VALIDADA; fuente `4e9b2ee8-7737-4c6d-a100-8c7fa87591a3`): Si el usuario recupera permisos, su acceso se evaluará nuevamente según el rol y ámbito vigentes.
+- **RN-0996** (DEC-116; EXTRAIDA_NO_VALIDADA; fuente `4e9b2ee8-7737-4c6d-a100-8c7fa87591a3`): Recuperar permisos no restaurará notificaciones que ya hayan vencido su período de visibilidad.
+- **RN-0997** (DEC-116; EXTRAIDA_NO_VALIDADA; fuente `4e9b2ee8-7737-4c6d-a100-8c7fa87591a3`): La pérdida de acceso a una disciplina no afectará los permisos que el usuario conserve sobre otras disciplinas autorizadas.
+- **RN-0998** (DEC-116; EXTRAIDA_NO_VALIDADA; fuente `4e9b2ee8-7737-4c6d-a100-8c7fa87591a3`): Los contadores, búsquedas y filtros excluirán las notificaciones que el usuario ya no esté autorizado a consultar.
+- **RN-0999** (DEC-116; EXTRAIDA_NO_VALIDADA; fuente `4e9b2ee8-7737-4c6d-a100-8c7fa87591a3`): Los cambios de permisos y las revocaciones quedarán registrados para auditoría.
+- **RN-1000** (DEC-117; EXTRAIDA_NO_VALIDADA; fuente `3f80d91d-b1d5-48d3-824b-cb456dc73bba`): El portal permitirá iniciar la identificación ingresando el DNI del jugador.
+- **RN-1001** (DEC-117; EXTRAIDA_NO_VALIDADA; fuente `3f80d91d-b1d5-48d3-824b-cb456dc73bba`): El DNI por sí solo no habilitará la consulta de cuotas, deudas ni información personal.
+- **RN-1002** (DEC-117; EXTRAIDA_NO_VALIDADA; fuente `3f80d91d-b1d5-48d3-824b-cb456dc73bba`): El acceso requerirá verificar un código temporal de un solo uso (OTP).
+- **RN-1003** (DEC-117; EXTRAIDA_NO_VALIDADA; fuente `3f80d91d-b1d5-48d3-824b-cb456dc73bba`): El código se enviará a un correo electrónico o teléfono previamente registrado y verificado.
+- **RN-1004** (DEC-117; EXTRAIDA_NO_VALIDADA; fuente `3f80d91d-b1d5-48d3-824b-cb456dc73bba`): El sistema admitirá la verificación de jugadores y responsables de pago autorizados.
+- **RN-1005** (DEC-117; EXTRAIDA_NO_VALIDADA; fuente `3f80d91d-b1d5-48d3-824b-cb456dc73bba`): Los códigos tendrán una vigencia limitada.
+- **RN-1006** (DEC-117; EXTRAIDA_NO_VALIDADA; fuente `3f80d91d-b1d5-48d3-824b-cb456dc73bba`): Cada código podrá utilizarse una sola vez.
+- **RN-1007** (DEC-117; EXTRAIDA_NO_VALIDADA; fuente `3f80d91d-b1d5-48d3-824b-cb456dc73bba`): El sistema limitará los intentos incorrectos de verificación.
+- **RN-1008** (DEC-117; EXTRAIDA_NO_VALIDADA; fuente `3f80d91d-b1d5-48d3-824b-cb456dc73bba`): Se limitará la frecuencia de solicitud y reenvío de códigos.
+- **RN-1009** (DEC-117; EXTRAIDA_NO_VALIDADA; fuente `3f80d91d-b1d5-48d3-824b-cb456dc73bba`): Las respuestas de identificación no deberán revelar innecesariamente si un DNI está registrado.
+- **RN-1010** (DEC-117; EXTRAIDA_NO_VALIDADA; fuente `3f80d91d-b1d5-48d3-824b-cb456dc73bba`): Una verificación exitosa habilitará una sesión temporal para consultar y pagar cuotas autorizadas.
+- **RN-1011** (DEC-117; EXTRAIDA_NO_VALIDADA; fuente `3f80d91d-b1d5-48d3-824b-cb456dc73bba`): La sesión tendrá vencimiento y controles de seguridad.
+- **RN-1012** (DEC-117; EXTRAIDA_NO_VALIDADA; fuente `3f80d91d-b1d5-48d3-824b-cb456dc73bba`): La autenticación no permitirá acceder a jugadores o disciplinas sin autorización.
+- **RN-1013** (DEC-117; EXTRAIDA_NO_VALIDADA; fuente `3f80d91d-b1d5-48d3-824b-cb456dc73bba`): Los jugadores sin contacto verificado necesitarán un procedimiento seguro de vinculación.
+- **RN-1014** (DEC-117; EXTRAIDA_NO_VALIDADA; fuente `3f80d91d-b1d5-48d3-824b-cb456dc73bba`): La vinculación inicial será gestionada por personal autorizado del club o disciplina.
+- **RN-1015** (DEC-117; EXTRAIDA_NO_VALIDADA; fuente `3f80d91d-b1d5-48d3-824b-cb456dc73bba`): Los eventos de verificación, intentos fallidos y vinculaciones quedarán registrados para auditoría, sin almacenar códigos en texto plano.
+- **RN-1016** (DEC-117; EXTRAIDA_NO_VALIDADA; fuente `3f80d91d-b1d5-48d3-824b-cb456dc73bba`): El acceso al portal será independiente de las cuentas administrativas.
+- **RN-1017** (DEC-118; EXTRAIDA_NO_VALIDADA; fuente `dc15b527-dafb-423c-9570-2ab6b656ed9c`): Existirá una relación muchos a muchos entre responsables de pago y jugadores.
+- **RN-1018** (DEC-118; EXTRAIDA_NO_VALIDADA; fuente `dc15b527-dafb-423c-9570-2ab6b656ed9c`): Un jugador podrá tener múltiples responsables autorizados.
+- **RN-1019** (DEC-118; EXTRAIDA_NO_VALIDADA; fuente `dc15b527-dafb-423c-9570-2ab6b656ed9c`): Un responsable podrá estar vinculado a múltiples jugadores.
+- **RN-1020** (DEC-118; EXTRAIDA_NO_VALIDADA; fuente `dc15b527-dafb-423c-9570-2ab6b656ed9c`): Cada responsable tendrá una identidad propia, independiente de los jugadores vinculados.
+- **RN-1021** (DEC-118; EXTRAIDA_NO_VALIDADA; fuente `dc15b527-dafb-423c-9570-2ab6b656ed9c`): El acceso del responsable requerirá la verificación de identidad definida en DEC-117.
+- **RN-1022** (DEC-118; EXTRAIDA_NO_VALIDADA; fuente `dc15b527-dafb-423c-9570-2ab6b656ed9c`): Una vez autenticado, el responsable podrá consultar las cuotas de todos los jugadores con los que mantenga una vinculación vigente y autorizada.
+- **RN-1023** (DEC-118; EXTRAIDA_NO_VALIDADA; fuente `dc15b527-dafb-423c-9570-2ab6b656ed9c`): El portal ofrecerá una vista unificada de los jugadores vinculados.
+- **RN-1024** (DEC-118; EXTRAIDA_NO_VALIDADA; fuente `dc15b527-dafb-423c-9570-2ab6b656ed9c`): Las cuotas conservarán su asociación original con el jugador, club y disciplina.
+- **RN-1025** (DEC-118; EXTRAIDA_NO_VALIDADA; fuente `dc15b527-dafb-423c-9570-2ab6b656ed9c`): Las vinculaciones serán creadas y administradas por personal autorizado del club o disciplina.
+- **RN-1026** (DEC-118; EXTRAIDA_NO_VALIDADA; fuente `dc15b527-dafb-423c-9570-2ab6b656ed9c`): Se permitirá revocar una vinculación sin eliminar al jugador ni al responsable.
+- **RN-1027** (DEC-118; EXTRAIDA_NO_VALIDADA; fuente `dc15b527-dafb-423c-9570-2ab6b656ed9c`): La revocación impedirá inmediatamente nuevas consultas y operaciones basadas en ese vínculo.
+- **RN-1028** (DEC-118; EXTRAIDA_NO_VALIDADA; fuente `dc15b527-dafb-423c-9570-2ab6b656ed9c`): Las vinculaciones respetarán el aislamiento entre clubes y disciplinas.
+- **RN-1029** (DEC-118; EXTRAIDA_NO_VALIDADA; fuente `dc15b527-dafb-423c-9570-2ab6b656ed9c`): El sistema no presumirá parentescos ni autorizaciones por coincidencia de apellido, domicilio o contacto.
+- **RN-1030** (DEC-118; EXTRAIDA_NO_VALIDADA; fuente `dc15b527-dafb-423c-9570-2ab6b656ed9c`): Se registrarán altas, modificaciones y revocaciones con usuario responsable, fecha y hora.
+- **RN-1031** (DEC-118; EXTRAIDA_NO_VALIDADA; fuente `dc15b527-dafb-423c-9570-2ab6b656ed9c`): Los cambios de vinculación no modificarán los pagos históricos ni sus comprobantes.
+- **RN-1032** (DEC-118; EXTRAIDA_NO_VALIDADA; fuente `dc15b527-dafb-423c-9570-2ab6b656ed9c`): La visualización unificada no permitirá consultar información de jugadores sin autorización vigente.
+- **RN-1033** (DEC-119; EXTRAIDA_NO_VALIDADA; fuente `f43af9ff-2a12-4834-9a81-98827682645b`): Los administradores autorizados podrán vincular responsables de pago con jugadores.
+- **RN-1034** (DEC-119; EXTRAIDA_NO_VALIDADA; fuente `f43af9ff-2a12-4834-9a81-98827682645b`): La vinculación quedará activa inmediatamente después de ser confirmada por el administrador.
+- **RN-1035** (DEC-119; EXTRAIDA_NO_VALIDADA; fuente `f43af9ff-2a12-4834-9a81-98827682645b`): No se requerirá un proceso adicional de aprobación.
+- **RN-1036** (DEC-119; EXTRAIDA_NO_VALIDADA; fuente `f43af9ff-2a12-4834-9a81-98827682645b`): No se exigirá una verificación adicional de identidad o parentesco para activar la vinculación.
+- **RN-1037** (DEC-119; EXTRAIDA_NO_VALIDADA; fuente `f43af9ff-2a12-4834-9a81-98827682645b`): El administrador solo podrá vincular jugadores pertenecientes a su ámbito autorizado.
+- **RN-1038** (DEC-119; EXTRAIDA_NO_VALIDADA; fuente `f43af9ff-2a12-4834-9a81-98827682645b`): Un responsable podrá vincularse con varios jugadores.
+- **RN-1039** (DEC-119; EXTRAIDA_NO_VALIDADA; fuente `f43af9ff-2a12-4834-9a81-98827682645b`): Un jugador podrá tener varios responsables activos.
+- **RN-1040** (DEC-119; EXTRAIDA_NO_VALIDADA; fuente `f43af9ff-2a12-4834-9a81-98827682645b`): El sistema evitará vinculaciones activas duplicadas entre el mismo responsable y jugador dentro del mismo ámbito.
+- **RN-1041** (DEC-119; EXTRAIDA_NO_VALIDADA; fuente `f43af9ff-2a12-4834-9a81-98827682645b`): Cada vinculación registrará el administrador responsable, fecha y hora.
+- **RN-1042** (DEC-119; EXTRAIDA_NO_VALIDADA; fuente `f43af9ff-2a12-4834-9a81-98827682645b`): Las vinculaciones podrán revocarse conforme a DEC-118.
+- **RN-1043** (DEC-119; EXTRAIDA_NO_VALIDADA; fuente `f43af9ff-2a12-4834-9a81-98827682645b`): La activación del vínculo no reemplazará la autenticación OTP requerida para acceder al portal.
+- **RN-1044** (DEC-119; EXTRAIDA_NO_VALIDADA; fuente `f43af9ff-2a12-4834-9a81-98827682645b`): El acceso efectivo a las cuotas requerirá una vinculación vigente y una sesión autenticada.
+- **RN-1045** (DEC-119; EXTRAIDA_NO_VALIDADA; fuente `f43af9ff-2a12-4834-9a81-98827682645b`): La vinculación no modificará las cuotas, pagos ni comprobantes históricos.
+- **RN-1046** (DEC-119; EXTRAIDA_NO_VALIDADA; fuente `f43af9ff-2a12-4834-9a81-98827682645b`): Las altas y revocaciones permanecerán disponibles para auditoría.
+- **RN-1047** (DEC-120; EXTRAIDA_NO_VALIDADA; fuente `d680cb22-bca9-49a5-8c30-84c4acdad872`): Los administradores de disciplina podrán crear, modificar y revocar vinculaciones de jugadores de su propia disciplina.
+- **RN-1048** (DEC-120; EXTRAIDA_NO_VALIDADA; fuente `d680cb22-bca9-49a5-8c30-84c4acdad872`): Los delegados generales podrán administrar vinculaciones dentro de su club.
+- **RN-1049** (DEC-120; EXTRAIDA_NO_VALIDADA; fuente `d680cb22-bca9-49a5-8c30-84c4acdad872`): El superadministrador podrá administrar vinculaciones de cualquier club o disciplina.
+- **RN-1050** (DEC-120; EXTRAIDA_NO_VALIDADA; fuente `d680cb22-bca9-49a5-8c30-84c4acdad872`): Los responsables de pago podrán consultar sus vinculaciones vigentes, pero no modificarlas.
+- **RN-1051** (DEC-120; EXTRAIDA_NO_VALIDADA; fuente `d680cb22-bca9-49a5-8c30-84c4acdad872`): Los responsables no podrán agregar jugadores por cuenta propia.
+- **RN-1052** (DEC-120; EXTRAIDA_NO_VALIDADA; fuente `d680cb22-bca9-49a5-8c30-84c4acdad872`): Los responsables no podrán revocar directamente sus vinculaciones.
+- **RN-1053** (DEC-120; EXTRAIDA_NO_VALIDADA; fuente `d680cb22-bca9-49a5-8c30-84c4acdad872`): Toda operación administrativa deberá validar los permisos vigentes del usuario.
+- **RN-1054** (DEC-120; EXTRAIDA_NO_VALIDADA; fuente `d680cb22-bca9-49a5-8c30-84c4acdad872`): Las modificaciones deberán respetar el aislamiento entre clubes y disciplinas.
+- **RN-1055** (DEC-120; EXTRAIDA_NO_VALIDADA; fuente `d680cb22-bca9-49a5-8c30-84c4acdad872`): Las revocaciones tendrán efecto inmediato.
+- **RN-1056** (DEC-120; EXTRAIDA_NO_VALIDADA; fuente `d680cb22-bca9-49a5-8c30-84c4acdad872`): Una vinculación revocada dejará de habilitar consultas y nuevos pagos del jugador por parte de ese responsable.
+- **RN-1057** (DEC-120; EXTRAIDA_NO_VALIDADA; fuente `d680cb22-bca9-49a5-8c30-84c4acdad872`): La revocación no anulará pagos previamente realizados.
+- **RN-1058** (DEC-120; EXTRAIDA_NO_VALIDADA; fuente `d680cb22-bca9-49a5-8c30-84c4acdad872`): Las vinculaciones revocadas conservarán su historial para auditoría.
+- **RN-1059** (DEC-120; EXTRAIDA_NO_VALIDADA; fuente `d680cb22-bca9-49a5-8c30-84c4acdad872`): Cada alta, modificación y revocación registrará usuario responsable, fecha, hora y valores anteriores y nuevos cuando corresponda.
+- **RN-1060** (DEC-120; EXTRAIDA_NO_VALIDADA; fuente `d680cb22-bca9-49a5-8c30-84c4acdad872`): Los cambios se reflejarán en las sesiones activas de los responsables afectados.
+- **RN-1061** (DEC-120; EXTRAIDA_NO_VALIDADA; fuente `d680cb22-bca9-49a5-8c30-84c4acdad872`): El acceso al portal continuará sujeto a la autenticación y autorización definidas en DEC-117 y DEC-118.
+- **RN-1062** (DEC-121; EXTRAIDA_NO_VALIDADA; fuente `a31de425-64bb-4842-ba35-2d01d1e1ac04`): Un responsable podrá seleccionar cuotas completas de varios jugadores vinculados, siempre que pertenezcan a la misma disciplina.
+- **RN-1063** (DEC-121; EXTRAIDA_NO_VALIDADA; fuente `a31de425-64bb-4842-ba35-2d01d1e1ac04`): No se permitirá agrupar cuotas de distintas disciplinas en una misma operación de pago.
+- **RN-1064** (DEC-121; EXTRAIDA_NO_VALIDADA; fuente `a31de425-64bb-4842-ba35-2d01d1e1ac04`): Cada operación tendrá una única disciplina asociada.
+- **RN-1065** (DEC-121; EXTRAIDA_NO_VALIDADA; fuente `a31de425-64bb-4842-ba35-2d01d1e1ac04`): Cada disciplina mantendrá su propia identificación de operaciones, pagos y conciliaciones.
+- **RN-1066** (DEC-121; EXTRAIDA_NO_VALIDADA; fuente `a31de425-64bb-4842-ba35-2d01d1e1ac04`): Las comisiones y costos de procesamiento se identificarán por disciplina.
+- **RN-1067** (DEC-121; EXTRAIDA_NO_VALIDADA; fuente `a31de425-64bb-4842-ba35-2d01d1e1ac04`): Los pagos agrupados conservarán el detalle individual de cada jugador y cuota.
+- **RN-1068** (DEC-121; EXTRAIDA_NO_VALIDADA; fuente `a31de425-64bb-4842-ba35-2d01d1e1ac04`): Las cuotas de distintas disciplinas deberán pagarse mediante operaciones independientes.
+- **RN-1069** (DEC-121; EXTRAIDA_NO_VALIDADA; fuente `a31de425-64bb-4842-ba35-2d01d1e1ac04`): El portal podrá mostrar las cuotas de todas las disciplinas autorizadas sin mezclar sus procesos de cobro.
+- **RN-1070** (DEC-121; EXTRAIDA_NO_VALIDADA; fuente `a31de425-64bb-4842-ba35-2d01d1e1ac04`): Una falla en el pago de una disciplina no modificará el resultado de pagos de otras disciplinas.
+- **RN-1071** (DEC-121; EXTRAIDA_NO_VALIDADA; fuente `a31de425-64bb-4842-ba35-2d01d1e1ac04`): La conciliación y trazabilidad de cada pago permanecerán asociadas exclusivamente a su disciplina.
+- **RN-1072** (DEC-121; EXTRAIDA_NO_VALIDADA; fuente `a31de425-64bb-4842-ba35-2d01d1e1ac04`): Se evitarán cobros duplicados y se respetará la regla de pago completo de cuotas definida en DEC-047.
+- **RN-1073** (DEC-122; EXTRAIDA_NO_VALIDADA; fuente `5e412633-fbed-427c-b05f-813ba95e9c74`): Cada disciplina tendrá una configuración de cobro independiente.
+- **RN-1074** (DEC-122; EXTRAIDA_NO_VALIDADA; fuente `5e412633-fbed-427c-b05f-813ba95e9c74`): Una disciplina podrá utilizar una cuenta receptora exclusiva.
+- **RN-1075** (DEC-122; EXTRAIDA_NO_VALIDADA; fuente `5e412633-fbed-427c-b05f-813ba95e9c74`): Varias disciplinas de un mismo club podrán compartir una cuenta receptora.
+- **RN-1076** (DEC-122; EXTRAIDA_NO_VALIDADA; fuente `5e412633-fbed-427c-b05f-813ba95e9c74`): Cada operación de pago pertenecerá a una única disciplina, conforme a DEC-121.
+- **RN-1077** (DEC-122; EXTRAIDA_NO_VALIDADA; fuente `5e412633-fbed-427c-b05f-813ba95e9c74`): Los pagos deberán conservar el identificador de su disciplina, independientemente de la cuenta receptora.
+- **RN-1078** (DEC-122; EXTRAIDA_NO_VALIDADA; fuente `5e412633-fbed-427c-b05f-813ba95e9c74`): Las liquidaciones se registrarán y consultarán separadamente por disciplina.
+- **RN-1079** (DEC-122; EXTRAIDA_NO_VALIDADA; fuente `5e412633-fbed-427c-b05f-813ba95e9c74`): Las comisiones de la plataforma se calcularán e identificarán por disciplina.
+- **RN-1080** (DEC-122; EXTRAIDA_NO_VALIDADA; fuente `5e412633-fbed-427c-b05f-813ba95e9c74`): Los costos de la pasarela se registrarán por disciplina cuando estén disponibles.
+- **RN-1081** (DEC-122; EXTRAIDA_NO_VALIDADA; fuente `5e412633-fbed-427c-b05f-813ba95e9c74`): Las conciliaciones se realizarán y registrarán por disciplina, incluso si comparten cuenta receptora.
+- **RN-1082** (DEC-122; EXTRAIDA_NO_VALIDADA; fuente `5e412633-fbed-427c-b05f-813ba95e9c74`): Compartir una cuenta bancaria no otorgará acceso a los datos administrativos de otras disciplinas.
+- **RN-1083** (DEC-122; EXTRAIDA_NO_VALIDADA; fuente `5e412633-fbed-427c-b05f-813ba95e9c74`): Los reportes financieros permitirán distinguir los movimientos de cada disciplina.
+- **RN-1084** (DEC-122; EXTRAIDA_NO_VALIDADA; fuente `5e412633-fbed-427c-b05f-813ba95e9c74`): La configuración deberá respetar las capacidades técnicas y contractuales de la pasarela seleccionada.
+- **RN-1085** (DEC-122; EXTRAIDA_NO_VALIDADA; fuente `5e412633-fbed-427c-b05f-813ba95e9c74`): El sistema no asumirá que una cuenta bancaria compartida implica una liquidación conjunta.
+- **RN-1086** (DEC-122; EXTRAIDA_NO_VALIDADA; fuente `5e412633-fbed-427c-b05f-813ba95e9c74`): Los cambios de cuenta receptora conservarán el historial de operaciones y liquidaciones anteriores.
+- **RN-1087** (DEC-122; EXTRAIDA_NO_VALIDADA; fuente `5e412633-fbed-427c-b05f-813ba95e9c74`): Las modificaciones de configuración quedarán auditadas.
+- **RN-1088** (DEC-123; EXTRAIDA_NO_VALIDADA; fuente `cb0da57a-dd02-4537-996e-5501abb86be4`): Los administradores de disciplina podrán registrar su cuenta receptora de pagos.
+- **RN-1089** (DEC-123; EXTRAIDA_NO_VALIDADA; fuente `cb0da57a-dd02-4537-996e-5501abb86be4`): Podrán modificar o reemplazar la cuenta receptora sin aprobación del superadministrador.
+- **RN-1090** (DEC-123; EXTRAIDA_NO_VALIDADA; fuente `cb0da57a-dd02-4537-996e-5501abb86be4`): Solo podrán administrar la configuración de las disciplinas para las que tengan permisos.
+- **RN-1091** (DEC-123; EXTRAIDA_NO_VALIDADA; fuente `cb0da57a-dd02-4537-996e-5501abb86be4`): Un administrador no podrá modificar las cuentas receptoras de otras disciplinas.
+- **RN-1092** (DEC-123; EXTRAIDA_NO_VALIDADA; fuente `cb0da57a-dd02-4537-996e-5501abb86be4`): El sistema deberá validar los datos requeridos de la cuenta antes de activar la configuración.
+- **RN-1093** (DEC-123; EXTRAIDA_NO_VALIDADA; fuente `cb0da57a-dd02-4537-996e-5501abb86be4`): La cuenta deberá cumplir los requisitos técnicos y de titularidad que exija la pasarela seleccionada.
+- **RN-1094** (DEC-123; EXTRAIDA_NO_VALIDADA; fuente `cb0da57a-dd02-4537-996e-5501abb86be4`): Cada cambio registrará el administrador responsable, fecha y hora.
+- **RN-1095** (DEC-123; EXTRAIDA_NO_VALIDADA; fuente `cb0da57a-dd02-4537-996e-5501abb86be4`): Se conservará el historial de configuraciones anteriores.
+- **RN-1096** (DEC-123; EXTRAIDA_NO_VALIDADA; fuente `cb0da57a-dd02-4537-996e-5501abb86be4`): Los pagos ya iniciados mantendrán la referencia a la configuración receptora utilizada al crearlos.
+- **RN-1097** (DEC-123; EXTRAIDA_NO_VALIDADA; fuente `cb0da57a-dd02-4537-996e-5501abb86be4`): Los cambios no modificarán retroactivamente pagos, liquidaciones ni conciliaciones históricas.
+- **RN-1098** (DEC-123; EXTRAIDA_NO_VALIDADA; fuente `cb0da57a-dd02-4537-996e-5501abb86be4`): Las nuevas operaciones utilizarán la configuración vigente y validada.
+- **RN-1099** (DEC-123; EXTRAIDA_NO_VALIDADA; fuente `cb0da57a-dd02-4537-996e-5501abb86be4`): El sistema impedirá iniciar nuevos cobros si no existe una configuración receptora operativa exigida por la pasarela.
+- **RN-1100** (DEC-123; EXTRAIDA_NO_VALIDADA; fuente `cb0da57a-dd02-4537-996e-5501abb86be4`): Los cambios quedarán disponibles para auditoría del superadministrador.
+- **RN-1101** (DEC-123; EXTRAIDA_NO_VALIDADA; fuente `cb0da57a-dd02-4537-996e-5501abb86be4`): La administración de cuentas receptoras respetará el aislamiento financiero establecido en DEC-121 y DEC-122.
+- **RN-1102** (DEC-124; EXTRAIDA_NO_VALIDADA; fuente `598bdef1-9775-4234-918a-b9155ced369b`): El alta o reemplazo de una cuenta vinculada a la pasarela requerirá verificación mediante OTP.
+- **RN-1103** (DEC-124; EXTRAIDA_NO_VALIDADA; fuente `598bdef1-9775-4234-918a-b9155ced369b`): El código se enviará al correo electrónico previamente verificado del administrador que realiza la operación.
+- **RN-1104** (DEC-124; EXTRAIDA_NO_VALIDADA; fuente `598bdef1-9775-4234-918a-b9155ced369b`): El código será de un solo uso y tendrá un vencimiento.
+- **RN-1105** (DEC-124; EXTRAIDA_NO_VALIDADA; fuente `598bdef1-9775-4234-918a-b9155ced369b`): Se limitarán los intentos fallidos y las solicitudes de nuevos códigos.
+- **RN-1106** (DEC-124; EXTRAIDA_NO_VALIDADA; fuente `598bdef1-9775-4234-918a-b9155ced369b`): La operación deberá quedar asociada al administrador autenticado y a su disciplina.
+- **RN-1107** (DEC-124; EXTRAIDA_NO_VALIDADA; fuente `598bdef1-9775-4234-918a-b9155ced369b`): No se requerirá aprobación de otro administrador ni del superadministrador.
+- **RN-1108** (DEC-124; EXTRAIDA_NO_VALIDADA; fuente `598bdef1-9775-4234-918a-b9155ced369b`): La validación del OTP no reemplazará los controles de vinculación y titularidad exigidos por la pasarela.
+- **RN-1109** (DEC-124; EXTRAIDA_NO_VALIDADA; fuente `598bdef1-9775-4234-918a-b9155ced369b`): Una cuenta nueva no podrá utilizarse para cobrar hasta completar su vinculación y validación.
+- **RN-1110** (DEC-124; EXTRAIDA_NO_VALIDADA; fuente `598bdef1-9775-4234-918a-b9155ced369b`): Se registrarán fecha, hora, administrador, disciplina, cuenta anterior y nueva, sin almacenar credenciales sensibles innecesarias.
+- **RN-1111** (DEC-124; EXTRAIDA_NO_VALIDADA; fuente `598bdef1-9775-4234-918a-b9155ced369b`): El administrador recibirá un aviso de seguridad cuando se complete el cambio.
+- **RN-1112** (DEC-124; EXTRAIDA_NO_VALIDADA; fuente `598bdef1-9775-4234-918a-b9155ced369b`): El superadministrador también recibirá un aviso de seguridad, sin necesidad de aprobar la operación.
+- **RN-1113** (DEC-124; EXTRAIDA_NO_VALIDADA; fuente `598bdef1-9775-4234-918a-b9155ced369b`): Los avisos deberán respetar los permisos, ámbitos y reglas del sistema de notificaciones.
+- **RN-1114** (DEC-124; EXTRAIDA_NO_VALIDADA; fuente `598bdef1-9775-4234-918a-b9155ced369b`): Los pagos iniciados antes del cambio conservarán su referencia original para conciliación y trazabilidad.
+- **RN-1115** (DEC-124; EXTRAIDA_NO_VALIDADA; fuente `598bdef1-9775-4234-918a-b9155ced369b`): Si la validación falla, la nueva cuenta no se activará y se conservará la configuración anterior, si sigue operativa.
+- **RN-1116** (DEC-124; EXTRAIDA_NO_VALIDADA; fuente `598bdef1-9775-4234-918a-b9155ced369b`): Los eventos de seguridad y los cambios de configuración permanecerán auditados.
+- **RN-1117** (DEC-125; EXTRAIDA_NO_VALIDADA; fuente `86e957da-2af8-44db-b67a-aeaaa2b1f8f5`): Cada disciplina tendrá una configuración independiente de integración con la pasarela.
+- **RN-1118** (DEC-125; EXTRAIDA_NO_VALIDADA; fuente `86e957da-2af8-44db-b67a-aeaaa2b1f8f5`): Se priorizarán mecanismos oficiales de autorización externa, como OAuth.
+- **RN-1119** (DEC-125; EXTRAIDA_NO_VALIDADA; fuente `86e957da-2af8-44db-b67a-aeaaa2b1f8f5`): Se admitirán otros mecanismos de integración seguros cuando el proveedor los requiera.
+- **RN-1120** (DEC-125; EXTRAIDA_NO_VALIDADA; fuente `86e957da-2af8-44db-b67a-aeaaa2b1f8f5`): No se solicitará la contraseña personal de la cuenta de la pasarela cuando exista un mecanismo oficial de autorización.
+- **RN-1121** (DEC-125; EXTRAIDA_NO_VALIDADA; fuente `86e957da-2af8-44db-b67a-aeaaa2b1f8f5`): Las credenciales y tokens de integración se almacenarán de forma segura y no se expondrán en el frontend.
+- **RN-1122** (DEC-125; EXTRAIDA_NO_VALIDADA; fuente `86e957da-2af8-44db-b67a-aeaaa2b1f8f5`): Las conexiones deberán respetar los permisos y el ámbito de cada disciplina.
+- **RN-1123** (DEC-125; EXTRAIDA_NO_VALIDADA; fuente `86e957da-2af8-44db-b67a-aeaaa2b1f8f5`): Varias disciplinas podrán utilizar el mismo proveedor de pagos sin compartir sus registros operativos.
+- **RN-1124** (DEC-125; EXTRAIDA_NO_VALIDADA; fuente `86e957da-2af8-44db-b67a-aeaaa2b1f8f5`): Las conexiones de distintas disciplinas serán independientes a nivel lógico, incluso si utilizan una misma cuenta autorizada.
+- **RN-1125** (DEC-125; EXTRAIDA_NO_VALIDADA; fuente `86e957da-2af8-44db-b67a-aeaaa2b1f8f5`): Solo se habilitarán integraciones que permitan implementar el modelo de Split Payment acordado.
+- **RN-1126** (DEC-125; EXTRAIDA_NO_VALIDADA; fuente `86e957da-2af8-44db-b67a-aeaaa2b1f8f5`): La plataforma deberá identificar por separado el importe de la cuota, su comisión del 5% y los costos de la pasarela.
+- **RN-1127** (DEC-125; EXTRAIDA_NO_VALIDADA; fuente `86e957da-2af8-44db-b67a-aeaaa2b1f8f5`): Los fondos correspondientes a las cuotas se acreditarán directamente a sus destinatarios mediante la pasarela, sin custodia por parte de nuestra plataforma.
+- **RN-1128** (DEC-125; EXTRAIDA_NO_VALIDADA; fuente `86e957da-2af8-44db-b67a-aeaaa2b1f8f5`): El alta o reemplazo de una conexión requerirá la verificación adicional definida en DEC-124.
+- **RN-1129** (DEC-125; EXTRAIDA_NO_VALIDADA; fuente `86e957da-2af8-44db-b67a-aeaaa2b1f8f5`): Los errores de autorización o conexión deberán registrarse sin exponer datos sensibles.
+- **RN-1130** (DEC-125; EXTRAIDA_NO_VALIDADA; fuente `86e957da-2af8-44db-b67a-aeaaa2b1f8f5`): La plataforma deberá detectar cuando una conexión deje de estar autorizada o resulte inutilizable.
+- **RN-1131** (DEC-125; EXTRAIDA_NO_VALIDADA; fuente `86e957da-2af8-44db-b67a-aeaaa2b1f8f5`): No podrán iniciarse nuevos pagos con una conexión que no esté operativa.
+- **RN-1132** (DEC-125; EXTRAIDA_NO_VALIDADA; fuente `86e957da-2af8-44db-b67a-aeaaa2b1f8f5`): La desconexión o sustitución de una cuenta no alterará el historial de pagos y conciliaciones.
+- **RN-1133** (DEC-125; EXTRAIDA_NO_VALIDADA; fuente `86e957da-2af8-44db-b67a-aeaaa2b1f8f5`): La implementación definitiva de cada proveedor estará condicionada a sus capacidades técnicas y contractuales de split.
+- **RN-1134** (DEC-126; EXTRAIDA_NO_VALIDADA; fuente `c195f742-ea56-47a3-9af3-07549220050e`): Cada disciplina tendrá un estado independiente de conexión con su pasarela.
+- **RN-1135** (DEC-126; EXTRAIDA_NO_VALIDADA; fuente `c195f742-ea56-47a3-9af3-07549220050e`): Si una conexión deja de estar operativa, se bloqueará el inicio de nuevos pagos online de esa disciplina.
+- **RN-1136** (DEC-126; EXTRAIDA_NO_VALIDADA; fuente `c195f742-ea56-47a3-9af3-07549220050e`): El bloqueo no afectará a otras disciplinas con conexiones operativas.
+- **RN-1137** (DEC-126; EXTRAIDA_NO_VALIDADA; fuente `c195f742-ea56-47a3-9af3-07549220050e`): Se notificará a los administradores de la disciplina afectada.
+- **RN-1138** (DEC-126; EXTRAIDA_NO_VALIDADA; fuente `c195f742-ea56-47a3-9af3-07549220050e`): También se notificará al superadministrador.
+- **RN-1139** (DEC-126; EXTRAIDA_NO_VALIDADA; fuente `c195f742-ea56-47a3-9af3-07549220050e`): Las alertas respetarán el sistema de notificaciones y la agrupación por incidente definidos anteriormente.
+- **RN-1140** (DEC-126; EXTRAIDA_NO_VALIDADA; fuente `c195f742-ea56-47a3-9af3-07549220050e`): Las cuotas pendientes seguirán disponibles para consulta.
+- **RN-1141** (DEC-126; EXTRAIDA_NO_VALIDADA; fuente `c195f742-ea56-47a3-9af3-07549220050e`): Las operaciones iniciadas antes de la interrupción conservarán su estado y referencia original.
+- **RN-1142** (DEC-126; EXTRAIDA_NO_VALIDADA; fuente `c195f742-ea56-47a3-9af3-07549220050e`): Se continuará intentando conciliar las operaciones previas cuando la información de la pasarela esté disponible.
+- **RN-1143** (DEC-126; EXTRAIDA_NO_VALIDADA; fuente `c195f742-ea56-47a3-9af3-07549220050e`): Los administradores podrán continuar registrando pagos externos autorizados, respetando DEC-048.
+- **RN-1144** (DEC-126; EXTRAIDA_NO_VALIDADA; fuente `c195f742-ea56-47a3-9af3-07549220050e`): Los pagos externos no se contabilizarán como transacciones online para los mínimos comerciales.
+- **RN-1145** (DEC-126; EXTRAIDA_NO_VALIDADA; fuente `c195f742-ea56-47a3-9af3-07549220050e`): La recuperación de la conexión requerirá verificar nuevamente que esté operativa.
+- **RN-1146** (DEC-126; EXTRAIDA_NO_VALIDADA; fuente `c195f742-ea56-47a3-9af3-07549220050e`): Una vez validada, se habilitarán los nuevos cobros online de la disciplina.
+- **RN-1147** (DEC-126; EXTRAIDA_NO_VALIDADA; fuente `c195f742-ea56-47a3-9af3-07549220050e`): La recuperación no generará pagos duplicados ni modificará operaciones ya confirmadas.
+- **RN-1148** (DEC-126; EXTRAIDA_NO_VALIDADA; fuente `c195f742-ea56-47a3-9af3-07549220050e`): Se conservará un registro auditable de la interrupción, sus causas conocidas y su recuperación.
+- **RN-1149** (DEC-126; EXTRAIDA_NO_VALIDADA; fuente `c195f742-ea56-47a3-9af3-07549220050e`): La resolución del incidente actualizará las notificaciones correspondientes sin generar avisos duplicados.
+- **RN-1150** (DEC-127; EXTRAIDA_NO_VALIDADA; fuente `8cccae1b-3bdf-41bb-8170-66480bb5879c`): Cada conexión de disciplina será monitoreada independientemente.
+- **RN-1151** (DEC-127; EXTRAIDA_NO_VALIDADA; fuente `8cccae1b-3bdf-41bb-8170-66480bb5879c`): Se realizarán verificaciones periódicas de conectividad y autorización, según las capacidades de la pasarela.
+- **RN-1152** (DEC-127; EXTRAIDA_NO_VALIDADA; fuente `8cccae1b-3bdf-41bb-8170-66480bb5879c`): Se procesarán los eventos oficiales del proveedor, cuando estén disponibles.
+- **RN-1153** (DEC-127; EXTRAIDA_NO_VALIDADA; fuente `8cccae1b-3bdf-41bb-8170-66480bb5879c`): Los errores producidos durante operaciones reales también servirán para detectar problemas.
+- **RN-1154** (DEC-127; EXTRAIDA_NO_VALIDADA; fuente `8cccae1b-3bdf-41bb-8170-66480bb5879c`): Se distinguirán fallas de autorización, configuración y disponibilidad temporal.
+- **RN-1155** (DEC-127; EXTRAIDA_NO_VALIDADA; fuente `8cccae1b-3bdf-41bb-8170-66480bb5879c`): Una autorización revocada o una configuración inválida confirmada bloqueará nuevos cobros online de la disciplina afectada.
+- **RN-1156** (DEC-127; EXTRAIDA_NO_VALIDADA; fuente `8cccae1b-3bdf-41bb-8170-66480bb5879c`): Un error temporal aislado no provocará automáticamente una desconexión permanente.
+- **RN-1157** (DEC-127; EXTRAIDA_NO_VALIDADA; fuente `8cccae1b-3bdf-41bb-8170-66480bb5879c`): Las fallas temporales se evaluarán mediante criterios de recurrencia y disponibilidad configurados por el sistema.
+- **RN-1158** (DEC-127; EXTRAIDA_NO_VALIDADA; fuente `8cccae1b-3bdf-41bb-8170-66480bb5879c`): Si una interrupción temporal impide procesar pagos de forma segura, se suspenderán temporalmente nuevos intentos de cobro de esa disciplina.
+- **RN-1159** (DEC-127; EXTRAIDA_NO_VALIDADA; fuente `8cccae1b-3bdf-41bb-8170-66480bb5879c`): Las verificaciones no deberán generar cobros de prueba ni movimientos financieros reales.
+- **RN-1160** (DEC-127; EXTRAIDA_NO_VALIDADA; fuente `8cccae1b-3bdf-41bb-8170-66480bb5879c`): Los eventos repetidos de una misma incidencia se agruparán para evitar notificaciones duplicadas.
+- **RN-1161** (DEC-127; EXTRAIDA_NO_VALIDADA; fuente `8cccae1b-3bdf-41bb-8170-66480bb5879c`): Las interrupciones y recuperaciones respetarán las reglas de DEC-126.
+- **RN-1162** (DEC-127; EXTRAIDA_NO_VALIDADA; fuente `8cccae1b-3bdf-41bb-8170-66480bb5879c`): Se registrarán el origen, tipo, fecha, estado y evolución de cada incidente.
+- **RN-1163** (DEC-127; EXTRAIDA_NO_VALIDADA; fuente `8cccae1b-3bdf-41bb-8170-66480bb5879c`): El monitoreo no expondrá tokens, credenciales ni información financiera sensible.
+- **RN-1164** (DEC-127; EXTRAIDA_NO_VALIDADA; fuente `8cccae1b-3bdf-41bb-8170-66480bb5879c`): Una falla en una disciplina no modificará el estado operativo de otras conexiones.
+- **RN-1165** (DEC-127; EXTRAIDA_NO_VALIDADA; fuente `8cccae1b-3bdf-41bb-8170-66480bb5879c`): La recuperación se confirmará mediante verificaciones válidas antes de reactivar los cobros.
+- **RN-1166** (DEC-128; EXTRAIDA_NO_VALIDADA; fuente `52d25648-40a4-40e6-a296-2d05bb7140fd`): La plataforma verificará automáticamente la recuperación de las conexiones bloqueadas.
+- **RN-1167** (DEC-128; EXTRAIDA_NO_VALIDADA; fuente `52d25648-40a4-40e6-a296-2d05bb7140fd`): Cuando una conexión vuelva a estar operativa y autorizada, se habilitarán los nuevos cobros online.
+- **RN-1168** (DEC-128; EXTRAIDA_NO_VALIDADA; fuente `52d25648-40a4-40e6-a296-2d05bb7140fd`): No será necesaria una aprobación ni una reactivación manual del administrador.
+- **RN-1169** (DEC-128; EXTRAIDA_NO_VALIDADA; fuente `52d25648-40a4-40e6-a296-2d05bb7140fd`): La recuperación automática se aplicará independientemente de la clasificación original de la falla.
+- **RN-1170** (DEC-128; EXTRAIDA_NO_VALIDADA; fuente `52d25648-40a4-40e6-a296-2d05bb7140fd`): No se reactivarán cobros mientras la autorización de la pasarela continúe siendo inválida.
+- **RN-1171** (DEC-128; EXTRAIDA_NO_VALIDADA; fuente `52d25648-40a4-40e6-a296-2d05bb7140fd`): Cada disciplina se recuperará de forma independiente.
+- **RN-1172** (DEC-128; EXTRAIDA_NO_VALIDADA; fuente `52d25648-40a4-40e6-a296-2d05bb7140fd`): La recuperación no modificará los estados de pagos anteriores.
+- **RN-1173** (DEC-128; EXTRAIDA_NO_VALIDADA; fuente `52d25648-40a4-40e6-a296-2d05bb7140fd`): No se reintentarán automáticamente cobros que pudieran generar duplicaciones.
+- **RN-1174** (DEC-128; EXTRAIDA_NO_VALIDADA; fuente `52d25648-40a4-40e6-a296-2d05bb7140fd`): Se registrarán fecha, hora y resultado de la verificación de recuperación.
+- **RN-1175** (DEC-128; EXTRAIDA_NO_VALIDADA; fuente `52d25648-40a4-40e6-a296-2d05bb7140fd`): El incidente existente se actualizará como resuelto cuando corresponda.
+- **RN-1176** (DEC-128; EXTRAIDA_NO_VALIDADA; fuente `52d25648-40a4-40e6-a296-2d05bb7140fd`): Los administradores de la disciplina y el superadministrador podrán consultar el historial de la interrupción.
+- **RN-1177** (DEC-128; EXTRAIDA_NO_VALIDADA; fuente `52d25648-40a4-40e6-a296-2d05bb7140fd`): La reactivación respetará otros bloqueos independientes, como la suspensión comercial o la desactivación de la disciplina.
+- **RN-1178** (DEC-129; EXTRAIDA_NO_VALIDADA; fuente `4b349d14-f615-428f-ae3d-f567926bc904`): El superadministrador podrá configurar la frecuencia de verificación de conexiones por proveedor de pagos.
+- **RN-1179** (DEC-129; EXTRAIDA_NO_VALIDADA; fuente `4b349d14-f615-428f-ae3d-f567926bc904`): Podrá configurar los intervalos de verificación para recuperar conexiones bloqueadas.
+- **RN-1180** (DEC-129; EXTRAIDA_NO_VALIDADA; fuente `4b349d14-f615-428f-ae3d-f567926bc904`): Los parámetros serán globales para todas las disciplinas que utilicen el mismo proveedor.
+- **RN-1181** (DEC-129; EXTRAIDA_NO_VALIDADA; fuente `4b349d14-f615-428f-ae3d-f567926bc904`): Cada proveedor podrá tener una configuración de monitoreo diferente.
+- **RN-1182** (DEC-129; EXTRAIDA_NO_VALIDADA; fuente `4b349d14-f615-428f-ae3d-f567926bc904`): Las frecuencias deberán respetar los límites y restricciones técnicas de las API de cada pasarela.
+- **RN-1183** (DEC-129; EXTRAIDA_NO_VALIDADA; fuente `4b349d14-f615-428f-ae3d-f567926bc904`): Se evitarán verificaciones innecesarias que puedan provocar bloqueos por exceso de solicitudes.
+- **RN-1184** (DEC-129; EXTRAIDA_NO_VALIDADA; fuente `4b349d14-f615-428f-ae3d-f567926bc904`): Las conexiones conservarán estados operativos independientes por disciplina.
+- **RN-1185** (DEC-129; EXTRAIDA_NO_VALIDADA; fuente `4b349d14-f615-428f-ae3d-f567926bc904`): Una falla detectada en una conexión no bloqueará automáticamente las demás conexiones del proveedor.
+- **RN-1186** (DEC-129; EXTRAIDA_NO_VALIDADA; fuente `4b349d14-f615-428f-ae3d-f567926bc904`): Los cambios de frecuencia se aplicarán a las verificaciones futuras, sin alterar registros históricos.
+- **RN-1187** (DEC-129; EXTRAIDA_NO_VALIDADA; fuente `4b349d14-f615-428f-ae3d-f567926bc904`): Se registrarán los cambios de configuración, incluyendo valores anteriores, nuevos, fecha y usuario responsable.
+- **RN-1188** (DEC-129; EXTRAIDA_NO_VALIDADA; fuente `4b349d14-f615-428f-ae3d-f567926bc904`): Los administradores de disciplina podrán consultar el estado de su conexión, pero no modificar los parámetros globales.
+- **RN-1189** (DEC-129; EXTRAIDA_NO_VALIDADA; fuente `4b349d14-f615-428f-ae3d-f567926bc904`): La recuperación automática continuará respetando DEC-128.
+- **RN-1190** (DEC-129; EXTRAIDA_NO_VALIDADA; fuente `4b349d14-f615-428f-ae3d-f567926bc904`): El sistema podrá aplicar límites técnicos de seguridad para impedir configuraciones incompatibles con las restricciones del proveedor.
+- **RN-1191** (DEC-130; EXTRAIDA_NO_VALIDADA; fuente `b0155776-99e8-4c39-9916-20618b83a777`): Existirá un catálogo global de proveedores de pago integrados.
+- **RN-1192** (DEC-130; EXTRAIDA_NO_VALIDADA; fuente `b0155776-99e8-4c39-9916-20618b83a777`): Solo el superadministrador podrá habilitar o deshabilitar proveedores del catálogo.
+- **RN-1193** (DEC-130; EXTRAIDA_NO_VALIDADA; fuente `b0155776-99e8-4c39-9916-20618b83a777`): Únicamente podrán habilitarse proveedores con una integración técnica implementada y compatible con el modelo de Split Payment.
+- **RN-1194** (DEC-130; EXTRAIDA_NO_VALIDADA; fuente `b0155776-99e8-4c39-9916-20618b83a777`): Cada disciplina podrá seleccionar un proveedor habilitado.
+- **RN-1195** (DEC-130; EXTRAIDA_NO_VALIDADA; fuente `b0155776-99e8-4c39-9916-20618b83a777`): Los administradores de disciplina podrán vincular su cuenta mediante los mecanismos establecidos en DEC-125.
+- **RN-1196** (DEC-130; EXTRAIDA_NO_VALIDADA; fuente `b0155776-99e8-4c39-9916-20618b83a777`): Cada disciplina conservará una configuración de conexión independiente.
+- **RN-1197** (DEC-130; EXTRAIDA_NO_VALIDADA; fuente `b0155776-99e8-4c39-9916-20618b83a777`): Varias disciplinas podrán utilizar el mismo proveedor sin compartir sus operaciones financieras.
+- **RN-1198** (DEC-130; EXTRAIDA_NO_VALIDADA; fuente `b0155776-99e8-4c39-9916-20618b83a777`): La habilitación de un proveedor no conectará automáticamente las cuentas de las disciplinas.
+- **RN-1199** (DEC-130; EXTRAIDA_NO_VALIDADA; fuente `b0155776-99e8-4c39-9916-20618b83a777`): Deshabilitar un proveedor impedirá nuevas vinculaciones mientras permanezca deshabilitado.
+- **RN-1200** (DEC-130; EXTRAIDA_NO_VALIDADA; fuente `b0155776-99e8-4c39-9916-20618b83a777`): La deshabilitación no eliminará pagos, liquidaciones ni conciliaciones históricos.
+- **RN-1201** (DEC-130; EXTRAIDA_NO_VALIDADA; fuente `b0155776-99e8-4c39-9916-20618b83a777`): Los administradores de disciplina no podrán habilitar proveedores globalmente.
+- **RN-1202** (DEC-130; EXTRAIDA_NO_VALIDADA; fuente `b0155776-99e8-4c39-9916-20618b83a777`): El catálogo identificará el estado de disponibilidad de cada proveedor.
+- **RN-1203** (DEC-130; EXTRAIDA_NO_VALIDADA; fuente `b0155776-99e8-4c39-9916-20618b83a777`): Los cambios de habilitación quedarán auditados con usuario, fecha, hora y valores anteriores y nuevos.
+- **RN-1204** (DEC-130; EXTRAIDA_NO_VALIDADA; fuente `b0155776-99e8-4c39-9916-20618b83a777`): La gestión de proveedores respetará los parámetros globales de monitoreo definidos en DEC-129.
+- **RN-1205** (DEC-130; EXTRAIDA_NO_VALIDADA; fuente `b0155776-99e8-4c39-9916-20618b83a777`): El comportamiento de las conexiones existentes al deshabilitar un proveedor se definirá por separado.
+- **RN-1206** (DEC-131; EXTRAIDA_NO_VALIDADA; fuente `c1211db6-74c2-4940-87be-39a84e959761`): El superadministrador podrá deshabilitar un proveedor mediante dos modalidades: comercial y operativa.
+- **RN-1207** (DEC-131; EXTRAIDA_NO_VALIDADA; fuente `c1211db6-74c2-4940-87be-39a84e959761`): La deshabilitación comercial impedirá crear nuevas vinculaciones con el proveedor.
+- **RN-1208** (DEC-131; EXTRAIDA_NO_VALIDADA; fuente `c1211db6-74c2-4940-87be-39a84e959761`): Las disciplinas que ya tengan conexiones válidas podrán continuar cobrando durante una deshabilitación comercial.
+- **RN-1209** (DEC-131; EXTRAIDA_NO_VALIDADA; fuente `c1211db6-74c2-4940-87be-39a84e959761`): La deshabilitación operativa bloqueará inmediatamente el inicio de nuevos cobros online mediante ese proveedor.
+- **RN-1210** (DEC-131; EXTRAIDA_NO_VALIDADA; fuente `c1211db6-74c2-4940-87be-39a84e959761`): El bloqueo operativo afectará a todas las disciplinas que utilicen el proveedor deshabilitado.
+- **RN-1211** (DEC-131; EXTRAIDA_NO_VALIDADA; fuente `c1211db6-74c2-4940-87be-39a84e959761`): Las demás pasarelas habilitadas continuarán funcionando normalmente.
+- **RN-1212** (DEC-131; EXTRAIDA_NO_VALIDADA; fuente `c1211db6-74c2-4940-87be-39a84e959761`): Ninguna modalidad eliminará ni modificará pagos históricos.
+- **RN-1213** (DEC-131; EXTRAIDA_NO_VALIDADA; fuente `c1211db6-74c2-4940-87be-39a84e959761`): Las operaciones iniciadas antes del bloqueo conservarán sus referencias y estados.
+- **RN-1214** (DEC-131; EXTRAIDA_NO_VALIDADA; fuente `c1211db6-74c2-4940-87be-39a84e959761`): Se continuará conciliando esas operaciones cuando la información del proveedor esté disponible.
+- **RN-1215** (DEC-131; EXTRAIDA_NO_VALIDADA; fuente `c1211db6-74c2-4940-87be-39a84e959761`): Los administradores de las disciplinas afectadas serán notificados cuando un bloqueo operativo interrumpa sus cobros.
+- **RN-1216** (DEC-131; EXTRAIDA_NO_VALIDADA; fuente `c1211db6-74c2-4940-87be-39a84e959761`): El superadministrador podrá consultar el estado y alcance de la deshabilitación.
+- **RN-1217** (DEC-131; EXTRAIDA_NO_VALIDADA; fuente `c1211db6-74c2-4940-87be-39a84e959761`): Cada cambio registrará modalidad, motivo, usuario responsable, fecha y hora.
+- **RN-1218** (DEC-131; EXTRAIDA_NO_VALIDADA; fuente `c1211db6-74c2-4940-87be-39a84e959761`): El sistema distinguirá un bloqueo global del proveedor de una falla particular de conexión.
+- **RN-1219** (DEC-131; EXTRAIDA_NO_VALIDADA; fuente `c1211db6-74c2-4940-87be-39a84e959761`): La recuperación automática de DEC-128 no podrá levantar un bloqueo operativo global decidido por el superadministrador.
+- **RN-1220** (DEC-131; EXTRAIDA_NO_VALIDADA; fuente `c1211db6-74c2-4940-87be-39a84e959761`): Al levantar el bloqueo global, cada conexión deberá estar operativa y autorizada antes de permitir nuevos cobros.
+- **RN-1221** (DEC-131; EXTRAIDA_NO_VALIDADA; fuente `c1211db6-74c2-4940-87be-39a84e959761`): Las cuotas pendientes seguirán disponibles para consulta y registro de pagos externos autorizados.
+- **RN-1222** (DEC-132; EXTRAIDA_NO_VALIDADA; fuente `7aac55b2-274f-4d12-b681-3619c114a37f`): Solo el superadministrador podrá levantar una deshabilitación global de una pasarela.
+- **RN-1223** (DEC-132; EXTRAIDA_NO_VALIDADA; fuente `7aac55b2-274f-4d12-b681-3619c114a37f`): La reactivación global requerirá una acción administrativa explícita.
+- **RN-1224** (DEC-132; EXTRAIDA_NO_VALIDADA; fuente `7aac55b2-274f-4d12-b681-3619c114a37f`): El monitoreo automático no podrá levantar por sí mismo una deshabilitación global.
+- **RN-1225** (DEC-132; EXTRAIDA_NO_VALIDADA; fuente `7aac55b2-274f-4d12-b681-3619c114a37f`): Al reactivar el proveedor, se iniciará la validación de las conexiones de las disciplinas afectadas.
+- **RN-1226** (DEC-132; EXTRAIDA_NO_VALIDADA; fuente `7aac55b2-274f-4d12-b681-3619c114a37f`): Cada conexión se verificará de forma independiente.
+- **RN-1227** (DEC-132; EXTRAIDA_NO_VALIDADA; fuente `7aac55b2-274f-4d12-b681-3619c114a37f`): Las conexiones operativas y autorizadas podrán reanudar automáticamente sus cobros online.
+- **RN-1228** (DEC-132; EXTRAIDA_NO_VALIDADA; fuente `7aac55b2-274f-4d12-b681-3619c114a37f`): No será necesaria una reactivación manual por parte de cada administrador de disciplina.
+- **RN-1229** (DEC-132; EXTRAIDA_NO_VALIDADA; fuente `7aac55b2-274f-4d12-b681-3619c114a37f`): Las conexiones que continúen presentando fallas permanecerán bloqueadas.
+- **RN-1230** (DEC-132; EXTRAIDA_NO_VALIDADA; fuente `7aac55b2-274f-4d12-b681-3619c114a37f`): Una conexión con problemas no impedirá la recuperación de las demás.
+- **RN-1231** (DEC-132; EXTRAIDA_NO_VALIDADA; fuente `7aac55b2-274f-4d12-b681-3619c114a37f`): La reactivación respetará otros bloqueos vigentes, como la suspensión comercial o la desactivación de una disciplina.
+- **RN-1232** (DEC-132; EXTRAIDA_NO_VALIDADA; fuente `7aac55b2-274f-4d12-b681-3619c114a37f`): Los pagos iniciados antes de la deshabilitación conservarán su estado e historial.
+- **RN-1233** (DEC-132; EXTRAIDA_NO_VALIDADA; fuente `7aac55b2-274f-4d12-b681-3619c114a37f`): No se generarán nuevos cobros automáticamente por el solo hecho de reactivar el proveedor.
+- **RN-1234** (DEC-132; EXTRAIDA_NO_VALIDADA; fuente `7aac55b2-274f-4d12-b681-3619c114a37f`): La reactivación global registrará usuario responsable, fecha, hora y proveedor afectado.
+- **RN-1235** (DEC-132; EXTRAIDA_NO_VALIDADA; fuente `7aac55b2-274f-4d12-b681-3619c114a37f`): Se auditará el resultado de la validación de cada conexión.
+- **RN-1236** (DEC-132; EXTRAIDA_NO_VALIDADA; fuente `7aac55b2-274f-4d12-b681-3619c114a37f`): Los incidentes y notificaciones correspondientes se actualizarán según el estado real de recuperación.
+- **RN-1237** (DEC-132; EXTRAIDA_NO_VALIDADA; fuente `7aac55b2-274f-4d12-b681-3619c114a37f`): Las conexiones que permanezcan bloqueadas continuarán sujetas al monitoreo y recuperación automática definidos en DEC-127 y DEC-128.
+- **RN-1238** (DEC-133; EXTRAIDA_NO_VALIDADA; fuente `395cb944-1813-4769-87cc-beebfe8d472e`): Los administradores de disciplina podrán solicitar el cambio de pasarela dentro de su ámbito.
+- **RN-1239** (DEC-133; EXTRAIDA_NO_VALIDADA; fuente `395cb944-1813-4769-87cc-beebfe8d472e`): La nueva pasarela deberá estar habilitada en el catálogo global.
+- **RN-1240** (DEC-133; EXTRAIDA_NO_VALIDADA; fuente `395cb944-1813-4769-87cc-beebfe8d472e`): El cambio requerirá la verificación OTP definida en DEC-124.
+- **RN-1241** (DEC-133; EXTRAIDA_NO_VALIDADA; fuente `395cb944-1813-4769-87cc-beebfe8d472e`): La nueva conexión deberá completar la autorización y validación correspondientes.
+- **RN-1242** (DEC-133; EXTRAIDA_NO_VALIDADA; fuente `395cb944-1813-4769-87cc-beebfe8d472e`): Se verificará que la nueva integración sea compatible con el Split Payment requerido.
+- **RN-1243** (DEC-133; EXTRAIDA_NO_VALIDADA; fuente `395cb944-1813-4769-87cc-beebfe8d472e`): La disciplina mantendrá una única pasarela principal para iniciar nuevos cobros online.
+- **RN-1244** (DEC-133; EXTRAIDA_NO_VALIDADA; fuente `395cb944-1813-4769-87cc-beebfe8d472e`): La nueva pasarela comenzará a utilizarse únicamente después de confirmar su activación.
+- **RN-1245** (DEC-133; EXTRAIDA_NO_VALIDADA; fuente `395cb944-1813-4769-87cc-beebfe8d472e`): Los pagos iniciados antes del cambio conservarán su proveedor y referencia originales.
+- **RN-1246** (DEC-133; EXTRAIDA_NO_VALIDADA; fuente `395cb944-1813-4769-87cc-beebfe8d472e`): Las operaciones anteriores continuarán conciliándose mediante la información del proveedor con el que fueron creadas.
+- **RN-1247** (DEC-133; EXTRAIDA_NO_VALIDADA; fuente `395cb944-1813-4769-87cc-beebfe8d472e`): El cambio no modificará pagos, comisiones ni liquidaciones históricas.
+- **RN-1248** (DEC-133; EXTRAIDA_NO_VALIDADA; fuente `395cb944-1813-4769-87cc-beebfe8d472e`): No se crearán pagos duplicados durante la transición.
+- **RN-1249** (DEC-133; EXTRAIDA_NO_VALIDADA; fuente `395cb944-1813-4769-87cc-beebfe8d472e`): Si falla la validación de la nueva pasarela, no se activará el cambio y se conservará la configuración anterior, si sigue operativa.
+- **RN-1250** (DEC-133; EXTRAIDA_NO_VALIDADA; fuente `395cb944-1813-4769-87cc-beebfe8d472e`): La migración de una disciplina no afectará las conexiones de otras disciplinas.
+- **RN-1251** (DEC-133; EXTRAIDA_NO_VALIDADA; fuente `395cb944-1813-4769-87cc-beebfe8d472e`): Se conservará el historial de proveedores utilizados por cada disciplina.
+- **RN-1252** (DEC-133; EXTRAIDA_NO_VALIDADA; fuente `395cb944-1813-4769-87cc-beebfe8d472e`): Se auditarán el administrador responsable, fecha, hora, proveedor anterior y proveedor nuevo.
+- **RN-1253** (DEC-133; EXTRAIDA_NO_VALIDADA; fuente `395cb944-1813-4769-87cc-beebfe8d472e`): La plataforma permitirá consultar y conciliar operaciones históricas de proveedores anteriores, siempre que sus mecanismos de consulta continúen disponibles.
+- **RN-1254** (DEC-134; EXTRAIDA_NO_VALIDADA; fuente `39977ea5-190b-44fe-8239-47b98a9e7888`): Los checkouts iniciados antes del cambio de pasarela conservarán su proveedor original.
+- **RN-1255** (DEC-134; EXTRAIDA_NO_VALIDADA; fuente `39977ea5-190b-44fe-8239-47b98a9e7888`): Podrán completarse mientras estén vigentes y el proveedor permita procesarlos.
+- **RN-1256** (DEC-134; EXTRAIDA_NO_VALIDADA; fuente `39977ea5-190b-44fe-8239-47b98a9e7888`): Cada checkout mantendrá identificadas las cuotas y el jugador o jugadores involucrados.
+- **RN-1257** (DEC-134; EXTRAIDA_NO_VALIDADA; fuente `39977ea5-190b-44fe-8239-47b98a9e7888`): Una cuota con una operación de pago pendiente válida no podrá incorporarse a otro checkout incompatible.
+- **RN-1258** (DEC-134; EXTRAIDA_NO_VALIDADA; fuente `39977ea5-190b-44fe-8239-47b98a9e7888`): La restricción de duplicados se aplicará aunque las operaciones utilicen pasarelas diferentes.
+- **RN-1259** (DEC-134; EXTRAIDA_NO_VALIDADA; fuente `39977ea5-190b-44fe-8239-47b98a9e7888`): Cerrar la pantalla del checkout no significará que el pago fue cancelado.
+- **RN-1260** (DEC-134; EXTRAIDA_NO_VALIDADA; fuente `39977ea5-190b-44fe-8239-47b98a9e7888`): El sistema verificará el estado real de la operación mediante eventos, consultas y conciliación.
+- **RN-1261** (DEC-134; EXTRAIDA_NO_VALIDADA; fuente `39977ea5-190b-44fe-8239-47b98a9e7888`): Si el checkout vence, se cancela o falla definitivamente, sus cuotas podrán volver a estar disponibles para un nuevo intento, siempre que no estén pagadas.
+- **RN-1262** (DEC-134; EXTRAIDA_NO_VALIDADA; fuente `39977ea5-190b-44fe-8239-47b98a9e7888`): Los nuevos intentos utilizarán la pasarela principal vigente de la disciplina.
+- **RN-1263** (DEC-134; EXTRAIDA_NO_VALIDADA; fuente `39977ea5-190b-44fe-8239-47b98a9e7888`): Los eventos repetidos de la pasarela deberán procesarse de forma idempotente.
+- **RN-1264** (DEC-134; EXTRAIDA_NO_VALIDADA; fuente `39977ea5-190b-44fe-8239-47b98a9e7888`): Un pago confirmado no podrá volver a imputarse sobre las mismas cuotas.
+- **RN-1265** (DEC-134; EXTRAIDA_NO_VALIDADA; fuente `39977ea5-190b-44fe-8239-47b98a9e7888`): Las operaciones de distintos proveedores conservarán identificadores y trazabilidad independientes.
+- **RN-1266** (DEC-134; EXTRAIDA_NO_VALIDADA; fuente `39977ea5-190b-44fe-8239-47b98a9e7888`): Los pagos confirmados en la pasarela anterior continuarán conciliándose con ella.
+- **RN-1267** (DEC-134; EXTRAIDA_NO_VALIDADA; fuente `39977ea5-190b-44fe-8239-47b98a9e7888`): Ante un estado incierto, el sistema no habilitará un segundo cobro hasta verificar que el anterior no puede completarse.
+- **RN-1268** (DEC-134; EXTRAIDA_NO_VALIDADA; fuente `39977ea5-190b-44fe-8239-47b98a9e7888`): Se registrarán los cambios de estado y los intentos de pago asociados a cada cuota.
+- **RN-1269** (DEC-134; EXTRAIDA_NO_VALIDADA; fuente `39977ea5-190b-44fe-8239-47b98a9e7888`): La transición no afectará las operaciones de otras disciplinas.
+- **RN-1270** (DEC-135; EXTRAIDA_NO_VALIDADA; fuente `1aae1e61-1d9a-407e-a68d-f654b080c5af`): Cada checkout conservará su proveedor, modalidad de pago y vencimiento informado.
+- **RN-1271** (DEC-135; EXTRAIDA_NO_VALIDADA; fuente `1aae1e61-1d9a-407e-a68d-f654b080c5af`): La vigencia del checkout dependerá de las reglas reales de su pasarela.
+- **RN-1272** (DEC-135; EXTRAIDA_NO_VALIDADA; fuente `1aae1e61-1d9a-407e-a68d-f654b080c5af`): No se impondrá un vencimiento universal que contradiga las condiciones del proveedor.
+- **RN-1273** (DEC-135; EXTRAIDA_NO_VALIDADA; fuente `1aae1e61-1d9a-407e-a68d-f654b080c5af`): La plataforma podrá establecer tiempos internos para detectar operaciones aparentemente abandonadas.
+- **RN-1274** (DEC-135; EXTRAIDA_NO_VALIDADA; fuente `1aae1e61-1d9a-407e-a68d-f654b080c5af`): Un tiempo interno de monitoreo no implicará la cancelación de un checkout.
+- **RN-1275** (DEC-135; EXTRAIDA_NO_VALIDADA; fuente `1aae1e61-1d9a-407e-a68d-f654b080c5af`): Las cuotas permanecerán protegidas contra nuevos cobros incompatibles mientras exista una operación pendiente válida.
+- **RN-1276** (DEC-135; EXTRAIDA_NO_VALIDADA; fuente `1aae1e61-1d9a-407e-a68d-f654b080c5af`): Antes de liberar una cuota, se verificará el estado real del pago anterior.
+- **RN-1277** (DEC-135; EXTRAIDA_NO_VALIDADA; fuente `1aae1e61-1d9a-407e-a68d-f654b080c5af`): Una cuota podrá liberarse cuando se confirme que el checkout venció, fue cancelado o falló definitivamente, siempre que no exista un pago confirmado asociado.
+- **RN-1278** (DEC-135; EXTRAIDA_NO_VALIDADA; fuente `1aae1e61-1d9a-407e-a68d-f654b080c5af`): Si el estado de la operación es incierto, la cuota permanecerá protegida contra duplicaciones.
+- **RN-1279** (DEC-135; EXTRAIDA_NO_VALIDADA; fuente `1aae1e61-1d9a-407e-a68d-f654b080c5af`): El sistema continuará consultando y conciliando las operaciones cuyo estado no esté resuelto.
+- **RN-1280** (DEC-135; EXTRAIDA_NO_VALIDADA; fuente `1aae1e61-1d9a-407e-a68d-f654b080c5af`): Los eventos tardíos o repetidos de la pasarela deberán procesarse de forma idempotente.
+- **RN-1281** (DEC-135; EXTRAIDA_NO_VALIDADA; fuente `1aae1e61-1d9a-407e-a68d-f654b080c5af`): La liberación de cuotas no eliminará el historial del checkout anterior.
+- **RN-1282** (DEC-135; EXTRAIDA_NO_VALIDADA; fuente `1aae1e61-1d9a-407e-a68d-f654b080c5af`): Los nuevos intentos utilizarán la pasarela principal vigente de la disciplina.
+- **RN-1283** (DEC-135; EXTRAIDA_NO_VALIDADA; fuente `1aae1e61-1d9a-407e-a68d-f654b080c5af`): Se conservará la trazabilidad entre cuotas, checkouts e intentos de pago.
+- **RN-1284** (DEC-135; EXTRAIDA_NO_VALIDADA; fuente `1aae1e61-1d9a-407e-a68d-f654b080c5af`): Las reglas se aplicarán independientemente a cada disciplina.
+- **RN-1285** (DEC-136; EXTRAIDA_NO_VALIDADA; fuente `367e9c3b-6951-44fc-9b00-d0a2c4ea5975`): Las operaciones cuyo resultado no pueda confirmarse se identificarán como pagos de estado incierto.
+- **RN-1286** (DEC-136; EXTRAIDA_NO_VALIDADA; fuente `367e9c3b-6951-44fc-9b00-d0a2c4ea5975`): Las cuotas involucradas permanecerán protegidas contra nuevos cobros incompatibles.
+- **RN-1287** (DEC-136; EXTRAIDA_NO_VALIDADA; fuente `367e9c3b-6951-44fc-9b00-d0a2c4ea5975`): La plataforma continuará consultando y conciliando el estado de estas operaciones.
+- **RN-1288** (DEC-136; EXTRAIDA_NO_VALIDADA; fuente `367e9c3b-6951-44fc-9b00-d0a2c4ea5975`): Se establecerá un plazo configurable para determinar cuándo un pago incierto requiere revisión administrativa.
+- **RN-1289** (DEC-136; EXTRAIDA_NO_VALIDADA; fuente `367e9c3b-6951-44fc-9b00-d0a2c4ea5975`): Al superar ese plazo, se alertará a los administradores de la disciplina afectada.
+- **RN-1290** (DEC-136; EXTRAIDA_NO_VALIDADA; fuente `367e9c3b-6951-44fc-9b00-d0a2c4ea5975`): El superadministrador también recibirá la alerta.
+- **RN-1291** (DEC-136; EXTRAIDA_NO_VALIDADA; fuente `367e9c3b-6951-44fc-9b00-d0a2c4ea5975`): Los avisos se agruparán por incidente para evitar duplicaciones.
+- **RN-1292** (DEC-136; EXTRAIDA_NO_VALIDADA; fuente `367e9c3b-6951-44fc-9b00-d0a2c4ea5975`): Los administradores autorizados podrán consultar el detalle y los intentos de conciliación.
+- **RN-1293** (DEC-136; EXTRAIDA_NO_VALIDADA; fuente `367e9c3b-6951-44fc-9b00-d0a2c4ea5975`): Podrán registrar observaciones y aportar evidencia para la revisión.
+- **RN-1294** (DEC-136; EXTRAIDA_NO_VALIDADA; fuente `367e9c3b-6951-44fc-9b00-d0a2c4ea5975`): La revisión administrativa no permitirá liberar arbitrariamente cuotas cuyo pago anterior todavía pueda confirmarse.
+- **RN-1295** (DEC-136; EXTRAIDA_NO_VALIDADA; fuente `367e9c3b-6951-44fc-9b00-d0a2c4ea5975`): Una cuota solo podrá liberarse cuando exista evidencia suficiente de que el cobro anterior no se completó.
+- **RN-1296** (DEC-136; EXTRAIDA_NO_VALIDADA; fuente `367e9c3b-6951-44fc-9b00-d0a2c4ea5975`): La resolución deberá identificar la evidencia utilizada y el usuario o proceso responsable.
+- **RN-1297** (DEC-136; EXTRAIDA_NO_VALIDADA; fuente `367e9c3b-6951-44fc-9b00-d0a2c4ea5975`): Toda resolución y liberación quedará auditada.
+- **RN-1298** (DEC-136; EXTRAIDA_NO_VALIDADA; fuente `367e9c3b-6951-44fc-9b00-d0a2c4ea5975`): Los pagos confirmados tardíamente deberán tratarse de forma idempotente, evitando imputaciones duplicadas.
+- **RN-1299** (DEC-136; EXTRAIDA_NO_VALIDADA; fuente `367e9c3b-6951-44fc-9b00-d0a2c4ea5975`): La resolución del incidente actualizará las alertas correspondientes.
+- **RN-1300** (DEC-136; EXTRAIDA_NO_VALIDADA; fuente `367e9c3b-6951-44fc-9b00-d0a2c4ea5975`): Las reglas se aplicarán exclusivamente a las operaciones de la disciplina involucrada.
+- **RN-1301** (DEC-137; EXTRAIDA_NO_VALIDADA; fuente `8cc228ed-7f3b-4b7d-bade-b6356e6f5bb1`): El superadministrador podrá configurar el plazo de alerta de pagos inciertos.
+- **RN-1302** (DEC-137; EXTRAIDA_NO_VALIDADA; fuente `8cc228ed-7f3b-4b7d-bade-b6356e6f5bb1`): Cada proveedor de pagos podrá tener un plazo diferente.
+- **RN-1303** (DEC-137; EXTRAIDA_NO_VALIDADA; fuente `8cc228ed-7f3b-4b7d-bade-b6356e6f5bb1`): Todas las disciplinas que utilicen un mismo proveedor compartirán su configuración global.
+- **RN-1304** (DEC-137; EXTRAIDA_NO_VALIDADA; fuente `8cc228ed-7f3b-4b7d-bade-b6356e6f5bb1`): Los administradores de disciplina no podrán modificar estos plazos.
+- **RN-1305** (DEC-137; EXTRAIDA_NO_VALIDADA; fuente `8cc228ed-7f3b-4b7d-bade-b6356e6f5bb1`): El plazo se calculará desde el momento en que la operación ingrese en estado incierto.
+- **RN-1306** (DEC-137; EXTRAIDA_NO_VALIDADA; fuente `8cc228ed-7f3b-4b7d-bade-b6356e6f5bb1`): Al superar el plazo configurado, se generará una alerta para los administradores de la disciplina afectada.
+- **RN-1307** (DEC-137; EXTRAIDA_NO_VALIDADA; fuente `8cc228ed-7f3b-4b7d-bade-b6356e6f5bb1`): El superadministrador también recibirá la alerta.
+- **RN-1308** (DEC-137; EXTRAIDA_NO_VALIDADA; fuente `8cc228ed-7f3b-4b7d-bade-b6356e6f5bb1`): Las alertas conservarán la identificación del proveedor, disciplina y operación.
+- **RN-1309** (DEC-137; EXTRAIDA_NO_VALIDADA; fuente `8cc228ed-7f3b-4b7d-bade-b6356e6f5bb1`): Las notificaciones repetidas de una misma incidencia se agruparán.
+- **RN-1310** (DEC-137; EXTRAIDA_NO_VALIDADA; fuente `8cc228ed-7f3b-4b7d-bade-b6356e6f5bb1`): El vencimiento del plazo no modificará automáticamente el estado financiero de la operación.
+- **RN-1311** (DEC-137; EXTRAIDA_NO_VALIDADA; fuente `8cc228ed-7f3b-4b7d-bade-b6356e6f5bb1`): El plazo no autorizará liberar cuotas ni iniciar nuevos cobros incompatibles.
+- **RN-1312** (DEC-137; EXTRAIDA_NO_VALIDADA; fuente `8cc228ed-7f3b-4b7d-bade-b6356e6f5bb1`): La conciliación continuará hasta obtener información suficiente para resolver el pago.
+- **RN-1313** (DEC-137; EXTRAIDA_NO_VALIDADA; fuente `8cc228ed-7f3b-4b7d-bade-b6356e6f5bb1`): Los cambios de configuración se aplicarán a las evaluaciones futuras, sin modificar eventos de alerta históricos.
+- **RN-1314** (DEC-137; EXTRAIDA_NO_VALIDADA; fuente `8cc228ed-7f3b-4b7d-bade-b6356e6f5bb1`): Toda modificación del plazo registrará usuario, fecha, hora y valores anteriores y nuevos.
+- **RN-1315** (DEC-137; EXTRAIDA_NO_VALIDADA; fuente `8cc228ed-7f3b-4b7d-bade-b6356e6f5bb1`): El monitoreo respetará el aislamiento de datos entre disciplinas.
+- **RN-1316** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): Se priorizará la confirmación oficial de la pasarela para determinar el resultado de un pago incierto.
+- **RN-1317** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): Una confirmación definitiva de vencimiento, cancelación o fallo permitirá evaluar la liberación de las cuotas afectadas.
+- **RN-1318** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): Antes de liberar una cuota, se verificará que no exista otro pago confirmado asociado.
+- **RN-1319** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): Cuando la pasarela no proporcione una respuesta definitiva, podrá considerarse evidencia externa verificable.
+- **RN-1320** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): La evidencia externa deberá permitir identificar la operación y sustentar razonablemente que no se completó el cobro.
+- **RN-1321** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): Los administradores de disciplina podrán aportar observaciones y documentación para la revisión.
+- **RN-1322** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): Una declaración del administrador de disciplina, por sí sola, no será suficiente para liberar una cuota.
+- **RN-1323** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): Solo el superadministrador podrá autorizar una resolución manual excepcional de un pago incierto.
+- **RN-1324** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): Toda resolución manual excepcional requerirá una justificación obligatoria.
+- **RN-1325** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): También requerirá evidencia verificable asociada a la operación.
+- **RN-1326** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): Antes de resolver, deberá haberse descartado razonablemente la existencia de un cobro exitoso.
+- **RN-1327** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): No se permitirá resolver manualmente como impago una operación que tenga confirmación oficial de pago exitoso.
+- **RN-1328** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): La resolución conservará la identificación del proveedor, disciplina, operación y cuotas afectadas.
+- **RN-1329** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): Se registrarán el superadministrador responsable, fecha, hora, justificación y referencias de evidencia.
+- **RN-1330** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): La liberación no eliminará el historial del intento de pago original.
+- **RN-1331** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): Los eventos tardíos de la pasarela seguirán procesándose y podrán detectar discrepancias posteriores.
+- **RN-1332** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): Una discrepancia posterior no generará automáticamente una segunda imputación ni alterará silenciosamente el historial financiero.
+- **RN-1333** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): Las discrepancias deberán ingresar al circuito de conciliación y resolución correspondiente.
+- **RN-1334** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): La resolución actualizará el incidente y las notificaciones asociadas.
+- **RN-1335** (DEC-138; EXTRAIDA_NO_VALIDADA; fuente `91f11397-6587-4a08-8ac8-c796200f47cb`): Las operaciones de otras disciplinas no se verán afectadas.
+- **RN-1336** (DEC-139; EXTRAIDA_NO_VALIDADA; fuente `9f7b9703-9126-48a7-9945-98edb0afff57`): Solo el superadministrador podrá confirmar la liberación excepcional de una cuota asociada a un pago incierto.
+- **RN-1337** (DEC-139; EXTRAIDA_NO_VALIDADA; fuente `9f7b9703-9126-48a7-9945-98edb0afff57`): La operación podrá realizarse desde una sesión autenticada y vigente.
+- **RN-1338** (DEC-139; EXTRAIDA_NO_VALIDADA; fuente `9f7b9703-9126-48a7-9945-98edb0afff57`): No se requerirá un código OTP adicional.
+- **RN-1339** (DEC-139; EXTRAIDA_NO_VALIDADA; fuente `9f7b9703-9126-48a7-9945-98edb0afff57`): No se requerirá volver a ingresar la contraseña.
+- **RN-1340** (DEC-139; EXTRAIDA_NO_VALIDADA; fuente `9f7b9703-9126-48a7-9945-98edb0afff57`): No será necesaria la aprobación de otro usuario.
+- **RN-1341** (DEC-139; EXTRAIDA_NO_VALIDADA; fuente `9f7b9703-9126-48a7-9945-98edb0afff57`): La justificación de la resolución será obligatoria.
+- **RN-1342** (DEC-139; EXTRAIDA_NO_VALIDADA; fuente `9f7b9703-9126-48a7-9945-98edb0afff57`): La evidencia verificable también será obligatoria.
+- **RN-1343** (DEC-139; EXTRAIDA_NO_VALIDADA; fuente `9f7b9703-9126-48a7-9945-98edb0afff57`): El sistema impedirá confirmar una resolución si faltan la justificación o la evidencia.
+- **RN-1344** (DEC-139; EXTRAIDA_NO_VALIDADA; fuente `9f7b9703-9126-48a7-9945-98edb0afff57`): Se verificarán los permisos del superadministrador antes de ejecutar la operación.
+- **RN-1345** (DEC-139; EXTRAIDA_NO_VALIDADA; fuente `9f7b9703-9126-48a7-9945-98edb0afff57`): La resolución respetará los criterios de evidencia definidos en DEC-138.
+- **RN-1346** (DEC-139; EXTRAIDA_NO_VALIDADA; fuente `9f7b9703-9126-48a7-9945-98edb0afff57`): No se permitirá liberar una cuota cuando exista confirmación oficial de pago exitoso.
+- **RN-1347** (DEC-139; EXTRAIDA_NO_VALIDADA; fuente `9f7b9703-9126-48a7-9945-98edb0afff57`): La operación registrará usuario responsable, fecha, hora, motivo y evidencia asociada.
+- **RN-1348** (DEC-139; EXTRAIDA_NO_VALIDADA; fuente `9f7b9703-9126-48a7-9945-98edb0afff57`): El historial original del pago permanecerá disponible para conciliación y auditoría.
+- **RN-1349** (DEC-139; EXTRAIDA_NO_VALIDADA; fuente `9f7b9703-9126-48a7-9945-98edb0afff57`): La resolución no generará automáticamente un nuevo checkout.
+- **RN-1350** (DEC-139; EXTRAIDA_NO_VALIDADA; fuente `9f7b9703-9126-48a7-9945-98edb0afff57`): Si posteriormente se recibe un resultado contradictorio, se registrará una discrepancia para revisión.
+- **RN-1351** (DEC-140; EXTRAIDA_NO_VALIDADA; fuente `5f48679c-b241-4f58-b1e0-c699abc7f0b5`): El superadministrador podrá configurar globalmente el período de conservación de archivos de evidencia financiera.
+- **RN-1352** (DEC-140; EXTRAIDA_NO_VALIDADA; fuente `5f48679c-b241-4f58-b1e0-c699abc7f0b5`): El período se expresará en años.
+- **RN-1353** (DEC-140; EXTRAIDA_NO_VALIDADA; fuente `5f48679c-b241-4f58-b1e0-c699abc7f0b5`): La configuración será común a todos los clubes y disciplinas.
+- **RN-1354** (DEC-140; EXTRAIDA_NO_VALIDADA; fuente `5f48679c-b241-4f58-b1e0-c699abc7f0b5`): Los administradores de clubes y disciplinas no podrán modificar esta política.
+- **RN-1355** (DEC-140; EXTRAIDA_NO_VALIDADA; fuente `5f48679c-b241-4f58-b1e0-c699abc7f0b5`): Cada evidencia conservará su fecha de incorporación y la operación financiera a la que pertenece.
+- **RN-1356** (DEC-140; EXTRAIDA_NO_VALIDADA; fuente `5f48679c-b241-4f58-b1e0-c699abc7f0b5`): El sistema identificará los archivos que hayan alcanzado el plazo configurado.
+- **RN-1357** (DEC-140; EXTRAIDA_NO_VALIDADA; fuente `5f48679c-b241-4f58-b1e0-c699abc7f0b5`): La eliminación automática solo procederá cuando no exista una obligación legal, contractual o de preservación que lo impida.
+- **RN-1358** (DEC-140; EXTRAIDA_NO_VALIDADA; fuente `5f48679c-b241-4f58-b1e0-c699abc7f0b5`): Las evidencias relacionadas con disputas, investigaciones o revisiones abiertas permanecerán protegidas.
+- **RN-1359** (DEC-140; EXTRAIDA_NO_VALIDADA; fuente `5f48679c-b241-4f58-b1e0-c699abc7f0b5`): Una evidencia protegida no se eliminará aunque haya superado el plazo general.
+- **RN-1360** (DEC-140; EXTRAIDA_NO_VALIDADA; fuente `5f48679c-b241-4f58-b1e0-c699abc7f0b5`): Una vez finalizada la causa de preservación, se volverá a evaluar si corresponde eliminarla.
+- **RN-1361** (DEC-140; EXTRAIDA_NO_VALIDADA; fuente `5f48679c-b241-4f58-b1e0-c699abc7f0b5`): La eliminación del archivo no eliminará el registro de la operación financiera.
+- **RN-1362** (DEC-140; EXTRAIDA_NO_VALIDADA; fuente `5f48679c-b241-4f58-b1e0-c699abc7f0b5`): Las resoluciones excepcionales y su historial de auditoría se conservarán conforme a sus políticas específicas.
+- **RN-1363** (DEC-140; EXTRAIDA_NO_VALIDADA; fuente `5f48679c-b241-4f58-b1e0-c699abc7f0b5`): Cuando se elimine una evidencia, se mantendrá un registro de su existencia anterior y de la eliminación efectuada.
+- **RN-1364** (DEC-140; EXTRAIDA_NO_VALIDADA; fuente `5f48679c-b241-4f58-b1e0-c699abc7f0b5`): Los cambios de configuración quedarán auditados con usuario, fecha y valores anteriores y nuevos.
+- **RN-1365** (DEC-140; EXTRAIDA_NO_VALIDADA; fuente `5f48679c-b241-4f58-b1e0-c699abc7f0b5`): El acceso a evidencias respetará los permisos y el aislamiento de cada disciplina.
+- **RN-1366** (DEC-140; EXTRAIDA_NO_VALIDADA; fuente `5f48679c-b241-4f58-b1e0-c699abc7f0b5`): La política deberá respetar los períodos mínimos de conservación exigidos por la normativa aplicable.
+- **RN-1367** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): Los archivos de evidencia financiera se almacenarán en un repositorio privado.
+- **RN-1368** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): Los archivos deberán estar cifrados en reposo.
+- **RN-1369** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): El almacenamiento tendrá aislamiento lógico por club y disciplina.
+- **RN-1370** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): Ningún usuario podrá consultar evidencias de una disciplina sin autorización.
+- **RN-1371** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): Los archivos no tendrán enlaces públicos permanentes.
+- **RN-1372** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): Toda solicitud de consulta o descarga deberá validar la identidad del usuario.
+- **RN-1373** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): Se verificarán los permisos vigentes sobre el club, la disciplina y la operación financiera.
+- **RN-1374** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): Los accesos temporales tendrán un vencimiento limitado.
+- **RN-1375** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): Un enlace temporal vencido no permitirá nuevas descargas.
+- **RN-1376** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): La autorización deberá verificarse nuevamente al solicitar otro acceso.
+- **RN-1377** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): Se auditarán las consultas de evidencias financieras.
+- **RN-1378** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): Se auditarán las solicitudes y operaciones de descarga.
+- **RN-1379** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): Los registros de auditoría identificarán usuario, fecha, hora, archivo y operación asociada.
+- **RN-1380** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): Los documentos conservarán su asociación con el pago incierto y su resolución.
+- **RN-1381** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): Los archivos estarán sujetos a las políticas de conservación definidas en DEC-140.
+- **RN-1382** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): La eliminación de una evidencia no eliminará su historial de auditoría.
+- **RN-1383** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): Las evidencias protegidas por disputas o investigaciones no podrán eliminarse mientras exista una obligación de preservación.
+- **RN-1384** (DEC-141; EXTRAIDA_NO_VALIDADA; fuente `fa24fc2f-9b46-4f1f-8e16-f903d0c75579`): Los accesos deberán utilizar comunicaciones seguras.
+- **RN-1385** (DEC-142; EXTRAIDA_NO_VALIDADA; fuente `453201bd-fe48-4d1c-94da-5028f0ba8ca5`): Toda evidencia financiera cargada será inmutable.
+- **RN-1386** (DEC-142; EXTRAIDA_NO_VALIDADA; fuente `453201bd-fe48-4d1c-94da-5028f0ba8ca5`): No se permitirá sobrescribir el contenido de un archivo existente.
+- **RN-1387** (DEC-142; EXTRAIDA_NO_VALIDADA; fuente `453201bd-fe48-4d1c-94da-5028f0ba8ca5`): Los usuarios autorizados podrán incorporar versiones corregidas.
+- **RN-1388** (DEC-142; EXTRAIDA_NO_VALIDADA; fuente `453201bd-fe48-4d1c-94da-5028f0ba8ca5`): Cada corrección requerirá un motivo obligatorio.
+- **RN-1389** (DEC-142; EXTRAIDA_NO_VALIDADA; fuente `453201bd-fe48-4d1c-94da-5028f0ba8ca5`): Cada versión identificará al usuario responsable.
+- **RN-1390** (DEC-142; EXTRAIDA_NO_VALIDADA; fuente `453201bd-fe48-4d1c-94da-5028f0ba8ca5`): Se registrarán la fecha y hora de incorporación.
+- **RN-1391** (DEC-142; EXTRAIDA_NO_VALIDADA; fuente `453201bd-fe48-4d1c-94da-5028f0ba8ca5`): Cada versión tendrá un identificador único.
+- **RN-1392** (DEC-142; EXTRAIDA_NO_VALIDADA; fuente `453201bd-fe48-4d1c-94da-5028f0ba8ca5`): La nueva versión conservará su relación con la evidencia original.
+- **RN-1393** (DEC-142; EXTRAIDA_NO_VALIDADA; fuente `453201bd-fe48-4d1c-94da-5028f0ba8ca5`): Las versiones anteriores se identificarán como reemplazadas.
+- **RN-1394** (DEC-142; EXTRAIDA_NO_VALIDADA; fuente `453201bd-fe48-4d1c-94da-5028f0ba8ca5`): Las versiones reemplazadas permanecerán consultables para usuarios autorizados mientras deban conservarse.
+- **RN-1395** (DEC-142; EXTRAIDA_NO_VALIDADA; fuente `453201bd-fe48-4d1c-94da-5028f0ba8ca5`): Las políticas de conservación de DEC-140 se aplicarán a las distintas versiones.
+- **RN-1396** (DEC-142; EXTRAIDA_NO_VALIDADA; fuente `453201bd-fe48-4d1c-94da-5028f0ba8ca5`): Las versiones sujetas a disputas o investigaciones permanecerán protegidas.
+- **RN-1397** (DEC-142; EXTRAIDA_NO_VALIDADA; fuente `453201bd-fe48-4d1c-94da-5028f0ba8ca5`): Se auditarán todas las incorporaciones y correcciones.
+- **RN-1398** (DEC-142; EXTRAIDA_NO_VALIDADA; fuente `453201bd-fe48-4d1c-94da-5028f0ba8ca5`): Las correcciones no modificarán automáticamente una resolución financiera confirmada.
+- **RN-1399** (DEC-142; EXTRAIDA_NO_VALIDADA; fuente `453201bd-fe48-4d1c-94da-5028f0ba8ca5`): Si una corrección contradice la evidencia utilizada para resolver una operación, deberá señalarse para revisión.
+- **RN-1400** (DEC-142; EXTRAIDA_NO_VALIDADA; fuente `453201bd-fe48-4d1c-94da-5028f0ba8ca5`): La consulta y descarga de versiones respetará los controles de acceso de DEC-141.
+- **RN-1401** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): Los administradores de disciplina podrán iniciar solicitudes de devolución de pagos online correspondientes a su disciplina.
+- **RN-1402** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): La ejecución de devoluciones dependerá de las capacidades y permisos otorgados por la pasarela.
+- **RN-1403** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): Un administrador no podrá gestionar devoluciones de otra disciplina.
+- **RN-1404** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): El superadministrador podrá consultar y supervisar las devoluciones de todos los clubes y disciplinas.
+- **RN-1405** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): El superadministrador podrá intervenir operativamente cuando disponga de autorización suficiente.
+- **RN-1406** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): Cada devolución estará vinculada al pago original.
+- **RN-1407** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): Toda solicitud de devolución deberá registrar un motivo.
+- **RN-1408** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): Se registrarán el importe solicitado y el importe efectivamente devuelto.
+- **RN-1409** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): Se conservarán los estados informados por la pasarela.
+- **RN-1410** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): Una solicitud enviada no se considerará completada hasta obtener confirmación suficiente del proveedor.
+- **RN-1411** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): Las operaciones deberán ser idempotentes para evitar devoluciones duplicadas.
+- **RN-1412** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): El tratamiento de la comisión del 5% dependerá de las capacidades y condiciones contractuales del proveedor.
+- **RN-1413** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): Los costos de procesamiento de la pasarela se tratarán conforme a sus condiciones reales.
+- **RN-1414** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): No se asumirá que una devolución revierte automáticamente todas las partes del Split Payment.
+- **RN-1415** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): Los importes de la disciplina, la plataforma y el pagador deberán identificarse separadamente cuando el proveedor suministre esa información.
+- **RN-1416** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): Las devoluciones deberán reflejarse en los reportes financieros y la conciliación.
+- **RN-1417** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): Los eventos tardíos y repetidos del proveedor no podrán duplicar devoluciones.
+- **RN-1418** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): Se auditarán el solicitante, fecha, motivo, importe, proveedor y resultado.
+- **RN-1419** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): El historial del pago original permanecerá disponible.
+- **RN-1420** (DEC-143; EXTRAIDA_NO_VALIDADA; fuente `8db4a8ec-287c-4c5a-990a-5ecceee26d51`): Los errores o rechazos de devolución deberán quedar registrados para seguimiento.
+- **RN-1421** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): Se permitirán devoluciones totales de un checkout.
+- **RN-1422** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): Se podrán seleccionar una o varias cuotas completas para devolver dentro del mismo checkout.
+- **RN-1423** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): No se permitirán devoluciones de fracciones arbitrarias de una cuota.
+- **RN-1424** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): Cada devolución estará vinculada al checkout original.
+- **RN-1425** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): El sistema identificará individualmente las cuotas incluidas en la devolución.
+- **RN-1426** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): Las devoluciones parciales dependerán del soporte real de la pasarela.
+- **RN-1427** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): También se verificará la compatibilidad con el mecanismo de Split Payment.
+- **RN-1428** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): No se permitirá solicitar una devolución superior al importe disponible para devolver.
+- **RN-1429** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): Una cuota completamente devuelta no podrá devolverse nuevamente.
+- **RN-1430** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): Se impedirán solicitudes simultáneas que puedan duplicar devoluciones.
+- **RN-1431** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): Las devoluciones pendientes mantendrán reservado su importe hasta obtener un resultado definitivo.
+- **RN-1432** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): Se registrarán los importes correspondientes a cuota, comisión de plataforma y costos de pasarela, según la información disponible.
+- **RN-1433** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): No se asumirá que la comisión del 5% se devuelve automáticamente.
+- **RN-1434** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): Cada devolución tendrá su propio identificador, estado e historial.
+- **RN-1435** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): Los resultados se actualizarán mediante confirmaciones verificables de la pasarela.
+- **RN-1436** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): Las devoluciones se reflejarán en la conciliación y los reportes financieros.
+- **RN-1437** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): Todas las acciones quedarán auditadas.
+- **RN-1438** (DEC-144; EXTRAIDA_NO_VALIDADA; fuente `1fda8a25-ac49-4a99-886c-636e7021d603`): Se mantendrá el aislamiento financiero entre disciplinas.
+- **RN-1439** (DEC-145; EXTRAIDA_NO_VALIDADA; fuente `8788f831-5fca-4c98-b42b-150ebdf072fd`): Al solicitar una devolución, el administrador deberá definir el destino de cada cuota afectada.
+- **RN-1440** (DEC-145; EXTRAIDA_NO_VALIDADA; fuente `8788f831-5fca-4c98-b42b-150ebdf072fd`): Los destinos posibles serán volver a pendiente o quedar anulada.
+- **RN-1441** (DEC-145; EXTRAIDA_NO_VALIDADA; fuente `8788f831-5fca-4c98-b42b-150ebdf072fd`): La decisión requerirá una justificación obligatoria.
+- **RN-1442** (DEC-145; EXTRAIDA_NO_VALIDADA; fuente `8788f831-5fca-4c98-b42b-150ebdf072fd`): La decisión podrá establecerse individualmente para cada cuota incluida en una devolución.
+- **RN-1443** (DEC-145; EXTRAIDA_NO_VALIDADA; fuente `8788f831-5fca-4c98-b42b-150ebdf072fd`): Mientras la devolución esté pendiente, no se aplicará el cambio definitivo de estado.
+- **RN-1444** (DEC-145; EXTRAIDA_NO_VALIDADA; fuente `8788f831-5fca-4c98-b42b-150ebdf072fd`): El cambio se aplicará cuando la pasarela confirme efectivamente la devolución.
+- **RN-1445** (DEC-145; EXTRAIDA_NO_VALIDADA; fuente `8788f831-5fca-4c98-b42b-150ebdf072fd`): Antes de volver a habilitar el cobro, se comprobará que no existan otros pagos o checkouts incompatibles vigentes.
+- **RN-1446** (DEC-145; EXTRAIDA_NO_VALIDADA; fuente `8788f831-5fca-4c98-b42b-150ebdf072fd`): Una cuota devuelta que siga siendo exigible volverá a estado pendiente.
+- **RN-1447** (DEC-145; EXTRAIDA_NO_VALIDADA; fuente `8788f831-5fca-4c98-b42b-150ebdf072fd`): Una cuota devuelta y anulada quedará cerrada sin deuda exigible.
+- **RN-1448** (DEC-145; EXTRAIDA_NO_VALIDADA; fuente `8788f831-5fca-4c98-b42b-150ebdf072fd`): Una cuota anulada no podrá incluirse en nuevos checkouts.
+- **RN-1449** (DEC-145; EXTRAIDA_NO_VALIDADA; fuente `8788f831-5fca-4c98-b42b-150ebdf072fd`): Si la devolución falla, se conservará el estado financiero correspondiente al pago original.
+- **RN-1450** (DEC-145; EXTRAIDA_NO_VALIDADA; fuente `8788f831-5fca-4c98-b42b-150ebdf072fd`): La plataforma conservará la relación entre cuota, pago original y devolución.
+- **RN-1451** (DEC-145; EXTRAIDA_NO_VALIDADA; fuente `8788f831-5fca-4c98-b42b-150ebdf072fd`): Se registrarán el administrador responsable, la fecha y el motivo de la decisión.
+- **RN-1452** (DEC-145; EXTRAIDA_NO_VALIDADA; fuente `8788f831-5fca-4c98-b42b-150ebdf072fd`): Las devoluciones y anulaciones se reflejarán en los reportes financieros.
+- **RN-1453** (DEC-145; EXTRAIDA_NO_VALIDADA; fuente `8788f831-5fca-4c98-b42b-150ebdf072fd`): Los eventos repetidos de confirmación no producirán cambios duplicados.
+- **RN-1454** (DEC-145; EXTRAIDA_NO_VALIDADA; fuente `8788f831-5fca-4c98-b42b-150ebdf072fd`): Toda la operación quedará auditada y aislada dentro de su disciplina.
+- **RN-1455** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): Cada contracargo estará vinculado a su pago original.
+- **RN-1456** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): Los contracargos se identificarán mediante los datos proporcionados por la pasarela.
+- **RN-1457** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): Cuando se inicie una disputa, las cuotas afectadas se identificarán como disputadas.
+- **RN-1458** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): Una disputa abierta no habilitará automáticamente un nuevo cobro.
+- **RN-1459** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): Las cuotas disputadas permanecerán protegidas contra checkouts incompatibles.
+- **RN-1460** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): Se registrarán los estados y cambios informados por el proveedor.
+- **RN-1461** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): Se registrarán las retenciones de fondos cuando la pasarela proporcione esa información.
+- **RN-1462** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): Se identificarán los costos o comisiones asociados al contracargo.
+- **RN-1463** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): Si la disputa se resuelve favorablemente y el pago permanece válido, la cuota conservará su condición de pagada.
+- **RN-1464** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): Si se confirma definitivamente la pérdida del pago, la cuota volverá a pendiente, salvo anulación administrativa justificada.
+- **RN-1465** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): No se habilitará otro cobro mientras exista incertidumbre sobre el resultado financiero.
+- **RN-1466** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): Los eventos repetidos o tardíos se procesarán de forma idempotente.
+- **RN-1467** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): Los contracargos se incorporarán a la conciliación financiera.
+- **RN-1468** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): Los reportes reflejarán los importes disputados, retenidos y definitivamente revertidos, según la información disponible.
+- **RN-1469** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): Se notificará a los administradores de la disciplina afectada.
+- **RN-1470** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): El superadministrador podrá supervisar los contracargos globalmente.
+- **RN-1471** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): Se conservará el historial del pago original y de la disputa.
+- **RN-1472** (DEC-146; EXTRAIDA_NO_VALIDADA; fuente `66343511-3abb-404e-a08a-05109349d29a`): Las resoluciones quedarán auditadas y aisladas por disciplina.
+- **RN-1473** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): Los administradores de disciplina podrán consultar los contracargos correspondientes a su disciplina.
+- **RN-1474** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): Podrán incorporar documentación y evidencias para defender operaciones disputadas.
+- **RN-1475** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): La presentación de defensas mediante la plataforma dependerá de las capacidades de la pasarela.
+- **RN-1476** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): Se verificarán los permisos de la cuenta conectada antes de enviar una defensa.
+- **RN-1477** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): Los administradores no podrán gestionar disputas de otras disciplinas.
+- **RN-1478** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): El superadministrador podrá supervisar todas las disputas de la plataforma.
+- **RN-1479** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): Podrá intervenir operativamente únicamente cuando tenga autorización suficiente.
+- **RN-1480** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): Cada disputa conservará la fecha límite de presentación informada por el proveedor.
+- **RN-1481** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): Se identificarán las disputas próximas a vencer.
+- **RN-1482** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): Se generarán alertas internas sobre vencimientos próximos.
+- **RN-1483** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): Las evidencias utilizadas deberán respetar las políticas de seguridad y versionado aprobadas.
+- **RN-1484** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): La presentación de una defensa requerirá una acción autorizada.
+- **RN-1485** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): El sistema no enviará automáticamente documentación sin autorización.
+- **RN-1486** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): Se registrarán los intentos de presentación y las respuestas del proveedor.
+- **RN-1487** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): Se conservarán los estados de la disputa y su resultado definitivo.
+- **RN-1488** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): No se considerará ganada una disputa por el solo hecho de presentar evidencia.
+- **RN-1489** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): Los resultados se incorporarán a la conciliación financiera.
+- **RN-1490** (DEC-147; EXTRAIDA_NO_VALIDADA; fuente `c9d63d22-db41-44b7-8dd9-486dfef8ba1e`): Se auditarán las acciones, responsables, fechas y documentos asociados.
+- **RN-1491** (DEC-148; EXTRAIDA_NO_VALIDADA; fuente `451dc9b8-e436-4e0e-81e0-65702407a721`): Cada disputa conservará la fecha y hora límite de defensa informada por la pasarela.
+- **RN-1492** (DEC-148; EXTRAIDA_NO_VALIDADA; fuente `451dc9b8-e436-4e0e-81e0-65702407a721`): Se programará un aviso automático 24 horas antes de ese vencimiento.
+- **RN-1493** (DEC-148; EXTRAIDA_NO_VALIDADA; fuente `451dc9b8-e436-4e0e-81e0-65702407a721`): El plazo de anticipación será fijo para toda la plataforma.
+- **RN-1494** (DEC-148; EXTRAIDA_NO_VALIDADA; fuente `451dc9b8-e436-4e0e-81e0-65702407a721`): Los administradores de disciplina no podrán modificar la anticipación.
+- **RN-1495** (DEC-148; EXTRAIDA_NO_VALIDADA; fuente `451dc9b8-e436-4e0e-81e0-65702407a721`): El superadministrador tampoco necesitará configurar este parámetro.
+- **RN-1496** (DEC-148; EXTRAIDA_NO_VALIDADA; fuente `451dc9b8-e436-4e0e-81e0-65702407a721`): El aviso se dirigirá a los administradores autorizados de la disciplina afectada.
+- **RN-1497** (DEC-148; EXTRAIDA_NO_VALIDADA; fuente `451dc9b8-e436-4e0e-81e0-65702407a721`): El superadministrador conservará visibilidad global de las disputas próximas a vencer.
+- **RN-1498** (DEC-148; EXTRAIDA_NO_VALIDADA; fuente `451dc9b8-e436-4e0e-81e0-65702407a721`): Se generará un único aviso por disputa y vencimiento para cada destinatario.
+- **RN-1499** (DEC-148; EXTRAIDA_NO_VALIDADA; fuente `451dc9b8-e436-4e0e-81e0-65702407a721`): No se emitirán avisos de presentación pendiente cuando la defensa ya haya sido presentada correctamente.
+- **RN-1500** (DEC-148; EXTRAIDA_NO_VALIDADA; fuente `451dc9b8-e436-4e0e-81e0-65702407a721`): Tampoco se emitirán si la disputa fue cerrada o dejó de requerir defensa.
+- **RN-1501** (DEC-148; EXTRAIDA_NO_VALIDADA; fuente `451dc9b8-e436-4e0e-81e0-65702407a721`): Si la pasarela informa una disputa cuando faltan menos de 24 horas, se generará inmediatamente el aviso correspondiente.
+- **RN-1502** (DEC-148; EXTRAIDA_NO_VALIDADA; fuente `451dc9b8-e436-4e0e-81e0-65702407a721`): Si cambia oficialmente la fecha límite, se actualizará la programación sin duplicar avisos innecesarios.
+- **RN-1503** (DEC-148; EXTRAIDA_NO_VALIDADA; fuente `451dc9b8-e436-4e0e-81e0-65702407a721`): El aviso identificará la disputa, la operación y su fecha límite.
+- **RN-1504** (DEC-148; EXTRAIDA_NO_VALIDADA; fuente `451dc9b8-e436-4e0e-81e0-65702407a721`): Las notificaciones respetarán el aislamiento entre disciplinas.
+- **RN-1505** (DEC-148; EXTRAIDA_NO_VALIDADA; fuente `451dc9b8-e436-4e0e-81e0-65702407a721`): Se conservará la trazabilidad de la generación y entrega de los avisos.
+- **RN-1506** (DEC-149; EXTRAIDA_NO_VALIDADA; fuente `7d34b284-977e-4d18-bae8-93e4d7ec99c6`): La política comercial será devolver al pagador la comisión de plataforma asociada a cada cuota efectivamente devuelta.
+- **RN-1507** (DEC-149; EXTRAIDA_NO_VALIDADA; fuente `7d34b284-977e-4d18-bae8-93e4d7ec99c6`): La comisión a revertir corresponderá al 5% del importe nominal de la cuota devuelta.
+- **RN-1508** (DEC-149; EXTRAIDA_NO_VALIDADA; fuente `7d34b284-977e-4d18-bae8-93e4d7ec99c6`): En devoluciones parciales por cuotas completas, solo se revertirá la comisión correspondiente a las cuotas seleccionadas.
+- **RN-1509** (DEC-149; EXTRAIDA_NO_VALIDADA; fuente `7d34b284-977e-4d18-bae8-93e4d7ec99c6`): En devoluciones totales, se considerará la totalidad de las comisiones de plataforma cobradas en el checkout.
+- **RN-1510** (DEC-149; EXTRAIDA_NO_VALIDADA; fuente `7d34b284-977e-4d18-bae8-93e4d7ec99c6`): Antes de ejecutar la devolución, se verificará la compatibilidad del proveedor con la reversión del Split Payment.
+- **RN-1511** (DEC-149; EXTRAIDA_NO_VALIDADA; fuente `7d34b284-977e-4d18-bae8-93e4d7ec99c6`): No se asumirá que la devolución del importe nominal revierte automáticamente la comisión de plataforma.
+- **RN-1512** (DEC-149; EXTRAIDA_NO_VALIDADA; fuente `7d34b284-977e-4d18-bae8-93e4d7ec99c6`): No se ejecutarán devoluciones automáticas que generen importes incorrectos o inconsistencias entre las partes.
+- **RN-1513** (DEC-149; EXTRAIDA_NO_VALIDADA; fuente `7d34b284-977e-4d18-bae8-93e4d7ec99c6`): Cuando el proveedor no permita realizar correctamente la reversión, se registrará la limitación.
+- **RN-1514** (DEC-149; EXTRAIDA_NO_VALIDADA; fuente `7d34b284-977e-4d18-bae8-93e4d7ec99c6`): Las operaciones afectadas requerirán una resolución operativa controlada.
+- **RN-1515** (DEC-149; EXTRAIDA_NO_VALIDADA; fuente `7d34b284-977e-4d18-bae8-93e4d7ec99c6`): No se marcará una devolución como completamente resuelta mientras existan componentes obligatorios pendientes de tratamiento.
+- **RN-1516** (DEC-149; EXTRAIDA_NO_VALIDADA; fuente `7d34b284-977e-4d18-bae8-93e4d7ec99c6`): Los costos de procesamiento de la pasarela se tratarán conforme a las condiciones contractuales reales del proveedor.
+- **RN-1517** (DEC-149; EXTRAIDA_NO_VALIDADA; fuente `7d34b284-977e-4d18-bae8-93e4d7ec99c6`): Se registrarán por separado los importes nominales, las comisiones de plataforma y los costos de pasarela.
+- **RN-1518** (DEC-149; EXTRAIDA_NO_VALIDADA; fuente `7d34b284-977e-4d18-bae8-93e4d7ec99c6`): Se impedirá devolver dos veces una misma comisión.
+- **RN-1519** (DEC-149; EXTRAIDA_NO_VALIDADA; fuente `7d34b284-977e-4d18-bae8-93e4d7ec99c6`): Las reversiones deberán reflejarse en los reportes comerciales y financieros.
+- **RN-1520** (DEC-149; EXTRAIDA_NO_VALIDADA; fuente `7d34b284-977e-4d18-bae8-93e4d7ec99c6`): Toda devolución y resolución excepcional quedará auditada.
+- **RN-1521** (DEC-149; EXTRAIDA_NO_VALIDADA; fuente `7d34b284-977e-4d18-bae8-93e4d7ec99c6`): Se conservará la trazabilidad entre el checkout original, las cuotas y los importes devueltos.
+- **RN-1522** (DEC-150; EXTRAIDA_NO_VALIDADA; fuente `ab5dd86a-3982-4223-830d-62c524cb0f91`): Se intentarán reintegrar los costos de procesamiento cuando el proveedor lo permita.
+- **RN-1523** (DEC-150; EXTRAIDA_NO_VALIDADA; fuente `ab5dd86a-3982-4223-830d-62c524cb0f91`): El tratamiento de estos costos dependerá de las condiciones reales de cada pasarela.
+- **RN-1524** (DEC-150; EXTRAIDA_NO_VALIDADA; fuente `ab5dd86a-3982-4223-830d-62c524cb0f91`): Se respetará la política de devolución previamente comunicada al pagador.
+- **RN-1525** (DEC-150; EXTRAIDA_NO_VALIDADA; fuente `ab5dd86a-3982-4223-830d-62c524cb0f91`): No se asumirá que los costos de procesamiento son siempre recuperables.
+- **RN-1526** (DEC-150; EXTRAIDA_NO_VALIDADA; fuente `ab5dd86a-3982-4223-830d-62c524cb0f91`): La plataforma no cubrirá automáticamente los costos que el proveedor no reintegre.
+- **RN-1527** (DEC-150; EXTRAIDA_NO_VALIDADA; fuente `ab5dd86a-3982-4223-830d-62c524cb0f91`): Antes de confirmar una devolución, se presentará un desglose de los importes estimados.
+- **RN-1528** (DEC-150; EXTRAIDA_NO_VALIDADA; fuente `ab5dd86a-3982-4223-830d-62c524cb0f91`): El desglose identificará el importe nominal de las cuotas seleccionadas.
+- **RN-1529** (DEC-150; EXTRAIDA_NO_VALIDADA; fuente `ab5dd86a-3982-4223-830d-62c524cb0f91`): Se identificará por separado la comisión del 5% correspondiente.
+- **RN-1530** (DEC-150; EXTRAIDA_NO_VALIDADA; fuente `ab5dd86a-3982-4223-830d-62c524cb0f91`): Se mostrarán los costos de pasarela recuperables y no recuperables, cuando esa información esté disponible.
+- **RN-1531** (DEC-150; EXTRAIDA_NO_VALIDADA; fuente `ab5dd86a-3982-4223-830d-62c524cb0f91`): Los importes estimados se distinguirán de los efectivamente confirmados por el proveedor.
+- **RN-1532** (DEC-150; EXTRAIDA_NO_VALIDADA; fuente `ab5dd86a-3982-4223-830d-62c524cb0f91`): Si no puede determinarse un importe confiable, se impedirá confirmar automáticamente una devolución potencialmente incorrecta.
+- **RN-1533** (DEC-150; EXTRAIDA_NO_VALIDADA; fuente `ab5dd86a-3982-4223-830d-62c524cb0f91`): Las excepciones requerirán autorización de un usuario con permisos suficientes.
+- **RN-1534** (DEC-150; EXTRAIDA_NO_VALIDADA; fuente `ab5dd86a-3982-4223-830d-62c524cb0f91`): Toda excepción deberá registrar una justificación.
+- **RN-1535** (DEC-150; EXTRAIDA_NO_VALIDADA; fuente `ab5dd86a-3982-4223-830d-62c524cb0f91`): Se auditarán los importes, responsables, decisiones y resultados.
+- **RN-1536** (DEC-150; EXTRAIDA_NO_VALIDADA; fuente `ab5dd86a-3982-4223-830d-62c524cb0f91`): Las diferencias entre importes estimados y efectivamente devueltos deberán conciliarse.
+- **RN-1537** (DEC-150; EXTRAIDA_NO_VALIDADA; fuente `ab5dd86a-3982-4223-830d-62c524cb0f91`): Los reportes financieros distinguirán los costos de procesamiento de las comisiones propias de la plataforma.
+- **RN-1538** (DEC-150; EXTRAIDA_NO_VALIDADA; fuente `ab5dd86a-3982-4223-830d-62c524cb0f91`): Las devoluciones conservarán el aislamiento financiero entre disciplinas.
+- **RN-1539** (DEC-151; REVISAR_IMPACTO; fuente `38a2be52-2d72-4a2f-8479-4f084e5ceeb1`): Toda excepción de devolución deberá identificar el costo adicional que se pretende cubrir.
+- **RN-1540** (DEC-151; REVISAR_IMPACTO; fuente `38a2be52-2d72-4a2f-8479-4f084e5ceeb1`): Se deberá identificar quién asumirá económicamente la diferencia.
+- **RN-1541** (DEC-151; REVISAR_IMPACTO; fuente `38a2be52-2d72-4a2f-8479-4f084e5ceeb1`): Si la diferencia corresponde a la disciplina, sus administradores autorizados podrán aprobarla.
+- **RN-1542** (DEC-151; REVISAR_IMPACTO; fuente `38a2be52-2d72-4a2f-8479-4f084e5ceeb1`): Los administradores de disciplina no podrán comprometer fondos de otras disciplinas.
+- **RN-1543** (DEC-151; REVISAR_IMPACTO; fuente `38a2be52-2d72-4a2f-8479-4f084e5ceeb1`): Si la diferencia corresponde a la plataforma, únicamente el superadministrador podrá autorizarla.
+- **RN-1544** (DEC-151; REVISAR_IMPACTO; fuente `38a2be52-2d72-4a2f-8479-4f084e5ceeb1`): Los administradores de disciplina no podrán autorizar gastos con cargo a la plataforma.
+- **RN-1545** (DEC-151; REVISAR_IMPACTO; fuente `38a2be52-2d72-4a2f-8479-4f084e5ceeb1`): Toda excepción requerirá un motivo obligatorio.
+- **RN-1546** (DEC-151; REVISAR_IMPACTO; fuente `38a2be52-2d72-4a2f-8479-4f084e5ceeb1`): Se registrará el importe adicional autorizado.
+- **RN-1547** (DEC-151; REVISAR_IMPACTO; fuente `38a2be52-2d72-4a2f-8479-4f084e5ceeb1`): Se registrarán el usuario responsable y la fecha de autorización.
+- **RN-1548** (DEC-151; REVISAR_IMPACTO; fuente `38a2be52-2d72-4a2f-8479-4f084e5ceeb1`): Antes de ejecutar la operación, se comprobarán las capacidades reales de la pasarela.
+- **RN-1549** (DEC-151; REVISAR_IMPACTO; fuente `38a2be52-2d72-4a2f-8479-4f084e5ceeb1`): No se realizarán movimientos entre cuentas sin una operación autorizada y técnicamente compatible.
+- **RN-1550** (DEC-151; REVISAR_IMPACTO; fuente `38a2be52-2d72-4a2f-8479-4f084e5ceeb1`): La aprobación administrativa no implicará que la devolución haya sido ejecutada exitosamente.
+- **RN-1551** (DEC-151; REVISAR_IMPACTO; fuente `38a2be52-2d72-4a2f-8479-4f084e5ceeb1`): Se registrará el resultado efectivo informado por el proveedor.
+- **RN-1552** (DEC-151; REVISAR_IMPACTO; fuente `38a2be52-2d72-4a2f-8479-4f084e5ceeb1`): Las excepciones se incorporarán a la conciliación financiera.
+- **RN-1553** (DEC-151; REVISAR_IMPACTO; fuente `38a2be52-2d72-4a2f-8479-4f084e5ceeb1`): Los reportes identificarán qué parte asumió cada costo.
+- **RN-1554** (DEC-151; REVISAR_IMPACTO; fuente `38a2be52-2d72-4a2f-8479-4f084e5ceeb1`): Se evitarán ejecuciones duplicadas mediante controles de idempotencia.
+- **RN-1555** (DEC-151; REVISAR_IMPACTO; fuente `38a2be52-2d72-4a2f-8479-4f084e5ceeb1`): Todas las autorizaciones y resultados quedarán auditados.
+- **RN-1556** (DEC-151; REVISAR_IMPACTO; fuente `7bb97432-16dd-49bd-9dc0-4fea17350474`): El sistema registrará la causa de cada devolución excepcional.
+- **RN-1557** (DEC-151; REVISAR_IMPACTO; fuente `7bb97432-16dd-49bd-9dc0-4fea17350474`): Los costos no recuperables causados por fallas técnicas imputables a nuestro SaaS serán responsabilidad de la plataforma.
+- **RN-1558** (DEC-151; REVISAR_IMPACTO; fuente `7bb97432-16dd-49bd-9dc0-4fea17350474`): Los costos derivados de errores del pagador, cuando la disciplina acepte devolver el pago, serán responsabilidad de esa disciplina.
+- **RN-1559** (DEC-151; REVISAR_IMPACTO; fuente `7bb97432-16dd-49bd-9dc0-4fea17350474`): Los errores atribuibles a la gestión de una disciplina serán responsabilidad de esa disciplina.
+- **RN-1560** (DEC-151; REVISAR_IMPACTO; fuente `7bb97432-16dd-49bd-9dc0-4fea17350474`): El superadministrador autorizará los costos asumidos por nuestra plataforma.
+- **RN-1561** (DEC-151; REVISAR_IMPACTO; fuente `7bb97432-16dd-49bd-9dc0-4fea17350474`): Los administradores de disciplina autorizarán los costos que correspondan a su disciplina.
+- **RN-1562** (DEC-151; REVISAR_IMPACTO; fuente `7bb97432-16dd-49bd-9dc0-4fea17350474`): Se registrarán la causa, evidencia, responsable económico, autorización e importe.
+- **RN-1563** (DEC-151; REVISAR_IMPACTO; fuente `7bb97432-16dd-49bd-9dc0-4fea17350474`): Los casos ambiguos se revisarán antes de asignar costos, sin presumir automáticamente la responsabilidad.
+- **RN-1564** (DEC-151; REVISAR_IMPACTO; fuente `7bb97432-16dd-49bd-9dc0-4fea17350474`): La ejecución seguirá dependiendo de las capacidades de la pasarela y de las condiciones aplicables.
+- **RN-1565** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): Los responsables autenticados podrán solicitar devoluciones desde su portal.
+- **RN-1566** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): Solo podrán solicitar devoluciones de pagos asociados a jugadores para los que tengan una vinculación vigente y autorizada.
+- **RN-1567** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): Podrán seleccionar una o varias cuotas completas pertenecientes al mismo checkout.
+- **RN-1568** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): No podrán solicitar devoluciones por importes arbitrarios ni fracciones de cuotas.
+- **RN-1569** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): Cada solicitud deberá incluir un motivo obligatorio.
+- **RN-1570** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): La solicitud quedará vinculada al pago original, las cuotas seleccionadas y la disciplina.
+- **RN-1571** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): Crear una solicitud no implicará ejecutar automáticamente una devolución.
+- **RN-1572** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): Los administradores autorizados de la disciplina recibirán la solicitud para evaluarla.
+- **RN-1573** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): Los administradores podrán aprobar o rechazar la solicitud, registrando su decisión y justificación.
+- **RN-1574** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): El responsable podrá consultar el estado de su solicitud.
+- **RN-1575** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): Se impedirá crear solicitudes activas duplicadas sobre las mismas cuotas.
+- **RN-1576** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): La aprobación deberá respetar las capacidades reales de la pasarela y las reglas de Split Payment.
+- **RN-1577** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): Se aplicará la política de reversión del 5% establecida en DEC-149.
+- **RN-1578** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): Los costos no recuperables se asignarán según la causa y responsabilidad establecidas en DEC-151.
+- **RN-1579** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): Si corresponde asumir costos por un error técnico de nuestro SaaS, intervendrá el superadministrador para autorizar ese gasto.
+- **RN-1580** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): Los estados de la solicitud y los de la devolución efectiva se distinguirán claramente.
+- **RN-1581** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): Se notificará al responsable cuando su solicitud sea aprobada, rechazada o se complete la devolución.
+- **RN-1582** (DEC-152; EXTRAIDA_NO_VALIDADA; fuente `4c06a873-451a-42ac-8a84-ef223d8dc77e`): Toda solicitud, decisión y operación quedará auditada y asociada a su disciplina.
+- **RN-1583** (DEC-153; EXTRAIDA_NO_VALIDADA; fuente `c2b3ac8b-de99-48c7-960e-3e7f33fadc17`): El responsable podrá cancelar una solicitud propia mientras la devolución no haya comenzado a ejecutarse.
+- **RN-1584** (DEC-153; EXTRAIDA_NO_VALIDADA; fuente `c2b3ac8b-de99-48c7-960e-3e7f33fadc17`): Se permitirá cancelar solicitudes pendientes de revisión.
+- **RN-1585** (DEC-153; EXTRAIDA_NO_VALIDADA; fuente `c2b3ac8b-de99-48c7-960e-3e7f33fadc17`): También se permitirá cancelar solicitudes aprobadas administrativamente si todavía no se inició la operación ante la pasarela.
+- **RN-1586** (DEC-153; EXTRAIDA_NO_VALIDADA; fuente `c2b3ac8b-de99-48c7-960e-3e7f33fadc17`): Una vez iniciada la devolución, el responsable no podrá cancelarla unilateralmente.
+- **RN-1587** (DEC-153; EXTRAIDA_NO_VALIDADA; fuente `c2b3ac8b-de99-48c7-960e-3e7f33fadc17`): Las devoluciones en proceso, confirmadas o con resultado incierto no admitirán cancelación desde el portal.
+- **RN-1588** (DEC-153; EXTRAIDA_NO_VALIDADA; fuente `c2b3ac8b-de99-48c7-960e-3e7f33fadc17`): El sistema verificará el estado actualizado antes de aceptar una cancelación.
+- **RN-1589** (DEC-153; EXTRAIDA_NO_VALIDADA; fuente `c2b3ac8b-de99-48c7-960e-3e7f33fadc17`): La cancelación y el inicio de ejecución deberán controlarse de forma atómica para evitar operaciones simultáneas contradictorias.
+- **RN-1590** (DEC-153; EXTRAIDA_NO_VALIDADA; fuente `c2b3ac8b-de99-48c7-960e-3e7f33fadc17`): Una solicitud cancelada no podrá iniciar posteriormente una devolución.
+- **RN-1591** (DEC-153; EXTRAIDA_NO_VALIDADA; fuente `c2b3ac8b-de99-48c7-960e-3e7f33fadc17`): La cancelación no modificará automáticamente el estado financiero de las cuotas originales.
+- **RN-1592** (DEC-153; EXTRAIDA_NO_VALIDADA; fuente `c2b3ac8b-de99-48c7-960e-3e7f33fadc17`): Se registrarán el responsable, la fecha y el estado anterior de la solicitud.
+- **RN-1593** (DEC-153; EXTRAIDA_NO_VALIDADA; fuente `c2b3ac8b-de99-48c7-960e-3e7f33fadc17`): Los administradores de la disciplina recibirán una notificación de la cancelación.
+- **RN-1594** (DEC-153; EXTRAIDA_NO_VALIDADA; fuente `c2b3ac8b-de99-48c7-960e-3e7f33fadc17`): El responsable podrá consultar la solicitud cancelada en su historial.
+- **RN-1595** (DEC-153; EXTRAIDA_NO_VALIDADA; fuente `c2b3ac8b-de99-48c7-960e-3e7f33fadc17`): La cancelación conservará toda la trazabilidad y auditoría.
+- **RN-1596** (DEC-153; EXTRAIDA_NO_VALIDADA; fuente `c2b3ac8b-de99-48c7-960e-3e7f33fadc17`): Se respetará el aislamiento de solicitudes entre disciplinas.
+- **RN-1597** (DEC-154; EXTRAIDA_NO_VALIDADA; fuente `f88629b4-e1b1-4d70-821d-48e437d338a6`): Cada disciplina podrá configurar su propio plazo para solicitar devoluciones desde el portal.
+- **RN-1598** (DEC-154; EXTRAIDA_NO_VALIDADA; fuente `f88629b4-e1b1-4d70-821d-48e437d338a6`): El plazo se expresará en días desde la fecha del pago confirmado.
+- **RN-1599** (DEC-154; EXTRAIDA_NO_VALIDADA; fuente `f88629b4-e1b1-4d70-821d-48e437d338a6`): Los administradores autorizados de la disciplina podrán modificar esta configuración.
+- **RN-1600** (DEC-154; EXTRAIDA_NO_VALIDADA; fuente `f88629b4-e1b1-4d70-821d-48e437d338a6`): La configuración de una disciplina no afectará a otras disciplinas.
+- **RN-1601** (DEC-154; EXTRAIDA_NO_VALIDADA; fuente `f88629b4-e1b1-4d70-821d-48e437d338a6`): El sistema verificará el plazo al momento de enviar una nueva solicitud.
+- **RN-1602** (DEC-154; EXTRAIDA_NO_VALIDADA; fuente `f88629b4-e1b1-4d70-821d-48e437d338a6`): Dentro del plazo configurado, el responsable podrá presentar una solicitud sobre pagos elegibles.
+- **RN-1603** (DEC-154; EXTRAIDA_NO_VALIDADA; fuente `f88629b4-e1b1-4d70-821d-48e437d338a6`): Fuera del plazo, se bloqueará la solicitud ordinaria desde el portal.
+- **RN-1604** (DEC-154; EXTRAIDA_NO_VALIDADA; fuente `f88629b4-e1b1-4d70-821d-48e437d338a6`): Se informará al responsable que puede contactar a la disciplina para solicitar una revisión excepcional.
+- **RN-1605** (DEC-154; EXTRAIDA_NO_VALIDADA; fuente `f88629b4-e1b1-4d70-821d-48e437d338a6`): Una revisión excepcional no garantizará la aprobación de la devolución.
+- **RN-1606** (DEC-154; EXTRAIDA_NO_VALIDADA; fuente `f88629b4-e1b1-4d70-821d-48e437d338a6`): Se respetarán los límites técnicos y operativos de la pasarela.
+- **RN-1607** (DEC-154; EXTRAIDA_NO_VALIDADA; fuente `f88629b4-e1b1-4d70-821d-48e437d338a6`): Las obligaciones legales aplicables prevalecerán sobre las restricciones internas.
+- **RN-1608** (DEC-154; EXTRAIDA_NO_VALIDADA; fuente `f88629b4-e1b1-4d70-821d-48e437d338a6`): Estar dentro del plazo configurado no garantizará que la devolución pueda ejecutarse.
+- **RN-1609** (DEC-154; EXTRAIDA_NO_VALIDADA; fuente `f88629b4-e1b1-4d70-821d-48e437d338a6`): Las solicitudes presentadas válidamente conservarán su historial aunque posteriormente cambie la configuración.
+- **RN-1610** (DEC-154; EXTRAIDA_NO_VALIDADA; fuente `f88629b4-e1b1-4d70-821d-48e437d338a6`): Los cambios de configuración quedarán auditados.
+- **RN-1611** (DEC-154; EXTRAIDA_NO_VALIDADA; fuente `f88629b4-e1b1-4d70-821d-48e437d338a6`): Las devoluciones excepcionales respetarán las reglas de autorización, costos y responsabilidad previamente aprobadas.
+- **RN-1612** (DEC-155; EXTRAIDA_NO_VALIDADA; fuente `1991a39d-e7d8-4bc0-94c1-964df335ea09`): Cada disciplina tendrá políticas de devolución versionadas.
+- **RN-1613** (DEC-155; EXTRAIDA_NO_VALIDADA; fuente `1991a39d-e7d8-4bc0-94c1-964df335ea09`): Cada versión tendrá un identificador único y una fecha de entrada en vigencia.
+- **RN-1614** (DEC-155; EXTRAIDA_NO_VALIDADA; fuente `1991a39d-e7d8-4bc0-94c1-964df335ea09`): Cada pago conservará una referencia a la versión vigente cuando fue realizado.
+- **RN-1615** (DEC-155; EXTRAIDA_NO_VALIDADA; fuente `1991a39d-e7d8-4bc0-94c1-964df335ea09`): Las modificaciones de política se aplicarán únicamente a pagos posteriores a su entrada en vigencia.
+- **RN-1616** (DEC-155; EXTRAIDA_NO_VALIDADA; fuente `1991a39d-e7d8-4bc0-94c1-964df335ea09`): Los cambios no reducirán retroactivamente el plazo de solicitud informado para pagos anteriores.
+- **RN-1617** (DEC-155; EXTRAIDA_NO_VALIDADA; fuente `1991a39d-e7d8-4bc0-94c1-964df335ea09`): Las versiones anteriores se conservarán para consulta y auditoría.
+- **RN-1618** (DEC-155; EXTRAIDA_NO_VALIDADA; fuente `1991a39d-e7d8-4bc0-94c1-964df335ea09`): Una versión utilizada por pagos existentes no podrá sobrescribirse ni eliminarse.
+- **RN-1619** (DEC-155; EXTRAIDA_NO_VALIDADA; fuente `1991a39d-e7d8-4bc0-94c1-964df335ea09`): Los administradores autorizados podrán crear nuevas versiones para su disciplina.
+- **RN-1620** (DEC-155; EXTRAIDA_NO_VALIDADA; fuente `1991a39d-e7d8-4bc0-94c1-964df335ea09`): Se registrarán el usuario que realizó el cambio, la fecha y los valores anteriores y nuevos.
+- **RN-1621** (DEC-155; EXTRAIDA_NO_VALIDADA; fuente `1991a39d-e7d8-4bc0-94c1-964df335ea09`): Al solicitar una devolución, se utilizará la versión asociada al pago correspondiente.
+- **RN-1622** (DEC-155; EXTRAIDA_NO_VALIDADA; fuente `1991a39d-e7d8-4bc0-94c1-964df335ea09`): Las obligaciones legales aplicables prevalecerán sobre las restricciones de la política.
+- **RN-1623** (DEC-155; EXTRAIDA_NO_VALIDADA; fuente `1991a39d-e7d8-4bc0-94c1-964df335ea09`): Los límites técnicos y contractuales reales de la pasarela deberán verificarse antes de ejecutar una devolución.
+- **RN-1624** (DEC-155; EXTRAIDA_NO_VALIDADA; fuente `1991a39d-e7d8-4bc0-94c1-964df335ea09`): Las solicitudes existentes conservarán su trazabilidad aunque posteriormente cambie la política.
+- **RN-1625** (DEC-155; EXTRAIDA_NO_VALIDADA; fuente `1991a39d-e7d8-4bc0-94c1-964df335ea09`): El versionado será independiente para cada disciplina.
+- **RN-1626** (DEC-155; EXTRAIDA_NO_VALIDADA; fuente `1991a39d-e7d8-4bc0-94c1-964df335ea09`): El sistema permitirá identificar qué política se aplicó a cada solicitud y devolución.
+- **RN-1627** (DEC-156; EXTRAIDA_NO_VALIDADA; fuente `8d9bedfb-7b55-4e73-8b9e-3fa53116aeef`): Toda solicitud de devolución deberá incluir un motivo predefinido.
+- **RN-1628** (DEC-156; EXTRAIDA_NO_VALIDADA; fuente `8d9bedfb-7b55-4e73-8b9e-3fa53116aeef`): El responsable podrá agregar una explicación complementaria.
+- **RN-1629** (DEC-156; EXTRAIDA_NO_VALIDADA; fuente `8d9bedfb-7b55-4e73-8b9e-3fa53116aeef`): La plataforma dispondrá de un catálogo de motivos de devolución.
+- **RN-1630** (DEC-156; EXTRAIDA_NO_VALIDADA; fuente `8d9bedfb-7b55-4e73-8b9e-3fa53116aeef`): El catálogo contemplará errores del pagador, errores de la disciplina, posibles errores técnicos de la plataforma y otros motivos.
+- **RN-1631** (DEC-156; EXTRAIDA_NO_VALIDADA; fuente `8d9bedfb-7b55-4e73-8b9e-3fa53116aeef`): Cuando se seleccione «Otro», será obligatorio explicar la situación.
+- **RN-1632** (DEC-156; EXTRAIDA_NO_VALIDADA; fuente `8d9bedfb-7b55-4e73-8b9e-3fa53116aeef`): El motivo declarado por el responsable no determinará automáticamente la responsabilidad económica.
+- **RN-1633** (DEC-156; EXTRAIDA_NO_VALIDADA; fuente `8d9bedfb-7b55-4e73-8b9e-3fa53116aeef`): Los administradores de la disciplina deberán revisar la solicitud y sus antecedentes.
+- **RN-1634** (DEC-156; EXTRAIDA_NO_VALIDADA; fuente `8d9bedfb-7b55-4e73-8b9e-3fa53116aeef`): Se registrará por separado el motivo declarado y la causa verificada administrativamente.
+- **RN-1635** (DEC-156; EXTRAIDA_NO_VALIDADA; fuente `8d9bedfb-7b55-4e73-8b9e-3fa53116aeef`): La clasificación de la causa deberá contar con una justificación.
+- **RN-1636** (DEC-156; EXTRAIDA_NO_VALIDADA; fuente `8d9bedfb-7b55-4e73-8b9e-3fa53116aeef`): Se podrán incorporar evidencias que respalden la evaluación.
+- **RN-1637** (DEC-156; EXTRAIDA_NO_VALIDADA; fuente `8d9bedfb-7b55-4e73-8b9e-3fa53116aeef`): Si se determina que existió un error técnico imputable a nuestro SaaS, deberá intervenir el superadministrador para autorizar los costos correspondientes.
+- **RN-1638** (DEC-156; EXTRAIDA_NO_VALIDADA; fuente `8d9bedfb-7b55-4e73-8b9e-3fa53116aeef`): Si el error corresponde al pagador y la disciplina acepta devolver el dinero, los costos no recuperables serán responsabilidad de la disciplina.
+- **RN-1639** (DEC-156; EXTRAIDA_NO_VALIDADA; fuente `8d9bedfb-7b55-4e73-8b9e-3fa53116aeef`): Los casos de responsabilidad incierta o compartida requerirán revisión excepcional.
+- **RN-1640** (DEC-156; EXTRAIDA_NO_VALIDADA; fuente `8d9bedfb-7b55-4e73-8b9e-3fa53116aeef`): La asignación de costos respetará la DEC-151 actualizada.
+- **RN-1641** (DEC-156; EXTRAIDA_NO_VALIDADA; fuente `8d9bedfb-7b55-4e73-8b9e-3fa53116aeef`): Toda decisión conservará la identidad del administrador, la fecha y su justificación.
+- **RN-1642** (DEC-156; EXTRAIDA_NO_VALIDADA; fuente `8d9bedfb-7b55-4e73-8b9e-3fa53116aeef`): El historial de motivos y clasificaciones no podrá alterarse sin trazabilidad.
+- **RN-1643** (DEC-156; EXTRAIDA_NO_VALIDADA; fuente `8d9bedfb-7b55-4e73-8b9e-3fa53116aeef`): Las solicitudes y sus evidencias respetarán el aislamiento entre disciplinas.
+- **RN-1644** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): Los responsables podrán adjuntar archivos a sus solicitudes de devolución.
+- **RN-1645** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): Los archivos serán opcionales al crear la solicitud.
+- **RN-1646** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): Se admitirán formatos PDF, JPG y PNG.
+- **RN-1647** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): Se establecerán límites de tamaño por archivo y cantidad de adjuntos.
+- **RN-1648** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): El sistema validará el tipo y contenido de los archivos antes de almacenarlos.
+- **RN-1649** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): Se aplicarán controles de seguridad para prevenir archivos maliciosos.
+- **RN-1650** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): Los documentos se almacenarán de forma privada y protegidos mediante cifrado en reposo.
+- **RN-1651** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): Los archivos estarán vinculados a la solicitud de devolución correspondiente.
+- **RN-1652** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): Los administradores de disciplina solo podrán consultar evidencias de solicitudes bajo su responsabilidad.
+- **RN-1653** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): El superadministrador podrá consultar evidencias dentro de sus permisos globales.
+- **RN-1654** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): Los responsables solo podrán consultar los archivos de solicitudes a las que tengan acceso vigente.
+- **RN-1655** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): Las descargas requerirán autorización y no utilizarán enlaces públicos permanentes.
+- **RN-1656** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): Los administradores podrán solicitar evidencia adicional cuando resulte necesaria.
+- **RN-1657** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): El responsable podrá incorporar nuevos archivos mientras la solicitud admita información complementaria.
+- **RN-1658** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): Adjuntar documentos no implicará aprobar automáticamente la solicitud.
+- **RN-1659** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): Se registrarán las incorporaciones, consultas y descargas relevantes para auditoría.
+- **RN-1660** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): Los archivos estarán sujetos a las políticas de conservación aplicables, sin eliminar evidencias necesarias para disputas o auditorías.
+- **RN-1661** (DEC-157; EXTRAIDA_NO_VALIDADA; fuente `137d22d0-e0c5-497b-b3ca-14f8057a64ee`): Se mantendrá el aislamiento de archivos entre clubes y disciplinas.
+- **RN-1662** (DEC-158; EXTRAIDA_NO_VALIDADA; fuente `a77faac2-be9f-409a-b2e6-d71a856889f4`): Los administradores de disciplina podrán solicitar información adicional por canales externos.
+- **RN-1663** (DEC-158; EXTRAIDA_NO_VALIDADA; fuente `a77faac2-be9f-409a-b2e6-d71a856889f4`): La plataforma no incluirá un chat para solicitudes de devolución.
+- **RN-1664** (DEC-158; EXTRAIDA_NO_VALIDADA; fuente `a77faac2-be9f-409a-b2e6-d71a856889f4`): No se implementará un intercambio de mensajes entre responsable y administrador dentro del expediente.
+- **RN-1665** (DEC-158; EXTRAIDA_NO_VALIDADA; fuente `a77faac2-be9f-409a-b2e6-d71a856889f4`): No será necesario incorporar un estado específico de «Esperando información del responsable».
+- **RN-1666** (DEC-158; EXTRAIDA_NO_VALIDADA; fuente `a77faac2-be9f-409a-b2e6-d71a856889f4`): Los administradores podrán utilizar los datos de contacto autorizados del responsable.
+- **RN-1667** (DEC-158; EXTRAIDA_NO_VALIDADA; fuente `a77faac2-be9f-409a-b2e6-d71a856889f4`): El administrador podrá registrar observaciones internas sobre la información recibida.
+- **RN-1668** (DEC-158; EXTRAIDA_NO_VALIDADA; fuente `a77faac2-be9f-409a-b2e6-d71a856889f4`): Los administradores autorizados podrán incorporar al expediente comprobantes obtenidos por canales externos.
+- **RN-1669** (DEC-158; EXTRAIDA_NO_VALIDADA; fuente `a77faac2-be9f-409a-b2e6-d71a856889f4`): Los documentos incorporados deberán respetar los controles de seguridad definidos en DEC-157.
+- **RN-1670** (DEC-158; EXTRAIDA_NO_VALIDADA; fuente `a77faac2-be9f-409a-b2e6-d71a856889f4`): La falta de respuesta del responsable no provocará un rechazo automático.
+- **RN-1671** (DEC-158; EXTRAIDA_NO_VALIDADA; fuente `a77faac2-be9f-409a-b2e6-d71a856889f4`): El administrador conservará la responsabilidad de aprobar o rechazar la solicitud.
+- **RN-1672** (DEC-158; EXTRAIDA_NO_VALIDADA; fuente `a77faac2-be9f-409a-b2e6-d71a856889f4`): La evaluación deberá respetar los plazos reales de la pasarela y las obligaciones legales aplicables.
+- **RN-1673** (DEC-158; EXTRAIDA_NO_VALIDADA; fuente `a77faac2-be9f-409a-b2e6-d71a856889f4`): La decisión final y su justificación quedarán registradas.
+- **RN-1674** (DEC-158; EXTRAIDA_NO_VALIDADA; fuente `a77faac2-be9f-409a-b2e6-d71a856889f4`): El responsable podrá seguir consultando el estado de su solicitud desde el portal.
+- **RN-1675** (DEC-158; EXTRAIDA_NO_VALIDADA; fuente `a77faac2-be9f-409a-b2e6-d71a856889f4`): Se mantendrán las notificaciones de resolución previamente definidas.
+- **RN-1676** (DEC-158; EXTRAIDA_NO_VALIDADA; fuente `a77faac2-be9f-409a-b2e6-d71a856889f4`): Toda incorporación administrativa de evidencia o modificación relevante quedará auditada.
+- **RN-1677** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): Los responsables podrán consultar el historial de solicitudes y devoluciones para las que mantengan acceso autorizado.
+- **RN-1678** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): Cada registro identificará la disciplina y las cuotas involucradas.
+- **RN-1679** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): Se mostrará la fecha de solicitud y el motivo declarado.
+- **RN-1680** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): Se mostrará el importe originalmente solicitado.
+- **RN-1681** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): Se identificará el estado actual de la solicitud.
+- **RN-1682** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): Se distinguirá la aprobación administrativa de la ejecución efectiva de la devolución.
+- **RN-1683** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): Se mostrará el importe efectivamente devuelto una vez confirmado por la pasarela.
+- **RN-1684** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): Se informarán los costos no reintegrados que correspondan al pagador.
+- **RN-1685** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): Se mostrará la resolución comunicable al responsable, incluida la justificación del rechazo cuando corresponda.
+- **RN-1686** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): Se ofrecerá el comprobante de devolución cuando esté disponible.
+- **RN-1687** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): Los comprobantes estarán sujetos a controles de acceso y descarga segura.
+- **RN-1688** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): No se mostrarán observaciones administrativas internas.
+- **RN-1689** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): No se expondrán evidencias reservadas ni información financiera privada de la disciplina o plataforma.
+- **RN-1690** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): No se permitirá consultar datos de solicitudes de otros responsables sin autorización.
+- **RN-1691** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): Se conservará la trazabilidad de solicitudes canceladas, rechazadas y completadas.
+- **RN-1692** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): Las operaciones pendientes o inciertas no se presentarán como devoluciones confirmadas.
+- **RN-1693** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): La visibilidad respetará la vigencia de las vinculaciones entre responsables y jugadores.
+- **RN-1694** (DEC-159; EXTRAIDA_NO_VALIDADA; fuente `2f682705-f04a-4123-b165-f8466c99df50`): El historial mantendrá el aislamiento entre clubes y disciplinas.
+- **RN-1695** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): Las solicitudes de devolución se gestionarán desde una bandeja unificada.
+- **RN-1696** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): La bandeja mostrará solicitudes pendientes, aprobadas, rechazadas, canceladas, en proceso y completadas.
+- **RN-1697** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): Se podrá filtrar por estado de solicitud.
+- **RN-1698** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): Se podrá filtrar por rango de fechas.
+- **RN-1699** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): Se podrá buscar por jugador y responsable de pago.
+- **RN-1700** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): Se podrá filtrar por motivo de devolución.
+- **RN-1701** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): Las solicitudes pendientes tendrán una visualización prioritaria.
+- **RN-1702** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): Cada registro mostrará información resumida y permitirá consultar su detalle.
+- **RN-1703** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): La bandeja tendrá paginación para manejar grandes volúmenes de solicitudes.
+- **RN-1704** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): Los administradores de disciplina solo podrán gestionar solicitudes de su propia disciplina.
+- **RN-1705** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): El superadministrador dispondrá de una vista global.
+- **RN-1706** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): La vista global permitirá filtrar por club y disciplina.
+- **RN-1707** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): El acceso global no permitirá ejecutar operaciones financieras sin las autorizaciones correspondientes.
+- **RN-1708** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): Las acciones disponibles dependerán del estado de la solicitud y de los permisos del usuario.
+- **RN-1709** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): La bandeja distinguirá las solicitudes aprobadas de las devoluciones efectivamente confirmadas.
+- **RN-1710** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): Los cambios de estado se reflejarán en el historial de cada solicitud.
+- **RN-1711** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): Las búsquedas y consultas respetarán el aislamiento de datos entre clubes y disciplinas.
+- **RN-1712** (DEC-160; EXTRAIDA_NO_VALIDADA; fuente `7a94dcf0-7334-43ac-b5c9-46aaa90aa18d`): Las acciones administrativas conservarán su trazabilidad y auditoría.
+- **RN-1713** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): El producto se desarrollará y lanzará por etapas.
+- **RN-1714** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): El MVP incluirá administración de clubes y disciplinas.
+- **RN-1715** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): Incluirá usuarios, roles, permisos y aislamiento entre disciplinas.
+- **RN-1716** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): Incluirá gestión de jugadores, inscripciones y categorías.
+- **RN-1717** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): Incluirá generación automática de cuotas y configuración de importes.
+- **RN-1718** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): Incluirá becas y beneficios económicos esenciales.
+- **RN-1719** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): Incluirá registro de pagos externos.
+- **RN-1720** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): Incluirá pagos online únicamente mediante una integración de Split Payment técnicamente validada.
+- **RN-1721** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): Incluirá el portal del responsable para consultar y pagar cuotas autorizadas.
+- **RN-1722** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): Incluirá reportes financieros básicos por disciplina.
+- **RN-1723** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): Incluirá conciliación esencial de pagos y estados financieros.
+- **RN-1724** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): Los controles de autenticación, autorización y seguridad serán obligatorios desde el MVP.
+- **RN-1725** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): Se implementarán controles de idempotencia y prevención de cobros duplicados.
+- **RN-1726** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): Los pagos inciertos deberán tratarse de forma segura antes de permitir nuevos intentos.
+- **RN-1727** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): Las operaciones financieras deberán conservar trazabilidad y auditoría.
+- **RN-1728** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): Las devoluciones y contracargos deberán contar con procedimientos operativos controlados desde el lanzamiento, aunque sus módulos avanzados se desarrollen posteriormente.
+- **RN-1729** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): Los reportes avanzados, automatizaciones, exportaciones y gestión avanzada de devoluciones podrán incorporarse en versiones posteriores.
+- **RN-1730** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): No se habilitarán cobros reales sin validar las capacidades de la pasarela, la distribución de fondos y la conciliación.
+- **RN-1731** (DEC-161; EXTRAIDA_NO_VALIDADA; fuente `b9e42b6e-2067-452c-8d80-4c7cb2979408`): Las funcionalidades postergadas deberán conservar compatibilidad con las decisiones funcionales ya aprobadas.
+- **RN-1732** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): El lanzamiento inicial se realizará mediante un piloto controlado.
+- **RN-1733** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): Obras Futsal será la primera disciplina habilitada.
+- **RN-1734** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): El piloto comenzará con un grupo limitado de jugadores y responsables.
+- **RN-1735** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): La plataforma deberá permitir habilitar progresivamente el acceso de nuevos participantes.
+- **RN-1736** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): La arquitectura multi-club estará disponible desde el inicio, aunque el lanzamiento sea limitado.
+- **RN-1737** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): El aislamiento de datos y operaciones entre clubes y disciplinas será obligatorio desde la primera versión.
+- **RN-1738** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): Durante el piloto se verificará la generación correcta de cuotas.
+- **RN-1739** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): Se comprobarán los accesos y permisos de administradores y responsables.
+- **RN-1740** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): Se validará el funcionamiento de los pagos online y del Split Payment.
+- **RN-1741** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): Se verificará que los fondos lleguen correctamente a las cuentas correspondientes.
+- **RN-1742** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): Se comprobará la conciliación entre pagos, cuotas y operaciones de la pasarela.
+- **RN-1743** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): Se evaluarán los controles contra cobros duplicados y pagos inciertos.
+- **RN-1744** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): Los incidentes detectados durante el piloto deberán registrarse y analizarse.
+- **RN-1745** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): La ampliación del piloto dependerá de la validación satisfactoria de las operaciones esenciales.
+- **RN-1746** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): La segunda etapa incorporará progresivamente al resto de Obras Futsal.
+- **RN-1747** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): Posteriormente podrán habilitarse otras disciplinas de Obras Mendoza.
+- **RN-1748** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): La expansión comercial a otros clubes se realizará después de validar el funcionamiento del piloto.
+- **RN-1749** (DEC-162; EXTRAIDA_NO_VALIDADA; fuente `7d98917a-6ac0-4d4d-9aee-45444e97854e`): La incorporación de nuevos participantes no deberá alterar los registros financieros existentes.
+- **RN-1750** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): Cada ampliación del piloto requerirá una validación previa.
+- **RN-1751** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): Los administradores de disciplina podrán solicitar una ampliación.
+- **RN-1752** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): Únicamente el superadministrador podrá autorizar el avance entre etapas.
+- **RN-1753** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): La aprobación estará condicionada al cumplimiento de criterios técnicos y financieros mínimos.
+- **RN-1754** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): Se verificará que los pagos online se procesen correctamente.
+- **RN-1755** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): Se comprobará la distribución de fondos mediante Split Payment.
+- **RN-1756** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): No podrán existir diferencias críticas de conciliación sin resolver.
+- **RN-1757** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): Se validarán los controles de autenticación y autorización.
+- **RN-1758** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): Se comprobará el aislamiento entre clubes y disciplinas.
+- **RN-1759** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): No deberán existir errores bloqueantes que comprometan las operaciones esenciales.
+- **RN-1760** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): El sistema presentará el estado de las verificaciones requeridas.
+- **RN-1761** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): Cada validación deberá conservar evidencia o referencias a los resultados correspondientes.
+- **RN-1762** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): Si algún criterio obligatorio no se cumple, la ampliación quedará bloqueada.
+- **RN-1763** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): Los administradores de disciplina no podrán omitir controles obligatorios.
+- **RN-1764** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): Se registrarán el usuario que solicita la ampliación y el superadministrador que la aprueba.
+- **RN-1765** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): Toda aprobación o rechazo deberá conservar fecha, motivo y resultado.
+- **RN-1766** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): La ampliación no modificará pagos ni registros financieros anteriores.
+- **RN-1767** (DEC-163; EXTRAIDA_NO_VALIDADA; fuente `274acf46-016f-4c4d-a5e7-b711477cd522`): Los resultados y decisiones quedarán disponibles para auditoría.
+- **RN-1768** (DEC-164; EXTRAIDA_NO_VALIDADA; fuente `c384d4d6-ffd2-4606-9965-bc6da081c9ed`): El MVP contará con dos entornos: Desarrollo y Producción.
+- **RN-1769** (DEC-164; EXTRAIDA_NO_VALIDADA; fuente `c384d4d6-ffd2-4606-9965-bc6da081c9ed`): Desarrollo se utilizará para programación, pruebas técnicas e integraciones.
+- **RN-1770** (DEC-164; EXTRAIDA_NO_VALIDADA; fuente `c384d4d6-ffd2-4606-9965-bc6da081c9ed`): Producción se utilizará para operaciones reales de clubes, disciplinas y responsables.
+- **RN-1771** (DEC-164; EXTRAIDA_NO_VALIDADA; fuente `c384d4d6-ffd2-4606-9965-bc6da081c9ed`): Cada entorno tendrá su propia base de datos.
+- **RN-1772** (DEC-164; EXTRAIDA_NO_VALIDADA; fuente `c384d4d6-ffd2-4606-9965-bc6da081c9ed`): Las configuraciones y credenciales serán independientes.
+- **RN-1773** (DEC-164; EXTRAIDA_NO_VALIDADA; fuente `c384d4d6-ffd2-4606-9965-bc6da081c9ed`): Desarrollo utilizará credenciales de prueba o sandbox para las pasarelas de pago.
+- **RN-1774** (DEC-164; EXTRAIDA_NO_VALIDADA; fuente `c384d4d6-ffd2-4606-9965-bc6da081c9ed`): Las credenciales financieras reales estarán disponibles únicamente en Producción.
+- **RN-1775** (DEC-164; EXTRAIDA_NO_VALIDADA; fuente `c384d4d6-ffd2-4606-9965-bc6da081c9ed`): No se permitirán cobros reales desde Desarrollo.
+- **RN-1776** (DEC-164; EXTRAIDA_NO_VALIDADA; fuente `c384d4d6-ffd2-4606-9965-bc6da081c9ed`): Los datos de prueba no se mezclarán con los registros financieros de Producción.
+- **RN-1777** (DEC-164; EXTRAIDA_NO_VALIDADA; fuente `c384d4d6-ffd2-4606-9965-bc6da081c9ed`): Los cambios deberán validarse antes de desplegarse en Producción.
+- **RN-1778** (DEC-164; EXTRAIDA_NO_VALIDADA; fuente `c384d4d6-ffd2-4606-9965-bc6da081c9ed`): Los despliegues a Producción deberán realizarse mediante un procedimiento controlado.
+- **RN-1779** (DEC-164; EXTRAIDA_NO_VALIDADA; fuente `c384d4d6-ffd2-4606-9965-bc6da081c9ed`): Se deberá poder identificar qué versión del sistema está desplegada en cada entorno.
+- **RN-1780** (DEC-164; EXTRAIDA_NO_VALIDADA; fuente `c384d4d6-ffd2-4606-9965-bc6da081c9ed`): Las pruebas financieras deberán evitar modificar operaciones reales.
+- **RN-1781** (DEC-164; EXTRAIDA_NO_VALIDADA; fuente `c384d4d6-ffd2-4606-9965-bc6da081c9ed`): No será obligatorio disponer de un entorno Staging independiente para el MVP.
+- **RN-1782** (DEC-164; EXTRAIDA_NO_VALIDADA; fuente `c384d4d6-ffd2-4606-9965-bc6da081c9ed`): La arquitectura podrá incorporar nuevos entornos en el futuro.
+- **RN-1783** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): El proyecto utilizará un proceso de integración y despliegue continuo (CI/CD).
+- **RN-1784** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): Cada cambio integrado deberá pasar por verificaciones automáticas.
+- **RN-1785** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): El pipeline deberá compilar y validar los componentes afectados.
+- **RN-1786** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): Se ejecutarán pruebas automáticas antes de habilitar un despliegue productivo.
+- **RN-1787** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): Las pruebas deberán contemplar reglas críticas de cuotas, pagos, permisos y aislamiento.
+- **RN-1788** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): Ningún cambio se desplegará automáticamente en Producción sin aprobación explícita.
+- **RN-1789** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): La aprobación corresponderá al responsable técnico autorizado.
+- **RN-1790** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): Los despliegues deberán utilizar configuraciones y credenciales propias del entorno.
+- **RN-1791** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): Las migraciones de base de datos deberán validarse antes de aplicarse.
+- **RN-1792** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): Se deberá evitar la pérdida o alteración indebida de registros financieros durante una migración.
+- **RN-1793** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): Cada despliegue identificará la versión publicada y los cambios incluidos.
+- **RN-1794** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): Se registrarán el responsable de la aprobación, la fecha y el resultado.
+- **RN-1795** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): Existirá un procedimiento documentado de recuperación ante fallas.
+- **RN-1796** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): La recuperación deberá considerar la compatibilidad de los cambios de base de datos.
+- **RN-1797** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): Los despliegues no deberán generar cobros duplicados ni ejecutar nuevamente operaciones financieras ya procesadas.
+- **RN-1798** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): Las operaciones de pago en curso deberán conservar su trazabilidad y poder reconciliarse después de un despliegue.
+- **RN-1799** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): Si falla una verificación obligatoria, se bloqueará la publicación.
+- **RN-1800** (DEC-165; EXTRAIDA_NO_VALIDADA; fuente `ceffca5e-696f-4211-9074-ab366c96e4ca`): El proceso respetará los dos entornos aprobados: Desarrollo y Producción.
+- **RN-1801** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): La base de datos de Producción contará con backups automáticos.
+- **RN-1802** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): Se implementará recuperación a un punto en el tiempo (PITR), según las capacidades de la infraestructura seleccionada.
+- **RN-1803** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): Se utilizarán copias completas y registros de transacciones, o mecanismos equivalentes del proveedor.
+- **RN-1804** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): Los backups deberán estar cifrados.
+- **RN-1805** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): Las copias se almacenarán de manera aislada del entorno productivo.
+- **RN-1806** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): El acceso a las copias estará restringido a personal autorizado.
+- **RN-1807** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): Se establecerá una política de conservación de backups.
+- **RN-1808** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): Se supervisará la ejecución de las copias automáticas.
+- **RN-1809** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): Los errores de backup deberán generar alertas operativas.
+- **RN-1810** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): Se realizarán pruebas periódicas de restauración.
+- **RN-1811** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): Las pruebas verificarán que la información recuperada sea consistente y utilizable.
+- **RN-1812** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): Toda restauración productiva deberá quedar registrada y auditada.
+- **RN-1813** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): Después de restaurar, se verificará la consistencia de cuotas, pagos y operaciones financieras.
+- **RN-1814** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): Se reconciliarán los pagos con los registros reales de la pasarela.
+- **RN-1815** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): Los pagos con resultado incierto no podrán volver a cobrarse sin verificar previamente su estado.
+- **RN-1816** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): Se mantendrán los controles de idempotencia y prevención de duplicaciones.
+- **RN-1817** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): La reanudación de operaciones financieras dependerá de la validación de consistencia.
+- **RN-1818** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): El procedimiento de recuperación deberá estar documentado.
+- **RN-1819** (DEC-166; EXTRAIDA_NO_VALIDADA; fuente `3bec309c-bfde-48f7-98f4-b408221a6730`): Las pruebas y restauraciones deberán respetar la confidencialidad de los datos de los clubes.
+- **RN-1820** (DEC-167; EXTRAIDA_NO_VALIDADA; fuente `cdcbf711-6662-404d-8bd8-ea46785f5f15`): La plataforma mantendrá una ventana objetivo de recuperación a un punto en el tiempo de 30 días.
+- **RN-1821** (DEC-167; EXTRAIDA_NO_VALIDADA; fuente `cdcbf711-6662-404d-8bd8-ea46785f5f15`): Se conservarán copias mensuales durante 12 meses.
+- **RN-1822** (DEC-167; EXTRAIDA_NO_VALIDADA; fuente `cdcbf711-6662-404d-8bd8-ea46785f5f15`): Los backups mensuales serán independientes de la ventana de recuperación PITR.
+- **RN-1823** (DEC-167; EXTRAIDA_NO_VALIDADA; fuente `cdcbf711-6662-404d-8bd8-ea46785f5f15`): Todas las copias deberán permanecer cifradas.
+- **RN-1824** (DEC-167; EXTRAIDA_NO_VALIDADA; fuente `cdcbf711-6662-404d-8bd8-ea46785f5f15`): El almacenamiento estará aislado del entorno productivo.
+- **RN-1825** (DEC-167; EXTRAIDA_NO_VALIDADA; fuente `cdcbf711-6662-404d-8bd8-ea46785f5f15`): El acceso estará limitado a personal técnico autorizado.
+- **RN-1826** (DEC-167; EXTRAIDA_NO_VALIDADA; fuente `cdcbf711-6662-404d-8bd8-ea46785f5f15`): Se verificará que el proveedor de infraestructura soporte los períodos definidos.
+- **RN-1827** (DEC-167; EXTRAIDA_NO_VALIDADA; fuente `cdcbf711-6662-404d-8bd8-ea46785f5f15`): Si el proveedor no ofrece PITR de 30 días, deberá implementarse una solución equivalente antes de considerar cumplido el requisito.
+- **RN-1828** (DEC-167; EXTRAIDA_NO_VALIDADA; fuente `cdcbf711-6662-404d-8bd8-ea46785f5f15`): Se comprobará periódicamente la integridad de los backups.
+- **RN-1829** (DEC-167; EXTRAIDA_NO_VALIDADA; fuente `cdcbf711-6662-404d-8bd8-ea46785f5f15`): Se realizarán pruebas de restauración que incluyan puntos recientes y copias mensuales.
+- **RN-1830** (DEC-167; EXTRAIDA_NO_VALIDADA; fuente `cdcbf711-6662-404d-8bd8-ea46785f5f15`): Los errores de generación o conservación deberán generar alertas operativas.
+- **RN-1831** (DEC-167; EXTRAIDA_NO_VALIDADA; fuente `cdcbf711-6662-404d-8bd8-ea46785f5f15`): Las copias vencidas se eliminarán de forma segura, salvo obligaciones legales o medidas de preservación aplicables.
+- **RN-1832** (DEC-167; EXTRAIDA_NO_VALIDADA; fuente `cdcbf711-6662-404d-8bd8-ea46785f5f15`): La creación, restauración y eliminación de backups deberá conservar trazabilidad operativa.
+- **RN-1833** (DEC-167; EXTRAIDA_NO_VALIDADA; fuente `cdcbf711-6662-404d-8bd8-ea46785f5f15`): La política de backups no reemplazará la conservación legal de comprobantes, operaciones financieras ni auditorías.
+- **RN-1834** (DEC-167; EXTRAIDA_NO_VALIDADA; fuente `cdcbf711-6662-404d-8bd8-ea46785f5f15`): La restauración de una copia histórica no permitirá omitir la conciliación financiera posterior definida en DEC-166.
+- **RN-1835** (DEC-168; EXTRAIDA_NO_VALIDADA; fuente `9311945a-6ebe-4194-91e7-16f970fc9dd1`): El entorno de Producción contará con monitoreo automático.
+- **RN-1836** (DEC-168; EXTRAIDA_NO_VALIDADA; fuente `9311945a-6ebe-4194-91e7-16f970fc9dd1`): Se supervisará la disponibilidad de la API y los servicios esenciales.
+- **RN-1837** (DEC-168; EXTRAIDA_NO_VALIDADA; fuente `9311945a-6ebe-4194-91e7-16f970fc9dd1`): Se detectarán errores técnicos que afecten el funcionamiento de la plataforma.
+- **RN-1838** (DEC-168; EXTRAIDA_NO_VALIDADA; fuente `9311945a-6ebe-4194-91e7-16f970fc9dd1`): Se monitoreará la disponibilidad y el estado operativo de la base de datos.
+- **RN-1839** (DEC-168; EXTRAIDA_NO_VALIDADA; fuente `9311945a-6ebe-4194-91e7-16f970fc9dd1`): Se supervisarán fallas en la generación automática de cuotas.
+- **RN-1840** (DEC-168; EXTRAIDA_NO_VALIDADA; fuente `9311945a-6ebe-4194-91e7-16f970fc9dd1`): Se detectarán errores críticos de procesamiento de pagos.
+- **RN-1841** (DEC-168; EXTRAIDA_NO_VALIDADA; fuente `9311945a-6ebe-4194-91e7-16f970fc9dd1`): Se supervisarán fallas en los procesos esenciales de conciliación.
+- **RN-1842** (DEC-168; EXTRAIDA_NO_VALIDADA; fuente `9311945a-6ebe-4194-91e7-16f970fc9dd1`): Se detectarán fallas en la ejecución de backups automáticos.
+- **RN-1843** (DEC-168; EXTRAIDA_NO_VALIDADA; fuente `9311945a-6ebe-4194-91e7-16f970fc9dd1`): Los problemas detectados generarán alertas automáticas por correo electrónico al responsable técnico.
+- **RN-1844** (DEC-168; EXTRAIDA_NO_VALIDADA; fuente `9311945a-6ebe-4194-91e7-16f970fc9dd1`): Las direcciones de los destinatarios técnicos deberán mantenerse configuradas y actualizadas.
+- **RN-1845** (DEC-168; EXTRAIDA_NO_VALIDADA; fuente `9311945a-6ebe-4194-91e7-16f970fc9dd1`): Las alertas incluirán información suficiente para identificar el servicio, problema y momento de detección.
+- **RN-1846** (DEC-168; EXTRAIDA_NO_VALIDADA; fuente `9311945a-6ebe-4194-91e7-16f970fc9dd1`): Los correos no deberán exponer contraseñas, tokens ni datos financieros sensibles.
+- **RN-1847** (DEC-168; EXTRAIDA_NO_VALIDADA; fuente `9311945a-6ebe-4194-91e7-16f970fc9dd1`): Se registrarán los incidentes técnicos detectados para facilitar su diagnóstico.
+- **RN-1848** (DEC-168; EXTRAIDA_NO_VALIDADA; fuente `9311945a-6ebe-4194-91e7-16f970fc9dd1`): Se evitará el envío repetitivo de alertas idénticas mientras persista un mismo incidente, sin impedir avisos de fallas nuevas.
+- **RN-1849** (DEC-168; EXTRAIDA_NO_VALIDADA; fuente `9311945a-6ebe-4194-91e7-16f970fc9dd1`): Se conservará el registro de recuperación o resolución de los incidentes detectados.
+- **RN-1850** (DEC-168; EXTRAIDA_NO_VALIDADA; fuente `9311945a-6ebe-4194-91e7-16f970fc9dd1`): Las alertas técnicas por correo no reemplazarán las notificaciones operativas a administradores y superadministradores definidas previamente.
+- **RN-1851** (DEC-168; EXTRAIDA_NO_VALIDADA; fuente `9311945a-6ebe-4194-91e7-16f970fc9dd1`): No será obligatorio implementar canales adicionales ni clasificación avanzada de incidentes durante el MVP.
+- **RN-1852** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): El MVP permitirá realizar una migración inicial controlada de información.
+- **RN-1853** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): Se podrán importar jugadores y sus datos de identificación.
+- **RN-1854** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): Se podrán importar categorías e inscripciones correspondientes a la disciplina.
+- **RN-1855** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): Se podrán incorporar becas y beneficios económicos vigentes.
+- **RN-1856** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): Se podrán importar cuotas anteriores que continúen pendientes de pago.
+- **RN-1857** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): Se podrán incorporar pagos externos históricos cuando exista información suficientemente confiable.
+- **RN-1858** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): Los pagos históricos conservarán su fecha y medio de pago original cuando estén disponibles.
+- **RN-1859** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): Los pagos anteriores al lanzamiento se identificarán como registros históricos externos.
+- **RN-1860** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): No se crearán transacciones ficticias en la pasarela para representar pagos históricos.
+- **RN-1861** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): Los pagos históricos importados no generarán comisiones retroactivas del 5%.
+- **RN-1862** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): Antes de confirmar la migración se realizará una validación de los datos.
+- **RN-1863** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): El sistema identificará registros válidos, duplicados y registros con errores.
+- **RN-1864** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): Los administradores autorizados podrán revisar el resultado de la validación.
+- **RN-1865** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): La incorporación definitiva requerirá aprobación de un administrador autorizado dentro de su ámbito.
+- **RN-1866** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): Los registros con errores deberán corregirse o excluirse antes de incorporarlos.
+- **RN-1867** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): La importación será idempotente para evitar duplicaciones al reintentar un proceso.
+- **RN-1868** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): La migración respetará el aislamiento entre clubes y disciplinas.
+- **RN-1869** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): Se conservará trazabilidad de los datos importados, su origen y el responsable de la operación.
+- **RN-1870** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): Se verificará la consistencia de los saldos pendientes después de la migración.
+- **RN-1871** (DEC-169; EXTRAIDA_NO_VALIDADA; fuente `d399f8ac-1aae-485e-898e-7d5ff26de860`): Los registros financieros históricos no podrán sobrescribir operaciones reales previamente confirmadas.
+- **RN-1872** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): El MVP deberá superar un checklist de aceptación antes de habilitar cobros reales.
+- **RN-1873** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): Todas las funcionalidades esenciales comprometidas para el MVP deberán estar implementadas y verificadas.
+- **RN-1874** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): Se deberán validar autenticación, autorización y aislamiento entre clubes y disciplinas.
+- **RN-1875** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): La integración de Split Payment deberá estar validada técnica, operativa y comercialmente con la pasarela seleccionada.
+- **RN-1876** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): Se verificará la distribución correcta de fondos y comisiones, respetando las condiciones legales y contractuales aplicables.
+- **RN-1877** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): Las pruebas de cobros, idempotencia y prevención de pagos duplicados deberán ser satisfactorias.
+- **RN-1878** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): Se deberán probar los escenarios de pagos inciertos, reintentos y conciliación.
+- **RN-1879** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): La migración inicial deberá estar validada y aprobada.
+- **RN-1880** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): Los backups y mecanismos de recuperación deberán estar configurados y probados.
+- **RN-1881** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): El monitoreo automático y las alertas técnicas deberán estar operativos.
+- **RN-1882** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): Los procedimientos para incidentes financieros, devoluciones y contracargos deberán estar documentados y ser ejecutables.
+- **RN-1883** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): El responsable técnico deberá aprobar formalmente la versión candidata.
+- **RN-1884** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): El superadministrador deberá autorizar la habilitación del piloto.
+- **RN-1885** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): Cualquier requisito crítico incumplido bloqueará la habilitación de nuevos cobros reales.
+- **RN-1886** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): Los pendientes no críticos podrán aceptarse únicamente si están documentados, evaluados y autorizados.
+- **RN-1887** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): El resultado del checklist deberá conservar evidencias y trazabilidad de las aprobaciones.
+- **RN-1888** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): La aprobación inicial no reemplazará las validaciones necesarias para posteriores ampliaciones del piloto.
+- **RN-1889** (DEC-170; EXTRAIDA_NO_VALIDADA; fuente `0d9e6281-fd00-4c30-9a66-90c6b3bdf3ad`): Si se detecta una condición crítica después de habilitar el piloto, se aplicarán los controles de suspensión de nuevas operaciones afectadas, preservando la conciliación de pagos anteriores.
+- **RN-C001** (DEC-031; APROBADA_CON-003; fuente `CON-003`): Se admiten tres modalidades de excepción económica individual: importe fijo personalizado, descuento porcentual y beca preconfigurada.
+- **RN-C002** (DEC-031; APROBADA_CON-003; fuente `CON-003`): El importe fijo establece el importe a pagar.
+- **RN-C003** (DEC-031; APROBADA_CON-003; fuente `CON-003`): El descuento porcentual se aplica al importe base de la categoría.
+- **RN-C004** (DEC-031; APROBADA_CON-003; fuente `CON-003`): La beca contiene reglas de cálculo preconfiguradas.
+- **RN-C005** (DEC-031; APROBADA_CON-003; fuente `CON-003`): Los administradores autorizados pueden crear tipos de beca reutilizables y asignarlos sin configurar individualmente el descuento.
+
+## Textos sustitutivos aprobados
+
+- **RN-0014 (CON-014):** Un club inactivo no genera nuevas cuotas, pero puede recibir pagos de cuotas preexistentes.
+- **RN-0099 (CON-013):** La baja lógica se realiza exclusivamente por disciplina; no existe baja simultánea de todas las disciplinas.

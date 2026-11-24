@@ -1,0 +1,12 @@
+# Private source material (never version)
+/sources/
+
+# Local unpacked import package retained only for verification
+/SSDD - Etapa 2/
+
+# Local/editor artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
