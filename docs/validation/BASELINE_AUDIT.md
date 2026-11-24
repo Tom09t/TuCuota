@@ -29,7 +29,27 @@ Todo cotejo aplica `CON-011`: CON aprobada, corrección explícita aprobada, exc
 - 169 DEC conservan estado `Cotejo pendiente` en la matriz de trazabilidad.
 - DEC-031 no tenía RN numeradas en el registro original; RN-C001–RN-C005 fueron aprobadas posteriormente por CON-003.
 - La trazabilidad PRD→DEC todavía no fue construida ni validada.
-- Los candidatos de revisión de `VALIDACION.md` siguen requiriendo cotejo contextual; la lista no se considera exhaustiva.
+- Los ocho candidatos de revisión de `VALIDACION.md` fueron cotejados y resueltos en `MATERIAL_REVIEW_02.md`; la detección original no se considera exhaustiva.
+
+## Cotejo estructural de las RN extraídas
+
+Se ejecutó un control completo sobre las 1.818 filas con estado de origen `EXTRAIDA_NO_VALIDADA`:
+
+| Control | Fallas |
+|---|---:|
+| Formato y presencia de DEC asociada | 0 |
+| Identificador de mensaje ausente en DEC.md | 0 |
+| Identificador de mensaje ausente en la transcripción privada | 0 |
+| Texto original no encontrado literalmente en DEC.md | 0 |
+
+El resultado confirma integridad de extracción y vinculación básica, pero no valida por sí solo vigencia, compatibilidad semántica ni completitud contextual. El estado de origen se conserva hasta completar el cotejo semántico por bloques.
+
+## Revisiones materiales aprobadas
+
+- `MATERIAL_REVIEW_01.md`: 55 RN sobre roles, permisos y costos excepcionales.
+- `MATERIAL_REVIEW_02.md`: ocho mensajes candidatos de recuperación e integridad.
+
+Ambas revisiones son capas de auditoría aditivas. No alteran el catálogo importado ni implican el cierre integral.
 
 ## Historial y sustituciones preservadas
 
