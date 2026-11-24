@@ -48,6 +48,7 @@ El resultado confirma integridad de extracción y vinculación básica, pero no 
 
 - `MATERIAL_REVIEW_01.md`: 55 RN sobre roles, permisos y costos excepcionales.
 - `MATERIAL_REVIEW_02.md`: ocho mensajes candidatos de recuperación e integridad.
+- `MATERIAL_REVIEW_03.md`: revisión semántica de DEC-001–030 y RN-0001–0178.
 
 Ambas revisiones son capas de auditoría aditivas. No alteran el catálogo importado ni implican el cierre integral.
 
