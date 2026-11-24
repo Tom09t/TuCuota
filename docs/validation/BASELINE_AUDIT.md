@@ -52,6 +52,7 @@ El resultado confirma integridad de extracción y vinculación básica, pero no 
 - `MATERIAL_REVIEW_04.md`: revisión semántica de DEC-031–060, RN-0179–0403 y RN-C001–RN-C005.
 - `MATERIAL_REVIEW_05.md`: revisión semántica de DEC-061–090 y RN-0404–0672.
 - `MATERIAL_REVIEW_06.md`: revisión semántica de DEC-091–120 y RN-0673–1061.
+- `MATERIAL_REVIEW_07.md`: revisión semántica de DEC-121–150 y RN-1062–1538.
 
 Ambas revisiones son capas de auditoría aditivas. No alteran el catálogo importado ni implican el cierre integral.
 
