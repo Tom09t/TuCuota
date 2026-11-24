@@ -52,7 +52,7 @@ Un jugador podrá participar en más de un club y en distintas disciplinas, cons
 
 El aislamiento entre disciplinas será especialmente estricto en las operaciones financieras.
 
-**Trazabilidad:** DEC-001, DEC-007, DEC-009, DEC-015–DEC-017, DEC-121, DEC-162.
+**Trazabilidad:** DEC-001–DEC-004, DEC-007, DEC-009–DEC-012, DEC-015–DEC-017, DEC-121, DEC-162.
 
 ## 4. Actores y permisos
 
@@ -96,7 +96,7 @@ Las categorías serán administradas por los responsables autorizados de cada di
 
 Cada jugador tendrá una categoría activa por disciplina, conservando el historial de cambios.
 
-**Trazabilidad:** DEC-013–DEC-018, DEC-027–DEC-029.
+**Trazabilidad:** DEC-013–DEC-018, DEC-024–DEC-029.
 
 ## 6. Gestión de cuotas y beneficios
 
@@ -152,7 +152,19 @@ Los administradores autorizados podrán registrar pagos realizados por efectivo,
 
 Estos registros deberán conservar método, fecha, responsable y auditoría.
 
-**Trazabilidad:** DEC-046–DEC-048, DEC-121–DEC-125, DEC-130–DEC-135.
+### 7.5 Gestión contractual y continuidad comercial
+
+Cada club o disciplina podrá tener condiciones comerciales versionadas que definan mínimos mensuales de pagos, modalidad e importe de penalización, responsable comercial y período de gracia.
+
+El incumplimiento generará una liquidación separada de las cuotas deportivas. El superadministrador podrá aprobarla, condonarla o ajustarla con justificación y auditoría. Los cambios contractuales serán prospectivos y los períodos cubiertos por gracia no podrán penalizarse ni trasladarse posteriormente para generar una penalización.
+
+La suspensión comercial será manual y afectará únicamente al responsable correspondiente. Durante la suspensión se preservarán consulta, historial y pagos de cuotas preexistentes. La reactivación podrá incluir una regularización asistida y auditada de los períodos suspendidos, sin duplicar cuotas ni pagos.
+
+Los vencimientos contractuales, continuidades temporales y alertas comerciales se gestionarán desde el panel del superadministrador. Los dashboards y exportaciones respetarán el ámbito y los permisos de lectura aprobados.
+
+Para el mínimo comercial, cada cuota cancelada exitosamente mediante la pasarela contará como un pago, incluso dentro de un checkout agrupado. Se excluirán pagos externos y operaciones rechazadas o pendientes.
+
+**Trazabilidad:** DEC-046–DEC-079, DEC-121–DEC-125, DEC-130–DEC-135, CON-017, CON-021.
 
 **Dependencia pendiente:** seleccionar y validar una pasarela que soporte efectivamente el esquema requerido, incluyendo las operaciones posteriores de devolución y conciliación.
 
@@ -167,10 +179,13 @@ El sistema deberá incorporar:
 - Conciliación de estados y movimientos.
 - Auditoría de modificaciones y decisiones financieras.
 - Aislamiento de información entre clubes y disciplinas.
+- Detección y clasificación de interrupciones de pasarelas por disciplina.
+- Recuperación automática de conexiones cuando no exista un bloqueo operativo global.
+- Monitoreo configurable del estado de los proveedores de pago.
 
 Una operación cuyo resultado sea incierto no podrá liberarse para un nuevo cobro únicamente por el vencimiento de un temporizador interno.
 
-**Trazabilidad:** DEC-082–DEC-096, DEC-134–DEC-142, DEC-161.
+**Trazabilidad:** DEC-082–DEC-096, DEC-126–DEC-142, DEC-161.
 
 ## 9. Devoluciones y contracargos
 
@@ -190,7 +205,9 @@ Los reportes deberán distinguir importes nominales, pagos online, pagos externo
 
 Las funciones avanzadas de exportación, análisis y automatización se organizarán en versiones posteriores según DEC-161.
 
-**Trazabilidad:** DEC-080–DEC-103, DEC-161.
+El sistema avanzado de notificaciones conservará categorías, destinatarios, incidentes, estados de lectura y resolución, sincronización entre sesiones y revocación inmediata por pérdida de permisos. Su implementación deberá respetar el alcance del MVP y no ampliará por sí misma los permisos de acceso.
+
+**Trazabilidad:** DEC-080–DEC-116, DEC-161.
 
 ## 11. Alcance del MVP
 

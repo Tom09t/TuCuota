@@ -55,7 +55,9 @@ El resultado confirma integridad de extracción y vinculación básica, pero no 
 - `MATERIAL_REVIEW_07.md`: revisión semántica de DEC-121–150 y RN-1062–1538.
 - `MATERIAL_REVIEW_08.md`: revisión semántica de DEC-151–170 y RN-1539–1889.
 
-Las revisiones 03–08 cubren las 170 DEC y todas las RN originales y complementarias. Este hito completa el cotejo semántico por bloques, pero no cierra la auditoría integral: aún deben cerrarse la trazabilidad PRD→DEC→RN→CON y la reconciliación final de estados.
+Las revisiones 03–08 cubren las 170 DEC y todas las RN originales y complementarias. Este hito completa el cotejo semántico por bloques.
+
+La auditoría `PRD_TRACEABILITY_AUDIT.md` corrigió la cobertura explícita del PRD de 113/170 a 170/170 DEC. La auditoría integral aún no está cerrada: falta la reconciliación final de estados y el informe de cierre.
 
 Ambas revisiones son capas de auditoría aditivas. No alteran el catálogo importado ni implican el cierre integral.
 
