@@ -166,7 +166,7 @@ Para el mínimo comercial, cada cuota cancelada exitosamente mediante la pasarel
 
 **Trazabilidad:** DEC-046–DEC-079, DEC-121–DEC-125, DEC-130–DEC-135, CON-017, CON-021.
 
-**Dependencia pendiente:** seleccionar y validar una pasarela que soporte efectivamente el esquema requerido, incluyendo las operaciones posteriores de devolución y conciliación.
+**Dependencia pendiente:** validar que Mercado Pago Split Payments 1:1 soporte efectivamente el esquema requerido, incluyendo distribución de costos, operaciones posteriores de devolución y conciliación.
 
 ## 8. Seguridad financiera
 
@@ -296,7 +296,7 @@ El incumplimiento de una condición crítica bloqueará los nuevos cobros reales
 
 Las siguientes cuestiones requieren resolución o verificación antes de dar por cerradas las especificaciones de implementación:
 
-1. Selección y validación real de la pasarela de pagos.
+1. Validación técnica, comercial y legal de Mercado Pago Split Payments 1:1.
 2. Confirmación de capacidades de Split Payment, costos, devoluciones y contracargos.
 3. Validación de las condiciones comerciales y legales del modelo de cobro.
 4. Selección definitiva de infraestructura compatible con los requisitos de backups y recuperación.

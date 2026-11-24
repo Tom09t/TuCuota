@@ -6,7 +6,7 @@ Repositorio documental del sistema SaaS multiclub de cuotas deportivas, con pilo
 
 Este repositorio contiene una **baseline documental preliminar** importada desde el paquete `SSDD - Etapa 2`. No constituye una baseline funcional definitiva y la auditoría integral de requisitos continúa pendiente.
 
-No hay código productivo ni una arquitectura definitiva aprobada.
+No hay código productivo. El stack base y la pasarela seleccionada están registrados en `docs/architecture/adr/`; hosting, topología y validaciones financieras continúan pendientes.
 
 ## Navegación
 
