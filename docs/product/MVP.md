@@ -1,6 +1,6 @@
 # Alcance del MVP
 
-**Estado:** propuesta derivada pendiente de aprobación final.
+**Estado:** aprobado el 2026-11-24.
 **Fuente normativa:** DEC-161–DEC-170 y sus RN vigentes, bajo CON-011.
 
 ## Objetivo

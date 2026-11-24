@@ -2,7 +2,7 @@
 
 ## Estado
 
-**En curso.** Este documento registra controles y pendientes; no certifica una baseline funcional definitiva ni autoriza crear `baseline-v1`.
+**Cerrada el 2026-11-24.** El cierre está documentado en `BASELINE_CLOSURE_REPORT.md`. No crea ni autoriza por sí solo `baseline-v1`.
 
 ## Criterio de precedencia
 
@@ -57,7 +57,7 @@ El resultado confirma integridad de extracción y vinculación básica, pero no 
 
 Las revisiones 03–08 cubren las 170 DEC y todas las RN originales y complementarias. Este hito completa el cotejo semántico por bloques.
 
-La auditoría `PRD_TRACEABILITY_AUDIT.md` corrigió la cobertura explícita del PRD de 113/170 a 170/170 DEC. La auditoría integral aún no está cerrada: falta la reconciliación final de estados y el informe de cierre.
+La auditoría `PRD_TRACEABILITY_AUDIT.md` corrigió la cobertura explícita del PRD de 113/170 a 170/170 DEC. La reconciliación final de estados y el informe de cierre fueron aprobados el 2026-11-24.
 
 Ambas revisiones son capas de auditoría aditivas. No alteran el catálogo importado ni implican el cierre integral.
 

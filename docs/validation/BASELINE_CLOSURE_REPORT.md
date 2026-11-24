@@ -1,6 +1,6 @@
 # Informe de cierre propuesto de la baseline funcional
 
-**Estado:** pendiente de aprobación final.
+**Estado:** aprobado el 2026-11-24; auditoría funcional cerrada.
 **Fecha de corte:** 2026-11-24.
 
 ## Evidencia completada
@@ -32,12 +32,12 @@ Los estados del CSV importado se conservan como evidencia original. La vigencia 
 
 Estos pendientes condicionan diseño, implementación o lanzamiento; no autorizan inventar requisitos ni reducen DEC-167/170.
 
-## Declaraciones que aún no se realizan
+## Límites del cierre
 
 - No se crea `baseline-v1` en este paso.
 - No se declara implementable ninguna integración no validada.
 - No se autoriza código productivo, despliegue ni procesamiento de dinero real.
 
-## Decisión solicitada
+## Decisión aprobada
 
-Aprobar el alcance de `docs/product/MVP.md` y este informe como cierre de la auditoría funcional. Una aprobación posterior y separada podrá autorizar la creación de `baseline-v1`.
+El propietario aprobó el alcance de `docs/product/MVP.md` y este informe como cierre de la auditoría funcional el 2026-11-24. Una aprobación posterior y separada podrá autorizar la creación de `baseline-v1`.
