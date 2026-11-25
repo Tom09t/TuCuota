@@ -26,4 +26,5 @@ Los criterios se derivan de especificaciones trazables a `baseline-v1`.
 | [ACCEPTANCE-020](ACCEPTANCE-020-financial-evidence.md) | Evidencia financiera | Aprobada |
 | [ACCEPTANCE-021](ACCEPTANCE-021-refunds.md) | Devoluciones de pagos | Aprobada |
 | [ACCEPTANCE-022](ACCEPTANCE-022-chargebacks-disputes.md) | Contracargos y disputas | Aprobada |
+| [ACCEPTANCE-023](ACCEPTANCE-023-refund-components.md) | Componentes económicos de devoluciones | Aprobada |
 
