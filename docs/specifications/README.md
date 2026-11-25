@@ -32,4 +32,5 @@ Las especificaciones se derivan de `baseline-v1`, citan DEC/RN/CON vigentes y ap
 | [SPEC-026](SPEC-026-refund-policies-evidence.md) | Políticas, motivos y evidencia de devolución | Aprobada |
 | [SPEC-027](SPEC-027-refund-management-history.md) | Gestión, historial y bandeja de devoluciones | Aprobada |
 | [SPEC-028](SPEC-028-mvp-scope.md) | Alcance funcional inicial del MVP | Aprobada |
+| [SPEC-029](SPEC-029-pilot-expansion.md) | Piloto progresivo y autorización de ampliaciones | Aprobada |
 
