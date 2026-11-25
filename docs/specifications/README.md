@@ -14,4 +14,5 @@ Las especificaciones se derivan de `baseline-v1`, citan DEC/RN/CON vigentes y ap
 | [SPEC-008](SPEC-008-dashboards-reports.md) | Dashboards y reportes | Aprobada |
 | [SPEC-009](SPEC-009-financial-reconciliation.md) | Conciliación financiera | Aprobada |
 | [SPEC-010](SPEC-010-reconciliation-operations-alerts.md) | Operación y alertas de conciliación | Aprobada |
+| [SPEC-011](SPEC-011-reconciliation-history-exports.md) | Recuperación, historial y exportación de conciliaciones | Aprobada |
 

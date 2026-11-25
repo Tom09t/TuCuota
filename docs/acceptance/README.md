@@ -14,4 +14,5 @@ Los criterios se derivan de especificaciones trazables a `baseline-v1`.
 | [ACCEPTANCE-008](ACCEPTANCE-008-dashboards-reports.md) | Dashboards y reportes | Aprobada |
 | [ACCEPTANCE-009](ACCEPTANCE-009-financial-reconciliation.md) | Conciliación financiera | Aprobada |
 | [ACCEPTANCE-010](ACCEPTANCE-010-reconciliation-operations-alerts.md) | Operación y alertas de conciliación | Aprobada |
+| [ACCEPTANCE-011](ACCEPTANCE-011-reconciliation-history-exports.md) | Recuperación, historial y exportación de conciliaciones | Aprobada |
 
