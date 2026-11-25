@@ -25,4 +25,5 @@ Las especificaciones se derivan de `baseline-v1`, citan DEC/RN/CON vigentes y ap
 | [SPEC-019](SPEC-019-gateway-transition-uncertain-payments.md) | Cambio de pasarela y pagos inciertos | Aprobada |
 | [SPEC-020](SPEC-020-financial-evidence.md) | Evidencia financiera | Aprobada |
 | [SPEC-021](SPEC-021-refunds.md) | Devoluciones de pagos | Aprobada |
+| [SPEC-022](SPEC-022-chargebacks-disputes.md) | Contracargos y disputas | Aprobada |
 
