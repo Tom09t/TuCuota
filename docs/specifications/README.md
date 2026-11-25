@@ -21,4 +21,5 @@ Las especificaciones se derivan de `baseline-v1`, citan DEC/RN/CON vigentes y ap
 | [SPEC-015](SPEC-015-notification-delivery-synchronization.md) | Entrega y sincronización de notificaciones | Aprobada |
 | [SPEC-016](SPEC-016-responsible-player-access.md) | Acceso del responsable y vinculación con jugadores | Aprobada |
 | [SPEC-017](SPEC-017-payment-routing-gateway.md) | Enrutamiento de pagos e integración receptora | Aprobada |
+| [SPEC-018](SPEC-018-gateway-availability-monitoring.md) | Disponibilidad y monitoreo de pasarelas | Aprobada |
 

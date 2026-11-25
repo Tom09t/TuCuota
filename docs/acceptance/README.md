@@ -21,4 +21,5 @@ Los criterios se derivan de especificaciones trazables a `baseline-v1`.
 | [ACCEPTANCE-015](ACCEPTANCE-015-notification-delivery-synchronization.md) | Entrega y sincronización de notificaciones | Aprobada |
 | [ACCEPTANCE-016](ACCEPTANCE-016-responsible-player-access.md) | Acceso del responsable y vinculación con jugadores | Aprobada |
 | [ACCEPTANCE-017](ACCEPTANCE-017-payment-routing-gateway.md) | Enrutamiento de pagos e integración receptora | Aprobada |
+| [ACCEPTANCE-018](ACCEPTANCE-018-gateway-availability-monitoring.md) | Disponibilidad y monitoreo de pasarelas | Aprobada |
 
