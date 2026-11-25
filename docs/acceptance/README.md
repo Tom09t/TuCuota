@@ -34,4 +34,5 @@ Los criterios se derivan de especificaciones trazables a `baseline-v1`.
 | [ACCEPTANCE-028](ACCEPTANCE-028-mvp-scope.md) | Alcance funcional inicial del MVP | Aprobada |
 | [ACCEPTANCE-029](ACCEPTANCE-029-pilot-expansion.md) | Piloto progresivo y autorización de ampliaciones | Aprobada |
 | [ACCEPTANCE-030](ACCEPTANCE-030-environments-deployments.md) | Entornos y despliegues controlados | Aprobada |
+| [ACCEPTANCE-031](ACCEPTANCE-031-backup-recovery.md) | Backups, retención y recuperación financiera | Aprobada |
 

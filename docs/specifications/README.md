@@ -34,4 +34,5 @@ Las especificaciones se derivan de `baseline-v1`, citan DEC/RN/CON vigentes y ap
 | [SPEC-028](SPEC-028-mvp-scope.md) | Alcance funcional inicial del MVP | Aprobada |
 | [SPEC-029](SPEC-029-pilot-expansion.md) | Piloto progresivo y autorización de ampliaciones | Aprobada |
 | [SPEC-030](SPEC-030-environments-deployments.md) | Entornos y despliegues controlados | Aprobada |
+| [SPEC-031](SPEC-031-backup-recovery.md) | Backups, retención y recuperación financiera | Aprobada |
 
