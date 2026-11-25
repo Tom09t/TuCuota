@@ -29,4 +29,5 @@ Los criterios se derivan de especificaciones trazables a `baseline-v1`.
 | [ACCEPTANCE-023](ACCEPTANCE-023-refund-components.md) | Componentes económicos de devoluciones | Aprobada |
 | [ACCEPTANCE-024](ACCEPTANCE-024-refund-cost-authorization.md) | Autorización de costos excepcionales | Aprobada |
 | [ACCEPTANCE-025](ACCEPTANCE-025-refund-requests.md) | Solicitudes de devolución del responsable | Aprobada |
+| [ACCEPTANCE-026](ACCEPTANCE-026-refund-policies-evidence.md) | Políticas, motivos y evidencia de devolución | Aprobada |
 

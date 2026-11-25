@@ -29,4 +29,5 @@ Las especificaciones se derivan de `baseline-v1`, citan DEC/RN/CON vigentes y ap
 | [SPEC-023](SPEC-023-refund-components.md) | Componentes económicos de devoluciones | Aprobada |
 | [SPEC-024](SPEC-024-refund-cost-authorization.md) | Autorización de costos excepcionales | Aprobada |
 | [SPEC-025](SPEC-025-refund-requests.md) | Solicitudes de devolución del responsable | Aprobada |
+| [SPEC-026](SPEC-026-refund-policies-evidence.md) | Políticas, motivos y evidencia de devolución | Aprobada |
 
