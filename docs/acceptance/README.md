@@ -33,4 +33,5 @@ Los criterios se derivan de especificaciones trazables a `baseline-v1`.
 | [ACCEPTANCE-027](ACCEPTANCE-027-refund-management-history.md) | Gestión, historial y bandeja de devoluciones | Aprobada |
 | [ACCEPTANCE-028](ACCEPTANCE-028-mvp-scope.md) | Alcance funcional inicial del MVP | Aprobada |
 | [ACCEPTANCE-029](ACCEPTANCE-029-pilot-expansion.md) | Piloto progresivo y autorización de ampliaciones | Aprobada |
+| [ACCEPTANCE-030](ACCEPTANCE-030-environments-deployments.md) | Entornos y despliegues controlados | Aprobada |
 
