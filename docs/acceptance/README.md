@@ -23,4 +23,5 @@ Los criterios se derivan de especificaciones trazables a `baseline-v1`.
 | [ACCEPTANCE-017](ACCEPTANCE-017-payment-routing-gateway.md) | Enrutamiento de pagos e integración receptora | Aprobada |
 | [ACCEPTANCE-018](ACCEPTANCE-018-gateway-availability-monitoring.md) | Disponibilidad y monitoreo de pasarelas | Aprobada |
 | [ACCEPTANCE-019](ACCEPTANCE-019-gateway-transition-uncertain-payments.md) | Cambio de pasarela y pagos inciertos | Aprobada |
+| [ACCEPTANCE-020](ACCEPTANCE-020-financial-evidence.md) | Evidencia financiera | Aprobada |
 
