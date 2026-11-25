@@ -8,4 +8,5 @@ Las especificaciones se derivan de `baseline-v1`, citan DEC/RN/CON vigentes y ap
 | [SPEC-002](SPEC-002-players-enrollments-categories.md) | Jugadores, inscripciones y categorías | Aprobada |
 | [SPEC-003](SPEC-003-fees-benefits-late-charges.md) | Cuotas, beneficios y recargos por mora | Aprobada |
 | [SPEC-004](SPEC-004-payments.md) | Selección y registro de pagos | Aprobada |
+| [SPEC-005](SPEC-005-commercial-policy.md) | Política comercial, liquidaciones y suspensión | Aprobada |
 
