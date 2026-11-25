@@ -36,4 +36,5 @@ Los criterios se derivan de especificaciones trazables a `baseline-v1`.
 | [ACCEPTANCE-030](ACCEPTANCE-030-environments-deployments.md) | Entornos y despliegues controlados | Aprobada |
 | [ACCEPTANCE-031](ACCEPTANCE-031-backup-recovery.md) | Backups, retención y recuperación financiera | Aprobada |
 | [ACCEPTANCE-032](ACCEPTANCE-032-production-monitoring.md) | Monitoreo de Producción y alertas técnicas | Aprobada |
+| [ACCEPTANCE-033](ACCEPTANCE-033-initial-data-migration.md) | Migración inicial controlada de datos | Aprobada |
 
