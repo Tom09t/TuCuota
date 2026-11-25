@@ -11,4 +11,5 @@ Los criterios se derivan de especificaciones trazables a `baseline-v1`.
 | [ACCEPTANCE-005](ACCEPTANCE-005-commercial-policy.md) | Política comercial, liquidaciones y suspensión | Aprobada |
 | [ACCEPTANCE-006](ACCEPTANCE-006-commercial-adjustments-grace.md) | Ajustes comerciales y período de gracia | Aprobada |
 | [ACCEPTANCE-007](ACCEPTANCE-007-commercial-contracts-renewals.md) | Contratos, renovaciones y alertas comerciales | Aprobada |
+| [ACCEPTANCE-008](ACCEPTANCE-008-dashboards-reports.md) | Dashboards y reportes | Aprobada |
 
