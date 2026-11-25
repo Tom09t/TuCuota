@@ -12,4 +12,5 @@ Las especificaciones se derivan de `baseline-v1`, citan DEC/RN/CON vigentes y ap
 | [SPEC-006](SPEC-006-commercial-adjustments-grace.md) | Ajustes comerciales y período de gracia | Aprobada |
 | [SPEC-007](SPEC-007-commercial-contracts-renewals.md) | Contratos, renovaciones y alertas comerciales | Aprobada |
 | [SPEC-008](SPEC-008-dashboards-reports.md) | Dashboards y reportes | Aprobada |
+| [SPEC-009](SPEC-009-financial-reconciliation.md) | Conciliación financiera | Aprobada |
 
