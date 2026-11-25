@@ -37,4 +37,5 @@ Las especificaciones se derivan de `baseline-v1`, citan DEC/RN/CON vigentes y ap
 | [SPEC-031](SPEC-031-backup-recovery.md) | Backups, retención y recuperación financiera | Aprobada |
 | [SPEC-032](SPEC-032-production-monitoring.md) | Monitoreo de Producción y alertas técnicas | Aprobada |
 | [SPEC-033](SPEC-033-initial-data-migration.md) | Migración inicial controlada de datos | Aprobada |
+| [SPEC-034](SPEC-034-production-readiness.md) | Preparación y habilitación de cobros reales | Aprobada |
 
