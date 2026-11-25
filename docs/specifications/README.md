@@ -18,4 +18,5 @@ Las especificaciones se derivan de `baseline-v1`, citan DEC/RN/CON vigentes y ap
 | [SPEC-012](SPEC-012-asynchronous-exports-storage.md) | Exportaciones asíncronas y almacenamiento seguro | Aprobada |
 | [SPEC-013](SPEC-013-internal-notifications.md) | Notificaciones internas y preferencias | Aprobada |
 | [SPEC-014](SPEC-014-notification-events-incidents.md) | Eventos e incidentes notificables | Aprobada |
+| [SPEC-015](SPEC-015-notification-delivery-synchronization.md) | Entrega y sincronización de notificaciones | Aprobada |
 

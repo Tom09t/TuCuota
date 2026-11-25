@@ -18,4 +18,5 @@ Los criterios se derivan de especificaciones trazables a `baseline-v1`.
 | [ACCEPTANCE-012](ACCEPTANCE-012-asynchronous-exports-storage.md) | Exportaciones asíncronas y almacenamiento seguro | Aprobada |
 | [ACCEPTANCE-013](ACCEPTANCE-013-internal-notifications.md) | Notificaciones internas y preferencias | Aprobada |
 | [ACCEPTANCE-014](ACCEPTANCE-014-notification-events-incidents.md) | Eventos e incidentes notificables | Aprobada |
+| [ACCEPTANCE-015](ACCEPTANCE-015-notification-delivery-synchronization.md) | Entrega y sincronización de notificaciones | Aprobada |
 
