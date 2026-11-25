@@ -27,4 +27,5 @@ Las especificaciones se derivan de `baseline-v1`, citan DEC/RN/CON vigentes y ap
 | [SPEC-021](SPEC-021-refunds.md) | Devoluciones de pagos | Aprobada |
 | [SPEC-022](SPEC-022-chargebacks-disputes.md) | Contracargos y disputas | Aprobada |
 | [SPEC-023](SPEC-023-refund-components.md) | Componentes económicos de devoluciones | Aprobada |
+| [SPEC-024](SPEC-024-refund-cost-authorization.md) | Autorización de costos excepcionales | Aprobada |
 
