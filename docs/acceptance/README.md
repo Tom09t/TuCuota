@@ -9,4 +9,5 @@ Los criterios se derivan de especificaciones trazables a `baseline-v1`.
 | [ACCEPTANCE-003](ACCEPTANCE-003-fees-benefits-late-charges.md) | Cuotas, beneficios y recargos por mora | Aprobada |
 | [ACCEPTANCE-004](ACCEPTANCE-004-payments.md) | Selección y registro de pagos | Aprobada |
 | [ACCEPTANCE-005](ACCEPTANCE-005-commercial-policy.md) | Política comercial, liquidaciones y suspensión | Aprobada |
+| [ACCEPTANCE-006](ACCEPTANCE-006-commercial-adjustments-grace.md) | Ajustes comerciales y período de gracia | Aprobada |
 
