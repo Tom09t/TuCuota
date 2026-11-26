@@ -158,3 +158,8 @@ try {
 finally {
     Pop-Location
 }
+
+# `git grep` returns 1 when it finds no matches. That is the expected outcome
+# for the secret scan above, but PowerShell otherwise propagates that native
+# exit code after the script has completed successfully.
+exit 0
