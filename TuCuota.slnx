@@ -1,0 +1,22 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/TuCuota.Api/TuCuota.Api.csproj" />
+    <Project Path="src/TuCuota.BuildingBlocks/TuCuota.BuildingBlocks.csproj" />
+    <Project Path="src/TuCuota.Worker/TuCuota.Worker.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/">
+    <Project Path="src/Modules/TuCuota.Modules.Access/TuCuota.Modules.Access.csproj" />
+    <Project Path="src/Modules/TuCuota.Modules.Billing/TuCuota.Modules.Billing.csproj" />
+    <Project Path="src/Modules/TuCuota.Modules.Commercial/TuCuota.Modules.Commercial.csproj" />
+    <Project Path="src/Modules/TuCuota.Modules.Notifications/TuCuota.Modules.Notifications.csproj" />
+    <Project Path="src/Modules/TuCuota.Modules.Payments/TuCuota.Modules.Payments.csproj" />
+    <Project Path="src/Modules/TuCuota.Modules.Reconciliation/TuCuota.Modules.Reconciliation.csproj" />
+    <Project Path="src/Modules/TuCuota.Modules.Refunds/TuCuota.Modules.Refunds.csproj" />
+    <Project Path="src/Modules/TuCuota.Modules.Reporting/TuCuota.Modules.Reporting.csproj" />
+    <Project Path="src/Modules/TuCuota.Modules.Sports/TuCuota.Modules.Sports.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/TuCuota.ArchitectureTests/TuCuota.ArchitectureTests.csproj" />
+    <Project Path="tests/TuCuota.IntegrationTests/TuCuota.IntegrationTests.csproj" />
+  </Folder>
+</Solution>
