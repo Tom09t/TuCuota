@@ -16,7 +16,7 @@ Las decisiones arquitectónicas materiales nuevas se documentarán mediante ADR.
 |---|---|
 | Roadmap y orden de construcción por capacidades | Cumplido mediante `ROADMAP-v1` |
 | Alcance de la primera entrega y criterios de salida | Cumplido mediante R0-D01 |
-| Repositorio, CI básico y política de ramas | Pendiente |
+| Repositorio, CI básico y política de ramas | Cumplido mediante R0-D04–R0-D06, R0-D24, R0-D26 y PR #1 |
 | Versiones iniciales fijadas y revisión de licencias | Cumplido para entrada a implementación mediante R0-D07–R0-D09 y R0-D21–R0-D23; revisión transitiva obligatoria en R1 |
 | Matriz SPEC/AC por incremento | Cumplido a nivel de roadmap; convención operativa de evidencia pendiente |
 | Responsables de decisiones técnicas y de seguridad | Cumplido mediante R0-D02, R0-D16 y R0-D17 |
@@ -45,7 +45,7 @@ Se mantendrá el repositorio público bajo GitHub Free durante la implementació
 #### Consecuencias
 
 - R0-D19 y R0-D20 quedan reemplazadas en cuanto exigen privacidad antes de H1.
-- PAR-003 deja de estar bloqueado y pasa a `En análisis` hasta completar la prueba efectiva de las protecciones.
+- PAR-003 deja de estar bloqueado y queda cerrado tras la prueba efectiva de las protecciones en el PR #1.
 - Esta decisión no cierra R0 ni autoriza H1, despliegues o dinero real.
 
 #### Evidencia de configuración
@@ -58,7 +58,7 @@ El 2026-11-26 se creó en `Tom09t/TuCuota` el ruleset activo `main-protection`, 
 - conversaciones resueltas y squash como único método de merge;
 - rama actualizada y `ci-gate` satisfactorio antes del merge.
 
-GitHub confirmó la creación y mostró el ruleset activo sobre un objetivo. Falta ejecutar un pull request de prueba con el workflow versionado y comprobar tanto el caso satisfactorio como el bloqueo ante fallo; hasta entonces PAR-003 no se cierra.
+La prueba efectiva se realizó en el PR #1 el 2026-11-26. La ejecución inicial `45860262871` falló y GitHub mantuvo bloqueado el merge; después de corregir el código de salida del validador, la ejecución `45860513027` completó satisfactoriamente el check requerido `ci-gate`. El panel de merge confirmó `All checks have passed`, ausencia de conflictos y `Squash and merge` como único método disponible. Con esta evidencia PAR-003 queda cerrado, sujeto a revalidación antes de Producción o ante un cambio de visibilidad o plan.
 
 #### Riesgos y tratamiento
 
@@ -835,7 +835,7 @@ Los archivos textuales del tag se normalizan a LF antes del hash para neutraliza
 - No crea solución, frontend, migraciones ni código productivo.
 - No usa secretos ni permisos de escritura.
 - No despliega.
-- R0-D26 reemplazó la combinación privada + GitHub Free: PAR-003 está `En análisis` hasta exigir y probar este check en el repositorio público.
+- R0-D26 reemplazó la combinación privada + GitHub Free: PAR-003 quedó cerrado al exigir y probar este check en el repositorio público mediante el PR #1.
 
 #### Trazabilidad
 
