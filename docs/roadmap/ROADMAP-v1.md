@@ -8,7 +8,7 @@
 
 **Arquitectura:** cerrada mediante ADR-0001–ADR-0017
 
-**Hito alcanzado:** H0 — Roadmap aprobado
+**Hito alcanzado:** H1 — Implementación autorizada
 
 ## Propósito
 
