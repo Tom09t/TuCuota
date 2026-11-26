@@ -9,4 +9,9 @@
 Thumbs.db
 .idea/
 .vscode/
+.dotnet-home/
+**/bin/
+**/obj/
+frontend/node_modules/
+frontend/dist/
 

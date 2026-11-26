@@ -1,0 +1,6 @@
+@TuCuota.Api_HostAddress = http://localhost:5254
+
+GET {{TuCuota.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
