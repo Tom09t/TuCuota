@@ -1,8 +1,9 @@
 # R0 — Preparación de la implementación
 
-**Estado:** en curso  
+**Estado:** cerrado
 **Roadmap:** `docs/roadmap/ROADMAP-v1.md`  
 **Hito habilitado:** ninguno; H1 permanece bloqueado
+**Fecha de cierre:** 2026-11-26
 
 ## Propósito
 
@@ -18,10 +19,10 @@ Las decisiones arquitectónicas materiales nuevas se documentarán mediante ADR.
 | Alcance de la primera entrega y criterios de salida | Cumplido mediante R0-D01 |
 | Repositorio, CI básico y política de ramas | Cumplido mediante R0-D04–R0-D06, R0-D24, R0-D26 y PR #1 |
 | Versiones iniciales fijadas y revisión de licencias | Cumplido para entrada a implementación mediante R0-D07–R0-D09 y R0-D21–R0-D23; revisión transitiva obligatoria en R1 |
-| Matriz SPEC/AC por incremento | Cumplido a nivel de roadmap; convención operativa de evidencia pendiente |
+| Matriz SPEC/AC por incremento | Cumplido mediante `ROADMAP-v1` y R0-D12 |
 | Responsables de decisiones técnicas y de seguridad | Cumplido mediante R0-D02, R0-D16 y R0-D17 |
 
-R0 no está cerrado. El inicio de código productivo requiere, además de cerrar todos los gates, una autorización explícita y separada de H1.
+R0 está cerrado conforme a `R0_CLOSURE.md`. El inicio de código productivo continúa bloqueado hasta recibir una autorización explícita y separada de H1.
 
 ## Decisiones aprobadas
 
