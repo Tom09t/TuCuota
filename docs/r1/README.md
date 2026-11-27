@@ -40,6 +40,11 @@ Vite `8.3.8` requiere `@vitejs/plugin-react` compatible con Vite 8. Se fijó `6.
 
 Estas verificaciones demuestran el scaffolding; no satisfacen por sí solas el gate de salida completo de R1.
 
+## Cortes posteriores
+
+- `PERSISTENCE_FOUNDATION.md`: persistencia multitenant y aislamiento PostgreSQL.
+- `OPENAPI_VERTICAL.md`: contrato OpenAPI 3.1 y recorrido técnico API–PostgreSQL–frontend.
+
 ## Trazabilidad
 
 - `docs/roadmap/H1_AUTHORIZATION.md`.
