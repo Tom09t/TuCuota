@@ -11,6 +11,8 @@
 - Entidad técnica `TenantBoundaryProbe` para probar aislamiento sin anticipar el modelo funcional de R2.
 - Primera migración del módulo Access con RLS, `FORCE ROW LEVEL SECURITY` y políticas de lectura/escritura con denegación por defecto.
 - Endpoint técnico `/api/system/persistence`, habilitado sólo cuando existe una cadena `ConnectionStrings__PostgreSql` externa.
+- Prueba de integración contra PostgreSQL 18.7 real mediante Testcontainers, ejecutada con un rol sin privilegios de superusuario.
+- Evidencia negativa de RLS: un club no puede leer filas de otro club ni insertar una fila con un `ClubId` distinto del contexto de sesión.
 
 ## Límites
 
