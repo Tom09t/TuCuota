@@ -44,6 +44,7 @@ Estas verificaciones demuestran el scaffolding; no satisfacen por sí solas el g
 
 - `PERSISTENCE_FOUNDATION.md`: persistencia multitenant y aislamiento PostgreSQL.
 - `OPENAPI_VERTICAL.md`: contrato OpenAPI 3.1 y recorrido técnico API–PostgreSQL–frontend.
+- `OBSERVABILITY_FOUNDATION.md`: OpenTelemetry, logs estructurados y correlación técnica.
 
 ## Trazabilidad
 

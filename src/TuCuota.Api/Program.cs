@@ -1,15 +1,23 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.OpenApi;
+using OpenTelemetry.Metrics;
+using OpenTelemetry.Trace;
 using System.Text.Json;
 using TuCuota.Api.Contracts;
 using TuCuota.Api.Health;
+using TuCuota.Api.Observability;
+using TuCuota.BuildingBlocks.Observability;
 using TuCuota.BuildingBlocks.Tenancy;
 using TuCuota.Modules.Access.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi(options => options.OpenApiVersion = OpenApiSpecVersion.OpenApi3_1);
+builder.Services
+    .AddTuCuotaObservability(builder.Configuration, "TuCuota.Api")
+    .WithTracing(tracing => tracing.AddAspNetCoreInstrumentation())
+    .WithMetrics(metrics => metrics.AddAspNetCoreInstrumentation());
 var healthChecks = builder.Services.AddHealthChecks();
 builder.Services.AddScoped(_ => TenantContext.ForClub(Guid.Parse("11111111-1111-1111-1111-111111111111")));
 
@@ -24,6 +32,7 @@ if (!string.IsNullOrWhiteSpace(connectionString))
 
 var app = builder.Build();
 
+app.UseMiddleware<CorrelationMiddleware>();
 app.MapOpenApi();
 app.MapHealthChecks("/health/live", new HealthCheckOptions
 {
