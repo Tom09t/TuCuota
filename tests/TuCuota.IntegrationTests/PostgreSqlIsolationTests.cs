@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.Extensions.Configuration;
 using Npgsql;
 using System.Net.Http.Json;
 using Testcontainers.PostgreSql;
@@ -59,11 +59,9 @@ public sealed class PostgreSqlIsolationTests : IAsyncLifetime
     public async Task ApiReportsPostgreSqlReadinessThroughTheTechnicalContract()
     {
         await using var factory = new WebApplicationFactory<Program>()
-            .WithWebHostBuilder(builder => builder.ConfigureAppConfiguration((_, configuration) =>
-                configuration.AddInMemoryCollection(new Dictionary<string, string?>
-                {
-                    ["ConnectionStrings:PostgreSql"] = _postgres.GetConnectionString(),
-                })));
+            .WithWebHostBuilder(builder => builder.UseSetting(
+                "ConnectionStrings:PostgreSql",
+                _postgres.GetConnectionString()));
         using var client = factory.CreateClient();
 
         var cancellationToken = TestContext.Current.CancellationToken;
