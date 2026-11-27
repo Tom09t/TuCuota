@@ -5,6 +5,7 @@ public sealed class TenantBoundaryProbe
     public Guid Id { get; private set; }
     public Guid ClubId { get; private set; }
     public DateTimeOffset CreatedAt { get; private set; }
+    public long Version { get; private set; } = 1;
 
     private TenantBoundaryProbe() { }
 
@@ -15,5 +16,10 @@ public sealed class TenantBoundaryProbe
         Id = id;
         ClubId = clubId;
         CreatedAt = createdAt;
+    }
+
+    public void Touch(DateTimeOffset changedAt)
+    {
+        CreatedAt = changedAt;
     }
 }
