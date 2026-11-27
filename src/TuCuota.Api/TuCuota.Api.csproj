@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TuCuota.BuildingBlocks\TuCuota.BuildingBlocks.csproj" />
+    <ProjectReference Include="..\Modules\TuCuota.Modules.Access\TuCuota.Modules.Access.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
