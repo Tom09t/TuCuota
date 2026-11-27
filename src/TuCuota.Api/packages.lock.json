@@ -49,11 +49,6 @@
         "resolved": "2.13.0",
         "contentHash": "wavlgBYnn7uU/ZGhFHNl0UlDOlwz+6KRduKkqdCCbfxxANaQ1rmBpETVGdwXanAM6twQOxsvI3CBEGF4OScbeQ=="
       },
-      "Npgsql": {
-        "type": "Transitive",
-        "resolved": "10.0.4",
-        "contentHash": "m2VCpcU9MKD8lLxTn+YaNIRWd+Gz3y/9wIaM+2ifDF24xZ2Kvvjx4CDB2BIgobr1Gj6a/gsdmfz1sQ+kmd7liw=="
-      },
       "OpenTelemetry": {
         "type": "Transitive",
         "resolved": "1.21.0",
@@ -96,6 +91,7 @@
         "type": "Project",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "[10.0.15, )",
+          "Npgsql": "[10.0.4, )",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "[10.0.4, )",
           "TuCuota.BuildingBlocks": "[1.0.0, )"
         }
@@ -109,6 +105,12 @@
           "Microsoft.EntityFrameworkCore.Abstractions": "10.0.15",
           "Microsoft.EntityFrameworkCore.Analyzers": "10.0.15"
         }
+      },
+      "Npgsql": {
+        "type": "CentralTransitive",
+        "requested": "[10.0.4, )",
+        "resolved": "10.0.4",
+        "contentHash": "m2VCpcU9MKD8lLxTn+YaNIRWd+Gz3y/9wIaM+2ifDF24xZ2Kvvjx4CDB2BIgobr1Gj6a/gsdmfz1sQ+kmd7liw=="
       },
       "Npgsql.EntityFrameworkCore.PostgreSQL": {
         "type": "CentralTransitive",
