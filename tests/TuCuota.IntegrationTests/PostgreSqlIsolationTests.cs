@@ -1,6 +1,10 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.Extensions.Configuration;
 using Npgsql;
+using System.Net.Http.Json;
 using Testcontainers.PostgreSql;
+using TuCuota.Api.Contracts;
 using TuCuota.BuildingBlocks.Tenancy;
 using TuCuota.Modules.Access.Persistence;
 
@@ -47,6 +51,36 @@ public sealed class PostgreSqlIsolationTests : IAsyncLifetime
 
         var exception = await Assert.ThrowsAsync<PostgresException>(() => InsertProbeAsync(ClubB, ClubA));
         Assert.Equal(PostgresErrorCodes.InsufficientPrivilege, exception.SqlState);
+    }
+
+    [Fact]
+    [Trait("ADR", "ADR-0003")]
+    [Trait("ADR", "ADR-0013")]
+    public async Task ApiReportsPostgreSqlReadinessThroughTheTechnicalContract()
+    {
+        await using var factory = new WebApplicationFactory<Program>()
+            .WithWebHostBuilder(builder => builder.ConfigureAppConfiguration((_, configuration) =>
+                configuration.AddInMemoryCollection(new Dictionary<string, string?>
+                {
+                    ["ConnectionStrings:PostgreSql"] = _postgres.GetConnectionString(),
+                })));
+        using var client = factory.CreateClient();
+
+        var cancellationToken = TestContext.Current.CancellationToken;
+        var persistence = await client.GetFromJsonAsync<PersistenceStatusResponse>(
+            "/api/system/persistence",
+            cancellationToken);
+        var readiness = await client.GetFromJsonAsync<HealthStatusResponse>(
+            "/health/ready",
+            cancellationToken);
+
+        Assert.NotNull(persistence);
+        Assert.True(persistence.Configured);
+        Assert.True(persistence.CanConnect);
+        Assert.Equal("access", persistence.Schema);
+        Assert.NotNull(readiness);
+        Assert.Equal("healthy", readiness.Status);
+        Assert.Equal("healthy", readiness.Checks["postgresql"]);
     }
 
     private async Task InsertProbeAsync(Guid sessionClubId, Guid rowClubId)

@@ -1,0 +1,103 @@
+{
+  "openapi": "3.1.1",
+  "info": {
+    "title": "TuCuota.Api | v1",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/system": {
+      "get": {
+        "tags": [
+          "TuCuota.Api"
+        ],
+        "operationId": "GetSystemStatus",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SystemStatusResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/system/persistence": {
+      "get": {
+        "tags": [
+          "TuCuota.Api"
+        ],
+        "operationId": "GetPersistenceStatus",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersistenceStatusResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "PersistenceStatusResponse": {
+        "required": [
+          "provider",
+          "schema",
+          "configured",
+          "canConnect"
+        ],
+        "type": "object",
+        "properties": {
+          "provider": {
+            "type": "string"
+          },
+          "schema": {
+            "type": "string"
+          },
+          "configured": {
+            "type": "boolean"
+          },
+          "canConnect": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          }
+        }
+      },
+      "SystemStatusResponse": {
+        "required": [
+          "service",
+          "status",
+          "persistence"
+        ],
+        "type": "object",
+        "properties": {
+          "service": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "persistence": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "TuCuota.Api"
+    }
+  ]
+}
